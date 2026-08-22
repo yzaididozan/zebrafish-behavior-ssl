@@ -1,0 +1,110 @@
+# Candidate SSL augmentation configuration for DS-005
+#
+# This file defines the conservative first-pass augmentation policy for
+# bout-level self-supervised learning.
+#
+# Status:
+#   Candidate only. Do not treat as frozen until augmentation QC is complete.
+
+ssl_augmentation:
+  version: "v1"
+  status: "FROZEN_V1"
+
+  dataset:
+    id: "DS-005"
+    unit_of_analysis: "valid_bout"
+    development_partition: "train"
+
+  input:
+    shape:
+      timesteps: 175
+      channels: 3
+
+    channels:
+      - index: 0
+        name: "sin_orientation"
+      - index: 1
+        name: "cos_orientation"
+      - index: 2
+        name: "speed_head"
+
+    notes:
+      - "head_pos is excluded from the primary SSL input because preregistered QC identified coordinate-semantic discontinuities."
+      - "fish ID, context, stimulus code, bout type, and partition are metadata only and must never be used as SSL input channels."
+
+  temporal_mask:
+    enabled: true
+    probability: 0.75
+    max_fraction: 0.10
+    contiguous: true
+    mask_value: 0.0
+
+  feature_mask:
+    enabled: false
+    probability: 0.0
+    orientation_pair_must_remain_grouped: true
+
+  currently_disabled:
+    gaussian_noise:
+      enabled: false
+      reason: "Magnitude not yet validated after train-only normalization."
+
+    temporal_crop:
+      enabled: false
+      reason: "Not yet validated for bout semantics."
+
+    time_warp:
+      enabled: false
+      reason: "Could distort biologically meaningful temporal dynamics."
+
+    rotation_augmentation:
+      enabled: false
+      reason: "Not yet justified for the current orientation representation."
+
+    translation_augmentation:
+      enabled: false
+      reason: "Primary SSL input does not currently include head_pos."
+
+  prohibited:
+    time_reverse: true
+    temporal_shuffle: true
+    cross_bout_mix: true
+    cross_fish_mix: true
+    cross_partition_mix: true
+
+  reproducibility:
+    deterministic_rng: true
+    rng_library: "numpy.random.Generator"
+    seed_policy: "explicit seed or controlled generator"
+    inspection_seed: 20260822
+
+  acceptance_criteria:
+    preserve_shape: true
+    preserve_dtype: "float32"
+    require_finite_output: true
+    preserve_temporal_order_outside_mask: true
+    modify_single_bout_only: true
+    no_metadata_leakage: true
+
+  validation:
+    unit_tests:
+      status: "PASSED"
+      passed: 12
+      failed: 0
+
+    real_bout_inspection:
+      status: "PASSED_CANDIDATE"
+      fish_id: "DS005-JM-F001"
+      bout_index: 0
+      partition: "train"
+      forced_temporal_mask_diagnostic:
+        temporal_mask_probability: 1.0
+        view_a_changed_timesteps_fraction: 0.08
+        view_b_changed_timesteps_fraction: 0.0171
+      interpretation: "Temporal masking produced modest, finite, shape-preserving changes on a real training bout."
+
+  freeze_requirements:
+    - "Train-only normalization statistics fitted and recorded."
+    - "Augmentation QC completed across a predefined sample of training bouts."
+    - "No augmentation changes made based on final test-set results."
+    - "Final config status changed to FROZEN only after QC review."

@@ -1,0 +1,250 @@
+{
+  "dataset_id": "DS-005",
+  "artifact_type": "Input A hand-engineered baseline",
+  "profile": "core",
+  "feature_count": 18,
+  "feature_names": [
+    "bout_duration_s",
+    "inter_bout_interval_s",
+    "speed_mean",
+    "speed_std",
+    "speed_median",
+    "speed_max",
+    "speed_p95",
+    "speed_rms",
+    "accel_abs_mean",
+    "accel_abs_std",
+    "accel_abs_max",
+    "accel_rms",
+    "turn_abs_total_rad",
+    "turn_net_rad",
+    "turn_abs_mean_rad",
+    "turn_abs_std_rad",
+    "turn_abs_max_rad",
+    "turn_rms_rad"
+  ],
+  "split_unit": "fish",
+  "normalization_fit_partition": "train",
+  "fish_partition_counts": {
+    "train": 323,
+    "validation": 70,
+    "test": 70
+  },
+  "total_valid_bouts": 1203409,
+  "total_feature_rows": 1203409,
+  "raw": {
+    "train": {
+      "profile": "core",
+      "rows": 842841,
+      "features": 18,
+      "feature_names": [
+        "bout_duration_s",
+        "inter_bout_interval_s",
+        "speed_mean",
+        "speed_std",
+        "speed_median",
+        "speed_max",
+        "speed_p95",
+        "speed_rms",
+        "accel_abs_mean",
+        "accel_abs_std",
+        "accel_abs_max",
+        "accel_rms",
+        "turn_abs_total_rad",
+        "turn_net_rad",
+        "turn_abs_mean_rad",
+        "turn_abs_std_rad",
+        "turn_abs_max_rad",
+        "turn_rms_rad"
+      ],
+      "finite": true,
+      "fish_count": 323,
+      "partition_row_counts": {
+        "train": 842841
+      },
+      "fish_overlap_across_partitions": false,
+      "all_zero_speed_rows": 29,
+      "extreme_speed_gt_100_rows": 5
+    },
+    "validation": {
+      "profile": "core",
+      "rows": 168464,
+      "features": 18,
+      "feature_names": [
+        "bout_duration_s",
+        "inter_bout_interval_s",
+        "speed_mean",
+        "speed_std",
+        "speed_median",
+        "speed_max",
+        "speed_p95",
+        "speed_rms",
+        "accel_abs_mean",
+        "accel_abs_std",
+        "accel_abs_max",
+        "accel_rms",
+        "turn_abs_total_rad",
+        "turn_net_rad",
+        "turn_abs_mean_rad",
+        "turn_abs_std_rad",
+        "turn_abs_max_rad",
+        "turn_rms_rad"
+      ],
+      "finite": true,
+      "fish_count": 70,
+      "partition_row_counts": {
+        "validation": 168464
+      },
+      "fish_overlap_across_partitions": false,
+      "all_zero_speed_rows": 1,
+      "extreme_speed_gt_100_rows": 0
+    },
+    "test": {
+      "profile": "core",
+      "rows": 192104,
+      "features": 18,
+      "feature_names": [
+        "bout_duration_s",
+        "inter_bout_interval_s",
+        "speed_mean",
+        "speed_std",
+        "speed_median",
+        "speed_max",
+        "speed_p95",
+        "speed_rms",
+        "accel_abs_mean",
+        "accel_abs_std",
+        "accel_abs_max",
+        "accel_rms",
+        "turn_abs_total_rad",
+        "turn_net_rad",
+        "turn_abs_mean_rad",
+        "turn_abs_std_rad",
+        "turn_abs_max_rad",
+        "turn_rms_rad"
+      ],
+      "finite": true,
+      "fish_count": 70,
+      "partition_row_counts": {
+        "test": 192104
+      },
+      "fish_overlap_across_partitions": false,
+      "all_zero_speed_rows": 4,
+      "extreme_speed_gt_100_rows": 1
+    }
+  },
+  "scaled": {
+    "train": {
+      "profile": "core",
+      "rows": 842841,
+      "features": 18,
+      "feature_names": [
+        "bout_duration_s",
+        "inter_bout_interval_s",
+        "speed_mean",
+        "speed_std",
+        "speed_median",
+        "speed_max",
+        "speed_p95",
+        "speed_rms",
+        "accel_abs_mean",
+        "accel_abs_std",
+        "accel_abs_max",
+        "accel_rms",
+        "turn_abs_total_rad",
+        "turn_net_rad",
+        "turn_abs_mean_rad",
+        "turn_abs_std_rad",
+        "turn_abs_max_rad",
+        "turn_rms_rad"
+      ],
+      "finite": true,
+      "fish_count": 323,
+      "partition_row_counts": {
+        "train": 842841
+      },
+      "fish_overlap_across_partitions": false,
+      "all_zero_speed_rows": 29,
+      "extreme_speed_gt_100_rows": 5
+    },
+    "validation": {
+      "profile": "core",
+      "rows": 168464,
+      "features": 18,
+      "feature_names": [
+        "bout_duration_s",
+        "inter_bout_interval_s",
+        "speed_mean",
+        "speed_std",
+        "speed_median",
+        "speed_max",
+        "speed_p95",
+        "speed_rms",
+        "accel_abs_mean",
+        "accel_abs_std",
+        "accel_abs_max",
+        "accel_rms",
+        "turn_abs_total_rad",
+        "turn_net_rad",
+        "turn_abs_mean_rad",
+        "turn_abs_std_rad",
+        "turn_abs_max_rad",
+        "turn_rms_rad"
+      ],
+      "finite": true,
+      "fish_count": 70,
+      "partition_row_counts": {
+        "validation": 168464
+      },
+      "fish_overlap_across_partitions": false,
+      "all_zero_speed_rows": 1,
+      "extreme_speed_gt_100_rows": 0
+    },
+    "test": {
+      "profile": "core",
+      "rows": 192104,
+      "features": 18,
+      "feature_names": [
+        "bout_duration_s",
+        "inter_bout_interval_s",
+        "speed_mean",
+        "speed_std",
+        "speed_median",
+        "speed_max",
+        "speed_p95",
+        "speed_rms",
+        "accel_abs_mean",
+        "accel_abs_std",
+        "accel_abs_max",
+        "accel_rms",
+        "turn_abs_total_rad",
+        "turn_net_rad",
+        "turn_abs_mean_rad",
+        "turn_abs_std_rad",
+        "turn_abs_max_rad",
+        "turn_rms_rad"
+      ],
+      "finite": true,
+      "fish_count": 70,
+      "partition_row_counts": {
+        "test": 192104
+      },
+      "fish_overlap_across_partitions": false,
+      "all_zero_speed_rows": 4,
+      "extreme_speed_gt_100_rows": 1
+    }
+  },
+  "train_scaling": {
+    "mean_abs_max": 2.2301791232151494e-09,
+    "std_abs_deviation_from_one_max": 2.230424733795644e-09,
+    "centered_with_atol_1e-4": true,
+    "unit_variance_with_atol_1e-4": true
+  },
+  "integrity": {
+    "no_fish_overlap": true,
+    "all_valid_bouts_represented": true,
+    "raw_scaled_metadata_equal": true,
+    "scaled_values_finite": true,
+    "train_only_normalization": true
+  }
+}

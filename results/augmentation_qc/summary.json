@@ -1,0 +1,63 @@
+{
+  "dataset_id": "DS-005",
+  "partition": "train",
+  "sample_bouts_requested": 1000,
+  "sample_bouts_processed": 1000,
+  "base_seed": 20260822,
+  "normalization": {
+    "speed_mean": 0.8584290329197303,
+    "speed_std": 1.2605445849117496,
+    "fit_partition": "train"
+  },
+  "augmentation_config": {
+    "temporal_mask_probability": 0.5,
+    "temporal_mask_max_fraction": 0.1,
+    "feature_mask_probability": 0.0,
+    "mask_value": 0.0
+  },
+  "view_a_changed_timestep_fraction": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.03428571428571429,
+    "mean": 0.03715428571428572,
+    "p75": 0.06857142857142857,
+    "p95": 0.09142857142857143,
+    "max": 0.09714285714285714
+  },
+  "view_b_changed_timestep_fraction": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.03428571428571429,
+    "mean": 0.03856571428571429,
+    "p75": 0.06857142857142857,
+    "p95": 0.09142857142857143,
+    "max": 0.09714285714285714
+  },
+  "view_a_changed_element_fraction": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.02857142857142857,
+    "mean": 0.033769523809523805,
+    "p75": 0.05714285714285714,
+    "p95": 0.09142857142857143,
+    "max": 0.09714285714285714
+  },
+  "view_b_changed_element_fraction": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.02857142857142857,
+    "mean": 0.034923809523809524,
+    "p75": 0.06285714285714286,
+    "p95": 0.09142857142857143,
+    "max": 0.09714285714285714
+  },
+  "finite_failures": 0,
+  "shape_failures": 0,
+  "equal_view_pairs": 74,
+  "acceptance_checks": {
+    "all_outputs_finite": true,
+    "all_shapes_preserved": true,
+    "max_changed_timestep_fraction_le_0_10": true
+  },
+  "status": "QC_COMPLETE_NOT_YET_FROZEN"
+}

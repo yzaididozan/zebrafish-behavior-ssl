@@ -1,0 +1,14 @@
+{
+  "dataset_id": "DS-005",
+  "k": 2,
+  "method": "kmeans",
+  "pca_components": 8,
+  "pca_variance_retained": 0.9539912939071655,
+  "representation": "ssl_encoder_embedding",
+  "score": 0.5109100758966075,
+  "seed": 20260822,
+  "ssl_training_seed": 11,
+  "stability_ari": 0.9986203610738782,
+  "test_partition_loaded": false,
+  "validation_silhouette": 0.18576988577842712
+}

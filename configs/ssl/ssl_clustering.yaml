@@ -1,0 +1,62 @@
+# SSL embedding clustering selection configuration
+#
+# This file governs TRAIN/VALIDATION-only clustering selection on frozen
+# encoder embeddings. TEST must remain untouched until final evaluation.
+
+version: "v1"
+status: "CANDIDATE_NOT_FROZEN"
+
+representation:
+  source: "ssl_encoder_embedding"
+  projection_head_used: false
+  embedding_dim: 64
+
+preprocessing:
+  standardize:
+    enabled: true
+    fit_partition: "train"
+
+  pca:
+    enabled: true
+    fit_partition: "train"
+    retain_variance: 0.95
+    role: "diagnostic_and_clustering_dimensionality_reduction"
+
+candidate_methods:
+  - "kmeans"
+  - "gmm"
+
+cluster_count:
+  min_k: 2
+  max_k: 12
+
+selection:
+  validation_metric: "silhouette"
+  stability_metric: "adjusted_rand_index"
+
+  composite_score:
+    silhouette_weight: 0.60
+    stability_weight: 0.40
+
+  tie_break_order:
+    - "higher_composite_score"
+    - "higher_validation_silhouette"
+    - "higher_stability"
+
+stability:
+  partition: "train"
+  repeats: 3
+  max_rows: 20000
+
+silhouette:
+  partition: "validation"
+  max_rows: 20000
+
+seed:
+  clustering_seed: 20260822
+
+test_protection:
+  load_during_selection: false
+  use_for_pca_fit: false
+  use_for_cluster_count_selection: false
+  use_for_method_selection: false

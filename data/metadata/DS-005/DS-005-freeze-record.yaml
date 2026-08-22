@@ -1,0 +1,101 @@
+dataset_id: DS-005
+record_type: DATASET_FREEZE_RECORD
+freeze_status: FROZEN
+confirmatory_analysis_frozen: false
+primary_dataset: true
+source_lock:
+  archive_path: data/raw/DS-005/Datasets.tar.gz
+  published_md5: b9a00fccda494bb49ea7c67d3b0f8d9e
+  local_sha256: 5af065e44f3f00f1a975dfe6472eee985c9e73c2f4a98ba722b5233efb85cffd
+  archive_entries: 2223
+  extracted_files: 2218
+  extracted_directories_including_root: 6
+  extracted_directories_excluding_root: 5
+  extraction_consistency_check: PASS
+identity_lock:
+  number_of_fish: 463
+  canonical_fish_id_format: DS005-JM-F###
+  fish_map: data/metadata/DS-005/DS-005-fish-map.csv
+  fish_mapping_verified: true
+  total_valid_bouts: 1203409
+context_lock:
+  experimental_context_mapping_verified: true
+  number_of_contexts: 14
+  all_primary_fish_mapped: true
+  mapping_source: Markov_Fish/Scripts/kmeans_embedding_jm.py
+  fish_163_resolution: Optokinetic Response (5x5cm)
+session_lock:
+  canonical_session_definition_verified: true
+  number_of_canonical_sessions: 463
+  canonical_session_id_format: DS005-JM-S###
+  relationship: one fish to one project-level continuous bout timeline/session
+  fish_with_nonmonotonic_bout_starts: 0
+  fish_with_end_before_start: 0
+qc_lock:
+  project_qc_thresholds_frozen: true
+  nonfinite_valid_bouts: 0
+  all_zero_speed_bouts: 34
+  all_zero_speed_primary_exclusion: false
+  all_zero_speed_sensitivity_exclusion: true
+  extreme_speed_threshold: 100
+  extreme_speed_flagged_bouts: 6
+  extreme_speed_primary_exclusion: false
+  extreme_speed_sensitivity_exclusion: true
+  rule: QC thresholds may not be changed because of downstream clustering, SSL, classification, or validation
+    performance.
+split_lock:
+  train_validation_test_split_frozen: true
+  split_file: data/splits/DS-005-fish-split-v1.csv
+  split_version: v1
+  random_seed: 20260822
+  split_unit: fish
+  stratified_by: experimental_context
+  counts:
+    train: 323
+    validation: 70
+    test: 70
+    total: 463
+  split_sha256: 19c1c7589e046337ec51b66b8fec7632029084d59905ca45b2ce751b3268c935
+  fish_overlap_across_partitions: false
+  every_context_present_in_all_partitions: true
+  bout_level_random_split_prohibited: true
+  split_regeneration_prohibited_for_performance_reasons: true
+verified_items:
+  archive_downloaded: true
+  published_md5_matched: true
+  local_sha256_recorded: true
+  archive_extracted: true
+  archive_entry_count_verified: true
+  extracted_file_count_verified: true
+  extracted_directory_count_verified: true
+  archive_extraction_consistency_verified: true
+  primary_cohort_identified: true
+  primary_fish_count_verified: true
+  fish_axis_verified: true
+  canonical_fish_ids_created: true
+  fish_mapping_crosschecked: true
+  exact_valid_bout_count_verified: true
+  frame_rate_verified: true
+  bout_padding_structure_verified: true
+  valid_bout_mask_field_verified: true
+  errmask_inspected: true
+  experimental_context_mapping_verified: true
+  canonical_session_definition_verified: true
+  project_qc_thresholds_frozen: true
+  train_validation_test_split_frozen: true
+  raw_directory_read_only: true
+pending_items: {}
+
+documented_limitations:
+  stimulus_code_semantics:
+    verified: false
+    freeze_blocking: false
+    note: >
+      The complete semantics of the 73 values in the stims field have not
+      been established. This does not block the primary analysis because
+      the 14 experimental-context assignments are independently reproduced
+      from the authors' Markov_Fish analysis code.
+final_freeze_conditions:
+  raw_directory_must_be_read_only: true
+  confirmatory_analysis_frozen_must_be_true: true
+  freeze_status_target: FROZEN

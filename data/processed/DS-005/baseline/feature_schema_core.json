@@ -1,0 +1,39 @@
+{
+  "dataset_id": "DS-005",
+  "input": "Input A \u2014 hand-engineered baseline",
+  "profile": "core",
+  "feature_names": [
+    "bout_duration_s",
+    "inter_bout_interval_s",
+    "speed_mean",
+    "speed_std",
+    "speed_median",
+    "speed_max",
+    "speed_p95",
+    "speed_rms",
+    "accel_abs_mean",
+    "accel_abs_std",
+    "accel_abs_max",
+    "accel_rms",
+    "turn_abs_total_rad",
+    "turn_net_rad",
+    "turn_abs_mean_rad",
+    "turn_abs_std_rad",
+    "turn_abs_max_rad",
+    "turn_rms_rad"
+  ],
+  "split_unit": "fish",
+  "normalization": "z-score using training-partition bouts only; validation/test use frozen training statistics",
+  "context_labels_used_as_features": false,
+  "stimulus_codes_used_as_features": false,
+  "bout_type_used_as_feature": false,
+  "qc": {
+    "primary_nonfinite_exclusion": true,
+    "all_zero_speed_primary_exclusion": false,
+    "speed_gt_100_primary_exclusion": false,
+    "all_zero_speed_sensitivity_flag": true,
+    "speed_gt_100_sensitivity_flag": true
+  },
+  "head_position_note": "Raw head_pos-derived path features are excluded from the core confirmatory profile because coordinate discontinuities were observed during QC and source coordinate semantics are not fully resolved.",
+  "first_inter_bout_interval_rule": "First valid bout for each fish receives inter_bout_interval_s = 0 because no preceding bout exists."
+}

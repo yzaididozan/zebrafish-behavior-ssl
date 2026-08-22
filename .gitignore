@@ -1,0 +1,8 @@
+.venv/
+data/raw/
+.DS_Store
+data/processed/**/*.npz
+data/processed/**/ssl_embeddings/
+results/ssl/checkpoints/
+results/ssl/logs/
+*.pt

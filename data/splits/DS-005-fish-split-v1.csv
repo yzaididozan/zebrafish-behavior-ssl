@@ -1,0 +1,464 @@
+dataset_id,canonical_fish_id,source_fish_index,context_id,context_name,partition,split_seed,split_version
+DS-005,DS005-JM-F000,0,CTX-09,3 min Light<->Dark(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F001,1,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F002,2,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F003,3,CTX-09,3 min Light<->Dark(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F004,4,CTX-09,3 min Light<->Dark(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F005,5,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F006,6,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F007,7,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F008,8,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F009,9,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F010,10,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F011,11,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F012,12,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F013,13,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F014,14,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F015,15,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F016,16,CTX-09,3 min Light<->Dark(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F017,17,CTX-09,3 min Light<->Dark(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F018,18,CTX-09,3 min Light<->Dark(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F019,19,CTX-09,3 min Light<->Dark(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F020,20,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F021,21,CTX-09,3 min Light<->Dark(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F022,22,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F023,23,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F024,24,CTX-04,Dark_Transitions(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F025,25,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F026,26,CTX-04,Dark_Transitions(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F027,27,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F028,28,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F029,29,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F030,30,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F031,31,CTX-04,Dark_Transitions(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F032,32,CTX-04,Dark_Transitions(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F033,33,CTX-04,Dark_Transitions(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F034,34,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F035,35,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F036,36,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F037,37,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F038,38,CTX-04,Dark_Transitions(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F039,39,CTX-04,Dark_Transitions(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F040,40,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F041,41,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F042,42,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F043,43,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F044,44,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F045,45,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F046,46,CTX-04,Dark_Transitions(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F047,47,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F048,48,CTX-04,Dark_Transitions(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F049,49,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F050,50,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F051,51,CTX-03,Looming(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F052,52,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F053,53,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F054,54,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F055,55,CTX-03,Looming(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F056,56,CTX-03,Looming(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F057,57,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F058,58,CTX-03,Looming(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F059,59,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F060,60,CTX-03,Looming(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F061,61,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F062,62,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F063,63,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F064,64,CTX-03,Looming(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F065,65,CTX-03,Looming(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F066,66,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F067,67,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F068,68,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F069,69,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F070,70,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F071,71,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F072,72,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F073,73,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F074,74,CTX-03,Looming(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F075,75,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F076,76,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F077,77,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F078,78,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F079,79,CTX-03,Looming(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F080,80,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F081,81,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F082,82,CTX-03,Looming(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F083,83,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F084,84,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F085,85,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F086,86,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F087,87,CTX-03,Looming(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F088,88,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F089,89,CTX-03,Looming(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F090,90,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F091,91,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F092,92,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F093,93,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F094,94,CTX-03,Looming(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F095,95,CTX-03,Looming(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F096,96,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F097,97,CTX-03,Looming(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F098,98,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F099,99,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F100,100,CTX-03,Looming(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F101,101,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F102,102,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F103,103,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F104,104,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F105,105,CTX-03,Looming(5x5cm),test,20260822,v1
+DS-005,DS005-JM-F106,106,CTX-03,Looming(5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F107,107,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F108,108,CTX-03,Looming(5x5cm),train,20260822,v1
+DS-005,DS005-JM-F109,109,CTX-06,Optomotor Response (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F110,110,CTX-06,Optomotor Response (1x5cm),validation,20260822,v1
+DS-005,DS005-JM-F111,111,CTX-06,Optomotor Response (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F112,112,CTX-06,Optomotor Response (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F113,113,CTX-06,Optomotor Response (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F114,114,CTX-06,Optomotor Response (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F115,115,CTX-06,Optomotor Response (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F116,116,CTX-06,Optomotor Response (1x5cm),test,20260822,v1
+DS-005,DS005-JM-F117,117,CTX-06,Optomotor Response (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F118,118,CTX-06,Optomotor Response (1x5cm),validation,20260822,v1
+DS-005,DS005-JM-F119,119,CTX-06,Optomotor Response (1x5cm),test,20260822,v1
+DS-005,DS005-JM-F120,120,CTX-06,Optomotor Response (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F121,121,CTX-02,Light (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F122,122,CTX-02,Light (1x5cm),validation,20260822,v1
+DS-005,DS005-JM-F123,123,CTX-02,Light (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F124,124,CTX-02,Light (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F125,125,CTX-02,Light (1x5cm),test,20260822,v1
+DS-005,DS005-JM-F126,126,CTX-02,Light (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F127,127,CTX-02,Light (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F128,128,CTX-02,Light (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F129,129,CTX-02,Light (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F130,130,CTX-02,Light (1x5cm),test,20260822,v1
+DS-005,DS005-JM-F131,131,CTX-02,Light (1x5cm),train,20260822,v1
+DS-005,DS005-JM-F132,132,CTX-02,Light (1x5cm),validation,20260822,v1
+DS-005,DS005-JM-F133,133,CTX-07,Optokinetic Response (5x5cm),test,20260822,v1
+DS-005,DS005-JM-F134,134,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F135,135,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F136,136,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F137,137,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F138,138,CTX-07,Optokinetic Response (5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F139,139,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F140,140,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F141,141,CTX-07,Optokinetic Response (5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F142,142,CTX-07,Optokinetic Response (5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F143,143,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F144,144,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F145,145,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F146,146,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F147,147,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F148,148,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F149,149,CTX-07,Optokinetic Response (5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F150,150,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F151,151,CTX-07,Optokinetic Response (5x5cm),test,20260822,v1
+DS-005,DS005-JM-F152,152,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F153,153,CTX-07,Optokinetic Response (5x5cm),test,20260822,v1
+DS-005,DS005-JM-F154,154,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F155,155,CTX-07,Optokinetic Response (5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F156,156,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F157,157,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F158,158,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F159,159,CTX-07,Optokinetic Response (5x5cm),test,20260822,v1
+DS-005,DS005-JM-F160,160,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F161,161,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F162,162,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F163,163,CTX-07,Optokinetic Response (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F164,164,CTX-05,Phototaxis,validation,20260822,v1
+DS-005,DS005-JM-F165,165,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F166,166,CTX-05,Phototaxis,validation,20260822,v1
+DS-005,DS005-JM-F167,167,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F168,168,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F169,169,CTX-05,Phototaxis,validation,20260822,v1
+DS-005,DS005-JM-F170,170,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F171,171,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F172,172,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F173,173,CTX-05,Phototaxis,test,20260822,v1
+DS-005,DS005-JM-F174,174,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F175,175,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F176,176,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F177,177,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F178,178,CTX-05,Phototaxis,test,20260822,v1
+DS-005,DS005-JM-F179,179,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F180,180,CTX-05,Phototaxis,test,20260822,v1
+DS-005,DS005-JM-F181,181,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F182,182,CTX-05,Phototaxis,test,20260822,v1
+DS-005,DS005-JM-F183,183,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F184,184,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F185,185,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F186,186,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F187,187,CTX-05,Phototaxis,validation,20260822,v1
+DS-005,DS005-JM-F188,188,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F189,189,CTX-05,Phototaxis,test,20260822,v1
+DS-005,DS005-JM-F190,190,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F191,191,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F192,192,CTX-05,Phototaxis,train,20260822,v1
+DS-005,DS005-JM-F193,193,CTX-10,Prey Capture Param. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F194,194,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F195,195,CTX-10,Prey Capture Param. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F196,196,CTX-10,Prey Capture Param. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F197,197,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F198,198,CTX-10,Prey Capture Param. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F199,199,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F200,200,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F201,201,CTX-10,Prey Capture Param. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F202,202,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F203,203,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F204,204,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F205,205,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F206,206,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F207,207,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F208,208,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F209,209,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F210,210,CTX-10,Prey Capture Param. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F211,211,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F212,212,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F213,213,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F214,214,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F215,215,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F216,216,CTX-10,Prey Capture Param. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F217,217,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F218,218,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F219,219,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F220,220,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F221,221,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F222,222,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F223,223,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F224,224,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F225,225,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F226,226,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F227,227,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F228,228,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F229,229,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F230,230,CTX-10,Prey Capture Param. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F231,231,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F232,232,CTX-10,Prey Capture Param. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F233,233,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F234,234,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F235,235,CTX-10,Prey Capture Param. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F236,236,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F237,237,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F238,238,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F239,239,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F240,240,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F241,241,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F242,242,CTX-10,Prey Capture Param. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F243,243,CTX-10,Prey Capture Param. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F244,244,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F245,245,CTX-10,Prey Capture Param. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F246,246,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F247,247,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F248,248,CTX-10,Prey Capture Param. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F249,249,CTX-10,Prey Capture Param. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F250,250,CTX-10,Prey Capture Param. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F251,251,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F252,252,CTX-10,Prey Capture Param. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F253,253,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F254,254,CTX-10,Prey Capture Param. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F255,255,CTX-10,Prey Capture Param. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F256,256,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F257,257,CTX-10,Prey Capture Param. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F258,258,CTX-12,Prey Capture Rot.(2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F259,259,CTX-12,Prey Capture Rot.(2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F260,260,CTX-12,Prey Capture Rot.(2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F261,261,CTX-12,Prey Capture Rot.(2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F262,262,CTX-12,Prey Capture Rot.(2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F263,263,CTX-12,Prey Capture Rot.(2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F264,264,CTX-12,Prey Capture Rot.(2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F265,265,CTX-12,Prey Capture Rot.(2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F266,266,CTX-12,Prey Capture Rot.(2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F267,267,CTX-12,Prey Capture Rot.(2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F268,268,CTX-12,Prey Capture Rot.(2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F269,269,CTX-12,Prey Capture Rot.(2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F270,270,CTX-12,Prey Capture Rot.(2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F271,271,CTX-12,Prey Capture Rot.(2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F272,272,CTX-12,Prey Capture Rot.(2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F273,273,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F274,274,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F275,275,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F276,276,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F277,277,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F278,278,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F279,279,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F280,280,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F281,281,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F282,282,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F283,283,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F284,284,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F285,285,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F286,286,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F287,287,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F288,288,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F289,289,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F290,290,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F291,291,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F292,292,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F293,293,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F294,294,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F295,295,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F296,296,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F297,297,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F298,298,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F299,299,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F300,300,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F301,301,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F302,302,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F303,303,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F304,304,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F305,305,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F306,306,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F307,307,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F308,308,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F309,309,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F310,310,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F311,311,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F312,312,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F313,313,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F314,314,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F315,315,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F316,316,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F317,317,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F318,318,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F319,319,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F320,320,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F321,321,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F322,322,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F323,323,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F324,324,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F325,325,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F326,326,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F327,327,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F328,328,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F329,329,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F330,330,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F331,331,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F332,332,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F333,333,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F334,334,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F335,335,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F336,336,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F337,337,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F338,338,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F339,339,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F340,340,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F341,341,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F342,342,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F343,343,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F344,344,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F345,345,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F346,346,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F347,347,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F348,348,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F349,349,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F350,350,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F351,351,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F352,352,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F353,353,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F354,354,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F355,355,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F356,356,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F357,357,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F358,358,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F359,359,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F360,360,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F361,361,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F362,362,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F363,363,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F364,364,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F365,365,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F366,366,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F367,367,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F368,368,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F369,369,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F370,370,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F371,371,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F372,372,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F373,373,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F374,374,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F375,375,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F376,376,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F377,377,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F378,378,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F379,379,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F380,380,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F381,381,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F382,382,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F383,383,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F384,384,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F385,385,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F386,386,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F387,387,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F388,388,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F389,389,CTX-14,Light RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F390,390,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F391,391,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F392,392,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F393,393,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F394,394,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F395,395,CTX-14,Light RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F396,396,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F397,397,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F398,398,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F399,399,CTX-14,Light RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F400,400,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F401,401,CTX-14,Light RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F402,402,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F403,403,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F404,404,CTX-14,Light RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F405,405,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F406,406,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F407,407,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F408,408,CTX-14,Light RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F409,409,CTX-14,Light RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F410,410,CTX-14,Light RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F411,411,CTX-14,Light RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F412,412,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F413,413,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F414,414,CTX-14,Light RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F415,415,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F416,416,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F417,417,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F418,418,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F419,419,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F420,420,CTX-14,Light RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F421,421,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F422,422,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F423,423,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F424,424,CTX-14,Light RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F425,425,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F426,426,CTX-14,Light RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F427,427,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F428,428,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F429,429,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F430,430,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F431,431,CTX-14,Light RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F432,432,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F433,433,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F434,434,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F435,435,CTX-14,Light RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F436,436,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F437,437,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F438,438,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F439,439,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F440,440,CTX-14,Light RW. (2.5x2.5cm),train,20260822,v1
+DS-005,DS005-JM-F441,441,CTX-14,Light RW. (2.5x2.5cm),validation,20260822,v1
+DS-005,DS005-JM-F442,442,CTX-14,Light RW. (2.5x2.5cm),test,20260822,v1
+DS-005,DS005-JM-F443,443,CTX-08,Dark (5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F444,444,CTX-08,Dark (5x5cm),test,20260822,v1
+DS-005,DS005-JM-F445,445,CTX-08,Dark (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F446,446,CTX-08,Dark (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F447,447,CTX-08,Dark (5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F448,448,CTX-08,Dark (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F449,449,CTX-08,Dark (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F450,450,CTX-08,Dark (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F451,451,CTX-08,Dark (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F452,452,CTX-08,Dark (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F453,453,CTX-01,Light (5x5cm),test,20260822,v1
+DS-005,DS005-JM-F454,454,CTX-01,Light (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F455,455,CTX-01,Light (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F456,456,CTX-01,Light (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F457,457,CTX-01,Light (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F458,458,CTX-01,Light (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F459,459,CTX-01,Light (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F460,460,CTX-01,Light (5x5cm),train,20260822,v1
+DS-005,DS005-JM-F461,461,CTX-01,Light (5x5cm),validation,20260822,v1
+DS-005,DS005-JM-F462,462,CTX-01,Light (5x5cm),validation,20260822,v1

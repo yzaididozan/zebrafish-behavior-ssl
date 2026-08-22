@@ -1,0 +1,258 @@
+dataset_id: DS-005
+dataset_name: Dataset for Uncovering multiscale structure in the variability of larval zebrafish navigation
+  V2
+authors: Sridhar / Marques et al.
+paper: Uncovering multiscale structure in the variability of larval zebrafish navigation
+repository: https://zenodo.org/records/13605471
+doi: 10.5281/zenodo.13605471
+license: CC BY 4.0
+species: Danio rerio
+developmental_stage: larval zebrafish, approximately 6-7 dpf
+role: PRIMARY
+status: SELECTED_PRIMARY_LOCAL_FREEZE_IN_PROGRESS
+confirmatory_analysis_frozen: true
+paths:
+  archive: data/raw/DS-005/Datasets.tar.gz
+  extracted_root: data/raw/DS-005/DS-005-v1
+  primary_hdf5: data/raw/DS-005/DS-005-v1/Datasets/JM_data/filtered_jmpool_kin.h5
+  fish_map: data/metadata/DS-005/DS-005-fish-map.csv
+  split_file: data/splits/DS-005-fish-split-v1.csv
+checksums:
+  published_md5: b9a00fccda494bb49ea7c67d3b0f8d9e
+  local_sha256: 5af065e44f3f00f1a975dfe6472eee985c9e73c2f4a98ba722b5233efb85cffd
+  split_sha256: 19c1c7589e046337ec51b66b8fec7632029084d59905ca45b2ce751b3268c935
+file_inventory:
+  archive_entries: 2223
+  extracted_files: 2218
+  extracted_directories_including_root: 6
+  extracted_directories_excluding_root: 5
+  extraction_consistency_check: PASS
+storage:
+  archive_size: 6.6G
+  extracted_size: 52G
+primary_cohort:
+  source_group: JM_data
+  number_of_fish: 463
+  frame_rate_hz: 700
+  total_valid_bouts: 1203409
+  bout_axis_padded_length: 11651
+  temporal_samples_per_bout: 175
+  validity_mask_field: MetaData/lengths_data
+  errmask_status: present but all-zero and not usable as per-bout QC
+identity:
+  fish_mapping_verified: true
+  number_of_fish: 463
+  source_fish_index_range: 0-462
+  canonical_id_format: DS005-JM-F###
+  mapping_file: data/metadata/DS-005/DS-005-fish-map.csv
+  mapping_validation:
+    expected_rows_including_header: 464
+    observed_rows_including_header: 464
+    expected_total_valid_bouts: 1203409
+    observed_total_valid_bouts: 1203409
+experimental_contexts:
+  mapping_verified: true
+  mapping_source:
+    repository: Markov_Fish
+    file: Scripts/kmeans_embedding_jm.py
+    lines: 103-117
+    assignment_semantics: Reproduce the authors' sequential Python assignment using half-open fish-index
+      ranges [start, end).
+  number_of_contexts: 14
+  all_primary_fish_mapped: true
+  overlap_note: Source ranges overlap at fish index 163. The authors' sequential assignment first places
+    index 163 in Phototaxis and subsequently overwrites it with Optokinetic Response (5x5cm). This project
+    reproduces that behavior exactly.
+  contexts:
+  - context_id: CTX-01
+    name: Light (5x5cm)
+    fish_indices: 453-462
+    number_of_fish: 10
+  - context_id: CTX-02
+    name: Light (1x5cm)
+    fish_indices: 121-132
+    number_of_fish: 12
+  - context_id: CTX-03
+    name: Looming(5x5cm)
+    fish_indices: 49-108
+    number_of_fish: 60
+  - context_id: CTX-04
+    name: Dark_Transitions(5x5cm)
+    fish_indices: 22-48
+    number_of_fish: 27
+  - context_id: CTX-05
+    name: Phototaxis
+    effective_fish_indices: 164-192
+    number_of_fish: 29
+  - context_id: CTX-06
+    name: Optomotor Response (1x5cm)
+    fish_indices: 109-120
+    number_of_fish: 12
+  - context_id: CTX-07
+    name: Optokinetic Response (5x5cm)
+    fish_indices: 133-163
+    number_of_fish: 31
+  - context_id: CTX-08
+    name: Dark (5x5cm)
+    fish_indices: 443-452
+    number_of_fish: 10
+  - context_id: CTX-09
+    name: 3 min Light<->Dark(5x5cm)
+    fish_indices: 0-21
+    number_of_fish: 22
+  - context_id: CTX-10
+    name: Prey Capture Param. (2.5x2.5cm)
+    fish_indices: 193-257
+    number_of_fish: 65
+  - context_id: CTX-11
+    name: Prey Capture Param. RW. (2.5x2.5cm)
+    fish_indices: 304-386
+    number_of_fish: 83
+  - context_id: CTX-12
+    name: Prey Capture Rot.(2.5x2.5cm)
+    fish_indices: 258-272
+    number_of_fish: 15
+  - context_id: CTX-13
+    name: Prey capture Rot. RW. (2.5x2.5cm)
+    fish_indices: 273-303
+    number_of_fish: 31
+  - context_id: CTX-14
+    name: Light RW. (2.5x2.5cm)
+    fish_indices: 387-442
+    number_of_fish: 56
+session_structure:
+  session_definition_verified: true
+  unit_of_recording: per-fish continuous bout timeline
+  number_of_canonical_sessions: 463
+  mapping_relationship: one fish to one project-level canonical session
+  canonical_session_id_format: DS005-JM-S###
+  evidence:
+    fish_checked: 463
+    times_field: times_bouts
+    fish_with_nonmonotonic_bout_starts: 0
+    fish_with_end_before_start: 0
+    last_observed_bout_time_minutes:
+      minimum: 5.041905
+      maximum: 140.48447
+      mean: 39.840508
+  limitation: The released HDF5 file does not contain a separate author-provided session identifier. Canonical
+    session IDs are project-generated. The final times_bouts value is the time of the last retained bout
+    and is not assumed to equal exact recording duration.
+quality_control:
+  qc_status: STRUCTURAL_QC_VERIFIED_AND_THRESHOLDS_FROZEN
+  structural_valid_bouts: 1203409
+  project_qc_principle: QC criteria are defined independently of downstream clustering or representation-learning
+    performance. Thresholds must not be changed because they improve downstream results.
+  structural_checks:
+    nonfinite_values:
+      fields:
+      - head_pos
+      - orientation_smooth
+      - speed_head
+      - times_bouts
+      observed_count: 0
+      exclude: true
+    all_zero_head_pos:
+      observed_count: 0
+    all_zero_orientation_smooth:
+      observed_count: 0
+    all_zero_times_bouts:
+      observed_count: 0
+    all_zero_speed_head:
+      observed_count: 34
+      observed_fraction: 2.825e-05
+      primary_analysis_exclusion: false
+      sensitivity_analysis_exclusion: true
+  extreme_speed_audit:
+    greater_than_25:
+      bouts: 1116
+      fish_affected: 280
+    greater_than_50:
+      bouts: 70
+      fish_affected: 34
+    greater_than_100:
+      bouts: 6
+      fish_affected: 6
+    greater_than_200:
+      bouts: 2
+      fish_affected: 2
+    review_threshold: 100
+    reviewed_bouts: 6
+    finding: All manually inspected bouts above 100 showed abrupt head-position discontinuities in the
+      same local region while orientation remained finite and comparatively continuous.
+    primary_analysis_exclusion: false
+    sensitivity_analysis_exclusion: true
+  head_position_step_rule: not used for automatic exclusion because coordinate semantics are not fully
+    documented
+  orientation_step_rule: not used for automatic exclusion
+  project_qc_thresholds_frozen: true
+data_split:
+  split_status: FROZEN
+  split_version: v1
+  split_file: data/splits/DS-005-fish-split-v1.csv
+  split_unit: fish
+  stratification_variable: experimental_context
+  random_seed: 20260822
+  target_proportions:
+    train: 0.7
+    validation: 0.15
+    test: 0.15
+  observed_counts:
+    total_fish: 463
+    train: 323
+    validation: 70
+    test: 70
+  observed_proportions:
+    train: 0.6976
+    validation: 0.1512
+    test: 0.1512
+  leakage_constraints:
+    fish_overlap_allowed: false
+    bout_level_random_split_allowed: false
+    all_bouts_inherit_fish_partition: true
+  validation_checks:
+    unique_fish: 463
+    assigned_fish: 463
+    number_of_contexts: 14
+    fish_overlap_across_partitions: false
+    every_context_present_in_all_partitions: true
+    validation_status: PASS
+  checksum:
+    algorithm: SHA-256
+    value: 19c1c7589e046337ec51b66b8fec7632029084d59905ca45b2ce751b3268c935
+  freeze_rule: This split is the canonical DS-005 fish-level train/validation/test partition. It must
+    not be regenerated because a different seed produces more favorable results.
+freeze_record:
+  verified_items:
+    archive_downloaded: true
+    published_md5_matched: true
+    local_sha256_recorded: true
+    archive_extracted: true
+    archive_entry_count_verified: true
+    extracted_file_count_verified: true
+    extracted_directory_count_verified: true
+    archive_extraction_consistency_verified: true
+    primary_cohort_identified: true
+    primary_fish_count_verified: true
+    fish_axis_verified: true
+    canonical_fish_ids_created: true
+    fish_mapping_crosschecked: true
+    exact_valid_bout_count_verified: true
+    frame_rate_verified: true
+    bout_padding_structure_verified: true
+    valid_bout_mask_field_verified: true
+    errmask_inspected: true
+    experimental_context_mapping_verified: true
+    canonical_session_definition_verified: true
+    project_qc_thresholds_frozen: true
+    train_validation_test_split_frozen: true
+    raw_directory_read_only: true
+  documented_limitations:
+  stimulus_code_semantics:
+    verified: false
+    freeze_blocking: false
+    note: >
+      The complete semantics of the 73 values in the stims field have not
+      been established. This does not block the primary analysis because
+      the 14 experimental-context assignments are independently reproduced
+      from the authors' Markov_Fish analysis code.

@@ -1,0 +1,8 @@
+{
+  "method": "gmm",
+  "k": 2,
+  "seed": 20260822,
+  "selection_score": 0.649252350828649,
+  "pca_components": 6,
+  "pca_variance_target": 0.95
+}

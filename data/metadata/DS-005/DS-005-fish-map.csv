@@ -1,0 +1,464 @@
+dataset_id,cohort,canonical_fish_id,source_fish_index,valid_bout_count,context_id,context_name,context_mapping_source
+DS-005,JM_data,DS005-JM-F000,0,1381,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F001,1,665,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F002,2,2246,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F003,3,2067,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F004,4,2270,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F005,5,2523,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F006,6,1654,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F007,7,1556,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F008,8,1641,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F009,9,1394,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F010,10,1803,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F011,11,1271,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F012,12,2016,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F013,13,2343,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F014,14,2073,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F015,15,1950,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F016,16,1106,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F017,17,2249,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F018,18,1888,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F019,19,1212,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F020,20,979,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F021,21,1408,CTX-09,3 min Light<->Dark(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F022,22,9395,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F023,23,6744,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F024,24,7748,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F025,25,6016,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F026,26,5061,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F027,27,6667,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F028,28,6973,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F029,29,6156,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F030,30,6643,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F031,31,4662,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F032,32,3547,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F033,33,5345,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F034,34,4479,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F035,35,3938,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F036,36,2789,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F037,37,6182,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F038,38,3750,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F039,39,6022,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F040,40,8355,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F041,41,6699,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F042,42,5934,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F043,43,2088,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F044,44,10208,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F045,45,6604,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F046,46,5081,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F047,47,7244,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F048,48,5025,CTX-04,Dark_Transitions(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F049,49,4960,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F050,50,4596,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F051,51,3577,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F052,52,3404,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F053,53,2669,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F054,54,4533,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F055,55,3325,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F056,56,2783,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F057,57,1778,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F058,58,3571,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F059,59,1620,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F060,60,3822,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F061,61,2557,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F062,62,4118,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F063,63,3688,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F064,64,3725,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F065,65,3329,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F066,66,2245,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F067,67,1775,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F068,68,2190,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F069,69,4064,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F070,70,4730,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F071,71,4083,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F072,72,4632,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F073,73,2692,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F074,74,5045,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F075,75,5549,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F076,76,4928,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F077,77,3892,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F078,78,2984,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F079,79,3840,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F080,80,618,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F081,81,3418,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F082,82,4429,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F083,83,4061,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F084,84,4179,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F085,85,4066,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F086,86,3565,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F087,87,3600,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F088,88,3345,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F089,89,2975,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F090,90,2783,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F091,91,2457,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F092,92,4985,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F093,93,4926,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F094,94,3959,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F095,95,3560,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F096,96,2936,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F097,97,2773,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F098,98,4572,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F099,99,4274,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F100,100,4066,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F101,101,4205,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F102,102,5959,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F103,103,4068,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F104,104,3340,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F105,105,3126,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F106,106,3073,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F107,107,5554,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F108,108,5377,CTX-03,Looming(5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F109,109,2585,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F110,110,3595,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F111,111,3006,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F112,112,2484,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F113,113,2020,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F114,114,3267,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F115,115,2478,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F116,116,2475,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F117,117,2763,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F118,118,1192,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F119,119,2719,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F120,120,5715,CTX-06,Optomotor Response (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F121,121,4761,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F122,122,3670,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F123,123,2993,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F124,124,2863,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F125,125,3838,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F126,126,4913,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F127,127,3359,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F128,128,2077,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F129,129,3701,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F130,130,2151,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F131,131,2752,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F132,132,3941,CTX-02,Light (1x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F133,133,1554,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F134,134,1283,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F135,135,1121,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F136,136,1404,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F137,137,1365,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F138,138,1220,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F139,139,1821,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F140,140,1716,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F141,141,1202,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F142,142,1272,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F143,143,1426,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F144,144,1277,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F145,145,1918,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F146,146,1659,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F147,147,2006,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F148,148,1474,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F149,149,1427,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F150,150,1440,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F151,151,1620,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F152,152,1554,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F153,153,1823,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F154,154,1482,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F155,155,1317,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F156,156,1385,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F157,157,1283,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F158,158,2227,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F159,159,1139,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F160,160,2208,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F161,161,1632,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F162,162,1748,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F163,163,2167,CTX-07,Optokinetic Response (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F164,164,1760,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F165,165,1656,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F166,166,1887,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F167,167,2547,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F168,168,1572,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F169,169,3034,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F170,170,2079,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F171,171,1915,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F172,172,2001,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F173,173,2562,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F174,174,2729,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F175,175,2273,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F176,176,2374,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F177,177,2712,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F178,178,1978,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F179,179,1709,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F180,180,2759,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F181,181,2511,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F182,182,2398,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F183,183,1529,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F184,184,2611,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F185,185,2382,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F186,186,2704,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F187,187,2211,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F188,188,2905,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F189,189,3049,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F190,190,2572,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F191,191,1908,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F192,192,2327,CTX-05,Phototaxis,Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F193,193,2158,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F194,194,1573,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F195,195,1481,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F196,196,2057,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F197,197,1885,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F198,198,1326,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F199,199,2229,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F200,200,1733,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F201,201,1380,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F202,202,1311,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F203,203,1242,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F204,204,656,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F205,205,2394,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F206,206,2325,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F207,207,1942,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F208,208,2021,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F209,209,1279,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F210,210,2096,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F211,211,2728,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F212,212,2885,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F213,213,3039,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F214,214,3068,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F215,215,1421,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F216,216,2113,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F217,217,1871,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F218,218,1187,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F219,219,1123,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F220,220,1532,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F221,221,2655,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F222,222,2520,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F223,223,2048,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F224,224,1532,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F225,225,1560,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F226,226,1524,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F227,227,1050,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F228,228,1207,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F229,229,2008,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F230,230,2086,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F231,231,2274,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F232,232,2349,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F233,233,2071,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F234,234,1852,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F235,235,1887,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F236,236,1496,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F237,237,1071,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F238,238,1537,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F239,239,590,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F240,240,1694,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F241,241,1268,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F242,242,955,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F243,243,1537,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F244,244,1771,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F245,245,521,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F246,246,1219,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F247,247,1171,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F248,248,1565,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F249,249,1948,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F250,250,1939,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F251,251,395,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F252,252,1904,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F253,253,1360,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F254,254,1716,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F255,255,2069,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F256,256,2017,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F257,257,661,CTX-10,Prey Capture Param. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F258,258,6239,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F259,259,6358,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F260,260,2218,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F261,261,7634,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F262,262,2930,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F263,263,7242,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F264,264,4732,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F265,265,4104,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F266,266,3817,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F267,267,4724,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F268,268,2455,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F269,269,3054,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F270,270,3626,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F271,271,5444,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F272,272,3743,CTX-12,Prey Capture Rot.(2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F273,273,7412,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F274,274,3663,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F275,275,7322,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F276,276,11651,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F277,277,5594,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F278,278,2112,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F279,279,4799,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F280,280,4516,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F281,281,3600,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F282,282,5107,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F283,283,3305,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F284,284,7052,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F285,285,3953,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F286,286,2256,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F287,287,5247,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F288,288,3747,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F289,289,5359,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F290,290,5484,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F291,291,5628,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F292,292,4663,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F293,293,4220,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F294,294,2462,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F295,295,5561,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F296,296,4819,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F297,297,4655,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F298,298,4295,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F299,299,6084,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F300,300,5327,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F301,301,3230,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F302,302,4402,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F303,303,3771,CTX-13,Prey capture Rot. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F304,304,2205,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F305,305,2458,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F306,306,2169,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F307,307,1853,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F308,308,1708,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F309,309,2050,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F310,310,1416,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F311,311,1518,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F312,312,1412,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F313,313,1649,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F314,314,2427,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F315,315,2039,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F316,316,1448,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F317,317,1443,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F318,318,1947,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F319,319,2540,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F320,320,2039,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F321,321,1971,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F322,322,2221,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F323,323,568,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F324,324,2395,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F325,325,2300,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F326,326,1551,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F327,327,1132,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F328,328,1601,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F329,329,2976,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F330,330,3059,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F331,331,3241,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F332,332,3309,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F333,333,3136,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F334,334,3056,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F335,335,623,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F336,336,2833,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F337,337,2510,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F338,338,2872,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F339,339,2593,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F340,340,2502,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F341,341,2016,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F342,342,1957,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F343,343,2165,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F344,344,2351,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F345,345,2517,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F346,346,2525,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F347,347,2486,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F348,348,2761,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F349,349,2470,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F350,350,2449,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F351,351,2554,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F352,352,2864,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F353,353,2615,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F354,354,1825,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F355,355,1869,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F356,356,2055,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F357,357,2556,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F358,358,2248,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F359,359,1802,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F360,360,1163,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F361,361,2239,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F362,362,2360,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F363,363,2670,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F364,364,2271,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F365,365,1604,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F366,366,1714,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F367,367,1833,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F368,368,2083,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F369,369,1601,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F370,370,2151,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F371,371,2624,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F372,372,2808,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F373,373,2640,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F374,374,2171,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F375,375,1627,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F376,376,1953,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F377,377,2396,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F378,378,1671,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F379,379,1350,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F380,380,1771,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F381,381,1988,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F382,382,2506,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F383,383,1905,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F384,384,1648,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F385,385,1277,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F386,386,1162,CTX-11,Prey Capture Param. RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F387,387,1203,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F388,388,342,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F389,389,302,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F390,390,582,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F391,391,971,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F392,392,1166,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F393,393,1079,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F394,394,1148,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F395,395,1056,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F396,396,1136,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F397,397,1534,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F398,398,1485,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F399,399,1425,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F400,400,1352,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F401,401,1148,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F402,402,1636,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F403,403,1025,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F404,404,1027,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F405,405,607,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F406,406,205,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F407,407,817,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F408,408,861,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F409,409,792,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F410,410,1023,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F411,411,1053,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F412,412,1315,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F413,413,1130,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F414,414,1409,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F415,415,1521,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F416,416,1526,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F417,417,1626,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F418,418,1273,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F419,419,2104,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F420,420,2207,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F421,421,2249,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F422,422,2305,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F423,423,1849,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F424,424,1371,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F425,425,1063,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F426,426,696,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F427,427,1100,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F428,428,466,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F429,429,684,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F430,430,404,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F431,431,155,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F432,432,176,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F433,433,893,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F434,434,439,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F435,435,498,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F436,436,1328,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F437,437,1062,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F438,438,1032,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F439,439,1383,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F440,440,825,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F441,441,914,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F442,442,203,CTX-14,Light RW. (2.5x2.5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F443,443,1037,CTX-08,Dark (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F444,444,1538,CTX-08,Dark (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F445,445,578,CTX-08,Dark (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F446,446,555,CTX-08,Dark (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F447,447,245,CTX-08,Dark (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F448,448,1335,CTX-08,Dark (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F449,449,259,CTX-08,Dark (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F450,450,143,CTX-08,Dark (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F451,451,1559,CTX-08,Dark (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F452,452,588,CTX-08,Dark (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F453,453,2580,CTX-01,Light (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F454,454,2583,CTX-01,Light (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F455,455,2164,CTX-01,Light (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F456,456,1006,CTX-01,Light (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F457,457,2159,CTX-01,Light (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F458,458,2404,CTX-01,Light (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F459,459,1623,CTX-01,Light (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F460,460,2559,CTX-01,Light (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F461,461,2552,CTX-01,Light (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py
+DS-005,JM_data,DS005-JM-F462,462,877,CTX-01,Light (5x5cm),Markov_Fish/Scripts/kmeans_embedding_jm.py

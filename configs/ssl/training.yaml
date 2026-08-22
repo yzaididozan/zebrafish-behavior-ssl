@@ -1,0 +1,207 @@
+# Primary SSL training configuration for DS-005
+#
+# Project: Self-Supervised Discovery of Zebrafish Behavioral Structure
+#
+# Status:
+#   Candidate confirmatory configuration. Freeze before final held-out test
+#   evaluation. Training/model-selection decisions must use TRAIN/VALIDATION
+#   only; TEST remains untouched.
+
+training:
+  version: "v1"
+  status: "CANDIDATE_NOT_FROZEN"
+
+  dataset:
+    id: "DS-005"
+    unit_of_analysis: "valid_bout"
+
+    partitions:
+      train:
+        fish: 323
+        role: "SSL training and optimization"
+      validation:
+        fish: 70
+        role: "predefined model selection / early stopping only"
+      test:
+        fish: 70
+        role: "final evaluation only"
+        protected: true
+
+    split_seed: 20260822
+    fish_overlap_across_partitions: 0
+
+  input:
+    shape:
+      timesteps: 175
+      channels: 3
+
+    channels:
+      - index: 0
+        name: "sin_orientation"
+        normalization: "none"
+      - index: 1
+        name: "cos_orientation"
+        normalization: "none"
+      - index: 2
+        name: "speed_head"
+        normalization: "train_only_zscore"
+
+    speed_normalization:
+      mean: 0.85842903292
+      std: 1.26054458491
+      fitted_on_partition: "train"
+      train_bouts_used: 842841
+      temporal_samples_used: 147497175
+      validation_used_for_fit: false
+      test_used_for_fit: false
+
+  augmentation:
+    config_file: "configs/ssl/augmentations.yaml"
+    temporal_mask:
+      enabled: true
+      probability: 0.75
+      max_fraction: 0.10
+      contiguous: true
+      mask_value: 0.0
+    feature_mask:
+      enabled: false
+
+  objective:
+    family: "temporal_contrastive_learning"
+    loss: "nt_xent"
+    implementation: "src/ssl/losses.py"
+    temperature: 0.10
+    positive_pair_definition: "two independently augmented views of the same valid bout"
+    negatives: "other bout views within the same training batch"
+
+  encoder:
+    family: "1d_temporal_cnn"
+    implementation: "src/ssl/encoder.py"
+
+    architecture:
+      input_channels: 3
+      conv_layers:
+        - out_channels: 32
+          kernel_size: 7
+        - out_channels: 64
+          kernel_size: 5
+        - out_channels: 128
+          kernel_size: 3
+      activation: "GELU"
+      normalization: "BatchNorm1d"
+      dropout: 0.10
+      pooling: "global_average_pooling"
+
+    embedding_dim: 64
+
+  projection_head:
+    enabled: true
+    projection_dim: 64
+    architecture:
+      - "Linear(64, 64)"
+      - "GELU"
+      - "Linear(64, 64)"
+    downstream_use: false
+    note: "Clustering and downstream discovery use encoder embeddings, not projection-head outputs."
+
+  optimization:
+    optimizer: "AdamW"
+    learning_rate: 0.001
+    weight_decay: 0.0001
+
+    batch_size: 256
+    epochs: 50
+
+    gradient_clipping:
+      enabled: true
+      max_norm: 1.0
+
+    mixed_precision:
+      enabled: false
+      note: "May be enabled later if hardware support is verified; any change must be documented."
+
+  validation:
+    enabled: true
+    partition: "validation"
+
+    primary_monitor: "contrastive_validation_loss"
+    selection_rule: "select checkpoint with minimum validation loss"
+
+    early_stopping:
+      enabled: true
+      patience_epochs: 8
+      minimum_delta: 0.0
+
+    test_partition_used_for_selection: false
+
+  seeds:
+    policy: "fixed_predefined"
+    values:
+      - 11
+      - 23
+      - 37
+      - 51
+      - 79
+    primary_number_of_seeds: 5
+
+  checkpointing:
+    enabled: true
+    directory: "results/ssl/checkpoints"
+    save_best_validation_checkpoint: true
+    save_last_checkpoint: true
+
+    filename_template: "ssl_seed{seed}_epoch{epoch}.pt"
+
+    metadata_to_save:
+      - "git_commit"
+      - "dataset_id"
+      - "split_seed"
+      - "training_seed"
+      - "epoch"
+      - "encoder_config"
+      - "augmentation_config"
+      - "normalization_config"
+      - "optimizer_state"
+      - "validation_loss"
+
+  logging:
+    directory: "results/ssl/logs"
+    log_every_n_steps: 100
+
+    record:
+      - "epoch"
+      - "train_loss"
+      - "validation_loss"
+      - "learning_rate"
+      - "training_seed"
+      - "wall_time"
+
+  smoke_test:
+    required_before_full_training: true
+    partition: "train"
+    max_bouts: 2048
+    epochs: 3
+
+    acceptance_criteria:
+      finite_loss: true
+      finite_gradients: true
+      checkpoint_written: true
+      model_parameters_update: true
+      loss_should_not_diverge: true
+
+  prohibited:
+    test_set_hyperparameter_selection: true
+    test_set_early_stopping: true
+    test_set_normalization_fit: true
+    metadata_as_model_input: true
+    fish_id_as_input: true
+    context_as_input: true
+    stimulus_code_as_input: true
+    bout_type_as_input: true
+
+  freeze_requirements:
+    - "Smoke-test training completes successfully on TRAIN bouts only."
+    - "Training loss remains finite and gradients remain finite."
+    - "Checkpoint save/load is verified."
+    - "Any change to optimizer, learning rate, batch size, temperature, epochs, seeds, embedding dimension, or encoder architecture is documented before test evaluation."
+    - "Final training configuration is marked FROZEN before held-out test analysis."

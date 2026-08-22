@@ -1,0 +1,40 @@
+{
+  "dataset_id": "DS-005",
+  "dataset_version": "DS-005-v1",
+  "input_representation": {
+    "shape": [
+      175,
+      3
+    ],
+    "channels": [
+      "sin_orientation",
+      "cos_orientation",
+      "speed_head"
+    ]
+  },
+  "fit_partition": "train",
+  "fit_scope": "all finite temporal speed samples from primary-QC-valid training bouts",
+  "normalization": {
+    "sin_orientation": {
+      "method": "none"
+    },
+    "cos_orientation": {
+      "method": "none"
+    },
+    "speed_head": {
+      "method": "zscore",
+      "mean": 0.8584290329197303,
+      "std": 1.2605445849117496
+    }
+  },
+  "status": "FITTED_TRAIN_ONLY",
+  "mean": 0.85842903292,
+  "std": 1.26054458491,
+  "fit_summary": {
+    "partition": "train",
+    "primary_qc_only": true,
+    "bout_count": 842841,
+    "temporal_sample_count": 147497175,
+    "temporal_samples_per_bout": 175
+  }
+}
