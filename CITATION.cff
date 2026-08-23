@@ -1,1 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it using the metadata below."
 
+title: "Zebrafish Behavior SSL: Self-Supervised Discovery of Zebrafish Behavioral Structure"
+type: software
+
+authors:
+  - family-names: "Zaidi-Dozandeh"
+    given-names: "Yasamean"
+    email: "yzaididozan@gmail.com"
+
+version: "0.1.0"
+date-released: "2026-08-23"
+
+repository-code: "https://github.com/yzaididozan/zebrafish-behavior-ssl"
+
+keywords:
+  - zebrafish
+  - self-supervised learning
+  - machine learning
+  - computational ethology
+  - behavioral representation learning
+  - unsupervised learning
+
+license: MIT

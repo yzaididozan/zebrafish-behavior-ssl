@@ -1,0 +1,130 @@
+{
+  "baseline": {
+    "pca_explained_variance": 0.9579394459724426,
+    "train_cluster_counts": [
+      759754,
+      83087
+    ],
+    "validation_cluster_counts": [
+      151851,
+      16613
+    ]
+  },
+  "context_probe": {
+    "result": {
+      "balanced_accuracy": 0.2706825716008004,
+      "chance_ratio": 3.7895560024112056,
+      "macro_f1": 0.19890674337834008,
+      "n_classes": 14,
+      "uniform_chance": 0.07142857142857142
+    },
+    "train_rows_used": 100000,
+    "validation_rows_used": 50000
+  },
+  "data": {
+    "feature_names": [
+      "bout_duration_s",
+      "inter_bout_interval_s",
+      "speed_mean",
+      "speed_std",
+      "speed_median",
+      "speed_max",
+      "speed_p95",
+      "speed_rms",
+      "accel_abs_mean",
+      "accel_abs_std",
+      "accel_abs_max",
+      "accel_rms",
+      "turn_abs_total_rad",
+      "turn_net_rad",
+      "turn_abs_mean_rad",
+      "turn_abs_std_rad",
+      "turn_abs_max_rad",
+      "turn_rms_rad"
+    ],
+    "n_features": 18,
+    "train_rows": 842841,
+    "train_unique_fish": 323,
+    "validation_rows": 168464,
+    "validation_unique_fish": 70
+  },
+  "dataset_id": "DS-005",
+  "governance": {
+    "frozen_configuration_used": {
+      "k": 2,
+      "method": "gmm",
+      "pca_components": 6,
+      "seed": 20260822
+    },
+    "method_selection_performed": false,
+    "new_post_clustering_exclusions_applied": false,
+    "test_access_prohibited": true
+  },
+  "heldout_cluster_occupancy": [
+    {
+      "cluster": 0,
+      "maximum": 0.9800995024875622,
+      "median_per_fish_occupancy": 0.9183058347391262,
+      "minimum": 0.15918367346938775,
+      "n_fish_with_cluster": 70,
+      "q25": 0.855126554106619,
+      "q75": 0.9530193451048609
+    },
+    {
+      "cluster": 1,
+      "maximum": 0.8408163265306122,
+      "median_per_fish_occupancy": 0.08169416526087378,
+      "minimum": 0.01990049751243781,
+      "n_fish_with_cluster": 70,
+      "q25": 0.04698065489513918,
+      "q75": 0.144873445893381
+    }
+  ],
+  "partitions_loaded": [
+    "train",
+    "validation"
+  ],
+  "qc_proxies": {
+    "train": {
+      "all_zero_speed_rate": 3.440743865094366e-05,
+      "extreme_speed_gt_100_rate": 5.932317008783388e-06
+    },
+    "validation": {
+      "all_zero_speed_rate": 5.935986323487511e-06,
+      "extreme_speed_gt_100_rate": 0.0
+    }
+  },
+  "speed_control": {
+    "baseline_cluster_speed_summaries": [
+      {
+        "cluster": 0,
+        "maximum": 3.0094196796417236,
+        "median": 0.7375392913818359,
+        "minimum": 0.0015873091761022806,
+        "n": 151851,
+        "q25": 0.4325903505086899,
+        "q75": 1.0881853699684143
+      },
+      {
+        "cluster": 1,
+        "maximum": 14.832372665405273,
+        "median": 1.1525431871414185,
+        "minimum": 0.0,
+        "n": 16613,
+        "q25": 0.5761306881904602,
+        "q75": 2.0918705463409424
+      }
+    ],
+    "kruskal_h": 5284.214515838555,
+    "kruskal_p": 0.0,
+    "speed_feature": "speed_mean",
+    "speed_only_k": 2,
+    "speed_only_method": "gmm",
+    "speed_only_vs_baseline": {
+      "ari": 0.30711111429860294,
+      "nmi": 0.1329182585275393
+    }
+  },
+  "status": "DRY_RUN_ONLY",
+  "test_loaded": false
+}

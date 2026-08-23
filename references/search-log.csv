@@ -1,24 +1,36 @@
 date,database,query,results_screened,papers_retained,notes
-2026-08-21,Google Scholar / web search,zebrafish unsupervised behavioral clustering,,,"Initial discovery/novelty search; retained Marques 2018, Ghosh & Rihel 2020, Yang 2021."
-2026-08-21,Google Scholar / web search,zebrafish representation learning behavior,,,Mapped direct and adjacent representation-learning literature.
-2026-08-21,Google Scholar / arXiv,zebrafish self-supervised behavior,,,Direct zebrafish SSL precedent identified: Xu & Wang 2024.
-2026-08-21,Google Scholar / arXiv,zebrafish temporal contrastive learning behavior,,,No direct matched zebrafish temporal-contrastive discovery study identified; broader animal precedent retained.
-2026-08-21,PubMed / publisher,zebrafish pose estimation DeepLabCut SLEAP,,,"Scholz et al. retained for pose schema, tracking validation, and public resources."
-2026-08-21,Publisher / dataset paper,zebrafish 3D tracking identity social behavior dataset,,,Deligkaris et al. retained for persistent identity and tracking-QC precedent.
-2026-08-21,Publisher / PubMed,zebrafish 3D tracking machine learning FuzzyART,,,Yang et al. deep-read for feature/discovery methodology.
-2026-08-21,Publisher / PubMed,zebrafish automatic monitoring behavioral metrics speed distance polarization,,,Barreiros et al. deep-read for conventional baseline evidence.
-2026-08-21,PubMed / publisher,ContrastivePose self-supervised pose behavior,,,ContrastivePose deep-read for matched handcrafted-vs-learned representation precedent.
-2026-08-21,arXiv / OpenReview,animal behavior temporal contrastive self-supervised transformer BEAST,,,BEAST reviewed as temporal-contrastive behavioral SSL precedent; publication status later updated to ICLR 2026.
-2026-08-21,Google Scholar / web search,animal behavior identity leakage subject identity representation learning,,,Identity prediction and subject-disjoint evaluation retained as nuisance-control methods.
-2026-08-21,Google Scholar / web search,behavior representation session effects camera domain shift animal,,,Session/domain leakage controls mapped; no single zebrafish paper found with full intended battery.
-2026-08-21,Google Scholar / web search,behavioral embedding speed locomotion confound animal,,,Speed prediction/correlation and speed-matched controls retained.
-2026-08-21,Google Scholar / publisher,zebrafish behavioral window duration bout segmentation motifs,,,Natural bouts and fixed windows both supported; no universal duration.
-2026-08-22,PubMed / publisher verification,Structure of the Zebrafish Locomotor Repertoire DOI,,1,Bibliographic verification for core BibTeX and paper note.
-2026-08-22,PubMed / eNeuro verification,Hierarchical Compression larval zebrafish DOI,,1,Bibliographic verification for core BibTeX and paper note.
-2026-08-22,Scientific Reports / PubMed verification,Zebrafish behavior feature recognition 3D tracking DOI,,1,Bibliographic verification for core BibTeX and paper note.
-2026-08-22,Scientific Reports / PubMed verification,Zebrafish automatic monitoring conditioning DOI,,1,Bibliographic verification for core BibTeX and paper note.
-2026-08-22,PubMed verification,ContrastivePose DOI authors,,1,Bibliographic verification.
-2026-08-22,PubMed / bioRxiv verification,Plug-and-Play zebrafish DeepLabCut SLEAP DOI authors,,1,"Verified preprint version, author list, DOI, and tracking-resource role."
-2026-08-22,arXiv / OpenReview verification,BEAST behavioral self-supervised pretraining,,1,Verified arXiv authors and ICLR 2026 publication status.
-2026-08-22,Scientific Data verification,fine-grained zebrafish interactions health disease DOI authors,,1,Verified dataset-paper authors and DOI.
-2026-08-22,Publisher verification,AquaMaze zebrafish DOI authors,,1,"Verified authors, 2026 publication, DOI, and core locomotion metrics."
+2026-08-21,Google Scholar / web search,zebrafish unsupervised behavioral clustering,NR,3,"Initial discovery/novelty search; retained Marques 2018, Ghosh & Rihel 2020, Yang 2021. Exact screening count was not recorded contemporaneously."
+2026-08-21,Google Scholar / web search,zebrafish representation learning behavior,NR,NR,Mapped direct and adjacent representation-learning literature. Exact screening count was not recorded contemporaneously. Exact retained-paper count was not recorded contemporaneously.
+2026-08-21,Google Scholar / arXiv,zebrafish self-supervised behavior,NR,1,Direct zebrafish SSL precedent identified: Xu & Wang 2024. Exact screening count was not recorded contemporaneously.
+2026-08-21,Google Scholar / arXiv,zebrafish temporal contrastive learning behavior,NR,NR,No direct matched zebrafish temporal-contrastive discovery study identified; broader animal precedent retained. Exact screening count was not recorded contemporaneously. Exact retained-paper count was not recorded contemporaneously.
+2026-08-21,PubMed / publisher,zebrafish pose estimation DeepLabCut SLEAP,NR,1,"Scholz et al. retained for pose schema, tracking validation, and public resources. Exact screening count was not recorded contemporaneously."
+2026-08-21,Publisher / dataset paper,zebrafish 3D tracking identity social behavior dataset,NR,1,Deligkaris et al. retained for persistent identity and tracking-QC precedent. Exact screening count was not recorded contemporaneously.
+2026-08-21,Publisher / PubMed,zebrafish 3D tracking machine learning FuzzyART,NR,1,Yang et al. deep-read for feature/discovery methodology. Exact screening count was not recorded contemporaneously.
+2026-08-21,Publisher / PubMed,zebrafish automatic monitoring behavioral metrics speed distance polarization,NR,1,Barreiros et al. deep-read for conventional baseline evidence. Exact screening count was not recorded contemporaneously.
+2026-08-21,PubMed / publisher,ContrastivePose self-supervised pose behavior,NR,1,ContrastivePose deep-read for matched handcrafted-vs-learned representation precedent. Exact screening count was not recorded contemporaneously.
+2026-08-21,arXiv / OpenReview,animal behavior temporal contrastive self-supervised transformer BEAST,NR,1,BEAST reviewed as temporal-contrastive behavioral SSL precedent; publication status later updated to ICLR 2026. Exact screening count was not recorded contemporaneously.
+2026-08-21,Google Scholar / web search,animal behavior identity leakage subject identity representation learning,NR,NR,Identity prediction and subject-disjoint evaluation retained as nuisance-control methods. Exact screening count was not recorded contemporaneously. Exact retained-paper count was not recorded contemporaneously.
+2026-08-21,Google Scholar / web search,behavior representation session effects camera domain shift animal,NR,NR,Session/domain leakage controls mapped; no single zebrafish paper found with full intended battery. Exact screening count was not recorded contemporaneously. Exact retained-paper count was not recorded contemporaneously.
+2026-08-21,Google Scholar / web search,behavioral embedding speed locomotion confound animal,NR,NR,Speed prediction/correlation and speed-matched controls retained. Exact screening count was not recorded contemporaneously. Exact retained-paper count was not recorded contemporaneously.
+2026-08-21,Google Scholar / publisher,zebrafish behavioral window duration bout segmentation motifs,NR,NR,Natural bouts and fixed windows both supported; no universal duration. Exact screening count was not recorded contemporaneously. Exact retained-paper count was not recorded contemporaneously.
+2026-08-22,PubMed / publisher verification,Structure of the Zebrafish Locomotor Repertoire DOI,NR,1,Bibliographic verification for core BibTeX and paper note. Exact screening count was not recorded contemporaneously.
+2026-08-22,PubMed / eNeuro verification,Hierarchical Compression larval zebrafish DOI,NR,1,Bibliographic verification for core BibTeX and paper note. Exact screening count was not recorded contemporaneously.
+2026-08-22,Scientific Reports / PubMed verification,Zebrafish behavior feature recognition 3D tracking DOI,NR,1,Bibliographic verification for core BibTeX and paper note. Exact screening count was not recorded contemporaneously.
+2026-08-22,Scientific Reports / PubMed verification,Zebrafish automatic monitoring conditioning DOI,NR,1,Bibliographic verification for core BibTeX and paper note. Exact screening count was not recorded contemporaneously.
+2026-08-22,PubMed verification,ContrastivePose DOI authors,NR,1,Bibliographic verification. Exact screening count was not recorded contemporaneously.
+2026-08-22,PubMed / bioRxiv verification,Plug-and-Play zebrafish DeepLabCut SLEAP DOI authors,NR,1,"Verified preprint version, author list, DOI, and tracking-resource role. Exact screening count was not recorded contemporaneously."
+2026-08-22,arXiv / OpenReview verification,BEAST behavioral self-supervised pretraining,NR,1,Verified arXiv authors and ICLR 2026 publication status. Exact screening count was not recorded contemporaneously.
+2026-08-22,Scientific Data verification,fine-grained zebrafish interactions health disease DOI authors,NR,1,Verified dataset-paper authors and DOI. Exact screening count was not recorded contemporaneously.
+2026-08-22,Publisher verification,AquaMaze zebrafish DOI authors,NR,1,"Verified authors, 2026 publication, DOI, and core locomotion metrics. Exact screening count was not recorded contemporaneously."
+2026-08-23,Citation-chain ledger,UBD-001 backward citation check,5,0,"Candidate-level decisions recorded in references/citation-chain.csv; two duplicates and three exclusions after scope reconciliation."
+2026-08-23,Citation-chain ledger,UBD-001 forward citation check,6,0,"Candidate-level decisions recorded in references/citation-chain.csv; four duplicates and two exclusions after scope reconciliation."
+2026-08-23,Citation-chain ledger,UBD-002 backward citation check,4,1,"Candidate-level decisions recorded in references/citation-chain.csv; one duplicate, two organism-scope exclusions, and one retained methods-comparison record."
+2026-08-23,Citation-chain ledger,UBD-002 forward citation check,2,1,"Candidate-level decisions recorded in references/citation-chain.csv; ZeChat retained and a supervised feature-selection study excluded."
+2026-08-23,Citation-chain ledger,ZF-002 backward citation check,3,0,"Candidate-level decisions recorded in references/citation-chain.csv; one duplicate and two review-only exclusions."
+2026-08-23,Citation-chain ledger,ZF-002 forward citation check,2,1,"Candidate-level decisions recorded in references/citation-chain.csv; one duplicate and one newly retained record."
+2026-08-23,Citation-chain ledger,SSL-001 backward citation check,3,0,"Candidate-level decisions recorded in references/citation-chain.csv; all three method-lineage records excluded from the bounded animal-behavior evidence matrix."
+2026-08-23,Citation-chain ledger,SSL-001 forward citation check,2,0,"Candidate-level decisions recorded in references/citation-chain.csv; one exclusion and one duplicate."
+2026-08-23,Citation-chain ledger,SSL-002 backward citation check,3,0,"Candidate-level decisions recorded in references/citation-chain.csv; all three candidates excluded as non-behavioral method background."
+2026-08-23,Citation-chain ledger,SSL-002 forward citation check,1,0,"One identified citing paper was excluded as outside scope; the no-match search outcome is recorded here rather than as a candidate row. Recheck with a live citation index before final saturation."
+2026-08-23,Citation-chain ledger,SSL-003 backward citation check,5,3,"Candidate-level decisions recorded in references/citation-chain.csv; two non-behavioral method papers excluded."
+2026-08-23,Citation-chain ledger,SSL-003 forward citation check,1,1,"Candidate-level decisions recorded in references/citation-chain.csv; BEAST3D retained as a direct follow-on self-supervised animal-video method."

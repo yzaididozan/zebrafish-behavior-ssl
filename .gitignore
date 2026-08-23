@@ -6,3 +6,7 @@ data/processed/**/ssl_embeddings/
 results/ssl/checkpoints/
 results/ssl/logs/
 *.pt
+
+# macOS Finder metadata
+.DS_Store
+Icon?

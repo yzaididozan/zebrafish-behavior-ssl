@@ -5,11 +5,14 @@ These notes support `docs/literature-protocol.md` and `docs/literature.md`.
 ## Unsupervised discovery
 - `UBD-001-marques2018.md`
 - `UBD-002-ghosh2020.md`
+- `CITE-008-todd2017.md`
+- `CITE-009-geng2023.md`
 
 ## Zebrafish behavioral measurement / ML
 - `ZF-001-yang2021.md`
 - `ZF-002-barreiros2021.md`
 - `ZF-003-aquamaze2026.md`
+- `CITE-013-whyte-fagundes2025.md`
 
 ## Tracking / pose / datasets
 - `POSE-001-scholz2025.md`
@@ -20,6 +23,10 @@ These notes support `docs/literature-protocol.md` and `docs/literature.md`.
 - `SSL-001-contrastivepose2023.md`
 - `SSL-002-xu2024.md`
 - `SSL-003-beast2026.md`
+- `CITE-015-azabou2023.md`
+- `CITE-016-mabe22.md`
+- `CITE-017-sun2024.md`
+- `CITE-018-beast3d2026.md`
 
 ## Status conventions
 - `NR`: not identified/reported in reviewed material.

@@ -1,877 +1,582 @@
 # Zebrafish Behavior SSL
 
-> Self-supervised temporal representation learning for reproducible discovery of zebrafish behavioral motifs.
+> Self-supervised temporal representation learning for reproducible discovery of zebrafish behavioral structure.
 
 ## Overview
 
-This repository contains code, experiments, and documentation for a research project investigating whether **self-supervised temporal representations learned from zebrafish video or pose sequences reveal stable behavioral structure beyond conventional hand-engineered locomotion and pose features**.
+This repository contains code, data-processing pipelines, preregistration materials, evaluation procedures, and reproducibility artifacts for a computational zebrafish behavior study.
 
-The project directly compares two representations derived from the same zebrafish behavioral samples:
+The primary research question is:
 
-- **Input A — Baseline:** hand-engineered locomotion, pose, and tail-dynamics features.
-- **Input B — Learned:** self-supervised temporal representations learned from zebrafish video or pose sequences.
+> **Do self-supervised temporal representations of zebrafish behavior reveal reproducible behavioral structure that is not captured by conventional hand-engineered locomotion and pose features?**
 
-The goal is not simply to generate clusters.
+The study compares two representations of the **same behavioral bouts**:
 
-The goal is to determine whether learned representations reveal **reproducible behavioral structure that is not adequately captured by conventional features**, while explicitly testing alternative explanations such as fish identity, recording conditions, locomotor speed, tracking errors, and clustering instability.
+- **Input A — Hand-engineered baseline:** conventional timing, speed, acceleration, and turning features.
+- **Input B — Learned representation:** a self-supervised temporal embedding learned from bout-level orientation and speed sequences.
+
+The goal is not simply to generate clusters. Any SSL-specific structure must generalize to held-out fish, remain stable across seeds, survive nuisance controls, and receive independent replication support.
+
+---
+
+## Quick Start
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yzaididozan/zebrafish-behavior-ssl.git
+cd zebrafish-behavior-ssl
+```
+
+### 2. Create the local environment and install dependencies
+
+```bash
+make setup
+```
+
+This creates:
+
+```text
+.venv/
+```
+
+and installs the project in editable mode with development dependencies.
+
+### 3. Run the test suite
+
+```bash
+make test
+```
+
+The repository is intended to keep software tests independent of the large third-party raw datasets where possible.
+
+### 4. Reproduce the frozen DS-005 baseline selection
+
+After the required DS-005 data are present locally:
+
+```bash
+make baseline
+```
+
+This runs:
+
+```bash
+python src/discovery/baseline_clustering.py select
+```
+
+and reproduces the TRAIN/VALIDATION baseline clustering selection while preserving the held-out TEST partition.
+
+---
+
+## Reproduction Levels
+
+### Level 1 — Software verification
+
+Does not require the full raw research datasets:
+
+```bash
+make test
+```
+
+This verifies the installed codebase and automated tests.
+
+### Level 2 — Primary baseline reproduction
+
+Requires the locally prepared DS-005 dataset and frozen preprocessing artifacts.
+
+```bash
+make baseline
+```
+
+The primary frozen baseline discovery configuration is:
+
+```text
+PCA(6 components) -> GMM(k=2, seed=20260822)
+```
+
+Selection uses TRAIN and VALIDATION only.
+
+### Level 3 — SSL reproduction
+
+Requires DS-005 and the frozen SSL configuration.
+
+The frozen method uses:
+
+```yaml
+objective: temporal_contrastive_learning
+loss: NT-Xent
+temperature: 0.10
+embedding_dimension: 64
+seeds:
+  - 11
+  - 23
+  - 37
+  - 51
+  - 79
+```
+
+The implementation lives under:
+
+```text
+src/ssl/
+configs/ssl/
+```
+
+### Level 4 — External replication
+
+Requires DS-006 and follows the frozen replication governance documented in:
+
+```text
+docs/ds006-replication-protocol.md
+docs/evaluation-protocol.md
+```
+
+The DS-006 TEST partition must remain sealed until replication-side TRAIN/VALIDATION procedures are frozen.
+
+---
+
+## Data Availability
+
+Raw third-party research datasets are **not** committed directly to this repository.
+
+The project currently uses:
+
+- **DS-005** — primary dataset
+- **DS-006** — external replication dataset
+
+Dataset provenance, licenses, versions, checksums, and project roles are documented in:
+
+```text
+docs/dataset-register.md
+data/manifests/
+```
+
+Do not silently substitute dataset versions.
+
+Material dataset changes require a documented amendment.
+
+---
+
+## Reproducibility Guarantees
+
+The project records and freezes:
+
+- random seeds
+- fish-level and recording-level data splits
+- TRAIN-only normalization statistics
+- baseline feature definitions
+- SSL input representation
+- SSL objective and encoder configuration
+- clustering configuration
+- nuisance-control procedures
+- evaluation metrics
+- sensitivity-analysis categories
+- artifact SHA-256 hashes
+- decision-log freeze points
+- protected held-out TEST partitions
+
+Material methodological decisions are recorded in:
+
+```text
+docs/decision-log.md
+```
 
 ---
 
 ## Research Question
 
-**Can self-supervised temporal representation learning from zebrafish video or pose support the reproducible discovery of behavioral motifs beyond those captured by conventional human-defined behavioral categories?**
+> **Do self-supervised temporal representations of zebrafish behavior reveal reproducible behavioral structure that is not captured by conventional hand-engineered locomotion and pose features?**
 
 ---
 
-## Research Hypothesis
+## Target Claim
 
-A self-supervised temporal representation learned from unlabeled zebrafish video or pose sequences will preserve established behavioral structure while exposing additional latent states or motifs that recur across independent animals or recordings.
+The project is governed by **Claim Level 2**:
 
-Compared with handcrafted kinematic or pose features, learned representations are hypothesized to produce behavioral structure with:
+> **Self-supervised temporal representations reveal reproducible behavioral structure not fully captured by the evaluated hand-engineered locomotion and pose features.**
 
-- greater cross-animal reproducibility;
-- greater temporal coherence;
-- alignment with independent kinematic changes;
-- resistance to fish-identity and recording-session confounds;
-- information not reducible to locomotor speed;
-- behavioral structure not fully represented by conventional engineered features.
+The study does **not** require SSL to outperform the baseline.
+
+Equivalent, negative, nuisance-driven, unstable, or replication-failing outcomes remain valid scientific results.
 
 ---
 
 ## Novelty Scope
 
-This project does **not** claim that:
+This project does **not** claim:
 
-- unsupervised zebrafish behavior discovery is new;
-- learned zebrafish behavioral representations are new;
-- self-supervised learning for zebrafish representations is entirely new;
-- data-driven methods have never identified zebrafish structure beyond human-defined categories.
+- the first use of SSL in zebrafish
+- the first unsupervised discovery of zebrafish behavior
+- the first ML analysis of zebrafish trajectories
+- discovery of a complete zebrafish ethogram
+- that every cluster is a biological state
+- that `k=2` is the true number of zebrafish behaviors
 
-Previous work has separately demonstrated these capabilities.
+The current novelty boundary is:
 
-Instead, this project investigates their comparatively underexplored intersection:
+> **A preregistered, held-out-fish comparison of conventional hand-engineered zebrafish behavioral representations and self-supervised temporal representations using matched observations, explicit nuisance controls, stability analysis, and independent external replication.**
 
-> **Whether self-supervised temporal representations learned from unlabeled zebrafish behavior provide a better substrate for reproducible open-ended behavioral motif discovery than conventional hand-engineered locomotion and pose representations.**
-
-Any newly identified state will initially be described as a **candidate behavioral motif**, not a newly discovered biological behavior.
-
----
-
-## Experimental Design
+See:
 
 ```text
-                Zebrafish Recording
-                        |
-                        v
-                Temporal Samples
-                        |
-               +--------+--------+
-               |                 |
-               v                 v
-          INPUT A             INPUT B
-      Hand-Engineered     Self-Supervised
-         Features          Representation
-               |                 |
-               +--------+--------+
-                        |
-                        v
-              Same Discovery Methods
-                        |
-               +--------+--------+
-               |                 |
-               v                 v
-          A Structure       B Structure
-               |                 |
-               +--------+--------+
-                        |
-                        v
-                   Comparison
-                        |
-          +-------------+-------------+
-          |             |             |
-          v             v             v
-      Stability      Temporal      Confound
-                    Validity       Testing
-          |             |             |
-          +-------------+-------------+
-                        |
-                        v
-                Held-Out Validation
-                        |
-                        v
-             Candidate Behavioral
-                    Motifs
+docs/novelty.md
 ```
 
 ---
 
-## Unit of Analysis
+# Primary Dataset — DS-005
 
-The primary representation unit will be a **temporally contiguous behavioral window or naturally occurring locomotor bout from a single zebrafish**.
+DS-005 is the frozen primary dataset.
 
-The exact primary temporal duration will be preregistered before final experiments.
+```yaml
+dataset_role: PRIMARY
+number_of_fish: 463
+valid_bouts: 1203409
+contexts: 14
+frame_rate_hz: 700
+samples_per_bout: 175
+```
 
-### Important Units
+### Fish-level split
 
-| Purpose | Unit |
-|---|---|
-| Representation | Behavioral window / bout |
-| Clustering | Behavioral window / bout |
-| Statistical inference | Fish or independent recording |
-| Train/validation/test split | Fish or recording |
+```yaml
+split_seed: 20260822
+train_fish: 323
+validation_fish: 70
+test_fish: 70
+fish_overlap: 0
+```
 
-Frames from the same fish must **never be randomly distributed across training and test sets**.
+All bouts inherit the partition of their source fish.
 
-This prevents models from exploiting fish identity rather than learning generalizable behavior.
+The DS-005 TEST partition is protected from all method selection.
+
+---
+
+# External Replication — DS-006
+
+DS-006 is reserved for independent external replication.
+
+```yaml
+dataset_role: EXTERNAL_REPLICATION
+recordings: 32
+fish_well_slots: 384
+usable_fish_well_units: 374
+accepted_bouts: 163065
+authoritative_frame_rate_hz: 160
+```
+
+### Recording-level split
+
+```yaml
+split_seed: 20260822
+train_recordings: 22
+validation_recordings: 5
+test_recordings: 5
+
+train_bouts: 118100
+validation_bouts: 18835
+test_bouts: 26130
+
+recording_overlap: 0
+```
+
+The DS-006 TEST partition remains sealed until replication-side TRAIN/VALIDATION analysis is frozen.
+
+DS-006 may not be used to change the primary DS-005 method.
+
+---
+
+# Unit of Analysis
+
+The frozen primary unit is:
+
+> **One valid behavioral bout belonging to one identifiable zebrafish.**
+
+Each DS-005 bout contains 175 temporal samples.
+
+The earlier provisional fixed-duration window design is superseded for the primary analysis.
 
 ---
 
 # Input A — Hand-Engineered Baseline
 
-Input A represents conventional behavioral quantification.
+Input A is frozen at **18 bout-level features** covering:
 
-The baseline should be intentionally strong rather than artificially simplified.
+- bout timing
+- inter-bout interval
+- speed summaries
+- acceleration / speed-change summaries
+- orientation / turning summaries
 
-## Locomotion Features
+`head_pos`-derived path/jump features are excluded from the primary baseline because of coordinate-semantic discontinuity concerns.
 
-Candidate variables include:
-
-- centroid speed;
-- acceleration;
-- jerk;
-- distance traveled;
-- displacement;
-- angular velocity;
-- turn angle;
-- path curvature;
-- bout duration;
-- immobility fraction.
-
-## Pose Features
-
-Where keypoint tracking is available:
-
-- body orientation;
-- head-tail angle;
-- body curvature;
-- inter-keypoint distances;
-- keypoint velocity;
-- keypoint acceleration;
-- relative keypoint angles.
-
-## Tail Dynamics
-
-Especially for larval zebrafish:
-
-- tail curvature;
-- maximum curvature;
-- tail-beat frequency;
-- tail-beat amplitude;
-- curvature propagation;
-- left-right asymmetry;
-- tail angular velocity.
-
-## Temporal Summaries
-
-Window-level statistics may include:
-
-- mean;
-- standard deviation;
-- minimum;
-- maximum;
-- quantiles;
-- spectral power;
-- autocorrelation;
-- temporal change.
-
-Final feature definitions will be frozen before evaluation on the held-out test set.
+They remain secondary sensitivity features only.
 
 ---
 
 # Input B — Self-Supervised Representation
 
-Input B will be generated from the **same temporal behavioral samples** used to generate Input A.
-
-Behavior labels will not be used during representation learning.
-
-## Pose-Based SSL
-
-Example input:
+Input B is frozen as:
 
 ```text
-T frames × K keypoints × coordinates
+shape: (175, 3)
+
+channel 0 = sin(orientation_smooth)
+channel 1 = cos(orientation_smooth)
+channel 2 = speed_head
 ```
 
-Potential model families include:
+The encoder receives no fish ID, context label, stimulus code, bout type, session label, partition label, or cluster label.
 
-- masked skeleton transformers;
-- temporal transformers;
-- masked sequence autoencoders;
-- temporal convolutional encoders;
-- predictive sequence encoders;
-- temporal contrastive models.
+### TRAIN-only normalization
 
-Pose-based SSL is a strong primary experiment because Input A and Input B can receive essentially the same underlying information.
+Only the speed channel is standardized.
 
----
-
-## Raw-Video SSL
-
-A secondary experiment may operate directly on video:
-
-```text
-T frames × height × width × channels
-```
-
-Potential approaches include:
-
-- masked video modeling;
-- masked patch reconstruction;
-- temporal contrastive learning;
-- future-state prediction;
-- spatiotemporal transformers.
-
-This experiment can test whether retaining visual information provides useful behavioral structure that is discarded by pose extraction.
-
----
-
-# Behavioral Discovery
-
-Representation learning and behavioral discovery are treated as **separate stages**.
-
-Whenever possible, Input A and Input B will be passed through the same discovery pipeline.
-
-This prevents downstream clustering choices from unfairly favoring one representation.
-
-## Primary Discovery Method
-
-### HDBSCAN
-
-HDBSCAN is a candidate primary clustering method because it:
-
-- does not require a fixed number of clusters;
-- supports irregular cluster geometry;
-- explicitly identifies noise;
-- avoids forcing every observation into a behavioral state.
-
----
-
-## Temporal Discovery
-
-A temporal state model may also be evaluated, such as:
-
-- Hidden Markov Model (HMM);
-- Hidden Semi-Markov Model (HSMM);
-- another preregistered sequential segmentation method.
-
-This allows comparison between:
-
-```text
-Representation
-      |
-      v
-Geometric Clustering
-      |
-      v
-Behavioral Clusters
-```
-
-and:
-
-```text
-Representation Sequence
-        |
-        v
-Temporal State Model
-        |
-        v
-Behavioral Motifs
+```yaml
+speed_mean: 0.858429032920
+speed_std: 1.260544584910
+train_bouts_used: 842841
+temporal_speed_samples_used: 147497175
+validation_used_for_fit: false
+test_used_for_fit: false
 ```
 
 ---
 
-# Comparison
+# SSL Method
 
-The primary scientific question is:
+The primary SSL method is frozen.
 
-> **Does the self-supervised representation contain reproducible behavioral structure that is not adequately captured by the hand-engineered baseline?**
+### Objective
 
-Several complementary comparisons will be used.
-
----
-
-## 1. Known-Behavior Recovery
-
-Where independent behavioral labels are available, evaluate whether discovered structure recovers established zebrafish behaviors.
-
-Possible metrics include:
-
-- Adjusted Mutual Information (AMI);
-- Normalized Mutual Information (NMI);
-- Adjusted Rand Index (ARI);
-- homogeneity;
-- completeness;
-- cluster purity.
-
-Labels are used for **evaluation only**.
-
-They are not used to train the self-supervised representation.
-
----
-
-## 2. Cross-Fish Stability
-
-Candidate behavioral states should recur across independent fish.
-
-The analysis will determine whether cluster structure remains similar across:
-
-- held-out animals;
-- bootstrap samples;
-- model seeds;
-- clustering seeds.
-
----
-
-## 3. Cross-Session Stability
-
-Where possible, states will also be evaluated across:
-
-- recording sessions;
-- experimental days;
-- cameras;
-- lighting conditions;
-- recording environments.
-
----
-
-## 4. Temporal Validity
-
-Inferred behavioral transitions will be compared with independent kinematic changes.
-
-Candidate signals include:
-
-- acceleration peaks;
-- angular-velocity changes;
-- tail-curvature transitions;
-- optical-flow changes;
-- stimulus-aligned behavioral changes.
-
-Possible metrics include boundary precision/recall and temporal distance to independently detected changepoints.
-
----
-
-## 5. Added Information Beyond Input A
-
-Additional clusters produced by Input B do not automatically represent additional behavioral information.
-
-A probe model may therefore attempt to predict Input B cluster assignments using only Input A features.
-
-```text
-Hand-Engineered Features
-          |
-          v
-     Probe Classifier
-          |
-          v
-Predict SSL-Derived State
+```yaml
+family: temporal_contrastive_learning
+loss: NT-Xent
+temperature: 0.10
 ```
 
-If Input A predicts a supposedly new Input B state almost perfectly, that state provides limited evidence for additional representational structure.
+### Encoder
+
+```text
+Input: (175, 3)
+
+Conv1d 3 -> 32, kernel 7
+BatchNorm
+GELU
+
+Conv1d 32 -> 64, kernel 5
+BatchNorm
+GELU
+
+Conv1d 64 -> 128, kernel 3
+BatchNorm
+GELU
+
+Dropout 0.10
+Global average pooling
+Linear 128 -> 64
+```
+
+Projection head:
+
+```text
+64 -> 64 -> 64
+```
+
+The downstream representation is the **64-dimensional encoder embedding**, not the projection-head output.
+
+### Frozen seed set
+
+```yaml
+seeds:
+  - 11
+  - 23
+  - 37
+  - 51
+  - 79
+```
 
 ---
 
-# Validation Framework
+# Baseline Discovery
 
-Validation will occur across several independent axes.
+The frozen primary baseline discovery configuration is:
 
-## Technical Validity
+```text
+PCA(6 components) -> GMM(k=2, seed=20260822)
+```
 
-Candidate structure should survive reasonable changes in:
+Selection used TRAIN and VALIDATION only.
 
-- model initialization;
-- random seed;
-- data resampling;
-- clustering seed;
-- clustering parameters.
+```yaml
+pca_components: 6
+explained_variance_retained: 0.9579
+method: GaussianMixture
+k: 2
+seed: 20260822
+selection_score: 0.649252
+validation_silhouette: 0.4158
+stability: 0.9992
+test_used: false
+```
 
----
+The selected `k=2` is the best evaluated baseline configuration under the frozen selection procedure.
 
-## Confound Validity
-
-Representations will be tested for information about variables that should not define behavior.
-
-Probe models may attempt to predict:
-
-- fish identity;
-- recording session;
-- camera;
-- lighting condition;
-- average speed;
-- distance traveled;
-- tracking confidence.
-
-A useful behavioral representation should not produce clusters primarily explained by these nuisance variables.
+It is **not** interpreted as the true biological number of zebrafish states.
 
 ---
 
-## Behavioral Validity
+# Confirmatory Evaluation
 
-Candidate motifs should demonstrate coherent:
+The frozen evaluation protocol is documented in:
 
-- pose dynamics;
-- locomotor dynamics;
-- temporal duration;
-- within-cluster similarity;
-- between-cluster differences.
+```text
+docs/evaluation-protocol.md
+```
 
----
+Primary confirmatory analyses include:
 
-## External Validity
-
-Where metadata permit, states may be compared with independent experimental variables such as:
-
-- prey strikes;
-- sensory stimuli;
-- social conditions;
-- light/dark transitions;
-- pharmacological conditions;
-- experimental manipulations.
-
-These variables should not be used to create the clusters.
+- fish-bootstrap ARI
+- cross-seed ARI
+- held-out cluster occupancy
+- baseline-vs-SSL ARI and NMI
+- Input A -> SSL-cluster prediction
+- speed-only clustering
+- embedding-to-speed regression
+- fish-identity leakage
+- context/session leakage
+- tracking-artifact checks
+- external replication
 
 ---
 
-## Expert Review
+# Sensitivity Analyses
 
-Potentially novel motifs may undergo blinded human review.
-
-Reviewers should not be shown:
-
-- cluster IDs;
-- experimental condition;
-- fish identity;
-- representation type.
-
-This reduces post-hoc storytelling.
+```yaml
+ssl_seed_sensitivity: CONFIRMATORY
+head_position_extended_baseline: SECONDARY
+cluster_number_sensitivity: SECONDARY
+visualization_dimensionality_reduction: EXPLORATORY
+alternate_segmentation: NOT_PRIMARY
+```
 
 ---
 
-# Threats to Validity
+# Test-Set Governance
 
-## Identity Leakage
+The DS-005 TEST partition must not influence feature definition, normalization, SSL design, clustering, nuisance models, evaluation metrics, decision thresholds, or interpretation criteria.
 
-**Threat:** The model learns individual fish rather than behavior.
+The DS-006 TEST partition is similarly sealed until replication-side procedures are frozen.
 
-### Controls
-
-- split datasets by fish;
-- never randomly split frames across train/test;
-- train probes to predict fish identity;
-- require candidate motifs to occur across multiple animals.
+Any accidental TEST inspection capable of influencing methodology must be documented as a deviation.
 
 ---
 
-## Session / Camera Leakage
+# Current Project Status
 
-**Threat:** Lighting, tank appearance, camera angle, compression, or recording setup determines representation structure.
+```text
+Primary dataset selection                         ✅
+Dataset/version freeze                            ✅
+Fish-level split                                  ✅
+Unit of analysis                                  ✅
 
-### Controls
+Input A implementation                            ✅
+Input A representation freeze                     ✅
+Baseline discovery/clustering                     ✅
 
-- split by recording session;
-- test session prediction from embeddings;
-- standardize preprocessing;
-- evaluate cross-session generalization;
-- evaluate camera/session composition within clusters.
+Input B SSL implementation                        ✅
+Input B representation freeze                     ✅
+SSL objective / encoder / seeds                    ✅
+Full multi-seed SSL training                      🔄
 
----
-
-## Speed-Only Solution
-
-**Threat:** The learned representation primarily encodes locomotor speed.
-
-### Controls
-
-- calculate embedding-speed relationships;
-- train speed probes;
-- include speed-only baselines;
-- speed-match observations;
-- residualize speed and repeat discovery;
-- determine whether behavioral structure persists after controlling for speed.
+Input A vs Input B comparison                      ⬜
+Independent DS-006 replication analysis           🟨 preprocessing complete
+Final DS-005 held-out TEST evaluation              🔒 not yet opened
+Final DS-006 held-out TEST evaluation              🔒 sealed
+```
 
 ---
 
-## Tracking Artifacts
-
-**Threat:** Occlusion, incorrect keypoints, or tracking jitter creates false behavioral states.
-
-### Controls
-
-- retain tracking-confidence values;
-- filter low-confidence frames;
-- inspect artifact-enriched clusters;
-- repeat discovery after quality filtering;
-- compare results across tracking pipelines where possible.
-
----
-
-## Window-Boundary Artifacts
-
-**Threat:** Cluster membership depends on arbitrary clip boundaries.
-
-### Controls
-
-- preregister a primary window length;
-- evaluate alternative window lengths;
-- shift temporal starting positions;
-- compare overlapping and non-overlapping windows;
-- measure assignment consistency.
-
----
-
-## Hyperparameter Fishing
-
-**Threat:** Interesting clusters occur only under a convenient seed or clustering configuration.
-
-### Controls
-
-- preregister primary algorithms;
-- preregister primary hyperparameter ranges;
-- evaluate multiple seeds;
-- report robustness across configurations;
-- avoid selecting results solely because they appear biologically interesting.
-
----
-
-## Post-Hoc Storytelling
-
-**Threat:** Researchers assign biological interpretations after seeing visually attractive clusters.
-
-### Controls
-
-- preregister interpretation criteria;
-- use blinded expert review;
-- separate discovery from biological interpretation;
-- preserve a held-out validation set;
-- classify additional states as candidate motifs until independently validated.
-
----
-
-# Claim Thresholds
-
-Finding a cluster is not sufficient evidence for discovering a behavior.
-
-Claims will therefore be made at different evidence levels.
-
-## Level 1 — Additional Cluster
-
-The learned representation produces a distinguishable cluster not produced by the baseline.
-
-This is a computational result only.
-
----
-
-## Level 2 — Reproducible Latent Behavioral State
-
-A state may receive this designation if it:
-
-- appears in held-out animals;
-- appears across recordings;
-- survives repeated model runs;
-- survives reasonable clustering configurations;
-- is not dominated by a single fish;
-- is not dominated by a single session;
-- is not explained primarily by locomotor speed;
-- remains after tracking-quality controls.
-
----
-
-## Level 3 — Candidate Novel Behavioral Motif
-
-A stronger claim additionally requires:
-
-- reproducible temporal structure;
-- coherent observable movement;
-- distinction from established behavioral categories;
-- evidence that hand-engineered features do not fully account for the state;
-- replication in held-out animals or recordings;
-- independent expert or experimental validation.
-
-The term **candidate novel behavioral motif** will be preferred over **new zebrafish behavior** unless substantially stronger biological evidence becomes available.
-
----
-
-# Preregistration
-
-Before final experiments, the following will be frozen.
-
-## Research Questions
-
-- Primary research question
-- Secondary research questions
-- Primary hypothesis
-- Secondary hypotheses
-
-## Dataset Rules
-
-- dataset inclusion criteria
-- dataset exclusion criteria
-- recording-quality requirements
-- tracking-quality requirements
-
-## Data Splits
-
-Train, validation, and test partitions will occur at the:
-
-- fish level; or
-- independent recording level.
-
-Random-frame splitting across partitions is prohibited.
-
-## Models
-
-Preregister:
-
-- hand-engineered baseline;
-- primary SSL model family;
-- secondary SSL models;
-- clustering algorithms;
-- temporal discovery models.
-
-## Evaluation
-
-Preregister:
-
-- primary metric;
-- secondary metrics;
-- number of random seeds;
-- number of repeated experiments;
-- ablations;
-- confound tests;
-- stability threshold;
-- candidate-motif criteria.
-
-## Statistics
-
-Preregister:
-
-- statistical tests;
-- effect-size measures;
-- confidence intervals;
-- multiple-comparison correction where applicable.
-
----
-
-# Planned Ablations
-
-Candidate ablations include:
-
-- hand-engineered features only;
-- speed only;
-- pose without temporal information;
-- masked reconstruction only;
-- temporal objective only;
-- combined reconstruction + temporal learning;
-- different embedding dimensionalities;
-- different temporal window lengths;
-- alternative clustering methods;
-- tracking-quality filtering;
-- speed residualization.
-
----
-
-# Candidate Datasets
-
-Potential authorized/open datasets include:
-
-- **Scholz et al. zebrafish larvae pose/video dataset**
-- **Marques et al. zebrafish locomotor repertoire dataset**
-- **PoseR / Mullen et al. larval zebrafish dataset**
-- **Larval zebrafish prey-capture datasets**
-- **Zebrafish social-experience datasets**
-
-Dataset licenses and reuse conditions must be verified before inclusion.
-
-Raw research data should generally not be committed directly to this repository.
-
----
-
-# Planned Repository Structure
+# Repository Structure
 
 ```text
 zebrafish-behavior-ssl/
-|
 ├── README.md
 ├── LICENSE
 ├── CITATION.cff
-├── requirements.txt
+├── Makefile
 ├── pyproject.toml
-|
+├── environment.yml
+├── .github/
+│   └── workflows/
+│       └── tests.yml
 ├── configs/
-|   ├── baseline/
-|   ├── ssl/
-|   └── clustering/
-|
 ├── data/
-|   ├── README.md
-|   ├── raw/
-|   ├── interim/
-|   └── processed/
-|
 ├── docs/
-|   ├── literature/
-|   ├── preregistration/
-|   └── methodology/
-|
-├── notebooks/
-|   ├── exploratory/
-|   └── validation/
-|
+├── external/
 ├── src/
-|   ├── data/
-|   ├── tracking/
-|   ├── features/
-|   ├── models/
-|   ├── clustering/
-|   ├── evaluation/
-|   └── visualization/
-|
-├── scripts/
-|   ├── preprocess/
-|   ├── train/
-|   ├── discover/
-|   └── evaluate/
-|
 ├── tests/
-|
 └── results/
-    ├── embeddings/
-    ├── clusters/
-    ├── validation/
-    ├── figures/
-    └── tables/
 ```
 
 ---
 
-# Reproducibility
+# Data and Third-Party Code
 
-The project aims to make experimental results reproducible through:
+Raw third-party research data should generally **not** be committed to Git.
 
-- version-controlled configuration files;
-- fixed random seeds;
-- recorded train/validation/test splits;
-- saved model configurations;
-- documented preprocessing;
-- automated evaluation scripts;
-- full reporting of negative and null results;
-- explicit dataset provenance.
+Dataset licenses remain independent of this repository's software license.
 
-Final test data should remain untouched until model and analysis decisions are frozen.
+External repositories under `external/` retain their original licenses and Git history unless explicitly stated otherwise.
+
+The project does not relicense third-party code or datasets.
 
 ---
 
-# Project Status
+# Documentation
 
-> **Status: Research design / literature review / pipeline development**
+Key project documents:
 
-Current work includes:
-
-- [x] Define working research question
-- [x] Define working hypothesis
-- [x] Conduct initial literature landscape review
-- [x] Search for novelty-threatening prior work
-- [x] Identify candidate public zebrafish datasets
-- [x] Define baseline vs learned comparison
-- [x] Identify major threats to validity
-- [ ] Select primary dataset
-- [ ] Define dataset inclusion/exclusion criteria
-- [ ] Finalize unit of analysis
-- [ ] Implement preprocessing pipeline
-- [ ] Implement hand-engineered baseline
-- [ ] Select primary SSL architecture
-- [ ] Implement self-supervised representation pipeline
-- [ ] Freeze preregistration
-- [ ] Run development experiments
-- [ ] Freeze final analysis pipeline
-- [ ] Run held-out evaluation
-- [ ] Validate candidate motifs
-- [ ] Prepare manuscript
-
----
-
-# Related Methods
-
-The project is informed by work involving:
-
-- zebrafish locomotor repertoire discovery;
-- DeepLabCut;
-- SLEAP;
-- MotionMapper;
-- B-SOiD;
-- VAME;
-- MoSeq;
-- Keypoint-MoSeq;
-- BehaveNet;
-- TREBA;
-- BEAST;
-- masked skeleton modeling;
-- self-supervised video representation learning.
-
-A formal bibliography will be maintained separately.
-
----
-
-# Ethical and Data-Use Considerations
-
-This project is designed primarily around **previously collected and authorized research datasets**.
-
-No new animal experiments are required for the initial computational study.
-
-Each dataset will be used according to its:
-
-- license;
-- repository terms;
-- citation requirements;
-- original study documentation.
-
-The repository will not redistribute third-party data unless its license explicitly permits redistribution.
-
----
-
-# Contributing
-
-This repository is currently maintained as a research project.
-
-Issues documenting:
-
-- reproducibility problems;
-- dataset inconsistencies;
-- implementation bugs;
-- methodological concerns;
-- relevant prior work
-
-are welcome.
+```text
+docs/charter.md
+docs/dataset-register.md
+docs/decision-log.md
+docs/evaluation-protocol.md
+docs/literature.md
+docs/novelty.md
+docs/preregistration-draft.md
+docs/research-question.md
+```
 
 ---
 
 # Citation
 
-Citation information will be added if this work results in a preprint, publication, or public software release.
+Citation metadata are provided in:
 
-A `CITATION.cff` file will be included before the first research release.
+```text
+CITATION.cff
+```
 
 ---
 
 # License
 
-A software license will be selected before public release.
+Original software and documentation in this repository are released under the **MIT License**, unless otherwise noted.
 
-Dataset licenses remain independent of the license applied to this repository.
+See:
+
+```text
+LICENSE
+```
+
+Third-party datasets, external code, pretrained models, and other external assets retain their own licenses and terms.
 
 ---
 
-## Disclaimer
+# Disclaimer
 
-Behavioral clusters produced by this project should not automatically be interpreted as distinct biological behaviors.
+Behavioral clusters produced by this project must not automatically be interpreted as distinct biological behaviors.
 
-The purpose of the project is to identify **candidate reproducible behavioral structure** and subject that structure to rigorous computational and biological validation.
+The project identifies and evaluates **candidate reproducible behavioral structure**. Biological interpretation requires evidence beyond cluster formation alone.
