@@ -14,7 +14,7 @@ help:
 setup:
 	python3 -m venv $(VENV)
 	$(PYTHON) -m pip install --upgrade pip
-	$(PIP) install -e ".[dev]"
+	$(PIP) install -e ".[dev,viz]"
 
 test:
 	$(PYTHON) -m pytest -q
