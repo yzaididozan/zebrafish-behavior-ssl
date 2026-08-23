@@ -1,0 +1,104 @@
+{
+  "dataset_id": "DS-006",
+  "status": "PREPARED",
+  "frozen_qc": {
+    "raw_bouts": 165579,
+    "well_excluded_bouts": 1556,
+    "qc_candidates": 164023,
+    "accepted_bouts": 163065,
+    "rejected_bouts": 958,
+    "acceptance_rate": 0.9941593557001153,
+    "rejection_reason_counts": {
+      "speed_too_high": 532,
+      "distance_too_large": 206,
+      "speed_too_low": 279,
+      "time_too_long": 140
+    },
+    "qc_seed": 20260822,
+    "fps_hz": 160.0,
+    "px_to_mm": 0.071
+  },
+  "well_qc": {
+    "empty_wells": [
+      {
+        "recording_id": "191119_Catamaran_pH_2b_t8",
+        "well": 4
+      },
+      {
+        "recording_id": "Catamaran_pH_1a_t2c",
+        "well": 4
+      },
+      {
+        "recording_id": "Catamaran_pH_2a_t3",
+        "well": 11
+      }
+    ],
+    "author_bad_wells": [
+      {
+        "recording_id": "191119_Catamaran_pH_2b_t6",
+        "well": 10
+      },
+      {
+        "recording_id": "191119_Catamaran_pH_2b_t8",
+        "well": 9
+      },
+      {
+        "recording_id": "Catamaran_pH_2a_t1a",
+        "well": 7
+      },
+      {
+        "recording_id": "Catamaran_pH_2a_t3",
+        "well": 10
+      },
+      {
+        "recording_id": "Catamaran_pH_2a_t4",
+        "well": 8
+      },
+      {
+        "recording_id": "Catamaran_pH_2b_t1",
+        "well": 9
+      },
+      {
+        "recording_id": "Catamaran_pH_2b_t5",
+        "well": 8
+      }
+    ],
+    "total_excluded_wells": 10
+  },
+  "split": {
+    "grouping_unit": "recording_id",
+    "seed": 20260822,
+    "target_fractions": {
+      "train": 0.7,
+      "validation": 0.15,
+      "test": 0.15
+    },
+    "recording_counts": {
+      "train": 22,
+      "validation": 5,
+      "test": 5
+    },
+    "bout_counts": {
+      "train": 118100,
+      "validation": 18835,
+      "test": 26130
+    },
+    "test_used_to_fit_preprocessing": false
+  },
+  "baseline": {
+    "feature_count": 18,
+    "train_only_imputation": true,
+    "train_only_scaling": true
+  },
+  "ssl": {
+    "target_length": 175,
+    "channels": 3,
+    "train_only_speed_normalization": true
+  },
+  "replication_constraints": {
+    "allowed_to_change_primary_method": false,
+    "allowed_for_primary_hyperparameter_selection": false,
+    "allowed_for_ssl_architecture_selection": false,
+    "allowed_for_cluster_k_selection": false
+  }
+}

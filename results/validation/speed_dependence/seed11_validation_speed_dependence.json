@@ -1,0 +1,12 @@
+{
+  "analysis": "speed_dependence",
+  "dataset_id": "DS-005",
+  "partition": "validation",
+  "pc1_speed_p_value": 0.0,
+  "pc1_speed_pearson_r": -0.9517446756362915,
+  "pc1_variance_fraction": 0.23379649221897125,
+  "ridge_speed_prediction_r2": 0.9975244998931885,
+  "rows_used": 2000,
+  "ssl_seed": 11,
+  "test_partition_used": false
+}

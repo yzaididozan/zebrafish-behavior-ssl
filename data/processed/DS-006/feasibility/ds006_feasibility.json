@@ -1,0 +1,230 @@
+{
+  "dataset_id": "DS-006",
+  "audit": "replication_feasibility",
+  "constants": {
+    "fps_hz": 160.0,
+    "px_to_mm": 0.071,
+    "qc_seed": 20260822
+  },
+  "archive": {
+    "mat_files": 32,
+    "raw_bouts_first_pass": 165579,
+    "raw_bouts": 165579
+  },
+  "heading": {
+    "unit_inference": "radians_likely",
+    "max_abs": 6.28239,
+    "p99_abs": 6.0725,
+    "warning": null
+  },
+  "frozen_qc_recheck": {
+    "empty_wells_seen": 3,
+    "author_bad_wells_seen": 7,
+    "total_excluded_wells_seen": 10,
+    "well_excluded_bouts": 1556,
+    "qc_candidates": 164023,
+    "accepted_bouts": 163065,
+    "rejected_bouts": 958,
+    "rejection_reasons": {
+      "speed_too_high": 532,
+      "distance_too_large": 206,
+      "speed_too_low": 279,
+      "time_too_long": 140
+    },
+    "by_family": {
+      "pH_1a": {
+        "evaluated": 22301,
+        "accepted": 21831,
+        "rejected": 470
+      },
+      "pH_2a": {
+        "evaluated": 36289,
+        "accepted": 36200,
+        "rejected": 89,
+        "well_excluded_bouts": 670
+      },
+      "pH_2b": {
+        "evaluated": 49447,
+        "accepted": 49257,
+        "rejected": 190,
+        "well_excluded_bouts": 886
+      },
+      "pH_2c": {
+        "evaluated": 55986,
+        "accepted": 55777,
+        "rejected": 209
+      }
+    },
+    "matches_frozen_counts": {
+      "raw_bouts": true,
+      "well_excluded_bouts": true,
+      "qc_candidates": true,
+      "accepted_bouts": true,
+      "rejected_bouts": true
+    },
+    "all_frozen_counts_match": true
+  },
+  "input_a": {
+    "target_feature_count": 18,
+    "target_features": [
+      "bout_duration",
+      "inter_bout_interval",
+      "speed_mean",
+      "speed_std",
+      "speed_median",
+      "speed_max",
+      "speed_p95",
+      "speed_rms",
+      "speed_change_abs_mean",
+      "speed_change_std",
+      "speed_change_max",
+      "speed_change_rms",
+      "turn_total_abs",
+      "turn_net",
+      "turn_abs_mean",
+      "turn_std",
+      "turn_max",
+      "turn_rms"
+    ],
+    "feature_feasibility": {
+      "bout_duration": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "inter_bout_interval": {
+        "computable_bouts": 162691,
+        "not_computable_bouts": 374,
+        "computable_fraction": 0.9977064360837703,
+        "note": "First accepted bout in each usable well has no preceding accepted bout, so IBI is not expected to be 100%."
+      },
+      "speed_mean": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "speed_std": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "speed_median": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "speed_max": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "speed_p95": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "speed_rms": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "speed_change_abs_mean": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "speed_change_std": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "speed_change_max": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "speed_change_rms": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "turn_total_abs": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "turn_net": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "turn_abs_mean": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "turn_std": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "turn_max": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      },
+      "turn_rms": {
+        "computable_bouts": 163065,
+        "not_computable_bouts": 0,
+        "computable_fraction": 1.0,
+        "note": null
+      }
+    },
+    "all_18_have_computable_examples": true,
+    "interpretation": "FEASIBLE_CANDIDATE",
+    "caveat": "This audit tests computability. It does not yet assert that DS-006 feature definitions are numerically identical to the frozen DS-005 baseline definitions."
+  },
+  "input_b": {
+    "candidate_channels": [
+      "sin(Heading)",
+      "cos(Heading)",
+      "derived_head_speed_mm_s"
+    ],
+    "successful_bouts": 163065,
+    "failed_bouts": 0,
+    "failure_reasons": {},
+    "temporal_length_summary": {
+      "min": 9,
+      "median": 24.0,
+      "p95": 41.0,
+      "max": 188,
+      "unique_lengths": 152
+    },
+    "all_accepted_bouts_shape_and_finite_valid": true,
+    "interpretation": "FEASIBLE_CANDIDATE",
+    "caveat": "DS-005 uses orientation_smooth and speed_head. DS-006 uses Heading plus speed derived from HeadX/HeadY, so semantic comparability must be documented before replication is frozen."
+  },
+  "constraints": {
+    "changes_primary_method": false,
+    "used_for_primary_hyperparameter_selection": false,
+    "used_for_ssl_architecture_selection": false,
+    "used_for_cluster_k_selection": false,
+    "loads_ds005_test_partition": false
+  }
+}

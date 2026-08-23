@@ -1,0 +1,175 @@
+dataset_id: DS-006
+dataset_version: DS-006-replication-v1
+role: EXTERNAL_REPLICATION
+
+repository: Dryad
+doi: 10.5061/dryad.6t1g1jwwz
+
+archive:
+  name: Data_all.zip
+  path: data/raw/DS-006/Data_all.zip
+  size_bytes: 1527805725
+  sha256: d94261a2ed89356cd0dd5f9fe69219aaae567eeac31cf46d90769c9aba40094f
+  archive_entry_count_raw: 222
+  archive_entry_count_clean: 104
+  local_modified_time: "2026-08-22 22:46:08"
+
+inventory:
+  archive_file_list: data/manifests/DS-006/archive-file-list.txt
+  clean_archive_file_list: data/manifests/DS-006/archive-file-list-clean.txt
+  extracted_root: data/raw/DS-006/extracted/Data_all
+  extracted_scientific_file_count: 64
+  mat_files: 32
+  txt_files: 32
+  extracted_size_human: 2.3G
+
+experiment_schema:
+  mat_file_unit: one_experiment
+  recording_count: 32
+  unique_recording_ids: 32
+  recording_id_source: organization.videoName
+  fish_per_experiment_expected: 12
+  wells_per_experiment: 12
+  one_fish_per_well: true
+
+frame_rate:
+  values_hz:
+    - 25
+    - 160
+  recordings_25_hz: 17
+  recordings_160_hz: 15
+  mixed_frame_rate_dataset: true
+
+bout_schema:
+  total_bouts: 165579
+  bout_start_field: BoutStart
+  bout_end_field: BoutEnd
+  variable_length_bouts: true
+  primary_motion_fields:
+    - TailAngle_Raw
+    - HeadX
+    - HeadY
+    - Heading_raw
+    - Heading
+    - TailX_VideoReferential
+    - TailY_VideoReferential
+    - TailX_HeadingReferential
+    - TailY_HeadingReferential
+    - TailAngle_smoothed
+    - Bend_TimingAbsolute
+    - Bend_Timing
+    - Bend_Amplitude
+  ignored_legacy_fields:
+    - param
+    - Head_Index_Interpolation
+    - Tail_Index_Interpolation
+
+well_schema:
+  well_position_fields:
+    - topLeftX
+    - topLeftY
+    - lengthX
+    - lengthY
+  potential_fish_well_slots: 384
+  empty_wells: 3
+  nonempty_fish_well_units: 381
+  empty_well_list:
+    - recording_id: 191119_Catamaran_pH_2b_t8
+      well: 4
+    - recording_id: Catamaran_pH_1a_t2c
+      well: 4
+    - recording_id: Catamaran_pH_2a_t3
+      well: 11
+
+fish_number_field:
+  field: FishNumber
+  observed_values:
+    - 0
+  expected_for_single_fish_per_well: 0
+  usable_as_cross_well_identifier: false
+
+canonical_fish_id:
+  rule: "DS006::<recording_id>::wellXX"
+  biological_uniqueness_across_recordings_verified: false
+
+organization_schema:
+  fields:
+    - fps
+    - videoName
+
+experiment_families:
+  pH_1a:
+    observed_recordings: 10
+    fps_hz: 25
+    total_bouts: 22301
+    median_bout_duration_s: 1.02
+    biological_condition: UNVERIFIED
+  pH_2a:
+    observed_recordings: 7
+    fps_hz: 25
+    total_bouts: 36959
+    median_bout_duration_s: 0.92
+    biological_condition: UNVERIFIED
+  pH_2b:
+    observed_recordings: 7
+    fps_hz: 160
+    total_bouts: 50333
+    median_bout_duration_s: 0.15
+    biological_condition: UNVERIFIED
+  pH_2c:
+    observed_recordings: 8
+    fps_hz: 160
+    total_bouts: 55986
+    median_bout_duration_s: 0.1656
+    biological_condition: UNVERIFIED
+
+author_documented_archive_structure:
+  pH_1a:
+    expected_experiments: 10
+  pH_2a:
+    expected_experiments: 7
+  pH_2b:
+    expected_experiments: 8
+  pH_2c:
+    expected_experiments: 8
+
+archive_discrepancies:
+  - family: pH_2b
+    expected_experiments: 8
+    observed_mat_files: 7
+    missing_apparent_recording: Catamaran_pH_2b_t7
+    status: UNRESOLVED
+
+quality_control:
+  nonfinite_numeric_field_occurrences: 0
+  empty_well_count: 3
+  empty_well_interpretation: UNRESOLVED
+  missing_recording_interpretation: UNRESOLVED
+
+environment_annotations:
+  source: Zebrafish_larvae_analysis_acid_data_final.ipynb
+  verified_from_author_readme: true
+  extracted: false
+  condition_mapping_status: PENDING_AUTHOR_CODE_VERIFICATION
+
+replication_constraints:
+  allowed_to_change_primary_method: false
+  allowed_for_primary_hyperparameter_selection: false
+  allowed_for_ssl_architecture_selection: false
+  allowed_for_cluster_k_selection: false
+
+status:
+  archive_downloaded: true
+  integrity_recorded: true
+  archive_inventory_recorded: true
+  recording_count_verified: true
+  well_count_verified: true
+  frame_rate_schema_verified: true
+  fish_number_field_verified: true
+  fish_id_schema_provisional: true
+  condition_fields_verified: false
+  matlab_structures_inventoried: true
+  missing_data_qc_documented: true
+  input_a_replication_feasibility_verified: false
+  input_b_replication_feasibility_verified: false
+  replication_manifest_complete: false

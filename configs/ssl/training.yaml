@@ -9,7 +9,7 @@
 
 training:
   version: "v1"
-  status: "CANDIDATE_NOT_FROZEN"
+  status: "FROZEN_V1"
 
   dataset:
     id: "DS-005"

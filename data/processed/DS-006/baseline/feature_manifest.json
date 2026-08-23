@@ -1,0 +1,38 @@
+{
+  "dataset_id": "DS-006",
+  "feature_count": 18,
+  "feature_names": [
+    "bout_duration",
+    "inter_bout_interval",
+    "speed_mean",
+    "speed_std",
+    "speed_median",
+    "speed_max",
+    "speed_p95",
+    "speed_rms",
+    "speed_change_abs_mean",
+    "speed_change_std",
+    "speed_change_max",
+    "speed_change_rms",
+    "turn_total_abs",
+    "turn_net",
+    "turn_abs_mean",
+    "turn_std",
+    "turn_max",
+    "turn_rms"
+  ],
+  "source_mapping": {
+    "bout_duration": "len(HeadX) / 160",
+    "inter_bout_interval": "(BoutStart_current - BoutEnd_previous_accepted) / 160",
+    "speed": "sqrt(diff(HeadX)^2 + diff(HeadY)^2) * 0.071 * 160",
+    "turn": "diff(unwrap(Heading))"
+  },
+  "units": {
+    "bout_duration": "seconds",
+    "inter_bout_interval": "seconds",
+    "speed_features": "mm/s",
+    "speed_change_features": "mm/s per sample",
+    "turn_features": "radians"
+  },
+  "ibi_policy": "Undefined for the first accepted bout in each usable well; stored NaN in raw arrays and median-imputed using TRAIN only for scaled arrays."
+}

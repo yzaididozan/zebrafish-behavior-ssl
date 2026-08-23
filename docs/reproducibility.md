@@ -824,11 +824,11 @@ Input A train-only normalization completed     ✅
 Input A artifact hashes recorded               ✅
 Input A baseline artifact set frozen           ✅
 
-Baseline discovery/clustering                  ⬜
-Input B SSL implementation                     ⬜
-Input B representation freeze                  ⬜
+Baseline discovery/clustering                  ✅
+Input B SSL implementation                     ✅
+Input B representation freeze                  ✅
 Input A vs Input B comparison                  ⬜
-Independent DS-006 replication                 ⬜
+Independent DS-006 replication                 🟨
 Final held-out test evaluation                 ⬜
 ```
 

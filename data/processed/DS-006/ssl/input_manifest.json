@@ -1,0 +1,18 @@
+{
+  "dataset_id": "DS-006",
+  "shape": [
+    "n_bouts",
+    175,
+    3
+  ],
+  "target_length": 175,
+  "channels": [
+    "sin(Heading_resampled)",
+    "cos(Heading_resampled)",
+    "derived_head_speed_mm_s_resampled"
+  ],
+  "heading_units": "radians",
+  "temporal_policy": "unwrap Heading; linearly resample angle and speed over normalized bout phase to 175 samples; then convert angle to sin/cos",
+  "architecture_change_required": false,
+  "metadata_used_as_encoder_input": false
+}

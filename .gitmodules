@@ -1,0 +1,3 @@
+[submodule "external/Markov_Fish"]
+	path = external/Markov_Fish
+	url = https://github.com/GautamSridhar/Markov_Fish.git

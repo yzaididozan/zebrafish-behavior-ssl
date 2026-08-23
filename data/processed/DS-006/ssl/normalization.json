@@ -1,0 +1,8 @@
+{
+  "fit_partition": "train",
+  "sin_cos_standardized": false,
+  "speed_standardized": true,
+  "speed_mean": 9.773209740465072,
+  "speed_std": 10.47893676505109,
+  "fit_over": "all resampled temporal speed samples in DS-006 TRAIN only"
+}

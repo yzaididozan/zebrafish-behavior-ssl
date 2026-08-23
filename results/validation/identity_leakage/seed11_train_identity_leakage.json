@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.7975,
+  "analysis": "identity_leakage",
+  "balanced_accuracy": 0.8105798203373602,
+  "chance_uniform": 0.5,
+  "dataset_id": "DS-005",
+  "fish_classes": 2,
+  "majority_class_baseline": 0.6675,
+  "partition": "train",
+  "rows_used": 2000,
+  "ssl_seed": 11,
+  "test_partition_used": false
+}
