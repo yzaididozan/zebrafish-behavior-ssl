@@ -773,25 +773,252 @@ TEST has not been used for:
 
 ---
 
-# 25. Frame-Rate Documentation Issue
+# Exact One-Time DS-006 TEST Procedure
 
-Project records retain an unresolved discrepancy:
+## Authorization boundary
+
+The only project program authorized to read the sealed DS-006 TEST arrays is:
+
+```text
+src/evaluation/ds006_final_test.py
+```
+
+The protected inputs are:
+
+```text
+data/processed/DS-006/ssl/test.npz
+data/processed/DS-006/baseline/test_core_raw.npz
+```
+
+The final mode requires the explicit `--confirm-open-test` flag and the full
+40-character SHA of the committed pre-TEST freeze. Without confirmation, the
+program exits before loading TEST. It also exits before TEST loading if the
+working tree is dirty, repository `HEAD` differs from `--freeze-commit`, a
+frozen input hash differs, frozen probe objects are absent, or the final output
+directory already exists. The final command must not be run until the runner,
+this procedure, TRAIN-only probe objects, and their manifest have been
+committed and pushed as the final pre-TEST freeze.
+
+## Pre-freeze TRAIN-only probe serialization
+
+The existing comparison artifacts contain probe results but not fitted probe
+objects. Before the final freeze commit, serialize the unchanged, preregistered
+TRAIN-only linear, nonlinear, and mean-speed-only models with:
+
+```bash
+PYTHONPATH=. python3 src/evaluation/ds006_final_test.py --prepare-probes
+```
+
+This mode is not authorized to open TEST. It reads the frozen 18-feature DS-006
+TRAIN matrix and TRAIN-derived aligned SSL labels only, writes fitted objects
+under `data/processed/DS-006/frozen_test_probes/`, and records their hashes in
+`probe_manifest.json`. These objects and the manifest must be included in the
+pre-TEST freeze commit. Probe fitting or deterministic reconstruction after
+TEST is opened is prohibited.
+
+## Frozen inputs and transformations
+
+For SSL seeds `11`, `23`, `37`, `51`, and `79`, the runner verifies and uses:
+
+```text
+results/ssl/checkpoints/ssl_seed{seed}_best.pt
+data/processed/DS-006/transfer_clustering/seed{seed}/scaler.joblib
+data/processed/DS-006/transfer_clustering/seed{seed}/pca.joblib
+data/processed/DS-006/transfer_clustering/seed{seed}/kmeans.joblib
+```
+
+The inference-only SSL path is:
+
+```text
+DS-006 TEST tensor [26,130, 175, 3]
+  -> frozen DS-005 encoder
+  -> TEST embedding [26,130, 64]
+  -> saved DS-006 TRAIN StandardScaler.transform
+  -> saved DS-006 TRAIN PCA.transform
+  -> saved DS-006 TRAIN KMeans.predict
+  -> saved TRAIN-derived seed-to-seed11 label mapping
+```
+
+The baseline path verifies and uses:
+
+```text
+data/processed/DS-006/baseline_clustering/imputer.joblib
+data/processed/DS-006/baseline_clustering/scaler.joblib
+data/processed/DS-006/baseline_clustering/pca.joblib
+data/processed/DS-006/baseline_clustering/gmm.joblib
+```
+
+and applies only:
+
+```text
+TEST 18-feature matrix
+  -> saved imputer.transform
+  -> saved scaler.transform
+  -> saved PCA.transform
+  -> saved GMM.predict
+```
+
+Before processing, the runner verifies the frozen SHA-256 values embedded in
+the runner from `DEC-023` and the committed clustering manifests. It asserts:
+
+```yaml
+test_bouts: 26130
+recordings: 5
+input_shape: [26130, 175, 3]
+embedding_shape: [26130, 64]
+ssl_seeds: [11, 23, 37, 51, 79]
+unique_nonempty_bout_ids: true
+```
+
+The following operations are prohibited in final mode:
+
+- `fit` or `fit_transform`;
+- encoder fine-tuning;
+- checkpoint or model selection;
+- a new PCA, KMeans, GMM, label alignment, or value of `k`;
+- probe fitting or reconstruction;
+- any configuration change based on TEST.
+
+## Frozen TEST metrics
+
+For each SSL seed, calculate:
+
+- cluster occupancy;
+- contributing fish-wells and recordings per cluster;
+- silhouette on a deterministic seed-`20260822` sample of 20,000 TEST bouts;
+- distance-margin confidence;
+- pairwise cross-seed ARI and NMI;
+- agreement after the TRAIN-derived alignment.
+
+Compare the frozen baseline and each aligned SSL partition using:
+
+- ARI, NMI, and AMI;
+- normalized conditional entropy in both directions;
+- the frozen linear 18-feature-to-SSL probe;
+- the frozen nonlinear 18-feature-to-SSL probe.
+
+Nuisance controls are:
+
+- mean-speed eta-squared;
+- frozen speed-only accuracy, balanced accuracy, and macro-F1;
+- fish-well identity NMI, AMI, Cramér's V, entropy, and maximum concentration;
+- the same association metrics for `recording_id`, `family`,
+  `condition_label`, `condition_code`, and `well`.
+
+The frozen kinematic axes are `speed_change_rms`, `speed_change_std`,
+`bout_duration`, `turn_net`, and `turn_total_abs`. For each axis, report TEST
+eta-squared, TRAIN-to-TEST aligned-profile Spearman correlation, and cross-seed
+TEST profile reproducibility.
+
+Every frozen pre-TEST claim assessed by the runner must receive exactly one of:
+
+```text
+SUPPORTED
+WEAKENED
+CONTRADICTED
+NOT_TESTABLE
+```
+
+No claim may be silently omitted or reworded after TEST is opened. Assessment
+rules must be committed in the runner before the freeze commit is recorded.
+The frozen rules cover all fourteen interpretations in the freeze declaration:
+cross-seed structure, speed dependence, speed-only collapse, identity and
+context leakage, baseline/SSL disagreement, linear/nonlinear recoverability,
+the speed-change, duration, signed-turning and turning-magnitude axes, broad
+transfer success, and the direct Long_CS/LLC limitation. Thresholds and
+three-way `SUPPORTED`/`WEAKENED`/`CONTRADICTED` branches are encoded directly
+in `claim_assessment.json` generation; direct Long_CS/LLC label replication is
+frozen as `NOT_TESTABLE` because DS-006 has no corresponding class labels.
+
+## Exact one-time command
+
+After committing and pushing the complete pre-TEST freeze, substitute that
+commit's full SHA and run exactly once from the repository root:
+
+```bash
+PYTHONPATH=. python3 src/evaluation/ds006_final_test.py \
+  --confirm-open-test \
+  --freeze-commit <FULL_40_CHARACTER_FREEZE_COMMIT_SHA>
+```
+
+## Exclusive output location
+
+All TEST-derived outputs go only under:
+
+```text
+data/processed/DS-006/final_test_evaluation/
+```
+
+Required outputs are:
+
+```text
+run_manifest.json
+seed11/test_embeddings.npz
+seed11/test_labels.npy
+seed11/metrics.json
+seed23/test_embeddings.npz
+seed23/test_labels.npy
+seed23/metrics.json
+seed37/test_embeddings.npz
+seed37/test_labels.npy
+seed37/metrics.json
+seed51/test_embeddings.npz
+seed51/test_labels.npy
+seed51/metrics.json
+seed79/test_embeddings.npz
+seed79/test_labels.npy
+seed79/metrics.json
+baseline_test_labels.npy
+baseline_vs_ssl_summary.json
+cross_seed_summary.json
+nuisance_summary.json
+kinematic_axes_summary.json
+claim_assessment.json
+FINAL_TEST_SHA256SUMS
+```
+
+`run_manifest.json` records the freeze commit, exact command, UTC timestamp,
+Python and package versions, verified input hashes, output hashes, and explicit
+assertions that TEST was not used for fitting and no configuration changed.
+
+---
+
+# 25. Frame-Rate Interpretation and Source-Metadata Discrepancy
+
+The analytical interpretation is formally resolved and frozen:
+
+```yaml
+authoritative_frame_rate_hz: 160
+analytical_interpretation_status: RESOLVED_AND_FROZEN
+source_metadata_discrepancy_status: UNRESOLVED_ORIGIN
+```
+
+All DS-006 preprocessing and derived timing quantities use **160 Hz**. This
+decision follows the author analysis notebook, which explicitly sets
+`fps = 160.0` before processing all four recording families and uses that
+value for bout duration, speed, oscillation frequency, angular speed,
+inter-bout interval, and trajectory timing. The decision and supporting
+evidence are frozen in `docs/decision-log.md` (`DEC-018`).
+
+Project records nevertheless retain a source-metadata discrepancy:
 
 - some raw/source metadata report **25 Hz**;
 - other records report **160 Hz**;
-- the frozen DS-006 preprocessing pipeline currently uses **160 Hz**.
+- the reason some source files contain **25 Hz** remains unknown.
 
-This matters because derived quantities such as:
+The embedded 25 Hz values are preserved for provenance but are not treated as
+authoritative timing metadata. Substituting 25 Hz would materially change
+derived quantities such as:
 
 - speed;
 - acceleration / speed change;
 - bout duration;
 - turning rates
 
-may depend on the sampling-rate interpretation.
-
-This discrepancy must remain visible in the provenance record and should be
-resolved or formally explained before final TEST interpretation and publication.
+The unknown origin of the 25 Hz entries does not leave the analysis frame rate
+undecided: **160 Hz is the sole frozen value for replication and final TEST
+evaluation**. The unresolved source-level origin must remain visible in the
+provenance record and be disclosed in publication materials.
 
 ---
 
@@ -821,7 +1048,8 @@ resolved or formally explained before final TEST interpretation and publication.
 [x] Cross-dataset directional comparison produced
 [x] Replication failures explicitly reported
 [x] Pre-TEST replication report updated
-[ ] Frame-rate discrepancy resolved/formally documented
+[x] Frame-rate analytical interpretation resolved and formally documented
+[x] Unknown origin of embedded 25 Hz metadata retained as a provenance limitation
 [ ] DS-006 TEST opened
 [ ] Final TEST confirmation completed
 ```
