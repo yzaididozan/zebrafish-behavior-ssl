@@ -7,7 +7,8 @@ of the frozen DS-005 findings reproduce in DS-006.
 
 It does **not** use individual p-values as the replication criterion.
 
-**DS-006 TEST remains sealed.**
+**Current TEST status:** DS-006 TEST was opened exactly once under the frozen
+procedure and its final evaluation is complete. DS-005 TEST remains unopened.
 
 DS-006 does not provide the same conventional bout-class labels as DS-005
 (`Long_CS`, `LLC`, etc.), so those class-specific comparisons are treated as
@@ -15,7 +16,7 @@ kinematic analogues rather than direct within-class replications.
 
 ---
 
-## Updated Comparison
+## Frozen TRAIN/VALIDATION Comparison
 
 | Claim | DS-005 | DS-006 | Status | Interpretation |
 |---|---|---|---|---|
@@ -179,8 +180,28 @@ The overall outcome is therefore a **mixed but informative replication**.
 ## TEST Status
 
 ```text
-DS-006 TEST partition used: NO
+DS-006 TEST partition: OPENED ONCE / FINAL EVALUATION COMPLETE
+DS-005 TEST partition: UNOPENED / PROTECTED
 ```
 
-All values in this document are derived from TRAIN/VALIDATION analyses frozen
-before TEST access.
+The comparison table above preserves the TRAIN/VALIDATION evidence frozen
+before TEST access. The one-time DS-006 TEST evaluation used freeze commit
+`575ead5403d0b2f721d143366b4d2e0014bd67ee`, performed no fitting or
+configuration changes, and produced the following final claim assessment:
+
+```text
+SUPPORTED       11
+WEAKENED         2
+CONTRADICTED     0
+NOT_TESTABLE     1
+```
+
+The speed-change/acceleration interpretation and weak-duration interpretation
+were **WEAKENED**. All other directly testable frozen interpretations were
+supported, including moderate cross-seed organization, speed dependence without
+mean-speed-only collapse, low identity/context association, baseline-versus-SSL
+disagreement, moderate handcrafted-feature recoverability, weak signed turning,
+and the partial turning-magnitude analogue. Direct Long_CS/LLC label replication
+remains **NOT_TESTABLE**. Full TEST metrics and hashes are recorded in
+`docs/ds-006-replication.md` and
+`data/processed/DS-006/final_test_evaluation/`.

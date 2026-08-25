@@ -131,7 +131,9 @@ docs/ds006-replication-protocol.md
 docs/evaluation-protocol.md
 ```
 
-The DS-006 TEST partition must remain sealed until replication-side TRAIN/VALIDATION procedures are frozen.
+That prerequisite was satisfied at commit `575ead5403d0b2f721d143366b4d2e0014bd67ee`.
+DS-006 TEST was subsequently opened exactly once under the frozen procedure;
+its final evaluation is complete. DS-005 TEST remains unopened.
 
 ---
 
@@ -290,7 +292,9 @@ test_bouts: 26130
 recording_overlap: 0
 ```
 
-The DS-006 TEST partition remains sealed until replication-side TRAIN/VALIDATION analysis is frozen.
+The DS-006 TRAIN/VALIDATION analysis was frozen before TEST access. DS-006 TEST
+has now been opened exactly once and its final evaluation is complete. DS-005
+TEST remains unopened.
 
 DS-006 may not be used to change the primary DS-005 method.
 
@@ -476,7 +480,9 @@ alternate_segmentation: NOT_PRIMARY
 
 The DS-005 TEST partition must not influence feature definition, normalization, SSL design, clustering, nuisance models, evaluation metrics, decision thresholds, or interpretation criteria.
 
-The DS-006 TEST partition is similarly sealed until replication-side procedures are frozen.
+DS-006 followed the same governance: replication-side procedures were frozen
+before its one-time final TEST evaluation. DS-006 TEST evaluation is complete;
+DS-005 TEST remains unopened.
 
 Any accidental TEST inspection capable of influencing methodology must be documented as a deviation.
 
@@ -504,9 +510,9 @@ Input A vs Input B comparison                      ✅ linear + nonlinear probes
 Nuisance and known-class validation                ✅ TRAIN / VALIDATION complete
 Within-class characterization                      ✅ Long_CS primary; LLC secondary
 Validation analysis freeze                        ✅ documented; commit/timestamp pending
-Independent DS-006 replication analysis           🟨 preprocessing complete
+Independent DS-006 replication analysis           ✅ final TEST complete
 Final DS-005 held-out TEST evaluation              🔒 not yet opened
-Final DS-006 held-out TEST evaluation              🔒 sealed
+Final DS-006 held-out TEST evaluation              ✅ opened once; complete
 ```
 
 ## Current TRAIN / VALIDATION Findings

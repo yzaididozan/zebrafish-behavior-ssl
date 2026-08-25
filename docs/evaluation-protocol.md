@@ -40,7 +40,11 @@ The DS-005 TEST partition remains protected until:
 - all sensitivity analyses are categorized;
 - and any remaining methodological ambiguity is resolved.
 
-The DS-006 TEST partition remains sealed until the replication-side TRAIN / VALIDATION procedure is frozen.
+The DS-006 TEST partition was required to remain sealed until the
+replication-side TRAIN/VALIDATION procedure was frozen. That condition was met
+at commit `575ead5403d0b2f721d143366b4d2e0014bd67ee`; DS-006 TEST was then opened
+exactly once and its final evaluation is complete. DS-005 TEST remains
+protected and unopened.
 
 The prerequisite DS-005 multi-seed TRAIN / VALIDATION analyses are complete.
 Their evidence-driven interpretation, selected within-class case studies, and
@@ -893,7 +897,9 @@ Not allowed:
 
 ## Replication TEST
 
-The DS-006 TEST partition is opened only after the replication-side procedure is frozen.
+The DS-006 TEST partition was opened exactly once after the replication-side
+procedure was frozen. Its final evaluation is complete; this historical rule
+remains the governing justification for that access.
 
 Primary replication emphasis:
 
@@ -1003,8 +1009,8 @@ sensitivity_analyses:
   alternate_segmentation: NOT_PRIMARY
 
 test_partitions:
-  DS005: PROTECTED
-  DS006: SEALED
+  DS005: PROTECTED_UNOPENED
+  DS006: OPENED_ONCE_FINAL_EVALUATION_COMPLETE
 ```
 
 ---

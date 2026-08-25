@@ -766,7 +766,10 @@ test_bouts: 26130
 recording_overlap: 0
 ```
 
-The DS-006 TEST partition remains sealed.
+Historical pre-TEST state: the DS-006 TEST partition remained sealed through
+the replication freeze. It was subsequently opened exactly once under the
+committed procedure and its final evaluation is complete. DS-005 TEST remains
+unopened.
 
 ---
 
@@ -914,7 +917,7 @@ ssl_train_validation_analysis: COMPLETE
 validation_interpretation_freeze: PREPARED_PENDING_COMMIT
 
 ds005_test_partition: PROTECTED
-ds006_test_partition: SEALED
+ds006_test_partition: OPENED_ONCE_FINAL_EVALUATION_COMPLETE
 ```
 
 ---

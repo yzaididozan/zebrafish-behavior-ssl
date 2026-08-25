@@ -461,7 +461,7 @@ ssl_train_validation_analysis: COMPLETE
 validation_interpretation_freeze: PREPARED_PENDING_COMMIT
 
 ds005_test_partition: PROTECTED
-ds006_test_partition: SEALED
+ds006_test_partition: OPENED_ONCE_FINAL_EVALUATION_COMPLETE
 
 charter_status: STABLE
 ```

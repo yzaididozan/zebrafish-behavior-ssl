@@ -838,9 +838,9 @@ DS-006 extraction/inventory recorded           ✅ 64 scientific files
 DS-006 recording/fish-well IDs frozen          ✅
 DS-006 well-level QC frozen                    ✅ 374 usable units
 DS-006 preprocessing and split                 ✅
-Independent DS-006 replication analysis        ⬜ not yet run
+Independent DS-006 replication analysis        ✅ final TEST complete
 Final DS-005 held-out test evaluation          🔒 not opened
-Final DS-006 held-out test evaluation          🔒 sealed
+Final DS-006 held-out test evaluation          ✅ opened once; complete
 ```
 
 ---
@@ -920,10 +920,14 @@ The canonical fish-well identifier guarantees computational uniqueness within
 DS-006. It does not establish whether a biological animal was reused across
 recordings. Replication grouping and interpretation must retain this limitation.
 
-The processed DS-006 TRAIN, VALIDATION, and sealed TEST artifacts are recorded
-in `docs/ds006-replication-protocol.md` and their frozen SHA-256 values in
-`docs/decision-log.md` (`DEC-023`). Creating and checksum-verifying the sealed
-TEST arrays did not constitute scientific TEST inspection.
+The processed DS-006 TRAIN, VALIDATION, and originally sealed TEST artifacts
+are recorded in `docs/ds006-replication-protocol.md`, with frozen source hashes
+in `docs/decision-log.md` (`DEC-023`). Creating and checksum-verifying those
+arrays did not constitute scientific inspection. DS-006 TEST was later opened
+exactly once from freeze commit
+`575ead5403d0b2f721d143366b4d2e0014bd67ee`; the final results and output hashes
+are recorded in `docs/ds-006-replication.md` and
+`data/processed/DS-006/final_test_evaluation/`. DS-005 TEST remains unopened.
 
 DS-006 is an independently acquired Reddy et al. (2022) dataset, distinct from
 the Marques et al. recordings underlying DS-005. Differences in assay design,

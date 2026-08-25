@@ -1561,7 +1561,9 @@ ds006:
   preprocessing: COMPLETE
   deterministic_qc: FROZEN
   processed_artifacts_hashed: true
-  test_partition: SEALED
+  test_partition: OPENED_ONCE_FINAL_EVALUATION_COMPLETE
+  final_test_freeze_commit: 575ead5403d0b2f721d143366b4d2e0014bd67ee
+  final_test_result_commit: 2e59bf0db0bd00230a5349cbf344c290da396f60
 
 reference_governance:
   DS002_license: VERIFIED_CC_BY_4_0
@@ -1585,9 +1587,12 @@ Before formal preregistration is declared complete:
 3. preserve the completed five-seed TRAIN / VALIDATION artifacts and hashes;
 4. commit or otherwise immutably timestamp `docs/validation-freeze.md` before opening DS-005 TEST;
 5. keep the DS-005 TEST partition protected until that freeze is recorded;
-6. keep the DS-006 TEST partition sealed until replication-side TRAIN / VALIDATION analysis is frozen.
+6. preserve the completed one-time DS-006 TEST result without rerunning or
+   selecting new configurations from it.
 
-No final TEST evaluation should occur before those checks are complete.
+DS-006 satisfied its replication-side freeze condition before its one-time
+final evaluation. No DS-005 final TEST evaluation should occur before the
+remaining DS-005 checks are complete.
 
 ---
 
@@ -1622,3 +1627,62 @@ DS-005 TEST remains unopened. This decision becomes the operative pre-TEST
 freeze only when committed or otherwise immutably timestamped with its source
 TRAIN / VALIDATION artifacts. Any later departure must be recorded as a protocol
 deviation.
+
+---
+
+# DEC-029 — One-Time DS-006 Final TEST Evaluation
+
+**Date:** 2026-08-25
+**Status:** COMPLETE / FROZEN RESULT
+
+## Decision and execution
+
+Open DS-006 TEST exactly once using the inference-only procedure committed at:
+
+```text
+575ead5403d0b2f721d143366b4d2e0014bd67ee
+```
+
+The runner verified frozen source, checkpoint, clustering-object, probe, label
+mapping, and TEST-array hashes before loading TEST. It recorded:
+
+```yaml
+test_bouts: 26130
+test_recordings: 5
+ssl_seeds: [11, 23, 37, 51, 79]
+test_used_for_fitting: false
+no_configuration_changed: true
+prohibited_operations_performed: []
+```
+
+## Result
+
+```text
+SUPPORTED       11
+WEAKENED         2
+CONTRADICTED     0
+NOT_TESTABLE     1
+```
+
+The acceleration/speed-change and weak-duration interpretations were weakened.
+No frozen claim was contradicted. Direct Long_CS/LLC replication remains not
+testable because DS-006 lacks equivalent labels.
+
+Final artifacts:
+
+```text
+data/processed/DS-006/final_test_evaluation/
+```
+
+Final checksum-manifest SHA-256:
+
+```text
+e80acf4a774650b71776ed24368b20e82a60aad7793560773ec917541859d189
+```
+
+## Consequence
+
+DS-006 TEST is no longer sealed: it was opened once and final evaluation is
+complete. It must not be rerun or used for further model, threshold, feature,
+cluster, or interpretation selection. DS-005 TEST remains unopened and
+protected under `DEC-028`.
