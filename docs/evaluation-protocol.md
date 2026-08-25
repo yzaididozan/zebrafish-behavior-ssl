@@ -6,8 +6,8 @@
 
 **Primary dataset:** `DS-005`  
 **External replication dataset:** `DS-006`  
-**Protocol status:** `FROZEN CANDIDATE — READY FOR RECORDING IN DECISION LOG`  
-**Last updated:** `2026-08-23`
+**Protocol status:** `FROZEN — RECORDED IN DEC-025; VALIDATION INTERPRETATION FROZEN SEPARATELY`
+**Last updated:** `2026-08-24`
 
 ---
 
@@ -41,6 +41,12 @@ The DS-005 TEST partition remains protected until:
 - and any remaining methodological ambiguity is resolved.
 
 The DS-006 TEST partition remains sealed until the replication-side TRAIN / VALIDATION procedure is frozen.
+
+The prerequisite DS-005 multi-seed TRAIN / VALIDATION analyses are complete.
+Their evidence-driven interpretation, selected within-class case studies, and
+exact one-time TEST analysis are frozen in `docs/validation-freeze.md`. That
+document narrows the permitted claim in response to validation evidence without
+changing the protected-TEST rules in this protocol.
 
 ---
 
@@ -657,6 +663,13 @@ nuisance-control consistency
 
 Exact cross-dataset cluster-label equality is not required because DS-006 is independently acquired and uses mapped rather than numerically identical source variables.
 
+DS-006 independence from DS-005 is confirmed at the dataset and acquisition
+levels: it has a separate source, DOI, publication, recordings, assay protocol,
+frame rate, recording duration, and tracking pipeline. Some investigators
+overlap and both datasets were later analyzed together, but no evidence of
+direct fish or recording overlap was found. This does not remove the separate
+within-DS-006 uncertainty about biological reuse across DS-006 recordings.
+
 ---
 
 # 13. Multiple Comparisons and Statistical Emphasis
@@ -1013,7 +1026,7 @@ The remaining preregistration readiness checks should focus on:
 
 ```text
 1. confirming docs/charter.md is stable;
-2. ensuring the decision log records this evaluation freeze;
-3. completing the already-running SSL runs without methodological changes;
-4. keeping DS-005 TEST protected.
+2. preserving the completed five-seed TRAIN / VALIDATION artifacts;
+3. committing or otherwise immutably timestamping docs/validation-freeze.md;
+4. keeping DS-005 TEST protected until that record is fixed.
 ```

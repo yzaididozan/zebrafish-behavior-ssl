@@ -8,7 +8,7 @@
 **Primary dataset:** `DS-005`  
 **External replication dataset:** `DS-006`  
 **Charter status:** `STABLE / FROZEN FOR PREREGISTRATION`  
-**Last updated:** `2026-08-23`
+**Last updated:** `2026-08-24`
 
 ---
 
@@ -96,9 +96,15 @@ fish_well_slots: 384
 usable_fish_well_units: 374
 accepted_bouts: 163065
 authoritative_frame_rate_hz: 160
+independence_from_ds005: CONFIRMED
+direct_fish_or_recording_overlap: "no evidence found"
 ```
 
 DS-006 cannot be used to alter the frozen primary DS-005 method.
+Its independence is based on its separate source, DOI, publication, acquisition,
+assay protocol, frame rate, recording duration, and tracking pipeline. Some
+investigators overlap and the datasets were later analyzed together, but DS-006
+is not a resplit or known reuse of DS-005 fish or recordings.
 
 ---
 
@@ -450,7 +456,9 @@ evaluation_protocol: FROZEN
 sensitivity_plan: FROZEN
 claim_level: FROZEN
 
-ssl_full_training: IN_PROGRESS
+ssl_full_training: COMPLETE
+ssl_train_validation_analysis: COMPLETE
+validation_interpretation_freeze: PREPARED_PENDING_COMMIT
 
 ds005_test_partition: PROTECTED
 ds006_test_partition: SEALED

@@ -1,0 +1,77 @@
+{
+  "analysis": "baseline_vs_transfer_ssl",
+  "baseline_cluster_k": 2,
+  "baseline_train_labels_source": "data/processed/DS-006/baseline_clustering/train_labels.npy",
+  "baseline_validation_labels_source": "data/processed/DS-006/baseline_clustering/validation_labels.npy",
+  "bout_id_alignment_verified": true,
+  "cluster_refitting_performed": false,
+  "dataset_id": "DS-006",
+  "feature_count": 18,
+  "feature_manifest": "data/processed/DS-006/baseline/feature_manifest.json",
+  "feature_manifest_sha256": "5dcaf8447e969114cb7f1fa40ae24ed66194ec388fb02802583e2b716b14f315",
+  "linear_18_feature_probe": {
+    "chance_balanced_accuracy": 0.125,
+    "feature_count": 18,
+    "fit_partition": "train",
+    "model": "median_imputer + StandardScaler + multinomial_logistic_regression",
+    "train": {
+      "accuracy": 0.3986282811176969,
+      "balanced_accuracy": 0.42072282944970324,
+      "macro_f1": 0.38487645194836373
+    },
+    "validation": {
+      "accuracy": 0.4023360764534112,
+      "balanced_accuracy": 0.4142175811147111,
+      "macro_f1": 0.3741096987562994
+    }
+  },
+  "nonlinear_18_feature_probe": {
+    "chance_balanced_accuracy": 0.125,
+    "feature_count": 18,
+    "fit_partition": "train",
+    "model": "median_imputer + HistGradientBoostingClassifier",
+    "parameters": {
+      "l2_regularization": 0.0,
+      "learning_rate": 0.1,
+      "max_iter": 200,
+      "max_leaf_nodes": 31,
+      "random_state": 20260822
+    },
+    "train": {
+      "accuracy": 0.47975444538526674,
+      "balanced_accuracy": 0.5109358215060527,
+      "macro_f1": 0.48566740066165853
+    },
+    "validation": {
+      "accuracy": 0.4319617732943987,
+      "balanced_accuracy": 0.4469305897718705,
+      "macro_f1": 0.4165288625157979
+    }
+  },
+  "probe_hyperparameter_selection_performed": false,
+  "ssl_cluster_k": 8,
+  "ssl_encoder_seed": 11,
+  "test_partition_used": false,
+  "train_cluster_comparison": {
+    "adjusted_mutual_information": 0.09431426181647318,
+    "adjusted_rand_index": 0.03409682088468724,
+    "conditional_entropy_baseline_given_ssl": 0.3297516544019528,
+    "conditional_entropy_ssl_given_baseline": 1.8763564169450861,
+    "entropy_baseline": 0.4446486512258364,
+    "entropy_ssl": 1.9912534137689697,
+    "normalized_conditional_entropy_baseline_given_ssl": 0.7416004827471576,
+    "normalized_conditional_entropy_ssl_given_baseline": 0.9422991588969026,
+    "normalized_mutual_information": 0.09433630232923865
+  },
+  "validation_cluster_comparison": {
+    "adjusted_mutual_information": 0.12256759004384335,
+    "adjusted_rand_index": 0.05541306095314965,
+    "conditional_entropy_baseline_given_ssl": 0.39559075056724907,
+    "conditional_entropy_ssl_given_baseline": 1.8849734489616379,
+    "entropy_baseline": 0.5550614266131892,
+    "entropy_ssl": 2.044444125007578,
+    "normalized_conditional_entropy_baseline_given_ssl": 0.7126972468272922,
+    "normalized_conditional_entropy_ssl_given_baseline": 0.9219980267030535,
+    "normalized_mutual_information": 0.12269308364932112
+  }
+}

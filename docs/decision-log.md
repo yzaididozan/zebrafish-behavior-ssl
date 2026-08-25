@@ -568,7 +568,26 @@ allowed_to_change_primary_method: false
 allowed_for_primary_hyperparameter_selection: false
 allowed_for_ssl_architecture_selection: false
 allowed_for_cluster_k_selection: false
+independence_from_ds005:
+  separate_source_dataset: true
+  separate_dataset_doi: true
+  separate_publication: true
+  separately_acquired_recordings: true
+  different_recording_protocol: true
+  different_frame_rate: true
+  different_recording_duration: true
+  different_tracking_pipeline: true
+  overlapping_authors: true
+  direct_fish_or_recording_overlap: "no evidence found"
+  independence_status: "CONFIRMED"
 ```
+
+DS-006 is an independently acquired Reddy et al. (2022) dataset and is not a
+resplit or known reuse of the Marques et al. fish or recordings underlying
+DS-005. It differs in assay, acquisition rate, recording duration, stimulus
+conditions, and tracking pipeline. Some investigators overlap, and the datasets
+were later analyzed together in Sridhar et al. (2024); neither fact creates
+direct fish- or recording-level overlap.
 
 ## Dataset provenance
 
@@ -1519,7 +1538,9 @@ primary_ssl_encoder: FROZEN
 ssl_embedding_dimension: 64
 ssl_seed_set: [11, 23, 37, 51, 79]
 ssl_training_configuration: FROZEN
-ssl_full_training: IN_PROGRESS
+ssl_full_training: COMPLETE
+ssl_train_validation_analysis: COMPLETE
+validation_interpretation_freeze: PREPARED_PENDING_COMMIT
 
 primary_discovery_method: FROZEN
 primary_baseline_clustering: "PCA(6) -> GMM(k=2, seed=20260822)"
@@ -1548,7 +1569,7 @@ reference_governance:
   DS004: TRACKING_CONVENTIONAL_ANALYSIS_REFERENCE
   DS001: QC_AS_NEEDED
 
-formal_preregistration: NEAR_READY
+formal_preregistration: INTERNALLY_READY_PENDING_IMMUTABLE_TIMESTAMP
 ```
 
 ---
@@ -1561,8 +1582,43 @@ Before formal preregistration is declared complete:
 
 1. confirm `docs/charter.md` is stable;
 2. ensure `docs/preregistration-draft.md` reflects `DEC-024` through `DEC-027`;
-3. allow the already-running SSL multi-seed training to finish without methodological changes;
-4. keep the DS-005 TEST partition protected;
-5. keep the DS-006 TEST partition sealed until replication-side TRAIN / VALIDATION analysis is frozen.
+3. preserve the completed five-seed TRAIN / VALIDATION artifacts and hashes;
+4. commit or otherwise immutably timestamp `docs/validation-freeze.md` before opening DS-005 TEST;
+5. keep the DS-005 TEST partition protected until that freeze is recorded;
+6. keep the DS-006 TEST partition sealed until replication-side TRAIN / VALIDATION analysis is frozen.
 
 No final TEST evaluation should occur before those checks are complete.
+
+---
+
+# DEC-028 — DS-005 Validation Interpretation and Final TEST Analysis Freeze
+
+**Date:** 2026-08-24
+**Status:** FROZEN PENDING COMMIT / IMMUTABLE TIMESTAMP
+
+## Decision
+
+Adopt `docs/validation-freeze.md` as the controlling record for interpretation
+of completed DS-005 TRAIN / VALIDATION findings and for the one-time final TEST
+analysis.
+
+The validation evidence requires the following claim restriction:
+
+> SSL produces a richer organization than the frozen two-state handcrafted
+> clustering, but much of the SSL cluster organization is recoverable from the
+> 18 handcrafted variables by a nonlinear mapping.
+
+The study therefore must not claim that the SSL representation contains
+information fundamentally absent from Input A. Mean VALIDATION balanced
+accuracy of the frozen nonlinear Input-A-to-SSL probe was `0.901642`.
+
+`Long_CS` is frozen as the primary within-class TEST case study using
+`bout_duration_s`, `accel_rms`, and `accel_abs_std`. `LLC` is frozen as the
+secondary case study using `turn_net_rad`; `BS` remains supporting evidence.
+
+## Governance
+
+DS-005 TEST remains unopened. This decision becomes the operative pre-TEST
+freeze only when committed or otherwise immutably timestamped with its source
+TRAIN / VALIDATION artifacts. Any later departure must be recorded as a protocol
+deviation.

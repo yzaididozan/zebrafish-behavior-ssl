@@ -12,6 +12,15 @@
 
 This is the primary question the project is designed to answer.
 
+Current TRAIN / VALIDATION evidence narrows how this question may ultimately be
+answered. A nonlinear probe reconstructs the SSL cluster labels from the frozen
+handcrafted variables with high accuracy. Accordingly, a difference between the
+two clusterings cannot be interpreted as proof that SSL contains information
+fundamentally absent from the handcrafted representation. The final evaluation
+instead tests whether SSL provides a reproducible, finer organization of those
+behavioral measurements, with the exact pre-TEST interpretation recorded in
+`docs/validation-freeze.md`.
+
 The study will compare two representations of the **same valid zebrafish movement bouts** from the frozen primary dataset:
 
 ```text

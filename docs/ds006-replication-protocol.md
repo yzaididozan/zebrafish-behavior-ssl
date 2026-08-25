@@ -20,6 +20,30 @@ The external replication is intended to answer:
 
 > Does the behavioral structure identified by the frozen primary analysis remain reproducible when the same comparison framework is transferred to an independent zebrafish dataset?
 
+### Independence from DS-005
+
+```yaml
+independence_from_ds005:
+  separate_source_dataset: true
+  separate_dataset_doi: true
+  separate_publication: true
+  separately_acquired_recordings: true
+  different_recording_protocol: true
+  different_frame_rate: true
+  different_recording_duration: true
+  different_tracking_pipeline: true
+  overlapping_authors: true
+  direct_fish_or_recording_overlap: "no evidence found"
+  independence_status: "CONFIRMED"
+```
+
+DS-006 is an independently acquired experimental dataset from Reddy et al.
+(2022), distinct from the Marques et al. recordings underlying DS-005. The two
+datasets differ in assay design, acquisition rate, recording duration, stimulus
+conditions, and tracking pipeline. They share some investigators and were later
+analyzed together in Sridhar et al. (2024), but there is no indication that
+DS-006 is a resplit or reuse of the DS-005 fish or recordings.
+
 ---
 
 ## 2. Dataset Identification

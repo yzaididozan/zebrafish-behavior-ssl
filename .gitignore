@@ -3,6 +3,13 @@ data/raw/
 .DS_Store
 data/processed/**/*.npz
 data/processed/**/ssl_embeddings/
+# Large generated row metadata and identifiers remain local; their hashes are
+# retained in the committed reproducibility manifests.
+data/processed/DS-005/ssl/seed*/train_metadata.csv
+data/processed/DS-005/ssl/seed*/validation_metadata.csv
+data/processed/DS-006/transfer_embeddings/seed*/train_metadata.csv
+data/processed/DS-006/transfer_embeddings/seed*/validation_metadata.csv
+data/processed/DS-006/baseline_clustering/*_bout_id.npy
 results/ssl/checkpoints/
 results/ssl/logs/
 *.pt

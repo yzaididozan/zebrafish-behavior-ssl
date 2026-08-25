@@ -1,0 +1,88 @@
+{
+  "clustering_seed": 20260822,
+  "dataset_id": "DS-006",
+  "k": 8,
+  "k_selection_performed": false,
+  "kmeans_fit_on_train_only": true,
+  "kmeans_n_init": 10,
+  "method": "kmeans",
+  "method_selection_performed": false,
+  "pca_components": 14,
+  "pca_fit_on_train_only": true,
+  "pca_variance_retained": 0.9516443610191345,
+  "pca_variance_target": 0.95,
+  "scaler_fit_on_train_only": true,
+  "source_encoder_dataset": "DS-005",
+  "ssl_encoder_seed": 79,
+  "test_partition_used": false,
+  "train_occupancy": {
+    "counts": [
+      12505,
+      4015,
+      9225,
+      14983,
+      27347,
+      17768,
+      13947,
+      18310
+    ],
+    "empty_clusters": 0,
+    "fractions": [
+      0.1058848433530906,
+      0.033996613039796786,
+      0.07811176968670618,
+      0.1268670618120237,
+      0.2315580016934801,
+      0.15044877222692635,
+      0.11809483488569009,
+      0.1550381033022862
+    ],
+    "max_fraction": 0.2315580016934801,
+    "min_fraction": 0.033996613039796786
+  },
+  "train_repeated_fit_stability": {
+    "max_pairwise_ari": 0.9964668163517424,
+    "mean_pairwise_ari": 0.9921254330662039,
+    "min_pairwise_ari": 0.984893578155369,
+    "repeat_seeds": [
+      20260822,
+      20261831,
+      20262840,
+      20263849,
+      20264858
+    ],
+    "repeats": 5,
+    "sample_rows": 50000,
+    "std_pairwise_ari": 0.003628903668329259
+  },
+  "train_rows": 118100,
+  "train_silhouette": 0.18603605031967163,
+  "validation_confidence": 0.2834128439426422,
+  "validation_occupancy": {
+    "counts": [
+      1966,
+      1535,
+      1502,
+      2385,
+      4045,
+      2565,
+      2169,
+      2668
+    ],
+    "empty_clusters": 0,
+    "fractions": [
+      0.104380143350146,
+      0.0814972126360499,
+      0.07974515529599151,
+      0.12662596230422088,
+      0.21475975577382533,
+      0.13618263870453942,
+      0.1151579506238386,
+      0.14165118131138837
+    ],
+    "max_fraction": 0.21475975577382533,
+    "min_fraction": 0.07974515529599151
+  },
+  "validation_rows": 18835,
+  "validation_silhouette": 0.1636067032814026
+}

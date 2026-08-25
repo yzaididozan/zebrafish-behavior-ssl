@@ -1,0 +1,2842 @@
+{
+  "context_id": {
+    "association": {
+      "adjusted_mutual_information": 0.03175317611072761,
+      "cramers_v": 0.15374310574564914,
+      "normalized_mutual_information": 0.03187343273447863
+    },
+    "category_count": 14,
+    "category_distribution": {
+      "per_category": {
+        "CTX-01": {
+          "bout_count": 3429,
+          "cluster_counts": [
+            796,
+            49,
+            624,
+            60,
+            806,
+            294,
+            385,
+            415
+          ],
+          "cluster_fractions": [
+            0.2321376494604841,
+            0.014289880431612716,
+            0.18197725284339458,
+            0.017497812773403325,
+            0.23505395158938466,
+            0.0857392825896763,
+            0.11227763196267133,
+            0.12102653834937299
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.23505395158938466,
+          "normalized_entropy": 0.8813156089022566
+        },
+        "CTX-02": {
+          "bout_count": 7611,
+          "cluster_counts": [
+            1022,
+            281,
+            359,
+            232,
+            1478,
+            313,
+            3530,
+            396
+          ],
+          "cluster_fractions": [
+            0.13427933254500066,
+            0.036920247010905266,
+            0.04716857180396794,
+            0.03048219682039154,
+            0.1941926159505978,
+            0.041124687951648926,
+            0.46380239127578504,
+            0.0520299566417028
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.46380239127578504,
+          "normalized_entropy": 0.7701582275188482
+        },
+        "CTX-03": {
+          "bout_count": 30052,
+          "cluster_counts": [
+            7059,
+            621,
+            5631,
+            496,
+            6739,
+            3246,
+            3222,
+            3038
+          ],
+          "cluster_fractions": [
+            0.23489285238919208,
+            0.020664182084387063,
+            0.18737521629176096,
+            0.01650472514308532,
+            0.22424464261945962,
+            0.10801277785172368,
+            0.10721416211899375,
+            0.10109144150139758
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.23489285238919208,
+          "normalized_entropy": 0.8890211727133
+        },
+        "CTX-04": {
+          "bout_count": 20106,
+          "cluster_counts": [
+            4435,
+            510,
+            3517,
+            990,
+            4029,
+            1848,
+            2958,
+            1819
+          ],
+          "cluster_fractions": [
+            0.2205809211180742,
+            0.025365562518651148,
+            0.17492290858450213,
+            0.049239033124440466,
+            0.20038794389734407,
+            0.09191286183228888,
+            0.14712026260817668,
+            0.09047050631652243
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.2205809211180742,
+          "normalized_entropy": 0.9236506416039291
+        },
+        "CTX-05": {
+          "bout_count": 8892,
+          "cluster_counts": [
+            1944,
+            295,
+            1378,
+            203,
+            1905,
+            835,
+            1498,
+            834
+          ],
+          "cluster_fractions": [
+            0.21862348178137653,
+            0.033175888439046335,
+            0.15497076023391812,
+            0.022829509671614935,
+            0.2142375168690958,
+            0.09390463337831759,
+            0.16846603688708953,
+            0.09379217273954116
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.21862348178137653,
+          "normalized_entropy": 0.9112259063139788
+        },
+        "CTX-06": {
+          "bout_count": 4787,
+          "cluster_counts": [
+            606,
+            122,
+            287,
+            492,
+            825,
+            217,
+            1906,
+            332
+          ],
+          "cluster_fractions": [
+            0.1265928556507207,
+            0.02548569041153123,
+            0.05995404219761855,
+            0.10277835805306038,
+            0.1723417589304366,
+            0.04533110507624817,
+            0.398161687904742,
+            0.06935450177564237
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.398161687904742,
+          "normalized_entropy": 0.842885653296467
+        },
+        "CTX-07": {
+          "bout_count": 6438,
+          "cluster_counts": [
+            1292,
+            64,
+            1037,
+            154,
+            1353,
+            714,
+            1284,
+            540
+          ],
+          "cluster_fractions": [
+            0.2006834420627524,
+            0.009940975458216837,
+            0.1610748679714197,
+            0.023920472196334266,
+            0.21015843429636533,
+            0.11090400745573159,
+            0.19944082013047532,
+            0.08387698042870456
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.21015843429636533,
+          "normalized_entropy": 0.8909514261728744
+        },
+        "CTX-08": {
+          "bout_count": 1282,
+          "cluster_counts": [
+            206,
+            145,
+            255,
+            60,
+            222,
+            120,
+            142,
+            132
+          ],
+          "cluster_fractions": [
+            0.1606864274570983,
+            0.11310452418096724,
+            0.19890795631825273,
+            0.046801872074883,
+            0.1731669266770671,
+            0.093603744149766,
+            0.11076443057722309,
+            0.1029641185647426
+          ],
+          "dominant_cluster": 2,
+          "dominant_cluster_fraction": 0.19890795631825273,
+          "normalized_entropy": 0.9656288776521248
+        },
+        "CTX-09": {
+          "bout_count": 4842,
+          "cluster_counts": [
+            1078,
+            126,
+            902,
+            319,
+            994,
+            539,
+            501,
+            383
+          ],
+          "cluster_fractions": [
+            0.22263527467988434,
+            0.026022304832713755,
+            0.1862866584056175,
+            0.06588186699710863,
+            0.20528707145807518,
+            0.11131763733994217,
+            0.10346964064436183,
+            0.07909954564229657
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.22263527467988434,
+          "normalized_entropy": 0.9264311189111072
+        },
+        "CTX-10": {
+          "bout_count": 16789,
+          "cluster_counts": [
+            2756,
+            1104,
+            2423,
+            1018,
+            2790,
+            1387,
+            4299,
+            1012
+          ],
+          "cluster_fractions": [
+            0.16415510155458932,
+            0.06575734111620704,
+            0.14432068616355948,
+            0.060634939543748885,
+            0.16618023705997975,
+            0.0826136160581333,
+            0.2560605158139258,
+            0.060277562689856456
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.2560605158139258,
+          "normalized_entropy": 0.9364565769747445
+        },
+        "CTX-11": {
+          "bout_count": 25385,
+          "cluster_counts": [
+            3829,
+            3857,
+            4081,
+            1050,
+            3917,
+            2403,
+            4823,
+            1425
+          ],
+          "cluster_fractions": [
+            0.15083710852865867,
+            0.15194012211936184,
+            0.1607642308449872,
+            0.041363009651368916,
+            0.15430372267086861,
+            0.09466220208784715,
+            0.18999409099862125,
+            0.05613551309828639
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.18999409099862125,
+          "normalized_entropy": 0.9550398083328973
+        },
+        "CTX-12": {
+          "bout_count": 7034,
+          "cluster_counts": [
+            872,
+            1417,
+            635,
+            425,
+            1192,
+            785,
+            1170,
+            538
+          ],
+          "cluster_fractions": [
+            0.123969292010236,
+            0.2014500995166335,
+            0.09027580324139892,
+            0.06042081319306227,
+            0.16946261017912995,
+            0.11160079613306796,
+            0.1663349445550185,
+            0.07648564117145294
+          ],
+          "dominant_cluster": 1,
+          "dominant_cluster_fraction": 0.2014500995166335,
+          "normalized_entropy": 0.9660134573566952
+        },
+        "CTX-13": {
+          "bout_count": 23498,
+          "cluster_counts": [
+            3709,
+            2437,
+            3216,
+            947,
+            4779,
+            2120,
+            4217,
+            2073
+          ],
+          "cluster_fractions": [
+            0.15784322069963402,
+            0.10371095412375521,
+            0.13686271172014638,
+            0.04030130223848838,
+            0.20337901097965785,
+            0.09022044429313134,
+            0.17946208187930887,
+            0.08822027406587794
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.20337901097965785,
+          "normalized_entropy": 0.9576862962002964
+        },
+        "CTX-14": {
+          "bout_count": 8319,
+          "cluster_counts": [
+            1497,
+            356,
+            1105,
+            2191,
+            1397,
+            428,
+            767,
+            578
+          ],
+          "cluster_fractions": [
+            0.17994951316263974,
+            0.04279360500060103,
+            0.13282846495973075,
+            0.26337300156268784,
+            0.16792883760067315,
+            0.05144849140521697,
+            0.09219858156028368,
+            0.06947950474816685
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.26337300156268784,
+          "normalized_entropy": 0.9234973460921079
+        }
+      },
+      "summary": {
+        "category_count": 14,
+        "max_dominant_cluster_fraction": 0.46380239127578504,
+        "max_normalized_entropy": 0.9660134573566952,
+        "mean_dominant_cluster_fraction": 0.25121954787318457,
+        "mean_normalized_entropy": 0.9099972941458304,
+        "median_bouts_per_category": 7965.0,
+        "min_normalized_entropy": 0.7701582275188482,
+        "std_normalized_entropy": 0.05179658729463698
+      }
+    },
+    "cluster_concentration": {
+      "0": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "CTX-03",
+        "effective_number_of_categories": 8.252343993689442,
+        "max_single_category_fraction": 0.226970193884441,
+        "top3_category_fraction": 0.4926851226648661,
+        "total_bouts": 31101
+      },
+      "1": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "CTX-11",
+        "effective_number_of_categories": 5.175771364743806,
+        "max_single_category_fraction": 0.33880885453267745,
+        "top3_category_fraction": 0.6773541813070977,
+        "total_bouts": 11384
+      },
+      "2": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "CTX-03",
+        "effective_number_of_categories": 7.801449457221398,
+        "max_single_category_fraction": 0.2212573673870334,
+        "top3_category_fraction": 0.519803536345776,
+        "total_bouts": 25450
+      },
+      "3": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "CTX-14",
+        "effective_number_of_categories": 7.6804919656665565,
+        "max_single_category_fraction": 0.25367604492300566,
+        "top3_category_fraction": 0.4931110339238161,
+        "total_bouts": 8637
+      },
+      "4": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "CTX-03",
+        "effective_number_of_categories": 8.689850069295954,
+        "max_single_category_fraction": 0.2078270523653858,
+        "top3_category_fraction": 0.4794609264170727,
+        "total_bouts": 32426
+      },
+      "5": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "CTX-03",
+        "effective_number_of_categories": 8.105819794671762,
+        "max_single_category_fraction": 0.21286641746999804,
+        "top3_category_fraction": 0.5094760312151616,
+        "total_bouts": 15249
+      },
+      "6": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "CTX-11",
+        "effective_number_of_categories": 9.330966920340263,
+        "max_single_category_fraction": 0.1570907432740538,
+        "top3_category_fraction": 0.4344668099798059,
+        "total_bouts": 30702
+      },
+      "7": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "CTX-03",
+        "effective_number_of_categories": 8.263310210449383,
+        "max_single_category_fraction": 0.22478727339992602,
+        "top3_category_fraction": 0.5127635960044395,
+        "total_bouts": 13515
+      }
+    },
+    "cluster_concentration_summary": {
+      "max_max_single_category_fraction": 0.33880885453267745,
+      "max_top3_category_fraction": 0.6773541813070977,
+      "mean_effective_number_of_categories": 7.912500472009821,
+      "mean_max_single_category_fraction": 0.23041049340456513,
+      "mean_top3_category_fraction": 0.5148901547322544,
+      "min_effective_number_of_categories": 5.175771364743806
+    }
+  },
+  "context_name": {
+    "association": {
+      "adjusted_mutual_information": 0.03175317611072761,
+      "cramers_v": 0.15374310574564914,
+      "normalized_mutual_information": 0.03187343273447863
+    },
+    "category_count": 14,
+    "category_distribution": {
+      "per_category": {
+        "3 min Light<->Dark(5x5cm)": {
+          "bout_count": 4842,
+          "cluster_counts": [
+            1078,
+            126,
+            902,
+            319,
+            994,
+            539,
+            501,
+            383
+          ],
+          "cluster_fractions": [
+            0.22263527467988434,
+            0.026022304832713755,
+            0.1862866584056175,
+            0.06588186699710863,
+            0.20528707145807518,
+            0.11131763733994217,
+            0.10346964064436183,
+            0.07909954564229657
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.22263527467988434,
+          "normalized_entropy": 0.9264311189111072
+        },
+        "Dark (5x5cm)": {
+          "bout_count": 1282,
+          "cluster_counts": [
+            206,
+            145,
+            255,
+            60,
+            222,
+            120,
+            142,
+            132
+          ],
+          "cluster_fractions": [
+            0.1606864274570983,
+            0.11310452418096724,
+            0.19890795631825273,
+            0.046801872074883,
+            0.1731669266770671,
+            0.093603744149766,
+            0.11076443057722309,
+            0.1029641185647426
+          ],
+          "dominant_cluster": 2,
+          "dominant_cluster_fraction": 0.19890795631825273,
+          "normalized_entropy": 0.9656288776521248
+        },
+        "Dark_Transitions(5x5cm)": {
+          "bout_count": 20106,
+          "cluster_counts": [
+            4435,
+            510,
+            3517,
+            990,
+            4029,
+            1848,
+            2958,
+            1819
+          ],
+          "cluster_fractions": [
+            0.2205809211180742,
+            0.025365562518651148,
+            0.17492290858450213,
+            0.049239033124440466,
+            0.20038794389734407,
+            0.09191286183228888,
+            0.14712026260817668,
+            0.09047050631652243
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.2205809211180742,
+          "normalized_entropy": 0.9236506416039291
+        },
+        "Light (1x5cm)": {
+          "bout_count": 7611,
+          "cluster_counts": [
+            1022,
+            281,
+            359,
+            232,
+            1478,
+            313,
+            3530,
+            396
+          ],
+          "cluster_fractions": [
+            0.13427933254500066,
+            0.036920247010905266,
+            0.04716857180396794,
+            0.03048219682039154,
+            0.1941926159505978,
+            0.041124687951648926,
+            0.46380239127578504,
+            0.0520299566417028
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.46380239127578504,
+          "normalized_entropy": 0.7701582275188482
+        },
+        "Light (5x5cm)": {
+          "bout_count": 3429,
+          "cluster_counts": [
+            796,
+            49,
+            624,
+            60,
+            806,
+            294,
+            385,
+            415
+          ],
+          "cluster_fractions": [
+            0.2321376494604841,
+            0.014289880431612716,
+            0.18197725284339458,
+            0.017497812773403325,
+            0.23505395158938466,
+            0.0857392825896763,
+            0.11227763196267133,
+            0.12102653834937299
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.23505395158938466,
+          "normalized_entropy": 0.8813156089022566
+        },
+        "Light RW. (2.5x2.5cm)": {
+          "bout_count": 8319,
+          "cluster_counts": [
+            1497,
+            356,
+            1105,
+            2191,
+            1397,
+            428,
+            767,
+            578
+          ],
+          "cluster_fractions": [
+            0.17994951316263974,
+            0.04279360500060103,
+            0.13282846495973075,
+            0.26337300156268784,
+            0.16792883760067315,
+            0.05144849140521697,
+            0.09219858156028368,
+            0.06947950474816685
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.26337300156268784,
+          "normalized_entropy": 0.9234973460921079
+        },
+        "Looming(5x5cm)": {
+          "bout_count": 30052,
+          "cluster_counts": [
+            7059,
+            621,
+            5631,
+            496,
+            6739,
+            3246,
+            3222,
+            3038
+          ],
+          "cluster_fractions": [
+            0.23489285238919208,
+            0.020664182084387063,
+            0.18737521629176096,
+            0.01650472514308532,
+            0.22424464261945962,
+            0.10801277785172368,
+            0.10721416211899375,
+            0.10109144150139758
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.23489285238919208,
+          "normalized_entropy": 0.8890211727133
+        },
+        "Optokinetic Response (5x5cm)": {
+          "bout_count": 6438,
+          "cluster_counts": [
+            1292,
+            64,
+            1037,
+            154,
+            1353,
+            714,
+            1284,
+            540
+          ],
+          "cluster_fractions": [
+            0.2006834420627524,
+            0.009940975458216837,
+            0.1610748679714197,
+            0.023920472196334266,
+            0.21015843429636533,
+            0.11090400745573159,
+            0.19944082013047532,
+            0.08387698042870456
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.21015843429636533,
+          "normalized_entropy": 0.8909514261728744
+        },
+        "Optomotor Response (1x5cm)": {
+          "bout_count": 4787,
+          "cluster_counts": [
+            606,
+            122,
+            287,
+            492,
+            825,
+            217,
+            1906,
+            332
+          ],
+          "cluster_fractions": [
+            0.1265928556507207,
+            0.02548569041153123,
+            0.05995404219761855,
+            0.10277835805306038,
+            0.1723417589304366,
+            0.04533110507624817,
+            0.398161687904742,
+            0.06935450177564237
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.398161687904742,
+          "normalized_entropy": 0.842885653296467
+        },
+        "Phototaxis": {
+          "bout_count": 8892,
+          "cluster_counts": [
+            1944,
+            295,
+            1378,
+            203,
+            1905,
+            835,
+            1498,
+            834
+          ],
+          "cluster_fractions": [
+            0.21862348178137653,
+            0.033175888439046335,
+            0.15497076023391812,
+            0.022829509671614935,
+            0.2142375168690958,
+            0.09390463337831759,
+            0.16846603688708953,
+            0.09379217273954116
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.21862348178137653,
+          "normalized_entropy": 0.9112259063139788
+        },
+        "Prey Capture Param. (2.5x2.5cm)": {
+          "bout_count": 16789,
+          "cluster_counts": [
+            2756,
+            1104,
+            2423,
+            1018,
+            2790,
+            1387,
+            4299,
+            1012
+          ],
+          "cluster_fractions": [
+            0.16415510155458932,
+            0.06575734111620704,
+            0.14432068616355948,
+            0.060634939543748885,
+            0.16618023705997975,
+            0.0826136160581333,
+            0.2560605158139258,
+            0.060277562689856456
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.2560605158139258,
+          "normalized_entropy": 0.9364565769747445
+        },
+        "Prey Capture Param. RW. (2.5x2.5cm)": {
+          "bout_count": 25385,
+          "cluster_counts": [
+            3829,
+            3857,
+            4081,
+            1050,
+            3917,
+            2403,
+            4823,
+            1425
+          ],
+          "cluster_fractions": [
+            0.15083710852865867,
+            0.15194012211936184,
+            0.1607642308449872,
+            0.041363009651368916,
+            0.15430372267086861,
+            0.09466220208784715,
+            0.18999409099862125,
+            0.05613551309828639
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.18999409099862125,
+          "normalized_entropy": 0.9550398083328973
+        },
+        "Prey Capture Rot.(2.5x2.5cm)": {
+          "bout_count": 7034,
+          "cluster_counts": [
+            872,
+            1417,
+            635,
+            425,
+            1192,
+            785,
+            1170,
+            538
+          ],
+          "cluster_fractions": [
+            0.123969292010236,
+            0.2014500995166335,
+            0.09027580324139892,
+            0.06042081319306227,
+            0.16946261017912995,
+            0.11160079613306796,
+            0.1663349445550185,
+            0.07648564117145294
+          ],
+          "dominant_cluster": 1,
+          "dominant_cluster_fraction": 0.2014500995166335,
+          "normalized_entropy": 0.9660134573566952
+        },
+        "Prey capture Rot. RW. (2.5x2.5cm)": {
+          "bout_count": 23498,
+          "cluster_counts": [
+            3709,
+            2437,
+            3216,
+            947,
+            4779,
+            2120,
+            4217,
+            2073
+          ],
+          "cluster_fractions": [
+            0.15784322069963402,
+            0.10371095412375521,
+            0.13686271172014638,
+            0.04030130223848838,
+            0.20337901097965785,
+            0.09022044429313134,
+            0.17946208187930887,
+            0.08822027406587794
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.20337901097965785,
+          "normalized_entropy": 0.9576862962002964
+        }
+      },
+      "summary": {
+        "category_count": 14,
+        "max_dominant_cluster_fraction": 0.46380239127578504,
+        "max_normalized_entropy": 0.9660134573566952,
+        "mean_dominant_cluster_fraction": 0.2512195478731845,
+        "mean_normalized_entropy": 0.9099972941458306,
+        "median_bouts_per_category": 7965.0,
+        "min_normalized_entropy": 0.7701582275188482,
+        "std_normalized_entropy": 0.05179658729463698
+      }
+    },
+    "cluster_concentration": {
+      "0": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "Looming(5x5cm)",
+        "effective_number_of_categories": 8.252343993689442,
+        "max_single_category_fraction": 0.226970193884441,
+        "top3_category_fraction": 0.4926851226648661,
+        "total_bouts": 31101
+      },
+      "1": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "Prey Capture Param. RW. (2.5x2.5cm)",
+        "effective_number_of_categories": 5.175771364743806,
+        "max_single_category_fraction": 0.33880885453267745,
+        "top3_category_fraction": 0.6773541813070977,
+        "total_bouts": 11384
+      },
+      "2": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "Looming(5x5cm)",
+        "effective_number_of_categories": 7.801449457221398,
+        "max_single_category_fraction": 0.2212573673870334,
+        "top3_category_fraction": 0.519803536345776,
+        "total_bouts": 25450
+      },
+      "3": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "Light RW. (2.5x2.5cm)",
+        "effective_number_of_categories": 7.6804919656665565,
+        "max_single_category_fraction": 0.25367604492300566,
+        "top3_category_fraction": 0.4931110339238161,
+        "total_bouts": 8637
+      },
+      "4": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "Looming(5x5cm)",
+        "effective_number_of_categories": 8.689850069295954,
+        "max_single_category_fraction": 0.2078270523653858,
+        "top3_category_fraction": 0.4794609264170727,
+        "total_bouts": 32426
+      },
+      "5": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "Looming(5x5cm)",
+        "effective_number_of_categories": 8.105819794671762,
+        "max_single_category_fraction": 0.21286641746999804,
+        "top3_category_fraction": 0.5094760312151616,
+        "total_bouts": 15249
+      },
+      "6": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "Prey Capture Param. RW. (2.5x2.5cm)",
+        "effective_number_of_categories": 9.330966920340263,
+        "max_single_category_fraction": 0.1570907432740538,
+        "top3_category_fraction": 0.4344668099798059,
+        "total_bouts": 30702
+      },
+      "7": {
+        "categories_with_any_bouts": 14,
+        "dominant_category": "Looming(5x5cm)",
+        "effective_number_of_categories": 8.263310210449381,
+        "max_single_category_fraction": 0.22478727339992602,
+        "top3_category_fraction": 0.5127635960044395,
+        "total_bouts": 13515
+      }
+    },
+    "cluster_concentration_summary": {
+      "max_max_single_category_fraction": 0.33880885453267745,
+      "max_top3_category_fraction": 0.6773541813070977,
+      "mean_effective_number_of_categories": 7.91250047200982,
+      "mean_max_single_category_fraction": 0.23041049340456513,
+      "mean_top3_category_fraction": 0.5148901547322544,
+      "min_effective_number_of_categories": 5.175771364743806
+    }
+  },
+  "k": 8,
+  "partition": "validation",
+  "session_id": {
+    "association": {
+      "adjusted_mutual_information": 0.03238892214243627,
+      "cramers_v": 0.19043773436427847,
+      "normalized_mutual_information": 0.03284636818789743
+    },
+    "category_count": 70,
+    "category_distribution": {
+      "per_category": {
+        "DS005-JM-S000": {
+          "bout_count": 1381,
+          "cluster_counts": [
+            262,
+            73,
+            277,
+            114,
+            248,
+            128,
+            170,
+            109
+          ],
+          "cluster_fractions": [
+            0.18971759594496743,
+            0.05286024619840695,
+            0.2005792903692976,
+            0.08254887762490949,
+            0.17958001448225924,
+            0.09268645908761766,
+            0.12309920347574221,
+            0.07892831281679942
+          ],
+          "dominant_cluster": 2,
+          "dominant_cluster_fraction": 0.2005792903692976,
+          "normalized_entropy": 0.9550709377622184
+        },
+        "DS005-JM-S017": {
+          "bout_count": 2249,
+          "cluster_counts": [
+            541,
+            40,
+            374,
+            153,
+            492,
+            247,
+            234,
+            168
+          ],
+          "cluster_fractions": [
+            0.24055135615829257,
+            0.017785682525566917,
+            0.16629613161405069,
+            0.06803023566029347,
+            0.2187638950644731,
+            0.10982658959537572,
+            0.10404624277456648,
+            0.07469986660738105
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.24055135615829257,
+          "normalized_entropy": 0.9136552595288109
+        },
+        "DS005-JM-S019": {
+          "bout_count": 1212,
+          "cluster_counts": [
+            275,
+            13,
+            251,
+            52,
+            254,
+            164,
+            97,
+            106
+          ],
+          "cluster_fractions": [
+            0.2268976897689769,
+            0.010726072607260726,
+            0.2070957095709571,
+            0.0429042904290429,
+            0.20957095709570958,
+            0.1353135313531353,
+            0.08003300330033003,
+            0.08745874587458746
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.2268976897689769,
+          "normalized_entropy": 0.8943402513371149
+        },
+        "DS005-JM-S024": {
+          "bout_count": 7748,
+          "cluster_counts": [
+            1648,
+            34,
+            1409,
+            371,
+            1630,
+            674,
+            1269,
+            713
+          ],
+          "cluster_fractions": [
+            0.21270005162622613,
+            0.0043882292204439855,
+            0.18185338151781105,
+            0.04788332472896231,
+            0.21037687145069695,
+            0.08699019101703666,
+            0.1637842023748064,
+            0.09202374806401652
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.21270005162622613,
+          "normalized_entropy": 0.8967725029724865
+        },
+        "DS005-JM-S026": {
+          "bout_count": 5061,
+          "cluster_counts": [
+            1135,
+            49,
+            806,
+            395,
+            998,
+            444,
+            728,
+            506
+          ],
+          "cluster_fractions": [
+            0.22426397945070145,
+            0.009681881051175657,
+            0.15925706382137916,
+            0.07804781663702826,
+            0.19719423038925113,
+            0.0877296976882039,
+            0.14384508990318118,
+            0.09998024105907924
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.22426397945070145,
+          "normalized_entropy": 0.9207309469379663
+        },
+        "DS005-JM-S032": {
+          "bout_count": 3547,
+          "cluster_counts": [
+            718,
+            220,
+            595,
+            103,
+            690,
+            364,
+            526,
+            331
+          ],
+          "cluster_fractions": [
+            0.20242458415562448,
+            0.06202424584155625,
+            0.16774739216239076,
+            0.029038624189455877,
+            0.1945305892303355,
+            0.10262193402875669,
+            0.1482943332393572,
+            0.09331829715252325
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.20242458415562448,
+          "normalized_entropy": 0.9399233748037006
+        },
+        "DS005-JM-S038": {
+          "bout_count": 3750,
+          "cluster_counts": [
+            934,
+            207,
+            707,
+            121,
+            711,
+            366,
+            435,
+            269
+          ],
+          "cluster_fractions": [
+            0.24906666666666666,
+            0.0552,
+            0.18853333333333333,
+            0.032266666666666666,
+            0.1896,
+            0.0976,
+            0.116,
+            0.07173333333333333
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.24906666666666666,
+          "normalized_entropy": 0.9198319388198952
+        },
+        "DS005-JM-S051": {
+          "bout_count": 3577,
+          "cluster_counts": [
+            657,
+            137,
+            569,
+            24,
+            885,
+            343,
+            578,
+            384
+          ],
+          "cluster_fractions": [
+            0.1836734693877551,
+            0.038300251607492314,
+            0.1590718479172491,
+            0.006709533128319821,
+            0.2474140341067934,
+            0.0958904109589041,
+            0.16158792284036902,
+            0.10735253005311714
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.2474140341067934,
+          "normalized_entropy": 0.8976895342809103
+        },
+        "DS005-JM-S055": {
+          "bout_count": 3325,
+          "cluster_counts": [
+            831,
+            55,
+            647,
+            48,
+            788,
+            325,
+            305,
+            326
+          ],
+          "cluster_fractions": [
+            0.2499248120300752,
+            0.016541353383458645,
+            0.19458646616541353,
+            0.01443609022556391,
+            0.23699248120300753,
+            0.09774436090225563,
+            0.09172932330827067,
+            0.0980451127819549
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.2499248120300752,
+          "normalized_entropy": 0.8701450282814751
+        },
+        "DS005-JM-S065": {
+          "bout_count": 3329,
+          "cluster_counts": [
+            735,
+            87,
+            657,
+            91,
+            661,
+            322,
+            423,
+            353
+          ],
+          "cluster_fractions": [
+            0.2207870231300691,
+            0.02613397416641634,
+            0.19735656353259237,
+            0.027335536197056174,
+            0.1985581255632322,
+            0.09672574346650646,
+            0.1270651847401622,
+            0.10603784920396515
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.2207870231300691,
+          "normalized_entropy": 0.9110341527277811
+        },
+        "DS005-JM-S079": {
+          "bout_count": 3840,
+          "cluster_counts": [
+            920,
+            84,
+            656,
+            118,
+            847,
+            366,
+            516,
+            333
+          ],
+          "cluster_fractions": [
+            0.23958333333333334,
+            0.021875,
+            0.17083333333333334,
+            0.030729166666666665,
+            0.22057291666666667,
+            0.0953125,
+            0.134375,
+            0.08671875
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.23958333333333334,
+          "normalized_entropy": 0.9012126041754209
+        },
+        "DS005-JM-S087": {
+          "bout_count": 3600,
+          "cluster_counts": [
+            1026,
+            27,
+            690,
+            58,
+            773,
+            430,
+            231,
+            365
+          ],
+          "cluster_fractions": [
+            0.285,
+            0.0075,
+            0.19166666666666668,
+            0.01611111111111111,
+            0.21472222222222223,
+            0.11944444444444445,
+            0.06416666666666666,
+            0.10138888888888889
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.285,
+          "normalized_entropy": 0.8511932750086935
+        },
+        "DS005-JM-S089": {
+          "bout_count": 2975,
+          "cluster_counts": [
+            793,
+            17,
+            650,
+            28,
+            697,
+            360,
+            162,
+            268
+          ],
+          "cluster_fractions": [
+            0.2665546218487395,
+            0.005714285714285714,
+            0.2184873949579832,
+            0.009411764705882352,
+            0.2342857142857143,
+            0.12100840336134454,
+            0.05445378151260504,
+            0.09008403361344537
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.2665546218487395,
+          "normalized_entropy": 0.8314998759915482
+        },
+        "DS005-JM-S095": {
+          "bout_count": 3560,
+          "cluster_counts": [
+            736,
+            91,
+            639,
+            70,
+            800,
+            401,
+            446,
+            377
+          ],
+          "cluster_fractions": [
+            0.20674157303370785,
+            0.02556179775280899,
+            0.17949438202247192,
+            0.019662921348314606,
+            0.2247191011235955,
+            0.11264044943820224,
+            0.1252808988764045,
+            0.10589887640449439
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.2247191011235955,
+          "normalized_entropy": 0.9063073107263223
+        },
+        "DS005-JM-S097": {
+          "bout_count": 2773,
+          "cluster_counts": [
+            678,
+            52,
+            518,
+            32,
+            635,
+            339,
+            239,
+            280
+          ],
+          "cluster_fractions": [
+            0.2445005409304003,
+            0.01875225387666787,
+            0.18680129823296068,
+            0.01153984853948792,
+            0.2289938694554634,
+            0.12225027046520015,
+            0.0861882437793004,
+            0.1009736747205193
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.2445005409304003,
+          "normalized_entropy": 0.8757711391996696
+        },
+        "DS005-JM-S106": {
+          "bout_count": 3073,
+          "cluster_counts": [
+            683,
+            71,
+            605,
+            27,
+            653,
+            360,
+            322,
+            352
+          ],
+          "cluster_fractions": [
+            0.22225837943377807,
+            0.023104458184184835,
+            0.196876016921575,
+            0.00878620240807029,
+            0.21249593231369998,
+            0.1171493654409372,
+            0.10478359908883828,
+            0.11454604620891637
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.22225837943377807,
+          "normalized_entropy": 0.8885869116021342
+        },
+        "DS005-JM-S110": {
+          "bout_count": 3595,
+          "cluster_counts": [
+            415,
+            87,
+            245,
+            336,
+            573,
+            159,
+            1497,
+            283
+          ],
+          "cluster_fractions": [
+            0.11543810848400557,
+            0.02420027816411683,
+            0.06815020862308763,
+            0.09346314325452017,
+            0.15938803894297635,
+            0.04422809457579972,
+            0.4164116828929068,
+            0.07872044506258692
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.4164116828929068,
+          "normalized_entropy": 0.8364748516184692
+        },
+        "DS005-JM-S118": {
+          "bout_count": 1192,
+          "cluster_counts": [
+            191,
+            35,
+            42,
+            156,
+            252,
+            58,
+            409,
+            49
+          ],
+          "cluster_fractions": [
+            0.16023489932885907,
+            0.02936241610738255,
+            0.03523489932885906,
+            0.13087248322147652,
+            0.21140939597315436,
+            0.04865771812080537,
+            0.34312080536912754,
+            0.041107382550335574
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.34312080536912754,
+          "normalized_entropy": 0.8439066944825442
+        },
+        "DS005-JM-S122": {
+          "bout_count": 3670,
+          "cluster_counts": [
+            362,
+            75,
+            106,
+            121,
+            580,
+            143,
+            2102,
+            181
+          ],
+          "cluster_fractions": [
+            0.09863760217983651,
+            0.020435967302452316,
+            0.02888283378746594,
+            0.032970027247956404,
+            0.15803814713896458,
+            0.03896457765667575,
+            0.5727520435967303,
+            0.049318801089918256
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.5727520435967303,
+          "normalized_entropy": 0.6773377699552628
+        },
+        "DS005-JM-S132": {
+          "bout_count": 3941,
+          "cluster_counts": [
+            660,
+            206,
+            253,
+            111,
+            898,
+            170,
+            1428,
+            215
+          ],
+          "cluster_fractions": [
+            0.16747018523217458,
+            0.052270997208830244,
+            0.06419690433900026,
+            0.028165440243592996,
+            0.2278609489977163,
+            0.04313625983252981,
+            0.3623445825932504,
+            0.054554681552905354
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.3623445825932504,
+          "normalized_entropy": 0.8316942356539332
+        },
+        "DS005-JM-S138": {
+          "bout_count": 1220,
+          "cluster_counts": [
+            283,
+            17,
+            216,
+            28,
+            305,
+            126,
+            140,
+            105
+          ],
+          "cluster_fractions": [
+            0.2319672131147541,
+            0.013934426229508197,
+            0.17704918032786884,
+            0.022950819672131147,
+            0.25,
+            0.10327868852459017,
+            0.11475409836065574,
+            0.0860655737704918
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.25,
+          "normalized_entropy": 0.8811118604634288
+        },
+        "DS005-JM-S141": {
+          "bout_count": 1202,
+          "cluster_counts": [
+            184,
+            17,
+            156,
+            20,
+            264,
+            139,
+            341,
+            81
+          ],
+          "cluster_fractions": [
+            0.15307820299500832,
+            0.014143094841930116,
+            0.129783693843594,
+            0.016638935108153077,
+            0.21963394342762063,
+            0.11564059900166389,
+            0.28369384359401,
+            0.06738768718801996
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.28369384359401,
+          "normalized_entropy": 0.8666989607068065
+        },
+        "DS005-JM-S142": {
+          "bout_count": 1272,
+          "cluster_counts": [
+            302,
+            11,
+            189,
+            34,
+            258,
+            123,
+            260,
+            95
+          ],
+          "cluster_fractions": [
+            0.23742138364779874,
+            0.008647798742138365,
+            0.14858490566037735,
+            0.026729559748427674,
+            0.2028301886792453,
+            0.09669811320754718,
+            0.20440251572327045,
+            0.07468553459119497
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.23742138364779874,
+          "normalized_entropy": 0.8802200615894805
+        },
+        "DS005-JM-S149": {
+          "bout_count": 1427,
+          "cluster_counts": [
+            221,
+            10,
+            243,
+            42,
+            257,
+            167,
+            337,
+            150
+          ],
+          "cluster_fractions": [
+            0.15487035739313246,
+            0.00700770847932726,
+            0.1702873160476524,
+            0.02943237561317449,
+            0.1800981079187106,
+            0.11702873160476523,
+            0.23615977575332867,
+            0.1051156271899089
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.23615977575332867,
+          "normalized_entropy": 0.8974886684106425
+        },
+        "DS005-JM-S155": {
+          "bout_count": 1317,
+          "cluster_counts": [
+            302,
+            9,
+            233,
+            30,
+            269,
+            159,
+            206,
+            109
+          ],
+          "cluster_fractions": [
+            0.22930903568716782,
+            0.00683371298405467,
+            0.17691723614274868,
+            0.022779043280182234,
+            0.20425208807896736,
+            0.12072892938496584,
+            0.15641609719058466,
+            0.08276385725132877
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.22930903568716782,
+          "normalized_entropy": 0.8850697498779044
+        },
+        "DS005-JM-S164": {
+          "bout_count": 1760,
+          "cluster_counts": [
+            338,
+            36,
+            238,
+            89,
+            313,
+            147,
+            431,
+            168
+          ],
+          "cluster_fractions": [
+            0.19204545454545455,
+            0.020454545454545454,
+            0.13522727272727272,
+            0.05056818181818182,
+            0.17784090909090908,
+            0.08352272727272728,
+            0.24488636363636362,
+            0.09545454545454546
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.24488636363636362,
+          "normalized_entropy": 0.9142649797329
+        },
+        "DS005-JM-S166": {
+          "bout_count": 1887,
+          "cluster_counts": [
+            443,
+            18,
+            317,
+            40,
+            436,
+            177,
+            275,
+            181
+          ],
+          "cluster_fractions": [
+            0.23476417594064652,
+            0.009538950715421303,
+            0.1679915209326974,
+            0.021197668256491786,
+            0.23105458399576045,
+            0.09379968203497616,
+            0.14573396926338103,
+            0.09591944886062533
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.23476417594064652,
+          "normalized_entropy": 0.8810051076477164
+        },
+        "DS005-JM-S169": {
+          "bout_count": 3034,
+          "cluster_counts": [
+            660,
+            174,
+            427,
+            49,
+            654,
+            304,
+            457,
+            309
+          ],
+          "cluster_fractions": [
+            0.21753460777851022,
+            0.057350032959789056,
+            0.14073829927488465,
+            0.016150296638101518,
+            0.21555702043506922,
+            0.1001977587343441,
+            0.15062623599208966,
+            0.10184574818721161
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.21753460777851022,
+          "normalized_entropy": 0.922091651349528
+        },
+        "DS005-JM-S187": {
+          "bout_count": 2211,
+          "cluster_counts": [
+            503,
+            67,
+            396,
+            25,
+            502,
+            207,
+            335,
+            176
+          ],
+          "cluster_fractions": [
+            0.22749886928991406,
+            0.030303030303030304,
+            0.1791044776119403,
+            0.011307100859339666,
+            0.22704658525554047,
+            0.09362279511533243,
+            0.15151515151515152,
+            0.07960199004975124
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.22749886928991406,
+          "normalized_entropy": 0.8883289669106738
+        },
+        "DS005-JM-S195": {
+          "bout_count": 1481,
+          "cluster_counts": [
+            246,
+            49,
+            244,
+            49,
+            227,
+            150,
+            399,
+            117
+          ],
+          "cluster_fractions": [
+            0.1661039837947333,
+            0.03308575286968265,
+            0.16475354490209318,
+            0.03308575286968265,
+            0.15327481431465226,
+            0.1012829169480081,
+            0.26941255908170153,
+            0.07900067521944631
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.26941255908170153,
+          "normalized_entropy": 0.910866389830588
+        },
+        "DS005-JM-S201": {
+          "bout_count": 1380,
+          "cluster_counts": [
+            207,
+            110,
+            216,
+            50,
+            217,
+            139,
+            384,
+            57
+          ],
+          "cluster_fractions": [
+            0.15,
+            0.07971014492753623,
+            0.1565217391304348,
+            0.036231884057971016,
+            0.1572463768115942,
+            0.10072463768115943,
+            0.2782608695652174,
+            0.041304347826086954
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.2782608695652174,
+          "normalized_entropy": 0.9167596340625559
+        },
+        "DS005-JM-S210": {
+          "bout_count": 2096,
+          "cluster_counts": [
+            510,
+            199,
+            253,
+            75,
+            402,
+            149,
+            355,
+            153
+          ],
+          "cluster_fractions": [
+            0.2433206106870229,
+            0.09494274809160305,
+            0.12070610687022901,
+            0.0357824427480916,
+            0.191793893129771,
+            0.07108778625954199,
+            0.1693702290076336,
+            0.07299618320610687
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.2433206106870229,
+          "normalized_entropy": 0.9321220344000475
+        },
+        "DS005-JM-S230": {
+          "bout_count": 2086,
+          "cluster_counts": [
+            395,
+            109,
+            292,
+            247,
+            375,
+            171,
+            365,
+            132
+          ],
+          "cluster_fractions": [
+            0.18935762224352828,
+            0.05225311601150527,
+            0.13998082454458294,
+            0.1184084372003835,
+            0.1797698945349952,
+            0.08197507190795782,
+            0.17497603068072867,
+            0.06327900287631831
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.18935762224352828,
+          "normalized_entropy": 0.9571960326535777
+        },
+        "DS005-JM-S242": {
+          "bout_count": 955,
+          "cluster_counts": [
+            75,
+            154,
+            80,
+            14,
+            145,
+            99,
+            321,
+            67
+          ],
+          "cluster_fractions": [
+            0.07853403141361257,
+            0.1612565445026178,
+            0.08376963350785341,
+            0.014659685863874346,
+            0.1518324607329843,
+            0.10366492146596859,
+            0.33612565445026177,
+            0.07015706806282722
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.33612565445026177,
+          "normalized_entropy": 0.883761658384151
+        },
+        "DS005-JM-S243": {
+          "bout_count": 1537,
+          "cluster_counts": [
+            182,
+            120,
+            224,
+            63,
+            254,
+            106,
+            472,
+            116
+          ],
+          "cluster_fractions": [
+            0.11841249186727391,
+            0.07807417046193885,
+            0.1457384515289525,
+            0.04098893949251789,
+            0.1652569941444372,
+            0.06896551724137931,
+            0.30709173715029275,
+            0.07547169811320754
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.30709173715029275,
+          "normalized_entropy": 0.9150835179151412
+        },
+        "DS005-JM-S248": {
+          "bout_count": 1565,
+          "cluster_counts": [
+            337,
+            20,
+            323,
+            138,
+            329,
+            128,
+            168,
+            122
+          ],
+          "cluster_fractions": [
+            0.21533546325878594,
+            0.012779552715654952,
+            0.2063897763578275,
+            0.08817891373801917,
+            0.21022364217252396,
+            0.0817891373801917,
+            0.1073482428115016,
+            0.07795527156549521
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.21533546325878594,
+          "normalized_entropy": 0.9124081677150827
+        },
+        "DS005-JM-S252": {
+          "bout_count": 1904,
+          "cluster_counts": [
+            216,
+            163,
+            265,
+            51,
+            296,
+            117,
+            683,
+            113
+          ],
+          "cluster_fractions": [
+            0.1134453781512605,
+            0.08560924369747899,
+            0.13918067226890757,
+            0.026785714285714284,
+            0.15546218487394958,
+            0.06144957983193277,
+            0.358718487394958,
+            0.05934873949579832
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.358718487394958,
+          "normalized_entropy": 0.8776030032867523
+        },
+        "DS005-JM-S254": {
+          "bout_count": 1716,
+          "cluster_counts": [
+            287,
+            72,
+            281,
+            142,
+            247,
+            173,
+            447,
+            67
+          ],
+          "cluster_fractions": [
+            0.16724941724941725,
+            0.04195804195804196,
+            0.16375291375291376,
+            0.08275058275058275,
+            0.14393939393939395,
+            0.10081585081585082,
+            0.26048951048951047,
+            0.03904428904428905
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.26048951048951047,
+          "normalized_entropy": 0.9242855785403117
+        },
+        "DS005-JM-S255": {
+          "bout_count": 2069,
+          "cluster_counts": [
+            301,
+            108,
+            245,
+            189,
+            298,
+            155,
+            705,
+            68
+          ],
+          "cluster_fractions": [
+            0.14548090865152247,
+            0.05219913001449976,
+            0.11841469308844853,
+            0.09134847752537457,
+            0.14403093281778637,
+            0.0749154180763654,
+            0.3407443209279845,
+            0.03286611889801837
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.3407443209279845,
+          "normalized_entropy": 0.8935817504835878
+        },
+        "DS005-JM-S262": {
+          "bout_count": 2930,
+          "cluster_counts": [
+            329,
+            549,
+            305,
+            210,
+            551,
+            437,
+            390,
+            159
+          ],
+          "cluster_fractions": [
+            0.11228668941979522,
+            0.18737201365187714,
+            0.10409556313993173,
+            0.07167235494880546,
+            0.18805460750853242,
+            0.1491467576791809,
+            0.13310580204778158,
+            0.05426621160409556
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.18805460750853242,
+          "normalized_entropy": 0.9658004051820442
+        },
+        "DS005-JM-S265": {
+          "bout_count": 4104,
+          "cluster_counts": [
+            543,
+            868,
+            330,
+            215,
+            641,
+            348,
+            780,
+            379
+          ],
+          "cluster_fractions": [
+            0.13230994152046785,
+            0.21150097465886938,
+            0.0804093567251462,
+            0.05238791423001949,
+            0.15618908382066277,
+            0.0847953216374269,
+            0.19005847953216373,
+            0.09234892787524367
+          ],
+          "dominant_cluster": 1,
+          "dominant_cluster_fraction": 0.21150097465886938,
+          "normalized_entropy": 0.9561022916032659
+        },
+        "DS005-JM-S285": {
+          "bout_count": 3953,
+          "cluster_counts": [
+            555,
+            369,
+            431,
+            159,
+            674,
+            383,
+            1019,
+            363
+          ],
+          "cluster_fractions": [
+            0.1403996964330888,
+            0.09334682519605363,
+            0.10903111560839869,
+            0.0402226157348849,
+            0.17050341512775108,
+            0.09688843916013154,
+            0.25777890209967114,
+            0.09182899064002024
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.25777890209967114,
+          "normalized_entropy": 0.9446715910352463
+        },
+        "DS005-JM-S291": {
+          "bout_count": 5628,
+          "cluster_counts": [
+            901,
+            665,
+            759,
+            76,
+            1040,
+            574,
+            983,
+            630
+          ],
+          "cluster_fractions": [
+            0.16009239516702203,
+            0.1181592039800995,
+            0.13486140724946696,
+            0.013503909026297086,
+            0.1847903340440654,
+            0.10199004975124377,
+            0.17466240227434257,
+            0.11194029850746269
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.1847903340440654,
+          "normalized_entropy": 0.9467552691730963
+        },
+        "DS005-JM-S296": {
+          "bout_count": 4819,
+          "cluster_counts": [
+            720,
+            585,
+            853,
+            395,
+            989,
+            331,
+            550,
+            396
+          ],
+          "cluster_fractions": [
+            0.14940859099398215,
+            0.1213944801826105,
+            0.17700767794148164,
+            0.08196721311475409,
+            0.20522930068478937,
+            0.06868644947084457,
+            0.11413156256484748,
+            0.08217472504669018
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.20522930068478937,
+          "normalized_entropy": 0.968326874466431
+        },
+        "DS005-JM-S300": {
+          "bout_count": 5327,
+          "cluster_counts": [
+            1052,
+            408,
+            737,
+            86,
+            1295,
+            514,
+            826,
+            409
+          ],
+          "cluster_fractions": [
+            0.19748451285902008,
+            0.07659095175520932,
+            0.13835179275389525,
+            0.016144171203303925,
+            0.24310118265440211,
+            0.09648958137788624,
+            0.15505913272010513,
+            0.07677867467617797
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.24310118265440211,
+          "normalized_entropy": 0.9199228268376457
+        },
+        "DS005-JM-S303": {
+          "bout_count": 3771,
+          "cluster_counts": [
+            481,
+            410,
+            436,
+            231,
+            781,
+            318,
+            839,
+            275
+          ],
+          "cluster_fractions": [
+            0.1275523733757624,
+            0.10872447626624238,
+            0.11561919915141872,
+            0.061256961018297536,
+            0.20710686820472024,
+            0.08432776451869531,
+            0.22248740387165208,
+            0.07292495359321136
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.22248740387165208,
+          "normalized_entropy": 0.9542854025198546
+        },
+        "DS005-JM-S306": {
+          "bout_count": 2169,
+          "cluster_counts": [
+            325,
+            348,
+            361,
+            53,
+            384,
+            223,
+            306,
+            169
+          ],
+          "cluster_fractions": [
+            0.14983863531581373,
+            0.16044260027662519,
+            0.16643614568925771,
+            0.024435223605348087,
+            0.17704011065006917,
+            0.10281235592438911,
+            0.14107883817427386,
+            0.07791609036422315
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.17704011065006917,
+          "normalized_entropy": 0.9534754511188342
+        },
+        "DS005-JM-S321": {
+          "bout_count": 1971,
+          "cluster_counts": [
+            293,
+            243,
+            316,
+            79,
+            320,
+            185,
+            420,
+            115
+          ],
+          "cluster_fractions": [
+            0.14865550481988837,
+            0.1232876712328767,
+            0.16032470826991374,
+            0.040081177067478435,
+            0.16235413495687467,
+            0.09386098427194317,
+            0.213089802130898,
+            0.058346017250126836
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.213089802130898,
+          "normalized_entropy": 0.9503980798625036
+        },
+        "DS005-JM-S325": {
+          "bout_count": 2300,
+          "cluster_counts": [
+            274,
+            471,
+            451,
+            43,
+            331,
+            177,
+            477,
+            76
+          ],
+          "cluster_fractions": [
+            0.1191304347826087,
+            0.20478260869565218,
+            0.19608695652173913,
+            0.018695652173913044,
+            0.14391304347826087,
+            0.07695652173913044,
+            0.2073913043478261,
+            0.03304347826086956
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.2073913043478261,
+          "normalized_entropy": 0.9076159055100875
+        },
+        "DS005-JM-S334": {
+          "bout_count": 3056,
+          "cluster_counts": [
+            362,
+            448,
+            431,
+            36,
+            470,
+            294,
+            799,
+            216
+          ],
+          "cluster_fractions": [
+            0.11845549738219895,
+            0.14659685863874344,
+            0.14103403141361257,
+            0.011780104712041885,
+            0.1537958115183246,
+            0.09620418848167539,
+            0.2614528795811518,
+            0.07068062827225131
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.2614528795811518,
+          "normalized_entropy": 0.9204001805593144
+        },
+        "DS005-JM-S342": {
+          "bout_count": 1957,
+          "cluster_counts": [
+            348,
+            119,
+            370,
+            286,
+            395,
+            103,
+            234,
+            102
+          ],
+          "cluster_fractions": [
+            0.17782319877363312,
+            0.060807358201328564,
+            0.1890648952478283,
+            0.14614205416453754,
+            0.20183955033214104,
+            0.05263157894736842,
+            0.1195707715891671,
+            0.052120592743995914
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.20183955033214104,
+          "normalized_entropy": 0.9421898153353864
+        },
+        "DS005-JM-S355": {
+          "bout_count": 1869,
+          "cluster_counts": [
+            457,
+            190,
+            214,
+            122,
+            260,
+            245,
+            296,
+            85
+          ],
+          "cluster_fractions": [
+            0.24451578384162653,
+            0.10165864098448368,
+            0.11449973247726057,
+            0.06527554842161584,
+            0.13911182450508294,
+            0.13108614232209737,
+            0.15837346174424827,
+            0.0454788657035848
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.24451578384162653,
+          "normalized_entropy": 0.9503704700003324
+        },
+        "DS005-JM-S358": {
+          "bout_count": 2248,
+          "cluster_counts": [
+            362,
+            444,
+            362,
+            30,
+            305,
+            204,
+            382,
+            159
+          ],
+          "cluster_fractions": [
+            0.1610320284697509,
+            0.19750889679715303,
+            0.1610320284697509,
+            0.013345195729537367,
+            0.1356761565836299,
+            0.09074733096085409,
+            0.1699288256227758,
+            0.07072953736654804
+          ],
+          "dominant_cluster": 1,
+          "dominant_cluster_fraction": 0.19750889679715303,
+          "normalized_entropy": 0.9345804647421886
+        },
+        "DS005-JM-S365": {
+          "bout_count": 1604,
+          "cluster_counts": [
+            198,
+            336,
+            291,
+            73,
+            180,
+            112,
+            349,
+            65
+          ],
+          "cluster_fractions": [
+            0.12344139650872818,
+            0.20947630922693267,
+            0.1814214463840399,
+            0.04551122194513716,
+            0.11221945137157108,
+            0.06982543640897755,
+            0.21758104738154613,
+            0.040523690773067333
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.21758104738154613,
+          "normalized_entropy": 0.9276793165452832
+        },
+        "DS005-JM-S369": {
+          "bout_count": 1601,
+          "cluster_counts": [
+            321,
+            175,
+            249,
+            127,
+            212,
+            202,
+            246,
+            69
+          ],
+          "cluster_fractions": [
+            0.2004996876951905,
+            0.10930668332292318,
+            0.15552779512804496,
+            0.07932542161149282,
+            0.13241723922548407,
+            0.12617114303560276,
+            0.15365396627108058,
+            0.043098063710181135
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.2004996876951905,
+          "normalized_entropy": 0.9650807927674757
+        },
+        "DS005-JM-S370": {
+          "bout_count": 2151,
+          "cluster_counts": [
+            293,
+            304,
+            299,
+            47,
+            305,
+            231,
+            555,
+            117
+          ],
+          "cluster_fractions": [
+            0.13621571362157137,
+            0.1413296141329614,
+            0.1390051139005114,
+            0.02185030218503022,
+            0.1417945141794514,
+            0.10739191073919108,
+            0.2580195258019526,
+            0.05439330543933055
+          ],
+          "dominant_cluster": 6,
+          "dominant_cluster_fraction": 0.2580195258019526,
+          "normalized_entropy": 0.928339799609463
+        },
+        "DS005-JM-S376": {
+          "bout_count": 1953,
+          "cluster_counts": [
+            222,
+            315,
+            342,
+            117,
+            374,
+            138,
+            340,
+            105
+          ],
+          "cluster_fractions": [
+            0.11367127496159754,
+            0.16129032258064516,
+            0.17511520737327188,
+            0.059907834101382486,
+            0.19150025601638504,
+            0.0706605222734255,
+            0.1740911418330773,
+            0.053763440860215055
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.19150025601638504,
+          "normalized_entropy": 0.9524015025946114
+        },
+        "DS005-JM-S382": {
+          "bout_count": 2506,
+          "cluster_counts": [
+            374,
+            464,
+            395,
+            37,
+            381,
+            289,
+            419,
+            147
+          ],
+          "cluster_fractions": [
+            0.14924181963288108,
+            0.18515562649640863,
+            0.15762170790103752,
+            0.014764565043894652,
+            0.15203511572226655,
+            0.11532322426177175,
+            0.16719872306464484,
+            0.05865921787709497
+          ],
+          "dominant_cluster": 1,
+          "dominant_cluster_fraction": 0.18515562649640863,
+          "normalized_entropy": 0.9379934110316643
+        },
+        "DS005-JM-S395": {
+          "bout_count": 1056,
+          "cluster_counts": [
+            240,
+            53,
+            146,
+            118,
+            248,
+            79,
+            105,
+            67
+          ],
+          "cluster_fractions": [
+            0.22727272727272727,
+            0.050189393939393936,
+            0.13825757575757575,
+            0.11174242424242424,
+            0.23484848484848486,
+            0.07481060606060606,
+            0.09943181818181818,
+            0.0634469696969697
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.23484848484848486,
+          "normalized_entropy": 0.9348855045410049
+        },
+        "DS005-JM-S404": {
+          "bout_count": 1027,
+          "cluster_counts": [
+            305,
+            55,
+            96,
+            190,
+            190,
+            97,
+            41,
+            53
+          ],
+          "cluster_fractions": [
+            0.29698149951314506,
+            0.053554040895813046,
+            0.0934761441090555,
+            0.18500486854917234,
+            0.18500486854917234,
+            0.09444985394352483,
+            0.03992210321324245,
+            0.05160662122687439
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.29698149951314506,
+          "normalized_entropy": 0.8981383266988869
+        },
+        "DS005-JM-S411": {
+          "bout_count": 1053,
+          "cluster_counts": [
+            200,
+            170,
+            141,
+            55,
+            179,
+            138,
+            112,
+            58
+          ],
+          "cluster_fractions": [
+            0.1899335232668566,
+            0.16144349477682812,
+            0.1339031339031339,
+            0.052231718898385564,
+            0.16999050332383667,
+            0.13105413105413105,
+            0.1063627730294397,
+            0.055080721747388414
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.1899335232668566,
+          "normalized_entropy": 0.9612661620943651
+        },
+        "DS005-JM-S414": {
+          "bout_count": 1409,
+          "cluster_counts": [
+            375,
+            28,
+            291,
+            67,
+            302,
+            57,
+            147,
+            142
+          ],
+          "cluster_fractions": [
+            0.26614620298083747,
+            0.0198722498225692,
+            0.20652945351312987,
+            0.047551454932576294,
+            0.21433640880056778,
+            0.04045422285308729,
+            0.10432931156848829,
+            0.10078069552874379
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.26614620298083747,
+          "normalized_entropy": 0.8789521616448529
+        },
+        "DS005-JM-S420": {
+          "bout_count": 2207,
+          "cluster_counts": [
+            201,
+            3,
+            282,
+            940,
+            333,
+            16,
+            255,
+            177
+          ],
+          "cluster_fractions": [
+            0.09107385591300408,
+            0.001359311282283643,
+            0.12777526053466243,
+            0.4259175351155415,
+            0.15088355233348436,
+            0.007249660172179429,
+            0.11554145899410966,
+            0.08019936565473493
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.4259175351155415,
+          "normalized_entropy": 0.7821350421748967
+        },
+        "DS005-JM-S431": {
+          "bout_count": 155,
+          "cluster_counts": [
+            27,
+            14,
+            30,
+            27,
+            21,
+            5,
+            14,
+            17
+          ],
+          "cluster_fractions": [
+            0.17419354838709677,
+            0.09032258064516129,
+            0.1935483870967742,
+            0.17419354838709677,
+            0.13548387096774195,
+            0.03225806451612903,
+            0.09032258064516129,
+            0.10967741935483871
+          ],
+          "dominant_cluster": 2,
+          "dominant_cluster_fraction": 0.1935483870967742,
+          "normalized_entropy": 0.9545968330339023
+        },
+        "DS005-JM-S435": {
+          "bout_count": 498,
+          "cluster_counts": [
+            52,
+            21,
+            46,
+            264,
+            37,
+            6,
+            36,
+            36
+          ],
+          "cluster_fractions": [
+            0.10441767068273092,
+            0.04216867469879518,
+            0.09236947791164658,
+            0.5301204819277109,
+            0.07429718875502007,
+            0.012048192771084338,
+            0.07228915662650602,
+            0.07228915662650602
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.5301204819277109,
+          "normalized_entropy": 0.7463998553028881
+        },
+        "DS005-JM-S441": {
+          "bout_count": 914,
+          "cluster_counts": [
+            97,
+            12,
+            73,
+            530,
+            87,
+            30,
+            57,
+            28
+          ],
+          "cluster_fractions": [
+            0.1061269146608315,
+            0.01312910284463895,
+            0.07986870897155361,
+            0.5798687089715536,
+            0.09518599562363239,
+            0.03282275711159737,
+            0.06236323851203501,
+            0.030634573304157548
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.5798687089715536,
+          "normalized_entropy": 0.6870308293884514
+        },
+        "DS005-JM-S443": {
+          "bout_count": 1037,
+          "cluster_counts": [
+            168,
+            135,
+            199,
+            15,
+            178,
+            90,
+            135,
+            117
+          ],
+          "cluster_fractions": [
+            0.16200578592092574,
+            0.13018322082931533,
+            0.1918997107039537,
+            0.01446480231436837,
+            0.171648987463838,
+            0.08678881388621022,
+            0.13018322082931533,
+            0.1128254580520733
+          ],
+          "dominant_cluster": 2,
+          "dominant_cluster_fraction": 0.1918997107039537,
+          "normalized_entropy": 0.9447612945044994
+        },
+        "DS005-JM-S447": {
+          "bout_count": 245,
+          "cluster_counts": [
+            38,
+            10,
+            56,
+            45,
+            44,
+            30,
+            7,
+            15
+          ],
+          "cluster_fractions": [
+            0.15510204081632653,
+            0.04081632653061224,
+            0.22857142857142856,
+            0.1836734693877551,
+            0.17959183673469387,
+            0.12244897959183673,
+            0.02857142857142857,
+            0.061224489795918366
+          ],
+          "dominant_cluster": 2,
+          "dominant_cluster_fraction": 0.22857142857142856,
+          "normalized_entropy": 0.9167536750326681
+        },
+        "DS005-JM-S461": {
+          "bout_count": 2552,
+          "cluster_counts": [
+            601,
+            31,
+            435,
+            43,
+            606,
+            227,
+            284,
+            325
+          ],
+          "cluster_fractions": [
+            0.23550156739811912,
+            0.012147335423197491,
+            0.17045454545454544,
+            0.016849529780564265,
+            0.23746081504702193,
+            0.0889498432601881,
+            0.11128526645768025,
+            0.1273510971786834
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.23746081504702193,
+          "normalized_entropy": 0.879053050687634
+        },
+        "DS005-JM-S462": {
+          "bout_count": 877,
+          "cluster_counts": [
+            195,
+            18,
+            189,
+            17,
+            200,
+            67,
+            101,
+            90
+          ],
+          "cluster_fractions": [
+            0.22234891676168758,
+            0.020524515393386546,
+            0.21550741163055873,
+            0.019384264538198404,
+            0.22805017103762829,
+            0.07639680729760548,
+            0.11516533637400228,
+            0.10262257696693272
+          ],
+          "dominant_cluster": 4,
+          "dominant_cluster_fraction": 0.22805017103762829,
+          "normalized_entropy": 0.8835985061287113
+        }
+      },
+      "summary": {
+        "category_count": 70,
+        "max_dominant_cluster_fraction": 0.5798687089715536,
+        "max_normalized_entropy": 0.968326874466431,
+        "mean_dominant_cluster_fraction": 0.25834090849766933,
+        "mean_normalized_entropy": 0.9013869637364961,
+        "median_bouts_per_category": 2091.0,
+        "min_normalized_entropy": 0.6773377699552628,
+        "std_normalized_entropy": 0.0561705397388602
+      }
+    },
+    "cluster_concentration": {
+      "0": {
+        "categories_with_any_bouts": 70,
+        "dominant_category": "DS005-JM-S024",
+        "effective_number_of_categories": 48.44383061130077,
+        "max_single_category_fraction": 0.05298864988264043,
+        "top3_category_fraction": 0.12330793222082892,
+        "total_bouts": 31101
+      },
+      "1": {
+        "categories_with_any_bouts": 70,
+        "dominant_category": "DS005-JM-S265",
+        "effective_number_of_categories": 31.12376983549453,
+        "max_single_category_fraction": 0.07624736472241743,
+        "top3_category_fraction": 0.1860505973295854,
+        "total_bouts": 11384
+      },
+      "2": {
+        "categories_with_any_bouts": 70,
+        "dominant_category": "DS005-JM-S024",
+        "effective_number_of_categories": 49.253429780560346,
+        "max_single_category_fraction": 0.055363457760314344,
+        "top3_category_fraction": 0.12055009823182711,
+        "total_bouts": 25450
+      },
+      "3": {
+        "categories_with_any_bouts": 70,
+        "dominant_category": "DS005-JM-S420",
+        "effective_number_of_categories": 29.69182427486695,
+        "max_single_category_fraction": 0.1088340859094593,
+        "top3_category_fraction": 0.2159314576820655,
+        "total_bouts": 8637
+      },
+      "4": {
+        "categories_with_any_bouts": 70,
+        "dominant_category": "DS005-JM-S024",
+        "effective_number_of_categories": 48.981749893063785,
+        "max_single_category_fraction": 0.05026830321347067,
+        "top3_category_fraction": 0.12227841855301302,
+        "total_bouts": 32426
+      },
+      "5": {
+        "categories_with_any_bouts": 70,
+        "dominant_category": "DS005-JM-S024",
+        "effective_number_of_categories": 49.88405987065396,
+        "max_single_category_fraction": 0.04419961964718998,
+        "top3_category_fraction": 0.11554856056134828,
+        "total_bouts": 15249
+      },
+      "6": {
+        "categories_with_any_bouts": 70,
+        "dominant_category": "DS005-JM-S122",
+        "effective_number_of_categories": 41.365523107899705,
+        "max_single_category_fraction": 0.06846459514038174,
+        "top3_category_fraction": 0.16373526154647905,
+        "total_bouts": 30702
+      },
+      "7": {
+        "categories_with_any_bouts": 70,
+        "dominant_category": "DS005-JM-S024",
+        "effective_number_of_categories": 45.204024812624596,
+        "max_single_category_fraction": 0.05275619681834998,
+        "top3_category_fraction": 0.1368109507954125,
+        "total_bouts": 13515
+      }
+    },
+    "cluster_concentration_summary": {
+      "max_max_single_category_fraction": 0.1088340859094593,
+      "max_top3_category_fraction": 0.2159314576820655,
+      "mean_effective_number_of_categories": 42.99352652330808,
+      "mean_max_single_category_fraction": 0.06364028413677798,
+      "mean_top3_category_fraction": 0.14802665961506997,
+      "min_effective_number_of_categories": 29.69182427486695
+    }
+  },
+  "ssl_seed": 79,
+  "test_partition_used": false
+}

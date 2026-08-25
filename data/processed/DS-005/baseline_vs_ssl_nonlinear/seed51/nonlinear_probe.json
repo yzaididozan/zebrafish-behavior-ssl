@@ -1,0 +1,53 @@
+{
+  "feature_names": [
+    "bout_duration_s",
+    "inter_bout_interval_s",
+    "speed_mean",
+    "speed_std",
+    "speed_median",
+    "speed_max",
+    "speed_p95",
+    "speed_rms",
+    "accel_abs_mean",
+    "accel_abs_std",
+    "accel_abs_max",
+    "accel_rms",
+    "turn_abs_total_rad",
+    "turn_net_rad",
+    "turn_abs_mean_rad",
+    "turn_abs_std_rad",
+    "turn_abs_max_rad",
+    "turn_rms_rad"
+  ],
+  "hyperparameters": {
+    "early_stopping": true,
+    "l2_regularization": 1.0,
+    "learning_rate": 0.08,
+    "max_depth": null,
+    "max_iter": 250,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 50,
+    "n_iter_no_change": 20,
+    "random_state": 20260822,
+    "validation_fraction": 0.1
+  },
+  "iterations_used": 250,
+  "model": "HistGradientBoostingClassifier",
+  "purpose": "Nonlinear sensitivity probe: predict SSL k=8 cluster labels from the same 18 handcrafted Input-A features.",
+  "ssl_seed": 51,
+  "test_partition_used": false,
+  "train": {
+    "accuracy": 0.9200940628184913,
+    "balanced_accuracy": 0.9194669861520046,
+    "macro_f1": 0.9194004790154304,
+    "majority_accuracy": 0.15779725950683463,
+    "uniform_chance": 0.125
+  },
+  "validation": {
+    "accuracy": 0.9054456738531674,
+    "balanced_accuracy": 0.9026285544715431,
+    "macro_f1": 0.9026906765965308,
+    "majority_accuracy": 0.15976113591034286,
+    "uniform_chance": 0.125
+  }
+}

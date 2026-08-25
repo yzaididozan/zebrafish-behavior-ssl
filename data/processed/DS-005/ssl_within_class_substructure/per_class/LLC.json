@@ -1,0 +1,634 @@
+{
+  "candidate_score_note": "Descriptive prioritization only; not a preregistered inferential metric.",
+  "candidate_substructure_score": 0.7278839439041758,
+  "class_name": "LLC",
+  "status": "analyzed",
+  "train": {
+    "count": 207166,
+    "cross_seed_distribution_js_similarity": {
+      "max": 0.949306024887407,
+      "mean": 0.8460756715815553,
+      "min": 0.7667583753389393,
+      "pair_count": 10,
+      "pairs": [
+        {
+          "seed_a": 11,
+          "seed_b": 23,
+          "similarity": 0.8099119517080732
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 37,
+          "similarity": 0.8930944570282502
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 51,
+          "similarity": 0.949306024887407
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 79,
+          "similarity": 0.8601991799183102
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 37,
+          "similarity": 0.8053301626675025
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 51,
+          "similarity": 0.8181043159015329
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 79,
+          "similarity": 0.7667583753389393
+        },
+        {
+          "seed_a": 37,
+          "seed_b": 51,
+          "similarity": 0.895181793851235
+        },
+        {
+          "seed_a": 37,
+          "seed_b": 79,
+          "similarity": 0.8196004745973191
+        },
+        {
+          "seed_a": 51,
+          "seed_b": 79,
+          "similarity": 0.843269979916984
+        }
+      ],
+      "std": 0.05121387124137096
+    },
+    "cross_seed_label_reproducibility": {
+      "aligned_agreement": {
+        "max": 0.702431866232876,
+        "mean": 0.5473301603544984,
+        "min": 0.3885869302877885,
+        "std": 0.09303788706564736
+      },
+      "ari": {
+        "max": 0.5558594022835286,
+        "mean": 0.3322571690281083,
+        "min": 0.1569319111808014,
+        "std": 0.10953414876106457
+      },
+      "nmi": {
+        "max": 0.6246485046485062,
+        "mean": 0.45783733103865093,
+        "min": 0.3014315253440758,
+        "std": 0.08827786295767957
+      },
+      "pair_count": 10,
+      "pairs": [
+        {
+          "aligned_agreement": 0.5164602299605148,
+          "ari": 0.2652034760500501,
+          "nmi": 0.398729474487413,
+          "seed_a": 11,
+          "seed_b": 23
+        },
+        {
+          "aligned_agreement": 0.687323209406949,
+          "ari": 0.43565939761224076,
+          "nmi": 0.5619884813907233,
+          "seed_a": 11,
+          "seed_b": 37
+        },
+        {
+          "aligned_agreement": 0.5411264396667407,
+          "ari": 0.3225756867765893,
+          "nmi": 0.4547862929926244,
+          "seed_a": 11,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 0.6195756060357395,
+          "ari": 0.4317040511155454,
+          "nmi": 0.5262907825780473,
+          "seed_a": 11,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 0.5246999990345906,
+          "ari": 0.3220455299326506,
+          "nmi": 0.4502113927160787,
+          "seed_a": 23,
+          "seed_b": 37
+        },
+        {
+          "aligned_agreement": 0.5283589005917959,
+          "ari": 0.31363076601155804,
+          "nmi": 0.43664798157294027,
+          "seed_a": 23,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 0.3885869302877885,
+          "ari": 0.1569319111808014,
+          "nmi": 0.3014315253440758,
+          "seed_a": 23,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 0.702431866232876,
+          "ari": 0.5558594022835286,
+          "nmi": 0.6246485046485062,
+          "seed_a": 37,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 0.5154127607812092,
+          "ari": 0.29836981639878746,
+          "nmi": 0.4423337450534899,
+          "seed_a": 37,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 0.4493256615467789,
+          "ari": 0.22059165291933147,
+          "nmi": 0.38130512960261076,
+          "seed_a": 51,
+          "seed_b": 79
+        }
+      ]
+    },
+    "distribution_summary": {
+      "mean_clusters_with_at_least_5pct": 6.2,
+      "mean_dominant_cluster_fraction": 0.22889566820810364,
+      "mean_effective_number_of_clusters": 6.163648373179457,
+      "mean_normalized_cluster_entropy": 0.873604949651584
+    },
+    "per_seed_distribution": {
+      "11": {
+        "cluster_counts": [
+          32121,
+          12652,
+          47138,
+          33907,
+          1011,
+          1782,
+          34531,
+          44024
+        ],
+        "cluster_fractions": [
+          0.1550495737717579,
+          0.06107179749572807,
+          0.227537337207843,
+          0.1636706795516639,
+          0.004880144425243525,
+          0.008601797592269003,
+          0.1666827568230308,
+          0.2125059131324638
+        ],
+        "clusters_with_any_bouts": 8,
+        "clusters_with_at_least_10pct": 5,
+        "clusters_with_at_least_5pct": 6,
+        "count": 207166,
+        "dominant_cluster": 2,
+        "dominant_cluster_fraction": 0.227537337207843,
+        "effective_number_of_clusters": 5.974404127356618,
+        "normalized_cluster_entropy": 0.8595982764494544
+      },
+      "23": {
+        "cluster_counts": [
+          33505,
+          14824,
+          32786,
+          29042,
+          16705,
+          2556,
+          39128,
+          38620
+        ],
+        "cluster_fractions": [
+          0.16173020669414864,
+          0.0715561433826014,
+          0.15825955996640376,
+          0.14018709633820223,
+          0.08063581861888534,
+          0.012337931900022204,
+          0.18887269146481567,
+          0.1864205516349208
+        ],
+        "clusters_with_any_bouts": 8,
+        "clusters_with_at_least_10pct": 5,
+        "clusters_with_at_least_5pct": 7,
+        "count": 207166,
+        "dominant_cluster": 6,
+        "dominant_cluster_fraction": 0.18887269146481567,
+        "effective_number_of_clusters": 6.929106892400509,
+        "normalized_cluster_entropy": 0.9308898040852929
+      },
+      "37": {
+        "cluster_counts": [
+          34545,
+          14091,
+          28460,
+          41996,
+          1122,
+          2379,
+          32306,
+          52267
+        ],
+        "cluster_fractions": [
+          0.1667503354797602,
+          0.0680179179981271,
+          0.13737775503702346,
+          0.20271666200052132,
+          0.005415946632169371,
+          0.011483544597086394,
+          0.15594257744996765,
+          0.2522952608053445
+        ],
+        "clusters_with_any_bouts": 8,
+        "clusters_with_at_least_10pct": 5,
+        "clusters_with_at_least_5pct": 6,
+        "count": 207166,
+        "dominant_cluster": 7,
+        "dominant_cluster_fraction": 0.2522952608053445,
+        "effective_number_of_clusters": 6.016688112982439,
+        "normalized_cluster_entropy": 0.8629898579112554
+      },
+      "51": {
+        "cluster_counts": [
+          34548,
+          16499,
+          43627,
+          37502,
+          1249,
+          1743,
+          34578,
+          37420
+        ],
+        "cluster_fractions": [
+          0.16676481662048792,
+          0.07964144695558151,
+          0.2105895755094948,
+          0.18102391319038838,
+          0.006028981589643088,
+          0.00841354276280857,
+          0.16690962802776518,
+          0.18062809534383056
+        ],
+        "clusters_with_any_bouts": 8,
+        "clusters_with_at_least_10pct": 5,
+        "clusters_with_at_least_5pct": 6,
+        "count": 207166,
+        "dominant_cluster": 2,
+        "dominant_cluster_fraction": 0.2105895755094948,
+        "effective_number_of_clusters": 6.151019599375397,
+        "normalized_cluster_entropy": 0.87360852429919
+      },
+      "79": {
+        "cluster_counts": [
+          41570,
+          18084,
+          49927,
+          19202,
+          1338,
+          1526,
+          20582,
+          54937
+        ],
+        "cluster_fractions": [
+          0.20066034001718427,
+          0.08729231630672987,
+          0.24099997103771856,
+          0.09268895475126228,
+          0.006458588764565614,
+          0.007366073583503084,
+          0.09935027948601605,
+          0.2651834760530203
+        ],
+        "clusters_with_any_bouts": 8,
+        "clusters_with_at_least_10pct": 3,
+        "clusters_with_at_least_5pct": 6,
+        "count": 207166,
+        "dominant_cluster": 7,
+        "dominant_cluster_fraction": 0.2651834760530203,
+        "effective_number_of_clusters": 5.747023133782323,
+        "normalized_cluster_entropy": 0.8409382855127281
+      }
+    }
+  },
+  "train_count": 207166,
+  "validation": {
+    "count": 42321,
+    "cross_seed_distribution_js_similarity": {
+      "max": 0.9556193613886214,
+      "mean": 0.8471488093143605,
+      "min": 0.7661697207318938,
+      "pair_count": 10,
+      "pairs": [
+        {
+          "seed_a": 11,
+          "seed_b": 23,
+          "similarity": 0.8094779237174549
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 37,
+          "similarity": 0.8954939654277853
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 51,
+          "similarity": 0.9556193613886214
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 79,
+          "similarity": 0.8563631865485412
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 37,
+          "similarity": 0.809691672638901
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 51,
+          "similarity": 0.8185590562182669
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 79,
+          "similarity": 0.7661697207318938
+        },
+        {
+          "seed_a": 37,
+          "seed_b": 51,
+          "similarity": 0.8985664149266989
+        },
+        {
+          "seed_a": 37,
+          "seed_b": 79,
+          "similarity": 0.8162007073388238
+        },
+        {
+          "seed_a": 51,
+          "seed_b": 79,
+          "similarity": 0.8453460842066178
+        }
+      ],
+      "std": 0.05290552335500538
+    },
+    "cross_seed_label_reproducibility": {
+      "aligned_agreement": {
+        "max": 0.6982585477658846,
+        "mean": 0.5470286618936225,
+        "min": 0.38612036577585596,
+        "std": 0.09242384730897749
+      },
+      "ari": {
+        "max": 0.5476324130904221,
+        "mean": 0.33170497593024467,
+        "min": 0.1590832509498223,
+        "std": 0.1067047111079109
+      },
+      "nmi": {
+        "max": 0.6194611155559209,
+        "mean": 0.4570422673772162,
+        "min": 0.3039358166556434,
+        "std": 0.08680175754115199
+      },
+      "pair_count": 10,
+      "pairs": [
+        {
+          "aligned_agreement": 0.5117790222348243,
+          "ari": 0.2660513360640474,
+          "nmi": 0.3985636971724424,
+          "seed_a": 11,
+          "seed_b": 23
+        },
+        {
+          "aligned_agreement": 0.6850263462583588,
+          "ari": 0.429886524755162,
+          "nmi": 0.5586269992300225,
+          "seed_a": 11,
+          "seed_b": 37
+        },
+        {
+          "aligned_agreement": 0.5382906831124028,
+          "ari": 0.318249885125467,
+          "nmi": 0.4535506025385425,
+          "seed_a": 11,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 0.6236147539046809,
+          "ari": 0.43424678163596464,
+          "nmi": 0.5291895471687814,
+          "seed_a": 11,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 0.5269724250372155,
+          "ari": 0.32113182638481663,
+          "nmi": 0.4472460508392962,
+          "seed_a": 23,
+          "seed_b": 37
+        },
+        {
+          "aligned_agreement": 0.528768223813237,
+          "ari": 0.31319738552759574,
+          "nmi": 0.43441226210586387,
+          "seed_a": 23,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 0.38612036577585596,
+          "ari": 0.1590832509498223,
+          "nmi": 0.3039358166556434,
+          "seed_a": 23,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 0.6982585477658846,
+          "ari": 0.5476324130904221,
+          "nmi": 0.6194611155559209,
+          "seed_a": 37,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 0.5187495569575388,
+          "ari": 0.3032163647941923,
+          "nmi": 0.4445777348026972,
+          "seed_a": 37,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 0.45270669407622693,
+          "ari": 0.22435399097495665,
+          "nmi": 0.38085884770295164,
+          "seed_a": 51,
+          "seed_b": 79
+        }
+      ]
+    },
+    "distribution_summary": {
+      "mean_clusters_with_at_least_5pct": 6.2,
+      "mean_dominant_cluster_fraction": 0.22762222064696017,
+      "mean_effective_number_of_clusters": 6.184469836466052,
+      "mean_normalized_cluster_entropy": 0.8752297602242312
+    },
+    "per_seed_distribution": {
+      "11": {
+        "cluster_counts": [
+          6652,
+          2841,
+          9615,
+          7072,
+          266,
+          280,
+          6726,
+          8869
+        ],
+        "cluster_fractions": [
+          0.15717965076439594,
+          0.06712979371943006,
+          0.22719217409796555,
+          0.1671038018950403,
+          0.006285295716074762,
+          0.006616100753762907,
+          0.1589281916778904,
+          0.2095649913754401
+        ],
+        "clusters_with_any_bouts": 8,
+        "clusters_with_at_least_10pct": 5,
+        "clusters_with_at_least_5pct": 6,
+        "count": 42321,
+        "dominant_cluster": 2,
+        "dominant_cluster_fraction": 0.22719217409796555,
+        "effective_number_of_clusters": 6.005652795318422,
+        "normalized_cluster_entropy": 0.8621070236024074
+      },
+      "23": {
+        "cluster_counts": [
+          6878,
+          3259,
+          6491,
+          5906,
+          3558,
+          448,
+          7702,
+          8079
+        ],
+        "cluster_fractions": [
+          0.16251978922993313,
+          0.07700668698754755,
+          0.15337539283098225,
+          0.13955246804187046,
+          0.0840717374353158,
+          0.010585761206020651,
+          0.18199002859100682,
+          0.1908981356773233
+        ],
+        "clusters_with_any_bouts": 8,
+        "clusters_with_at_least_10pct": 5,
+        "clusters_with_at_least_5pct": 7,
+        "count": 42321,
+        "dominant_cluster": 7,
+        "dominant_cluster_fraction": 0.1908981356773233,
+        "effective_number_of_clusters": 6.942263195755624,
+        "normalized_cluster_entropy": 0.9318020205992394
+      },
+      "37": {
+        "cluster_counts": [
+          6999,
+          3203,
+          5932,
+          8576,
+          309,
+          438,
+          6198,
+          10666
+        ],
+        "cluster_fractions": [
+          0.16537888991280925,
+          0.07568346683679497,
+          0.14016682025471988,
+          0.20264171451525248,
+          0.007301339760402637,
+          0.010349471893386262,
+          0.14645211597079463,
+          0.2520261808558399
+        ],
+        "clusters_with_any_bouts": 8,
+        "clusters_with_at_least_10pct": 5,
+        "clusters_with_at_least_5pct": 6,
+        "count": 42321,
+        "dominant_cluster": 7,
+        "dominant_cluster_fraction": 0.2520261808558399,
+        "effective_number_of_clusters": 6.07249606123641,
+        "normalized_cluster_entropy": 0.8674298830318504
+      },
+      "51": {
+        "cluster_counts": [
+          7101,
+          3612,
+          8910,
+          7598,
+          333,
+          253,
+          6721,
+          7793
+        ],
+        "cluster_fractions": [
+          0.16778904090168,
+          0.0853476997235415,
+          0.2105337775572411,
+          0.17953261973960918,
+          0.007868434110725173,
+          0.005978119609650056,
+          0.15881004702157323,
+          0.18414026133597977
+        ],
+        "clusters_with_any_bouts": 8,
+        "clusters_with_at_least_10pct": 5,
+        "clusters_with_at_least_5pct": 6,
+        "count": 42321,
+        "dominant_cluster": 2,
+        "dominant_cluster_fraction": 0.2105337775572411,
+        "effective_number_of_clusters": 6.162231972360544,
+        "normalized_cluster_entropy": 0.8744843308386724
+      },
+      "79": {
+        "cluster_counts": [
+          8704,
+          3994,
+          10349,
+          3714,
+          332,
+          223,
+          4109,
+          10896
+        ],
+        "cluster_fractions": [
+          0.20566621771697266,
+          0.09437395146617518,
+          0.24453580964532975,
+          0.08775785071241228,
+          0.007844805179461734,
+          0.005269251671746887,
+          0.09709127856147066,
+          0.25746083504643086
+        ],
+        "clusters_with_any_bouts": 8,
+        "clusters_with_at_least_10pct": 3,
+        "clusters_with_at_least_5pct": 6,
+        "count": 42321,
+        "dominant_cluster": 7,
+        "dominant_cluster_fraction": 0.25746083504643086,
+        "effective_number_of_clusters": 5.739705157659257,
+        "normalized_cluster_entropy": 0.8403255430489867
+      }
+    }
+  },
+  "validation_count": 42321
+}

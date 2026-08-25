@@ -7,8 +7,8 @@
 **Repository:** `zebrafish-behavior-ssl`  
 **Primary dataset:** `DS-005`  
 **External replication dataset:** `DS-006`  
-**Draft status:** `METHODS FROZEN — READY FOR FORMAL PREREGISTRATION REVIEW`  
-**Last updated:** `2026-08-23`
+**Draft status:** `METHODS FROZEN — VALIDATION INTERPRETATION PREPARED FOR TIMESTAMP`
+**Last updated:** `2026-08-24`
 
 ---
 
@@ -58,6 +58,24 @@ A positive Claim Level 2 result requires converging evidence that SSL-derived st
 - is not fully reconstructed by Input A;
 - survives the frozen sensitivity analyses;
 - and receives meaningful external replication support.
+
+## TRAIN / VALIDATION disposition
+
+The original Claim Level 2 target is not supported by the completed validation
+analysis as written. The nonlinear Input-A probe reconstructs SSL cluster labels
+with mean VALIDATION balanced accuracy `0.901642`, so the requirement that SSL
+structure is not fully reconstructed by Input A is not met. Final TEST and
+external replication remain necessary for the narrower permitted claim, but
+they must not be used to erase or redefine this validation result.
+
+The strongest claim still eligible for confirmation is:
+
+> SSL provides reproducible fine-grained organization within conventional
+> behavioral categories, while much of that organization is recoverable from
+> conventional movement features and exact boundaries remain seed-dependent.
+
+The controlling case studies and TEST analysis are frozen in
+`docs/validation-freeze.md`.
 
 ---
 
@@ -363,7 +381,9 @@ Both are pipeline-verification evidence only.
 
 # 17. Full SSL Training
 
-Full frozen multi-seed TRAIN / VALIDATION training is in progress.
+Full frozen multi-seed TRAIN / VALIDATION training is complete for seeds 11, 23,
+37, 51, and 79. Embeddings, manifests, metadata, and SHA-256 records are present
+for both partitions for every seed. The DS-005 TEST partition was not used.
 
 Running results must not alter:
 
@@ -709,6 +729,8 @@ fish_well_slots: 384
 usable_fish_well_units: 374
 accepted_bouts: 163065
 authoritative_frame_rate_hz: 160
+independence_from_ds005: CONFIRMED
+direct_fish_or_recording_overlap: "no evidence found"
 ```
 
 Canonical replication unit:
@@ -718,6 +740,13 @@ DS006::<recording_id>::wellXX
 ```
 
 Biological uniqueness across recordings is not independently verified.
+
+External-dataset independence from DS-005 is nevertheless confirmed: DS-006 has
+a separate source, DOI, publication, acquisition, assay protocol, frame rate,
+recording duration, and tracking pipeline. Some investigators overlap and both
+datasets were later analyzed together, but no direct fish or recording overlap
+was identified. This dataset-level conclusion does not resolve whether DS-006
+fish were reused across different DS-006 recordings.
 
 ---
 
@@ -880,7 +909,9 @@ validity_controls: FROZEN
 sensitivity_plan: FROZEN
 claim_level: FROZEN
 
-ssl_full_training: IN_PROGRESS
+ssl_full_training: COMPLETE
+ssl_train_validation_analysis: COMPLETE
+validation_interpretation_freeze: PREPARED_PENDING_COMMIT
 
 ds005_test_partition: PROTECTED
 ds006_test_partition: SEALED
@@ -962,14 +993,20 @@ ds006_test_partition: SEALED
 
 The methodological preregistration package is now internally ready for formal review/freeze.
 
-The ongoing SSL training does not reopen the frozen methods.
+The completed SSL training and validation analyses did not reopen the frozen
+methods. Validation-driven claim restrictions and the preselected final TEST
+case studies are recorded in `docs/validation-freeze.md`.
 
 Before any DS-005 TEST evaluation:
 
 1. preserve the current charter, decision log, dataset register, evaluation protocol, and preregistration draft;
-2. complete the already-running SSL seed runs without methodological modification;
-3. record final TRAIN / VALIDATION training artifacts and hashes;
+2. preserve the completed five-seed TRAIN / VALIDATION artifacts and hashes;
+3. preserve and commit `docs/validation-freeze.md` with the validation artifacts;
 4. verify that no protected TEST results have been inspected;
 5. formally timestamp or register the preregistration package.
 
-After that point, TEST evaluation may proceed exactly under the frozen protocol.
+After that point, TEST evaluation may proceed exactly under the frozen protocol
+and validation-freeze document. Current validation evidence restricts the claim:
+SSL organization is highly recoverable by a nonlinear Input-A probe, so the
+study must not claim that SSL captures information fundamentally absent from the
+handcrafted representation.

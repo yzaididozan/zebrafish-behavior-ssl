@@ -1,0 +1,88 @@
+{
+  "clustering_seed": 20260822,
+  "dataset_id": "DS-006",
+  "k": 8,
+  "k_selection_performed": false,
+  "kmeans_fit_on_train_only": true,
+  "kmeans_n_init": 10,
+  "method": "kmeans",
+  "method_selection_performed": false,
+  "pca_components": 13,
+  "pca_fit_on_train_only": true,
+  "pca_variance_retained": 0.9607731103897095,
+  "pca_variance_target": 0.95,
+  "scaler_fit_on_train_only": true,
+  "source_encoder_dataset": "DS-005",
+  "ssl_encoder_seed": 23,
+  "test_partition_used": false,
+  "train_occupancy": {
+    "counts": [
+      10809,
+      25658,
+      19671,
+      10828,
+      22713,
+      11411,
+      10069,
+      6941
+    ],
+    "empty_clusters": 0,
+    "fractions": [
+      0.09152413209144793,
+      0.21725656223539375,
+      0.16656223539373413,
+      0.09168501270110076,
+      0.19232006773920407,
+      0.09662150719729043,
+      0.08525825571549535,
+      0.05877222692633362
+    ],
+    "max_fraction": 0.21725656223539375,
+    "min_fraction": 0.05877222692633362
+  },
+  "train_repeated_fit_stability": {
+    "max_pairwise_ari": 1.0,
+    "mean_pairwise_ari": 0.831029983070691,
+    "min_pairwise_ari": 0.5845725560144899,
+    "repeat_seeds": [
+      20260822,
+      20261831,
+      20262840,
+      20263849,
+      20264858
+    ],
+    "repeats": 5,
+    "sample_rows": 50000,
+    "std_pairwise_ari": 0.19992127718388805
+  },
+  "train_rows": 118100,
+  "train_silhouette": 0.1968313455581665,
+  "validation_confidence": 0.28721141815185547,
+  "validation_occupancy": {
+    "counts": [
+      2358,
+      3883,
+      3050,
+      1737,
+      3263,
+      1709,
+      1608,
+      1227
+    ],
+    "empty_clusters": 0,
+    "fractions": [
+      0.12519246084417307,
+      0.20615874701353862,
+      0.1619325723387311,
+      0.09222192726307406,
+      0.17324130607910804,
+      0.09073533315635784,
+      0.08537297584284577,
+      0.0651446774621715
+    ],
+    "max_fraction": 0.20615874701353862,
+    "min_fraction": 0.0651446774621715
+  },
+  "validation_rows": 18835,
+  "validation_silhouette": 0.17376087605953217
+}

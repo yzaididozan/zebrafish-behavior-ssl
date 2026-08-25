@@ -1,0 +1,1076 @@
+{
+  "aggregate_metrics": {
+    "train_ami": {
+      "max": 0.05990266108228122,
+      "mean": 0.05101512364079917,
+      "min": 0.04468828475932171,
+      "std": 0.005185930605092798
+    },
+    "train_ari": {
+      "max": 0.024205004100700728,
+      "mean": 0.019032658962057775,
+      "min": 0.015889900100542764,
+      "std": 0.0028611945553637546
+    },
+    "train_h_baseline_given_ssl": {
+      "max": 0.8350363275644033,
+      "mean": 0.8137267241777929,
+      "min": 0.7853066562465815,
+      "std": 0.017082352880845173
+    },
+    "train_h_ssl_given_baseline": {
+      "max": 0.9741529768807774,
+      "mean": 0.9704424692444527,
+      "min": 0.9651905199572439,
+      "std": 0.0030522961405295246
+    },
+    "train_nmi": {
+      "max": 0.05990604475725252,
+      "mean": 0.051018473365428765,
+      "min": 0.04469162321196769,
+      "std": 0.005185943785955752
+    },
+    "train_probe_balanced_accuracy": {
+      "max": 0.5252228580571286,
+      "mean": 0.4863185761145318,
+      "min": 0.4259234683093982,
+      "std": 0.04046066945851124
+    },
+    "train_probe_macro_f1": {
+      "max": 0.5049361879057981,
+      "mean": 0.4631720602776137,
+      "min": 0.4084590654460062,
+      "std": 0.04162236565526133
+    },
+    "validation_ami": {
+      "max": 0.055403952170912964,
+      "mean": 0.047453755200621,
+      "min": 0.04038741452937344,
+      "std": 0.00496991895530804
+    },
+    "validation_ari": {
+      "max": 0.022815062222548452,
+      "mean": 0.01801393233336888,
+      "min": 0.01455190587618715,
+      "std": 0.002770760598865046
+    },
+    "validation_h_baseline_given_ssl": {
+      "max": 0.8509463309385595,
+      "mean": 0.8269819498589894,
+      "min": 0.8019901032208094,
+      "std": 0.016333298288183574
+    },
+    "validation_h_ssl_given_baseline": {
+      "max": 0.9766304981675772,
+      "mean": 0.9724902335856106,
+      "min": 0.9677805404930665,
+      "std": 0.0029265012169215937
+    },
+    "validation_nmi": {
+      "max": 0.055421011066205686,
+      "mean": 0.04747060166265571,
+      "min": 0.0404041982780258,
+      "std": 0.0049699999023660735
+    },
+    "validation_probe_balanced_accuracy": {
+      "max": 0.5237446430086279,
+      "mean": 0.4816436975422228,
+      "min": 0.4202171112543816,
+      "std": 0.0419201905669885
+    },
+    "validation_probe_macro_f1": {
+      "max": 0.5026126147090821,
+      "mean": 0.4579881445326947,
+      "min": 0.40402691115087036,
+      "std": 0.042422238075130576
+    }
+  },
+  "dataset_id": "DS-005",
+  "input_a": {
+    "representation": "18 handcrafted core features",
+    "selected_clustering": {
+      "k": 2,
+      "method": "gmm",
+      "pca_components": 6,
+      "seed": 20260822
+    }
+  },
+  "input_b": {
+    "representation": "ssl_encoder_embedding",
+    "selected_clustering": {
+      "k": 8,
+      "method": "kmeans"
+    },
+    "ssl_training_seeds": [
+      11,
+      23,
+      37,
+      51,
+      79
+    ]
+  },
+  "interpretation_guardrails": {
+    "conditional_entropy": "High H(SSL|baseline)/H(SSL) means knowing the baseline state leaves substantial uncertainty about the SSL state.",
+    "linear_probe": "The 18-feature logistic-regression probe tests only linear reconstructability. A later nonlinear sensitivity probe is needed before claiming SSL structure cannot be reconstructed from Input A by any reasonable mapping.",
+    "low_overlap": "Low ARI/NMI indicates the partitions differ, but difference alone does not establish that SSL structure is biologically meaningful.",
+    "test_partition_used": false
+  },
+  "per_seed": {
+    "11": {
+      "linear_probe": {
+        "fit_partition": "train",
+        "input": "18 frozen TRAIN-scaled handcrafted features",
+        "interpretation": "Tests linear reconstructability of SSL cluster labels from Input A. Does not rule out nonlinear reconstructability.",
+        "probe": "multinomial_logistic_regression",
+        "target": "SSL k=8 cluster labels",
+        "test_partition_used": false,
+        "train": {
+          "accuracy": 0.3958623275327138,
+          "balanced_accuracy": 0.4498436124694718,
+          "macro_f1": 0.41721241934072767,
+          "majority_accuracy": 0.1693688370641675,
+          "uniform_chance": 0.125
+        },
+        "validation": {
+          "accuracy": 0.38833222528255296,
+          "balanced_accuracy": 0.4427599465426824,
+          "macro_f1": 0.4094636045325162,
+          "majority_accuracy": 0.16913999430145313,
+          "uniform_chance": 0.125
+        }
+      },
+      "row_alignment_verified": true,
+      "ssl_seed": 11,
+      "test_partition_used": false,
+      "train_comparison": {
+        "adjusted_mutual_information": 0.05082207518884856,
+        "adjusted_rand_index": 0.018856214341355603,
+        "contingency_baseline_x_ssl": [
+          [
+            98523,
+            107399,
+            136238,
+            98793,
+            37125,
+            38632,
+            112656,
+            130394
+          ],
+          [
+            5707,
+            7950,
+            6513,
+            4933,
+            7450,
+            37853,
+            6477,
+            6198
+          ]
+        ],
+        "normalized_H_baseline_given_ssl": 0.8140338677411563,
+        "normalized_H_ssl_given_baseline": 0.970564915547707,
+        "normalized_mutual_information": 0.05082542143340126,
+        "ssl_within_each_baseline_cluster": {
+          "0": {
+            "count": 759760,
+            "dominant_ssl_cluster_fraction": 0.17931715278509003,
+            "effective_ssl_cluster_count": 7.384337230763236,
+            "ssl_cluster_counts": [
+              98523,
+              107399,
+              136238,
+              98793,
+              37125,
+              38632,
+              112656,
+              130394
+            ],
+            "ssl_cluster_fractions": [
+              0.12967647678214173,
+              0.1413591134042329,
+              0.17931715278509003,
+              0.13003185216384122,
+              0.048864114983679055,
+              0.05084763609560914,
+              0.1482784037064336,
+              0.1716252500789723
+            ]
+          },
+          "1": {
+            "count": 83081,
+            "dominant_ssl_cluster_fraction": 0.45561560404906054,
+            "effective_ssl_cluster_count": 5.713005489195346,
+            "ssl_cluster_counts": [
+              5707,
+              7950,
+              6513,
+              4933,
+              7450,
+              37853,
+              6477,
+              6198
+            ],
+            "ssl_cluster_fractions": [
+              0.06869199937410479,
+              0.09568974855863555,
+              0.07839337513992369,
+              0.05937578989179235,
+              0.08967152537884715,
+              0.45561560404906054,
+              0.07796006307097893,
+              0.074601894536657
+            ]
+          }
+        }
+      },
+      "validation_comparison": {
+        "adjusted_mutual_information": 0.04802880685701015,
+        "adjusted_rand_index": 0.018130149778433767,
+        "contingency_baseline_x_ssl": [
+          [
+            20125,
+            21734,
+            27139,
+            20279,
+            6882,
+            7850,
+            21943,
+            25899
+          ],
+          [
+            1180,
+            1803,
+            1355,
+            995,
+            1481,
+            7301,
+            1171,
+            1327
+          ]
+        ],
+        "normalized_H_baseline_given_ssl": 0.8244578760287357,
+        "normalized_H_ssl_given_baseline": 0.9721684660254827,
+        "normalized_mutual_information": 0.04804561846025997,
+        "ssl_within_each_baseline_cluster": {
+          "0": {
+            "count": 151851,
+            "dominant_ssl_cluster_fraction": 0.17872124648504126,
+            "effective_ssl_cluster_count": 7.368783677464712,
+            "ssl_cluster_counts": [
+              20125,
+              21734,
+              27139,
+              20279,
+              6882,
+              7850,
+              21943,
+              25899
+            ],
+            "ssl_cluster_fractions": [
+              0.13253123127276079,
+              0.1431271443717855,
+              0.17872124648504126,
+              0.13354538330336976,
+              0.04532074204318707,
+              0.051695411949871914,
+              0.14450349355618336,
+              0.17055534701780034
+            ]
+          },
+          "1": {
+            "count": 16613,
+            "dominant_ssl_cluster_fraction": 0.439475109853729,
+            "effective_ssl_cluster_count": 5.856550308869688,
+            "ssl_cluster_counts": [
+              1180,
+              1803,
+              1355,
+              995,
+              1481,
+              7301,
+              1171,
+              1327
+            ],
+            "ssl_cluster_fractions": [
+              0.07102871245410221,
+              0.10852946487690363,
+              0.08156263167399025,
+              0.05989285499307771,
+              0.08914705351230964,
+              0.439475109853729,
+              0.07048696803707939,
+              0.07987720459880816
+            ]
+          }
+        }
+      }
+    },
+    "23": {
+      "linear_probe": {
+        "fit_partition": "train",
+        "input": "18 frozen TRAIN-scaled handcrafted features",
+        "interpretation": "Tests linear reconstructability of SSL cluster labels from Input A. Does not rule out nonlinear reconstructability.",
+        "probe": "multinomial_logistic_regression",
+        "target": "SSL k=8 cluster labels",
+        "test_partition_used": false,
+        "train": {
+          "accuracy": 0.39047103783513143,
+          "balanced_accuracy": 0.4259234683093982,
+          "macro_f1": 0.4084590654460062,
+          "majority_accuracy": 0.1601120496036619,
+          "uniform_chance": 0.125
+        },
+        "validation": {
+          "accuracy": 0.3861121663975686,
+          "balanced_accuracy": 0.4202171112543816,
+          "macro_f1": 0.40402691115087036,
+          "majority_accuracy": 0.1631268401557603,
+          "uniform_chance": 0.125
+        }
+      },
+      "row_alignment_verified": true,
+      "ssl_seed": 23,
+      "test_partition_used": false,
+      "train_comparison": {
+        "adjusted_mutual_information": 0.04468828475932171,
+        "adjusted_rand_index": 0.015889900100542764,
+        "contingency_baseline_x_ssl": [
+          [
+            122270,
+            91336,
+            127563,
+            86454,
+            119153,
+            28357,
+            97938,
+            86689
+          ],
+          [
+            7229,
+            5935,
+            7386,
+            7402,
+            8833,
+            33665,
+            6291,
+            6340
+          ]
+        ],
+        "normalized_H_baseline_given_ssl": 0.8350363275644033,
+        "normalized_H_ssl_given_baseline": 0.9741529768807774,
+        "normalized_mutual_information": 0.04469162321196769,
+        "ssl_within_each_baseline_cluster": {
+          "0": {
+            "count": 759760,
+            "dominant_ssl_cluster_fraction": 0.16789907339159735,
+            "effective_ssl_cluster_count": 7.542850471678072,
+            "ssl_cluster_counts": [
+              122270,
+              91336,
+              127563,
+              86454,
+              119153,
+              28357,
+              97938,
+              86689
+            ],
+            "ssl_cluster_fractions": [
+              0.16093239970517006,
+              0.12021691060334842,
+              0.16789907339159735,
+              0.11379119722017479,
+              0.15682978835421713,
+              0.03732362851426766,
+              0.1289064967884595,
+              0.11410050542276508
+            ]
+          },
+          "1": {
+            "count": 83081,
+            "dominant_ssl_cluster_fraction": 0.40520696669515294,
+            "effective_ssl_cluster_count": 6.219356673028562,
+            "ssl_cluster_counts": [
+              7229,
+              5935,
+              7386,
+              7402,
+              8833,
+              33665,
+              6291,
+              6340
+            ],
+            "ssl_cluster_fractions": [
+              0.08701147073338068,
+              0.0714363091440883,
+              0.08890119281183423,
+              0.08909377595358746,
+              0.10631793069414186,
+              0.40520696669515294,
+              0.07572128404809764,
+              0.07631106991971691
+            ]
+          }
+        }
+      },
+      "validation_comparison": {
+        "adjusted_mutual_information": 0.04038741452937344,
+        "adjusted_rand_index": 0.01455190587618715,
+        "contingency_baseline_x_ssl": [
+          [
+            23750,
+            18124,
+            25914,
+            17384,
+            24224,
+            5968,
+            19073,
+            17414
+          ],
+          [
+            1447,
+            1068,
+            1567,
+            1557,
+            1953,
+            6406,
+            1286,
+            1329
+          ]
+        ],
+        "normalized_H_baseline_given_ssl": 0.8509463309385595,
+        "normalized_H_ssl_given_baseline": 0.9766304981675772,
+        "normalized_mutual_information": 0.0404041982780258,
+        "ssl_within_each_baseline_cluster": {
+          "0": {
+            "count": 151851,
+            "dominant_ssl_cluster_fraction": 0.17065412805974278,
+            "effective_ssl_cluster_count": 7.558599354029218,
+            "ssl_cluster_counts": [
+              23750,
+              18124,
+              25914,
+              17384,
+              24224,
+              5968,
+              19073,
+              17414
+            ],
+            "ssl_cluster_fractions": [
+              0.15640331640884814,
+              0.11935384027764058,
+              0.17065412805974278,
+              0.11448064220848068,
+              0.15952479733422895,
+              0.03930168388749498,
+              0.12560338753119835,
+              0.11467820429236554
+            ]
+          },
+          "1": {
+            "count": 16613,
+            "dominant_ssl_cluster_fraction": 0.3856016372720159,
+            "effective_ssl_cluster_count": 6.377925162348688,
+            "ssl_cluster_counts": [
+              1447,
+              1068,
+              1567,
+              1557,
+              1953,
+              6406,
+              1286,
+              1329
+            ],
+            "ssl_cluster_fractions": [
+              0.08710046349244567,
+              0.06428700415337386,
+              0.09432372238608319,
+              0.09372178414494672,
+              0.11755853849395052,
+              0.3856016372720159,
+              0.07740925781014868,
+              0.07999759224703545
+            ]
+          }
+        }
+      }
+    },
+    "37": {
+      "linear_probe": {
+        "fit_partition": "train",
+        "input": "18 frozen TRAIN-scaled handcrafted features",
+        "interpretation": "Tests linear reconstructability of SSL cluster labels from Input A. Does not rule out nonlinear reconstructability.",
+        "probe": "multinomial_logistic_regression",
+        "target": "SSL k=8 cluster labels",
+        "test_partition_used": false,
+        "train": {
+          "accuracy": 0.48313620243913147,
+          "balanced_accuracy": 0.5179260961143215,
+          "macro_f1": 0.48642318235623816,
+          "majority_accuracy": 0.1749665713936555,
+          "uniform_chance": 0.125
+        },
+        "validation": {
+          "accuracy": 0.48252445626365276,
+          "balanced_accuracy": 0.5149127681862162,
+          "macro_f1": 0.4811535041503007,
+          "majority_accuracy": 0.1747613733497958,
+          "uniform_chance": 0.125
+        }
+      },
+      "row_alignment_verified": true,
+      "ssl_seed": 37,
+      "test_partition_used": false,
+      "train_comparison": {
+        "adjusted_mutual_information": 0.04732012177336517,
+        "adjusted_rand_index": 0.01697606950130459,
+        "contingency_baseline_x_ssl": [
+          [
+            119466,
+            111679,
+            100932,
+            141419,
+            111167,
+            43151,
+            41546,
+            90400
+          ],
+          [
+            5974,
+            8210,
+            6144,
+            6050,
+            7030,
+            38033,
+            6809,
+            4831
+          ]
+        ],
+        "normalized_H_baseline_given_ssl": 0.8264556971608689,
+        "normalized_H_ssl_given_baseline": 0.9726028207043779,
+        "normalized_mutual_information": 0.047323472785265254,
+        "ssl_within_each_baseline_cluster": {
+          "0": {
+            "count": 759760,
+            "dominant_ssl_cluster_fraction": 0.1861364114983679,
+            "effective_ssl_cluster_count": 7.464621653663074,
+            "ssl_cluster_counts": [
+              119466,
+              111679,
+              100932,
+              141419,
+              111167,
+              43151,
+              41546,
+              90400
+            ],
+            "ssl_cluster_fractions": [
+              0.15724176055596503,
+              0.14699247130672843,
+              0.13284721490997156,
+              0.1861364114983679,
+              0.14631857428661682,
+              0.056795567021164575,
+              0.05468305780772876,
+              0.11898494261345688
+            ]
+          },
+          "1": {
+            "count": 83081,
+            "dominant_ssl_cluster_fraction": 0.4577821643937844,
+            "effective_ssl_cluster_count": 5.688615434751451,
+            "ssl_cluster_counts": [
+              5974,
+              8210,
+              6144,
+              6050,
+              7030,
+              38033,
+              6809,
+              4831
+            ],
+            "ssl_cluster_fractions": [
+              0.07190573055211179,
+              0.09881922461212551,
+              0.07395192643323985,
+              0.07282050047543963,
+              0.08461621790782489,
+              0.4577821643937844,
+              0.08195616326235843,
+              0.05814807236311551
+            ]
+          }
+        }
+      },
+      "validation_comparison": {
+        "adjusted_mutual_information": 0.044606899614286454,
+        "adjusted_rand_index": 0.01621935808482978,
+        "contingency_baseline_x_ssl": [
+          [
+            23752,
+            22703,
+            19651,
+            28148,
+            22526,
+            8746,
+            7893,
+            18432
+          ],
+          [
+            1124,
+            1833,
+            1096,
+            1293,
+            1539,
+            7357,
+            1326,
+            1045
+          ]
+        ],
+        "normalized_H_baseline_given_ssl": 0.8365782547405053,
+        "normalized_H_ssl_given_baseline": 0.9741602493290192,
+        "normalized_mutual_information": 0.04462373216444601,
+        "ssl_within_each_baseline_cluster": {
+          "0": {
+            "count": 151851,
+            "dominant_ssl_cluster_fraction": 0.18536591790636875,
+            "effective_ssl_cluster_count": 7.452024600336864,
+            "ssl_cluster_counts": [
+              23752,
+              22703,
+              19651,
+              28148,
+              22526,
+              8746,
+              7893,
+              18432
+            ],
+            "ssl_cluster_fractions": [
+              0.15641648721444046,
+              0.1495083996812665,
+              0.12940975034738,
+              0.18536591790636875,
+              0.14834278338634582,
+              0.05759593285523309,
+              0.05197858427010688,
+              0.12138214433885848
+            ]
+          },
+          "1": {
+            "count": 16613,
+            "dominant_ssl_cluster_fraction": 0.4428459640040932,
+            "effective_ssl_cluster_count": 5.814617094001258,
+            "ssl_cluster_counts": [
+              1124,
+              1833,
+              1096,
+              1293,
+              1539,
+              7357,
+              1326,
+              1045
+            ],
+            "ssl_cluster_fractions": [
+              0.06765785830373804,
+              0.110335279600313,
+              0.06597243122855595,
+              0.0778306145789442,
+              0.0926382953109011,
+              0.4428459640040932,
+              0.07981701077469451,
+              0.06290254619876001
+            ]
+          }
+        }
+      }
+    },
+    "51": {
+      "linear_probe": {
+        "fit_partition": "train",
+        "input": "18 frozen TRAIN-scaled handcrafted features",
+        "interpretation": "Tests linear reconstructability of SSL cluster labels from Input A. Does not rule out nonlinear reconstructability.",
+        "probe": "multinomial_logistic_regression",
+        "target": "SSL k=8 cluster labels",
+        "test_partition_used": false,
+        "train": {
+          "accuracy": 0.4806268323444161,
+          "balanced_accuracy": 0.5252228580571286,
+          "macro_f1": 0.5049361879057981,
+          "majority_accuracy": 0.15779725950683463,
+          "uniform_chance": 0.125
+        },
+        "validation": {
+          "accuracy": 0.4786126412764745,
+          "balanced_accuracy": 0.5237446430086279,
+          "macro_f1": 0.5026126147090821,
+          "majority_accuracy": 0.15976113591034286,
+          "uniform_chance": 0.125
+        }
+      },
+      "row_alignment_verified": true,
+      "ssl_seed": 51,
+      "test_partition_used": false,
+      "train_comparison": {
+        "adjusted_mutual_information": 0.05234247540017921,
+        "adjusted_rand_index": 0.019236106766385184,
+        "contingency_baseline_x_ssl": [
+          [
+            112734,
+            113761,
+            107991,
+            25311,
+            115871,
+            109452,
+            50398,
+            124242
+          ],
+          [
+            6620,
+            5361,
+            6511,
+            35073,
+            6339,
+            6820,
+            7601,
+            8756
+          ]
+        ],
+        "normalized_H_baseline_given_ssl": 0.8078010721759542,
+        "normalized_H_ssl_given_baseline": 0.9697011131321565,
+        "normalized_mutual_information": 0.052345804639257074,
+        "ssl_within_each_baseline_cluster": {
+          "0": {
+            "count": 759760,
+            "dominant_ssl_cluster_fraction": 0.1635279561966937,
+            "effective_ssl_cluster_count": 7.38955709555285,
+            "ssl_cluster_counts": [
+              112734,
+              113761,
+              107991,
+              25311,
+              115871,
+              109452,
+              50398,
+              124242
+            ],
+            "ssl_cluster_fractions": [
+              0.14838106770559123,
+              0.14973281036116667,
+              0.14213830683373696,
+              0.03331446772665052,
+              0.1525100031588923,
+              0.1440612825102664,
+              0.06633410550700221,
+              0.1635279561966937
+            ]
+          },
+          "1": {
+            "count": 83081,
+            "dominant_ssl_cluster_fraction": 0.42215428316943704,
+            "effective_ssl_cluster_count": 6.046696903523738,
+            "ssl_cluster_counts": [
+              6620,
+              5361,
+              6511,
+              35073,
+              6339,
+              6820,
+              7601,
+              8756
+            ],
+            "ssl_cluster_fractions": [
+              0.0796812749003984,
+              0.06452738893369121,
+              0.07836930224720454,
+              0.42215428316943704,
+              0.07629903347335733,
+              0.08208856417231376,
+              0.09148902877914325,
+              0.10539112432445445
+            ]
+          }
+        }
+      },
+      "validation_comparison": {
+        "adjusted_mutual_information": 0.04884170283152202,
+        "adjusted_rand_index": 0.01835318570484527,
+        "contingency_baseline_x_ssl": [
+          [
+            22074,
+            22621,
+            21722,
+            5131,
+            23913,
+            21876,
+            9559,
+            24955
+          ],
+          [
+            1215,
+            1150,
+            1347,
+            6709,
+            1452,
+            1282,
+            1499,
+            1959
+          ]
+        ],
+        "normalized_H_baseline_given_ssl": 0.8209371843663372,
+        "normalized_H_ssl_given_baseline": 0.9717114139129072,
+        "normalized_mutual_information": 0.04885844834434111,
+        "ssl_within_each_baseline_cluster": {
+          "0": {
+            "count": 151851,
+            "dominant_ssl_cluster_fraction": 0.1643387267782234,
+            "effective_ssl_cluster_count": 7.371897492697719,
+            "ssl_cluster_counts": [
+              22074,
+              22621,
+              21722,
+              5131,
+              23913,
+              21876,
+              9559,
+              24955
+            ],
+            "ssl_cluster_fractions": [
+              0.14536618132248058,
+              0.14896839665198122,
+              0.14304811953823154,
+              0.03378970174710736,
+              0.15747673706462256,
+              0.14406227156884052,
+              0.06294986532851282,
+              0.1643387267782234
+            ]
+          },
+          "1": {
+            "count": 16613,
+            "dominant_ssl_cluster_fraction": 0.40384036597845063,
+            "effective_ssl_cluster_count": 6.208016280896773,
+            "ssl_cluster_counts": [
+              1215,
+              1150,
+              1347,
+              6709,
+              1452,
+              1282,
+              1499,
+              1959
+            ],
+            "ssl_cluster_fractions": [
+              0.07313549629807982,
+              0.06922289773069283,
+              0.08108108108108109,
+              0.40384036597845063,
+              0.0874014326130139,
+              0.0771684825136941,
+              0.09023054234635526,
+              0.1179197014386324
+            ]
+          }
+        }
+      }
+    },
+    "79": {
+      "linear_probe": {
+        "fit_partition": "train",
+        "input": "18 frozen TRAIN-scaled handcrafted features",
+        "interpretation": "Tests linear reconstructability of SSL cluster labels from Input A. Does not rule out nonlinear reconstructability.",
+        "probe": "multinomial_logistic_regression",
+        "target": "SSL k=8 cluster labels",
+        "test_partition_used": false,
+        "train": {
+          "accuracy": 0.48378638438329413,
+          "balanced_accuracy": 0.5126768456223388,
+          "macro_f1": 0.49882944633929827,
+          "majority_accuracy": 0.188158857957788,
+          "uniform_chance": 0.125
+        },
+        "validation": {
+          "accuracy": 0.4768199734067813,
+          "balanced_accuracy": 0.5065840187192057,
+          "macro_f1": 0.49268408812070436,
+          "majority_accuracy": 0.19248029252540602,
+          "uniform_chance": 0.125
+        }
+      },
+      "row_alignment_verified": true,
+      "ssl_seed": 79,
+      "test_partition_used": false,
+      "train_comparison": {
+        "adjusted_mutual_information": 0.05990266108228122,
+        "adjusted_rand_index": 0.024205004100700728,
+        "contingency_baseline_x_ssl": [
+          [
+            149502,
+            52463,
+            117081,
+            12007,
+            150063,
+            71821,
+            142002,
+            64821
+          ],
+          [
+            9086,
+            7427,
+            6956,
+            32330,
+            8276,
+            4808,
+            9439,
+            4759
+          ]
+        ],
+        "normalized_H_baseline_given_ssl": 0.7853066562465815,
+        "normalized_H_ssl_given_baseline": 0.9651905199572439,
+        "normalized_mutual_information": 0.05990604475725252,
+        "ssl_within_each_baseline_cluster": {
+          "0": {
+            "count": 759760,
+            "dominant_ssl_cluster_fraction": 0.19751368853322102,
+            "effective_ssl_cluster_count": 6.855216203933027,
+            "ssl_cluster_counts": [
+              149502,
+              52463,
+              117081,
+              12007,
+              150063,
+              71821,
+              142002,
+              64821
+            ],
+            "ssl_cluster_fractions": [
+              0.19677529746235653,
+              0.06905206907444456,
+              0.15410261135095293,
+              0.015803674844687796,
+              0.19751368853322102,
+              0.09453116773718016,
+              0.1869037590818153,
+              0.08531773191534169
+            ]
+          },
+          "1": {
+            "count": 83081,
+            "dominant_ssl_cluster_fraction": 0.3891383108051179,
+            "effective_ssl_cluster_count": 6.2864665328333995,
+            "ssl_cluster_counts": [
+              9086,
+              7427,
+              6956,
+              32330,
+              8276,
+              4808,
+              9439,
+              4759
+            ],
+            "ssl_cluster_fractions": [
+              0.10936315162311479,
+              0.08939468711257688,
+              0.08372552087721621,
+              0.3891383108051179,
+              0.09961363007185758,
+              0.05787123409684525,
+              0.11361201718804541,
+              0.05728144822522598
+            ]
+          }
+        }
+      },
+      "validation_comparison": {
+        "adjusted_mutual_information": 0.055403952170912964,
+        "adjusted_rand_index": 0.022815062222548452,
+        "contingency_baseline_x_ssl": [
+          [
+            29354,
+            9926,
+            23925,
+            2496,
+            30586,
+            14327,
+            28598,
+            12639
+          ],
+          [
+            1747,
+            1458,
+            1525,
+            6141,
+            1840,
+            922,
+            2104,
+            876
+          ]
+        ],
+        "normalized_H_baseline_given_ssl": 0.8019901032208094,
+        "normalized_H_ssl_given_baseline": 0.9677805404930665,
+        "normalized_mutual_information": 0.055421011066205686,
+        "ssl_within_each_baseline_cluster": {
+          "0": {
+            "count": 151851,
+            "dominant_ssl_cluster_fraction": 0.20142112992341177,
+            "effective_ssl_cluster_count": 6.831359384301819,
+            "ssl_cluster_counts": [
+              29354,
+              9926,
+              23925,
+              2496,
+              30586,
+              14327,
+              28598,
+              12639
+            ],
+            "ssl_cluster_fractions": [
+              0.19330791367854014,
+              0.06536670815470429,
+              0.1575557618981765,
+              0.01643716537922042,
+              0.20142112992341177,
+              0.09434906586061337,
+              0.18832934916464167,
+              0.08323290594069187
+            ]
+          },
+          "1": {
+            "count": 16613,
+            "dominant_ssl_cluster_fraction": 0.3696502738818997,
+            "effective_ssl_cluster_count": 6.414262127558699,
+            "ssl_cluster_counts": [
+              1747,
+              1458,
+              1525,
+              6141,
+              1840,
+              922,
+              2104,
+              876
+            ],
+            "ssl_cluster_fractions": [
+              0.10515861072653945,
+              0.08776259555769578,
+              0.09179558177331006,
+              0.3696502738818997,
+              0.11075663636910853,
+              0.055498705832781554,
+              0.12664780593511105,
+              0.052729789923553844
+            ]
+          }
+        }
+      }
+    }
+  },
+  "row_alignment": {
+    "verified_fields": [
+      "fish_id",
+      "session_id",
+      "bout_index",
+      "partition",
+      "context_id"
+    ],
+    "verified_for_all_ssl_seeds": true
+  },
+  "test_partition_used": false
+}

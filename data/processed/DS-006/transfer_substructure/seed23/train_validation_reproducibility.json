@@ -1,0 +1,116 @@
+{
+  "analysis": "train_validation_cluster_feature_profile_reproducibility",
+  "dataset_id": "DS-006",
+  "features": {
+    "bout_duration": {
+      "mean_profile_spearman": 0.9523809523809524,
+      "median_profile_spearman": 0.9242930987335742,
+      "train_eta_squared": 0.18230105630864862,
+      "validation_eta_squared": 0.0637958537861937
+    },
+    "inter_bout_interval": {
+      "mean_profile_spearman": 0.6904761904761906,
+      "median_profile_spearman": 0.5988131309566295,
+      "train_eta_squared": 0.0010523139058008406,
+      "validation_eta_squared": 0.0021946627668935816
+    },
+    "speed_change_abs_mean": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.17052643498301231,
+      "validation_eta_squared": 0.30068636469508186
+    },
+    "speed_change_max": {
+      "mean_profile_spearman": 0.880952380952381,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.13526592221103545,
+      "validation_eta_squared": 0.29044668730073286
+    },
+    "speed_change_rms": {
+      "mean_profile_spearman": 0.9047619047619048,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.12189737686931285,
+      "validation_eta_squared": 0.28547150248583797
+    },
+    "speed_change_std": {
+      "mean_profile_spearman": 0.9047619047619048,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.12198373682919225,
+      "validation_eta_squared": 0.2854818793064639
+    },
+    "speed_max": {
+      "mean_profile_spearman": 0.9523809523809524,
+      "median_profile_spearman": 0.9285714285714287,
+      "train_eta_squared": 0.2670613071023921,
+      "validation_eta_squared": 0.3518320186696682
+    },
+    "speed_mean": {
+      "mean_profile_spearman": 0.9761904761904763,
+      "median_profile_spearman": 0.9761904761904763,
+      "train_eta_squared": 0.41672689732566315,
+      "validation_eta_squared": 0.4789235706696665
+    },
+    "speed_median": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.3033815818500506,
+      "validation_eta_squared": 0.23560992678430684
+    },
+    "speed_p95": {
+      "mean_profile_spearman": 0.9761904761904763,
+      "median_profile_spearman": 0.9285714285714287,
+      "train_eta_squared": 0.3655498060471539,
+      "validation_eta_squared": 0.3975233026991568
+    },
+    "speed_rms": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 0.9761904761904763,
+      "train_eta_squared": 0.3647183306832246,
+      "validation_eta_squared": 0.4139823814717138
+    },
+    "speed_std": {
+      "mean_profile_spearman": 0.9761904761904763,
+      "median_profile_spearman": 0.9285714285714287,
+      "train_eta_squared": 0.2980940730531424,
+      "validation_eta_squared": 0.36980966103485313
+    },
+    "turn_abs_mean": {
+      "mean_profile_spearman": 0.9761904761904763,
+      "median_profile_spearman": 0.9761904761904763,
+      "train_eta_squared": 0.31476015991624223,
+      "validation_eta_squared": 0.26079781377204536
+    },
+    "turn_max": {
+      "mean_profile_spearman": 0.9761904761904763,
+      "median_profile_spearman": 0.9761904761904763,
+      "train_eta_squared": 0.332921529132815,
+      "validation_eta_squared": 0.2776282217245322
+    },
+    "turn_net": {
+      "mean_profile_spearman": 0.9523809523809524,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.018396166741725735,
+      "validation_eta_squared": 0.012675390251308637
+    },
+    "turn_rms": {
+      "mean_profile_spearman": 0.9761904761904763,
+      "median_profile_spearman": 0.9761904761904763,
+      "train_eta_squared": 0.31606638384717184,
+      "validation_eta_squared": 0.2709773236111369
+    },
+    "turn_std": {
+      "mean_profile_spearman": 0.9761904761904763,
+      "median_profile_spearman": 0.9761904761904763,
+      "train_eta_squared": 0.31321875450941167,
+      "validation_eta_squared": 0.2673962421260888
+    },
+    "turn_total_abs": {
+      "mean_profile_spearman": 0.9285714285714287,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.404144599794987,
+      "validation_eta_squared": 0.2967039687579429
+    }
+  },
+  "ssl_encoder_seed": 23,
+  "test_partition_used": false
+}

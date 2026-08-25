@@ -1,0 +1,247 @@
+{
+  "aggregate": {
+    "train": {
+      "near_zero_variance_dimension_count": {
+        "max": 0,
+        "values_by_seed": {
+          "11": 0,
+          "23": 0,
+          "37": 0,
+          "51": 0,
+          "79": 0
+        }
+      },
+      "pca_components_for_95pct_variance": {
+        "mean": 13.0,
+        "values_by_seed": {
+          "11": 14,
+          "23": 11,
+          "37": 14,
+          "51": 13,
+          "79": 13
+        }
+      },
+      "total_variance": {
+        "mean": 73.33490054535802,
+        "values_by_seed": {
+          "11": 64.14717129900245,
+          "23": 94.30814953530498,
+          "37": 62.8150425921956,
+          "51": 70.5272914952285,
+          "79": 74.87684780505859
+        }
+      }
+    },
+    "validation": {
+      "near_zero_variance_dimension_count": {
+        "max": 0,
+        "values_by_seed": {
+          "11": 0,
+          "23": 0,
+          "37": 0,
+          "51": 0,
+          "79": 0
+        }
+      },
+      "pca_components_for_95pct_variance": {
+        "mean": 12.2,
+        "values_by_seed": {
+          "11": 12,
+          "23": 11,
+          "37": 14,
+          "51": 12,
+          "79": 12
+        }
+      },
+      "total_variance": {
+        "mean": 97.80131193601082,
+        "values_by_seed": {
+          "11": 90.2247336183294,
+          "23": 110.01476148379606,
+          "37": 81.84357700338369,
+          "51": 96.09397593599698,
+          "79": 110.82951163854798
+        }
+      }
+    }
+  },
+  "analysis": "transfer_embedding_qc",
+  "cross_seed_geometry": {
+    "train": {
+      "max_pairwise_rho": 0.8872275122715262,
+      "mean_pairwise_rho": 0.7108511777151748,
+      "median_pairwise_rho": 0.7115062980086624,
+      "metric": "Spearman correlation of sampled pairwise Euclidean distance profiles",
+      "min_pairwise_rho": 0.5237838435193862,
+      "pairs": [
+        {
+          "pvalue": 0.0,
+          "seed_a": 11,
+          "seed_b": 23,
+          "spearman_rho": 0.7033232035068346
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 11,
+          "seed_b": 37,
+          "spearman_rho": 0.7515471029670474
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 11,
+          "seed_b": 51,
+          "spearman_rho": 0.7237153716648598
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 11,
+          "seed_b": 79,
+          "spearman_rho": 0.7705966961486144
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 23,
+          "seed_b": 37,
+          "spearman_rho": 0.7184481263117928
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 23,
+          "seed_b": 51,
+          "spearman_rho": 0.6265011593959603
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 23,
+          "seed_b": 79,
+          "spearman_rho": 0.5237838435193862
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 37,
+          "seed_b": 51,
+          "spearman_rho": 0.8872275122715262
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 37,
+          "seed_b": 79,
+          "spearman_rho": 0.6988042916601951
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 51,
+          "seed_b": 79,
+          "spearman_rho": 0.7045644697055319
+        }
+      ],
+      "sample_rows": 2000,
+      "sampled_pairs": 20000,
+      "sampling_seed": 20260824
+    },
+    "validation": {
+      "max_pairwise_rho": 0.9011547626293992,
+      "mean_pairwise_rho": 0.7660819989410856,
+      "median_pairwise_rho": 0.7816540549293454,
+      "metric": "Spearman correlation of sampled pairwise Euclidean distance profiles",
+      "min_pairwise_rho": 0.6163456007968021,
+      "pairs": [
+        {
+          "pvalue": 0.0,
+          "seed_a": 11,
+          "seed_b": 23,
+          "spearman_rho": 0.7412442609530099
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 11,
+          "seed_b": 37,
+          "spearman_rho": 0.8005375577462347
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 11,
+          "seed_b": 51,
+          "spearman_rho": 0.7865033711025861
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 11,
+          "seed_b": 79,
+          "spearman_rho": 0.8297440387729631
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 23,
+          "seed_b": 37,
+          "spearman_rho": 0.7489684961469056
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 23,
+          "seed_b": 51,
+          "spearman_rho": 0.6699958579019918
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 23,
+          "seed_b": 79,
+          "spearman_rho": 0.6163456007968021
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 37,
+          "seed_b": 51,
+          "spearman_rho": 0.9011547626293992
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 37,
+          "seed_b": 79,
+          "spearman_rho": 0.7768047387561047
+        },
+        {
+          "pvalue": 0.0,
+          "seed_a": 51,
+          "seed_b": 79,
+          "spearman_rho": 0.7895213046048595
+        }
+      ],
+      "sample_rows": 2000,
+      "sampled_pairs": 20000,
+      "sampling_seed": 20260824
+    }
+  },
+  "dataset_id": "DS-006",
+  "expected_embedding_dim": 64,
+  "expected_rows": {
+    "train": 118100,
+    "validation": 18835
+  },
+  "healthy_noncollapsed_by_strict_basic_gate": true,
+  "interpretation_guardrails": {
+    "no_clustering_performed": true,
+    "no_model_selection_performed": true,
+    "no_test_access": true,
+    "passing_qc_not_biological_validation": true
+  },
+  "near_zero_variance_threshold": 1e-10,
+  "partitions": [
+    "train",
+    "validation"
+  ],
+  "seeds": [
+    11,
+    23,
+    37,
+    51,
+    79
+  ],
+  "source_encoder_dataset": "DS-005",
+  "strict_basic_gate_definition": {
+    "applies_to_train_and_validation": true,
+    "full_numeric_rank_all_seeds": true,
+    "zero_near_zero_variance_dimensions_all_seeds": true
+  },
+  "test_partition_loaded": false
+}

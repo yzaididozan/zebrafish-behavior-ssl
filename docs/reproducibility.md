@@ -827,9 +827,20 @@ Input A baseline artifact set frozen           ✅
 Baseline discovery/clustering                  ✅
 Input B SSL implementation                     ✅
 Input B representation freeze                  ✅
-Input A vs Input B comparison                  ⬜
-Independent DS-006 replication                 🟨
-Final held-out test evaluation                 ⬜
+Five-seed SSL TRAIN / VALIDATION artifacts      ✅
+SSL clustering/stability analysis              ✅
+Input A vs Input B comparison                  ✅
+Identity/context/speed validation              ✅
+Known-class and substructure validation        ✅
+Validation interpretation freeze               ✅ document prepared
+DS-006 archive integrity verified              ✅
+DS-006 extraction/inventory recorded           ✅ 64 scientific files
+DS-006 recording/fish-well IDs frozen          ✅
+DS-006 well-level QC frozen                    ✅ 374 usable units
+DS-006 preprocessing and split                 ✅
+Independent DS-006 replication analysis        ⬜ not yet run
+Final DS-005 held-out test evaluation          🔒 not opened
+Final DS-006 held-out test evaluation          🔒 sealed
 ```
 
 ---
@@ -863,6 +874,63 @@ Archive SHA-256:
 ```text
 ecf9a0bf45b34d1ec8c8b378c57860e0de20acc2e0aee5749a7bf6d442fd579c
 ```
+
+## DS-006 Replication Source and Identity Freeze
+
+```yaml
+archive_filename: "Data_all.zip"
+archive_sha256: "d94261a2ed89356cd0dd5f9fe69219aaae567eeac31cf46d90769c9aba40094f"
+
+scientific_files_extracted: 64
+mat_files: 32
+txt_files: 32
+
+number_of_sessions: 32
+fish_per_session: 12
+number_of_fish: "384 potential fish-well units; 381 nonempty; 374 usable after frozen well-level QC"
+
+recording_families:
+  pH_1a: 10
+  pH_2a: 7
+  pH_2b: 7
+  pH_2c: 8
+
+canonical_recording_id: "organization.videoName"
+canonical_fish_id: "DS006::<recording_id>::wellXX"
+biological_identity_across_recordings_verified: false
+
+archive_discrepancy:
+  description: "Catamaran_pH_2b_t7 directory exists but no matching scientific .mat/.txt result pair is present"
+
+independence_from_ds005:
+  separate_source_dataset: true
+  separate_dataset_doi: true
+  separate_publication: true
+  separately_acquired_recordings: true
+  different_recording_protocol: true
+  different_frame_rate: true
+  different_recording_duration: true
+  different_tracking_pipeline: true
+  overlapping_authors: true
+  direct_fish_or_recording_overlap: "no evidence found"
+  independence_status: "CONFIRMED"
+```
+
+The canonical fish-well identifier guarantees computational uniqueness within
+DS-006. It does not establish whether a biological animal was reused across
+recordings. Replication grouping and interpretation must retain this limitation.
+
+The processed DS-006 TRAIN, VALIDATION, and sealed TEST artifacts are recorded
+in `docs/ds006-replication-protocol.md` and their frozen SHA-256 values in
+`docs/decision-log.md` (`DEC-023`). Creating and checksum-verifying the sealed
+TEST arrays did not constitute scientific TEST inspection.
+
+DS-006 is an independently acquired Reddy et al. (2022) dataset, distinct from
+the Marques et al. recordings underlying DS-005. Differences in assay design,
+acquisition rate, duration, stimuli, and tracking pipeline support its external
+replication role. Although the datasets share some investigators and were later
+analyzed together in Sridhar et al. (2024), no evidence of direct fish or
+recording overlap was found.
 
 ## Input A Build Audit
 
@@ -908,21 +976,16 @@ bd9f9e4086fae94835409ca37c85163e22db607f3a76020c481dac12ab3474d6
 
 # 24. Next Freeze Point
 
-The next reproducibility freeze should occur **before final baseline clustering evaluation**.
+The TRAIN / VALIDATION analysis freeze is recorded in
+`docs/validation-freeze.md`. Before opening DS-005 TEST, commit or otherwise
+immutably timestamp that document together with the result artifacts and verify
+their recorded hashes. The final evaluation must use the frozen `Long_CS`
+primary case study, `LLC` secondary case study, and stated nuisance checks; TEST
+must not be used to select replacements.
 
-At minimum, freeze and record:
-
-```text
-clustering algorithm(s)
-candidate cluster counts
-cluster-selection criterion
-PCA or dimensionality-reduction configuration
-random seeds
-stability-analysis procedure
-validation metrics
-speed-only control
-fish-identity leakage analysis
-sensitivity-analysis definitions
-```
-
-Only after those decisions are recorded should the final held-out test partition be evaluated.
+The baseline and SSL clustering methods, candidate selection, dimensionality
+reduction, seeds, stability procedure, validation metrics, nuisance controls,
+and sensitivity definitions are already frozen and evaluated on TRAIN /
+VALIDATION. No additional method-selection freeze remains. Only after the
+validation freeze is immutably recorded should the final held-out TEST partition
+be evaluated.

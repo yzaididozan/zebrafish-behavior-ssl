@@ -1,0 +1,182 @@
+{
+  "analysis": "transfer_behavioral_kinematic_substructure",
+  "cross_seed_stability_source_sha256": "b45779bbe5622b4858f57f28a7731675c9f21c2951ef6d066377c5e8c7ad65d2",
+  "dataset_id": "DS-006",
+  "direct_class_replication_limitation": "The frozen DS-006 processed schema contains no conventional bout-class labels equivalent to DS-005 Long_CS or LLC.",
+  "direct_long_cs_or_llc_class_replication_available": false,
+  "feature_manifest_sha256": "5dcaf8447e969114cb7f1fa40ae24ed66194ec388fb02802583e2b716b14f315",
+  "no_cluster_refitting_performed": true,
+  "no_feature_selection_performed": true,
+  "scientific_scope": "reproducible kinematic-axis characterization of frozen transfer clusters",
+  "seeds": [
+    11,
+    23,
+    37,
+    51,
+    79
+  ],
+  "targeted_axes": {
+    "duration_speed_change": [
+      "bout_duration",
+      "speed_change_abs_mean",
+      "speed_change_std",
+      "speed_change_max",
+      "speed_change_rms"
+    ],
+    "turning": [
+      "turn_net",
+      "turn_total_abs",
+      "turn_abs_mean",
+      "turn_std",
+      "turn_max",
+      "turn_rms"
+    ]
+  },
+  "test_partition_used": false,
+  "validation_feature_ranking_by_mean_eta_squared": [
+    {
+      "cross_seed_mean_profile_spearman": 0.17857142857142858,
+      "cross_seed_median_profile_spearman": 0.20952380952380953,
+      "feature": "speed_rms",
+      "mean_train_to_validation_mean_profile_spearman": 0.9476190476190478,
+      "mean_validation_eta_squared": 0.5634847201830359,
+      "rank": 1
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.20476190476190478,
+      "cross_seed_median_profile_spearman": 0.24285714285714288,
+      "feature": "speed_std",
+      "mean_train_to_validation_mean_profile_spearman": 0.9142857142857144,
+      "mean_validation_eta_squared": 0.5468562699116207,
+      "rank": 2
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.15238095238095242,
+      "cross_seed_median_profile_spearman": 0.17857142857142858,
+      "feature": "speed_mean",
+      "mean_train_to_validation_mean_profile_spearman": 0.9714285714285715,
+      "mean_validation_eta_squared": 0.5454210820699339,
+      "rank": 3
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.1904761904761905,
+      "cross_seed_median_profile_spearman": 0.20952380952380953,
+      "feature": "speed_p95",
+      "mean_train_to_validation_mean_profile_spearman": 0.9142857142857143,
+      "mean_validation_eta_squared": 0.5262911535677259,
+      "rank": 4
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.2071428571428572,
+      "cross_seed_median_profile_spearman": 0.23095238095238096,
+      "feature": "speed_max",
+      "mean_train_to_validation_mean_profile_spearman": 0.9047619047619049,
+      "mean_validation_eta_squared": 0.522172399307569,
+      "rank": 5
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.3428571428571429,
+      "cross_seed_median_profile_spearman": 0.3619047619047619,
+      "feature": "speed_change_abs_mean",
+      "mean_train_to_validation_mean_profile_spearman": 0.9904761904761905,
+      "mean_validation_eta_squared": 0.4786602762109524,
+      "rank": 6
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.22142857142857145,
+      "cross_seed_median_profile_spearman": 0.32619047619047625,
+      "feature": "speed_change_max",
+      "mean_train_to_validation_mean_profile_spearman": 0.9523809523809523,
+      "mean_validation_eta_squared": 0.47809889844155756,
+      "rank": 7
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.26428571428571435,
+      "cross_seed_median_profile_spearman": 0.38571428571428573,
+      "feature": "speed_change_rms",
+      "mean_train_to_validation_mean_profile_spearman": 0.9619047619047618,
+      "mean_validation_eta_squared": 0.47596340718550056,
+      "rank": 8
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.26428571428571435,
+      "cross_seed_median_profile_spearman": 0.38571428571428573,
+      "feature": "speed_change_std",
+      "mean_train_to_validation_mean_profile_spearman": 0.9619047619047618,
+      "mean_validation_eta_squared": 0.475872748996372,
+      "rank": 9
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.7476190476190476,
+      "cross_seed_median_profile_spearman": 0.7642857142857145,
+      "feature": "turn_total_abs",
+      "mean_train_to_validation_mean_profile_spearman": 0.9523809523809526,
+      "mean_validation_eta_squared": 0.2916045317824528,
+      "rank": 10
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.7357142857142858,
+      "cross_seed_median_profile_spearman": 0.7904761904761906,
+      "feature": "turn_max",
+      "mean_train_to_validation_mean_profile_spearman": 0.980952380952381,
+      "mean_validation_eta_squared": 0.2755211905407947,
+      "rank": 11
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.7285714285714286,
+      "cross_seed_median_profile_spearman": 0.7880952380952382,
+      "feature": "turn_rms",
+      "mean_train_to_validation_mean_profile_spearman": 0.9714285714285715,
+      "mean_validation_eta_squared": 0.2647956485252184,
+      "rank": 12
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.7285714285714286,
+      "cross_seed_median_profile_spearman": 0.7880952380952382,
+      "feature": "turn_std",
+      "mean_train_to_validation_mean_profile_spearman": 0.9714285714285715,
+      "mean_validation_eta_squared": 0.26110692129740914,
+      "rank": 13
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.7404761904761905,
+      "cross_seed_median_profile_spearman": 0.7761904761904763,
+      "feature": "turn_abs_mean",
+      "mean_train_to_validation_mean_profile_spearman": 0.9666666666666668,
+      "mean_validation_eta_squared": 0.2498132863968822,
+      "rank": 14
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.24285714285714288,
+      "cross_seed_median_profile_spearman": 0.25000000000000006,
+      "feature": "speed_median",
+      "mean_train_to_validation_mean_profile_spearman": 0.9761904761904763,
+      "mean_validation_eta_squared": 0.22626823656893952,
+      "rank": 15
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.26428571428571435,
+      "cross_seed_median_profile_spearman": 0.42740681985511786,
+      "feature": "bout_duration",
+      "mean_train_to_validation_mean_profile_spearman": 0.7809523809523811,
+      "mean_validation_eta_squared": 0.08779300233577272,
+      "rank": 16
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.5714285714285715,
+      "cross_seed_median_profile_spearman": 0.5333333333333334,
+      "feature": "turn_net",
+      "mean_train_to_validation_mean_profile_spearman": 0.9666666666666668,
+      "mean_validation_eta_squared": 0.008711320910969926,
+      "rank": 17
+    },
+    {
+      "cross_seed_mean_profile_spearman": 0.40952380952380957,
+      "cross_seed_median_profile_spearman": 0.6367956843907627,
+      "feature": "inter_bout_interval",
+      "mean_train_to_validation_mean_profile_spearman": 0.680952380952381,
+      "mean_validation_eta_squared": 0.00411535311333442,
+      "rank": 18
+    }
+  ]
+}

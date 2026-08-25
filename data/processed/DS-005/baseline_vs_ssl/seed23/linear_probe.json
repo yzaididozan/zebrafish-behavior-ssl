@@ -1,0 +1,23 @@
+{
+  "fit_partition": "train",
+  "input": "18 frozen TRAIN-scaled handcrafted features",
+  "interpretation": "Tests linear reconstructability of SSL cluster labels from Input A. Does not rule out nonlinear reconstructability.",
+  "probe": "multinomial_logistic_regression",
+  "ssl_seed": 23,
+  "target": "SSL k=8 cluster labels",
+  "test_partition_used": false,
+  "train": {
+    "accuracy": 0.39047103783513143,
+    "balanced_accuracy": 0.4259234683093982,
+    "macro_f1": 0.4084590654460062,
+    "majority_accuracy": 0.1601120496036619,
+    "uniform_chance": 0.125
+  },
+  "validation": {
+    "accuracy": 0.3861121663975686,
+    "balanced_accuracy": 0.4202171112543816,
+    "macro_f1": 0.40402691115087036,
+    "majority_accuracy": 0.1631268401557603,
+    "uniform_chance": 0.125
+  }
+}

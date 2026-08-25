@@ -81,7 +81,7 @@ The selected primary and replication datasets both favor **pose/trajectory tempo
 | `DS-003` | Yang et al. 3D tracking/behavior-feature data | `APPROVED_WITH_LIMITATIONS` | `BENCHMARK`, `PRIOR_ART`, `PILOT`, `CROSS_DOMAIN_CHALLENGE` | Public tracked trajectories and direct prior art for unsupervised 3D behavior features | Only 10 adult fish; complete raw video and clear standalone dataset license not established |
 | `DS-004` | Barreiros et al. automated monitoring/conditioning | `APPROVED_WITH_LIMITATIONS` | `BENCHMARK`, tracking/baseline reference | 43 adult fish, automated tracking, repeated conditioning design | Complete public temporal dataset not found; persistent cross-video fish identities not guaranteed |
 | `DS-005` | Sridhar et al. / Marques et al. larval navigation dataset | `SELECTED_PRIMARY` | `PRIMARY` | 463 fish, 700 Hz tail tracking, 30 min–3 h recordings, 14 sensory contexts | Exact session-ID/file schema and local archive integrity still require ingestion verification |
-| `DS-006` | Reddy et al. larval exploration and aversive chemotaxis | `SELECTED_REPLICATION` | `REPLICATION` | 160 Hz, 10-min recordings, separate-well fish, ZebraZoom bout/pose features, CC0 | Public release is processed MATLAB data; exact usable fish count/ID schema should be confirmed during ingestion |
+| `DS-006` | Reddy et al. larval exploration and aversive chemotaxis | `SELECTED_REPLICATION` | `REPLICATION` | 160 Hz, 10-min recordings, 384 potential fish-well units across 32 recordings, ZebraZoom bout/pose features, CC0 | 381 units are nonempty and 374 remain usable after frozen well-level QC; biological identity across recordings is not verified |
 
 ---
 
@@ -472,9 +472,15 @@ date_accessed: "2026-08-21"
 
 species: "Danio rerio"
 developmental_stage: "larval; 7 dpf"
-number_of_fish: "unknown in the public landing-page summary; each experiment contains 12 separately housed larvae; exact total/usable count must be confirmed from the archive"
-number_of_sessions: "unknown total; each experiment contains 12 wells/fish and a 10-min recording"
-total_recording_duration: "10 min per fish/experiment; aggregate duration depends on total number of experiments and must be computed after ingestion"
+number_of_fish: "384 potential fish-well units; 381 nonempty; 374 usable after frozen well-level QC"
+number_of_sessions: 32
+fish_per_session: 12
+recording_families:
+  pH_1a: 10
+  pH_2a: 7
+  pH_2b: 7
+  pH_2c: 8
+total_recording_duration: "10 min per fish/experiment"
 frame_rate: "160 Hz"
 resolution: "pixel size approximately 70 µm; camera identified as Basler acA2040-180km"
 raw_video_available: "not in the Dryad processed-data archive reviewed; recording protocol is documented"
@@ -484,6 +490,32 @@ fish_ids_available: true
 session_ids_available: true
 condition_labels_available: true
 
+archive_filename: "Data_all.zip"
+archive_sha256: "d94261a2ed89356cd0dd5f9fe69219aaae567eeac31cf46d90769c9aba40094f"
+scientific_files_extracted: 64
+mat_files: 32
+txt_files: 32
+
+canonical_recording_id: "organization.videoName"
+canonical_fish_id: "DS006::<recording_id>::wellXX"
+biological_identity_across_recordings_verified: false
+
+archive_discrepancy:
+  description: "Catamaran_pH_2b_t7 directory exists but no matching scientific .mat/.txt result pair is present"
+
+independence_from_ds005:
+  separate_source_dataset: true
+  separate_dataset_doi: true
+  separate_publication: true
+  separately_acquired_recordings: true
+  different_recording_protocol: true
+  different_frame_rate: true
+  different_recording_duration: true
+  different_tracking_pipeline: true
+  overlapping_authors: true
+  direct_fish_or_recording_overlap: "no evidence found"
+  independence_status: "CONFIRMED"
+
 baseline_suitability: "VERY HIGH"
 ssl_suitability: "HIGH / strong external replication dataset"
 validation_suitability: "HIGH; separate wells preserve fish-level organization and experiment/well hierarchy is recoverable"
@@ -492,6 +524,13 @@ status: SELECTED_REPLICATION
 role:
   - REPLICATION
 ```
+
+DS-006 is an independently acquired experimental dataset from Reddy et al.
+(2022), distinct from the Marques et al. recordings underlying DS-005. The two
+datasets differ in assay design, acquisition rate, recording duration, stimulus
+conditions, and tracking pipeline. They share some investigators and were later
+analyzed together in Sridhar et al. (2024), but there is no indication that
+DS-006 is a resplit or reuse of the DS-005 fish or recordings.
 
 ## Authorization Review
 
@@ -838,7 +877,11 @@ The primary dataset is selected according to:
 
 **Reason:** Independent lab/setup, 160-Hz 10-minute larval recordings, separate-well fish organization, ZebraZoom pose/trajectory/bout outputs, free-swimming and aversive-chemotaxis conditions, and clear CC0 reuse authorization. It is close enough biologically and representationally to test replication while remaining independently acquired.
 
-**Remaining action:** inspect the Dryad archive to record the exact total number of fish, experiment/session count, and field-level fish/session identifier schema.
+**Ingestion status:** Complete. The archive contains 32 recording sessions with
+12 well slots each: 384 potential fish-well units, 381 nonempty units, and 374
+units usable after frozen well-level QC. Canonical IDs and the unresolved missing
+`Catamaran_pH_2b_t7` scientific-file pair are recorded above and in the dedicated
+replication protocol.
 
 ---
 
@@ -875,4 +918,3 @@ DS-006 is independent of DS-005 in acquisition setup and processing history whil
 - [ ] Use DS-001 for pose/tracking QC development as needed.
 
 ---
-

@@ -3,13 +3,13 @@
 # Project: Self-Supervised Discovery of Zebrafish Behavioral Structure
 #
 # Status:
-#   Candidate confirmatory configuration. Freeze before final held-out test
-#   evaluation. Training/model-selection decisions must use TRAIN/VALIDATION
-#   only; TEST remains untouched.
+#   FROZEN confirmatory configuration.
+#   Training/model-selection decisions use TRAIN/VALIDATION only.
+#   TEST remains untouched until final held-out evaluation.
 
 training:
   version: "v1"
-  status: "FROZEN_V1"
+  status: "FROZEN"
 
   dataset:
     id: "DS-005"

@@ -1,0 +1,47 @@
+{
+  "analysis": "frozen_handcrafted_baseline_clustering",
+  "dataset_id": "DS-006",
+  "feature_count": 18,
+  "gmm_converged": true,
+  "gmm_iterations": 6,
+  "gmm_k": 2,
+  "k_selection_performed": false,
+  "model_selection_performed": false,
+  "pca_components": 6,
+  "pca_dimension_selection_performed": false,
+  "pca_retained_variance": 0.9596860323934688,
+  "scientific_mode": "frozen_method_replication",
+  "test_partition_used": false,
+  "train_counts": [
+    98847,
+    19253
+  ],
+  "train_occupancy": {
+    "0": {
+      "count": 98847,
+      "fraction": 0.8369771380186283
+    },
+    "1": {
+      "count": 19253,
+      "fraction": 0.16302286198137173
+    }
+  },
+  "train_rows": 118100,
+  "train_silhouette": 0.5075638284387862,
+  "validation_counts": [
+    14249,
+    4586
+  ],
+  "validation_occupancy": {
+    "0": {
+      "count": 14249,
+      "fraction": 0.7565171223785506
+    },
+    "1": {
+      "count": 4586,
+      "fraction": 0.24348287762144943
+    }
+  },
+  "validation_rows": 18835,
+  "validation_silhouette": 0.49249349472543286
+}

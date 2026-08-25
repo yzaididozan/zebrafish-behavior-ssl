@@ -1,0 +1,116 @@
+{
+  "analysis": "train_validation_cluster_feature_profile_reproducibility",
+  "dataset_id": "DS-006",
+  "features": {
+    "bout_duration": {
+      "mean_profile_spearman": 0.5000000000000001,
+      "median_profile_spearman": 0.27439024390243905,
+      "train_eta_squared": 0.1886449644847855,
+      "validation_eta_squared": 0.10555050396445212
+    },
+    "inter_bout_interval": {
+      "mean_profile_spearman": 0.5714285714285715,
+      "median_profile_spearman": 0.265079480991534,
+      "train_eta_squared": 0.0005307769298190783,
+      "validation_eta_squared": 0.0044039080439661924
+    },
+    "speed_change_abs_mean": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.3397748259255216,
+      "validation_eta_squared": 0.6201015224803936
+    },
+    "speed_change_max": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.40800486283724186,
+      "validation_eta_squared": 0.6286093832719243
+    },
+    "speed_change_rms": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.3486440561726836,
+      "validation_eta_squared": 0.6303805002739149
+    },
+    "speed_change_std": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.34863692551702424,
+      "validation_eta_squared": 0.6302316981666384
+    },
+    "speed_max": {
+      "mean_profile_spearman": 0.9761904761904763,
+      "median_profile_spearman": 0.9761904761904763,
+      "train_eta_squared": 0.5264345764465156,
+      "validation_eta_squared": 0.6536265646448893
+    },
+    "speed_mean": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.48984309335954934,
+      "validation_eta_squared": 0.6036406759059733
+    },
+    "speed_median": {
+      "mean_profile_spearman": 0.9285714285714287,
+      "median_profile_spearman": 0.9285714285714287,
+      "train_eta_squared": 0.3052264103941035,
+      "validation_eta_squared": 0.25093677107901075
+    },
+    "speed_p95": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.5242165851173466,
+      "validation_eta_squared": 0.6139860343148377
+    },
+    "speed_rms": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.5451245150037073,
+      "validation_eta_squared": 0.6785672481644951
+    },
+    "speed_std": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.5425801939959644,
+      "validation_eta_squared": 0.6796102320044209
+    },
+    "turn_abs_mean": {
+      "mean_profile_spearman": 0.9047619047619048,
+      "median_profile_spearman": 0.7857142857142858,
+      "train_eta_squared": 0.33107577857232895,
+      "validation_eta_squared": 0.28885374292820126
+    },
+    "turn_max": {
+      "mean_profile_spearman": 0.9285714285714287,
+      "median_profile_spearman": 0.9047619047619048,
+      "train_eta_squared": 0.36893077786296746,
+      "validation_eta_squared": 0.31063125753946974
+    },
+    "turn_net": {
+      "mean_profile_spearman": 1.0,
+      "median_profile_spearman": 1.0,
+      "train_eta_squared": 0.01726091468154957,
+      "validation_eta_squared": 0.0142128354472602
+    },
+    "turn_rms": {
+      "mean_profile_spearman": 0.9047619047619048,
+      "median_profile_spearman": 0.9047619047619048,
+      "train_eta_squared": 0.337350444129004,
+      "validation_eta_squared": 0.298391309322346
+    },
+    "turn_std": {
+      "mean_profile_spearman": 0.9047619047619048,
+      "median_profile_spearman": 0.9047619047619048,
+      "train_eta_squared": 0.33380322532725176,
+      "validation_eta_squared": 0.2946891312827697
+    },
+    "turn_total_abs": {
+      "mean_profile_spearman": 0.9047619047619048,
+      "median_profile_spearman": 0.8571428571428572,
+      "train_eta_squared": 0.44144366747159103,
+      "validation_eta_squared": 0.35060335790306485
+    }
+  },
+  "ssl_encoder_seed": 11,
+  "test_partition_used": false
+}

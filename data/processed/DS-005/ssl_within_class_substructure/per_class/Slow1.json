@@ -1,0 +1,634 @@
+{
+  "candidate_score_note": "Descriptive prioritization only; not a preregistered inferential metric.",
+  "candidate_substructure_score": 0.6,
+  "class_name": "Slow1",
+  "status": "analyzed",
+  "train": {
+    "count": 1845,
+    "cross_seed_distribution_js_similarity": {
+      "max": 1.0,
+      "mean": 0.9868251184396449,
+      "min": 0.9670627960991125,
+      "pair_count": 10,
+      "pairs": [
+        {
+          "seed_a": 11,
+          "seed_b": 23,
+          "similarity": 0.9670627960991125
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 37,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 51,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 79,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 37,
+          "similarity": 0.9670627960991125
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 51,
+          "similarity": 0.9670627960991125
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 79,
+          "similarity": 0.9670627960991125
+        },
+        {
+          "seed_a": 37,
+          "seed_b": 51,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 37,
+          "seed_b": 79,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 51,
+          "seed_b": 79,
+          "similarity": 1.0
+        }
+      ],
+      "std": 0.016135868622236402
+    },
+    "cross_seed_label_reproducibility": {
+      "aligned_agreement": {
+        "max": 1.0,
+        "mean": 0.9991327913279132,
+        "min": 0.9978319783197832,
+        "std": 0.0010621093735645167
+      },
+      "ari": {
+        "max": 1.0,
+        "mean": 0.6,
+        "min": 0.0,
+        "std": 0.48989794855663565
+      },
+      "nmi": {
+        "max": 1.0,
+        "mean": 0.6,
+        "min": 0.0,
+        "std": 0.48989794855663565
+      },
+      "pair_count": 10,
+      "pairs": [
+        {
+          "aligned_agreement": 0.9978319783197832,
+          "ari": 0.0,
+          "nmi": 0.0,
+          "seed_a": 11,
+          "seed_b": 23
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 11,
+          "seed_b": 37
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 11,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 11,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 0.9978319783197832,
+          "ari": 0.0,
+          "nmi": 0.0,
+          "seed_a": 23,
+          "seed_b": 37
+        },
+        {
+          "aligned_agreement": 0.9978319783197832,
+          "ari": 0.0,
+          "nmi": 0.0,
+          "seed_a": 23,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 0.9978319783197832,
+          "ari": 0.0,
+          "nmi": 0.0,
+          "seed_a": 23,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 37,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 37,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 51,
+          "seed_b": 79
+        }
+      ]
+    },
+    "distribution_summary": {
+      "mean_clusters_with_at_least_5pct": 1.0,
+      "mean_dominant_cluster_fraction": 0.9995663956639567,
+      "mean_effective_number_of_clusters": 1.0031168748809147,
+      "mean_normalized_cluster_entropy": 0.0014873402151196545
+    },
+    "per_seed_distribution": {
+      "11": {
+        "cluster_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1845,
+          0,
+          0
+        ],
+        "cluster_fractions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "clusters_with_any_bouts": 1,
+        "clusters_with_at_least_10pct": 1,
+        "clusters_with_at_least_5pct": 1,
+        "count": 1845,
+        "dominant_cluster": 5,
+        "dominant_cluster_fraction": 1.0,
+        "effective_number_of_clusters": 1.0,
+        "normalized_cluster_entropy": -0.0
+      },
+      "23": {
+        "cluster_counts": [
+          0,
+          4,
+          0,
+          0,
+          0,
+          1841,
+          0,
+          0
+        ],
+        "cluster_fractions": [
+          0.0,
+          0.002168021680216802,
+          0.0,
+          0.0,
+          0.0,
+          0.9978319783197832,
+          0.0,
+          0.0
+        ],
+        "clusters_with_any_bouts": 2,
+        "clusters_with_at_least_10pct": 1,
+        "clusters_with_at_least_5pct": 1,
+        "count": 1845,
+        "dominant_cluster": 5,
+        "dominant_cluster_fraction": 0.9978319783197832,
+        "effective_number_of_clusters": 1.0155843744045734,
+        "normalized_cluster_entropy": 0.007436701075598273
+      },
+      "37": {
+        "cluster_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1845,
+          0,
+          0
+        ],
+        "cluster_fractions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "clusters_with_any_bouts": 1,
+        "clusters_with_at_least_10pct": 1,
+        "clusters_with_at_least_5pct": 1,
+        "count": 1845,
+        "dominant_cluster": 5,
+        "dominant_cluster_fraction": 1.0,
+        "effective_number_of_clusters": 1.0,
+        "normalized_cluster_entropy": -0.0
+      },
+      "51": {
+        "cluster_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1845,
+          0,
+          0
+        ],
+        "cluster_fractions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "clusters_with_any_bouts": 1,
+        "clusters_with_at_least_10pct": 1,
+        "clusters_with_at_least_5pct": 1,
+        "count": 1845,
+        "dominant_cluster": 5,
+        "dominant_cluster_fraction": 1.0,
+        "effective_number_of_clusters": 1.0,
+        "normalized_cluster_entropy": -0.0
+      },
+      "79": {
+        "cluster_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1845,
+          0,
+          0
+        ],
+        "cluster_fractions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "clusters_with_any_bouts": 1,
+        "clusters_with_at_least_10pct": 1,
+        "clusters_with_at_least_5pct": 1,
+        "count": 1845,
+        "dominant_cluster": 5,
+        "dominant_cluster_fraction": 1.0,
+        "effective_number_of_clusters": 1.0,
+        "normalized_cluster_entropy": -0.0
+      }
+    }
+  },
+  "train_count": 1845,
+  "validation": {
+    "count": 375,
+    "cross_seed_distribution_js_similarity": {
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0,
+      "pair_count": 10,
+      "pairs": [
+        {
+          "seed_a": 11,
+          "seed_b": 23,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 37,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 51,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 11,
+          "seed_b": 79,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 37,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 51,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 23,
+          "seed_b": 79,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 37,
+          "seed_b": 51,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 37,
+          "seed_b": 79,
+          "similarity": 1.0
+        },
+        {
+          "seed_a": 51,
+          "seed_b": 79,
+          "similarity": 1.0
+        }
+      ],
+      "std": 0.0
+    },
+    "cross_seed_label_reproducibility": {
+      "aligned_agreement": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "std": 0.0
+      },
+      "ari": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "std": 0.0
+      },
+      "nmi": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "std": 0.0
+      },
+      "pair_count": 10,
+      "pairs": [
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 11,
+          "seed_b": 23
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 11,
+          "seed_b": 37
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 11,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 11,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 23,
+          "seed_b": 37
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 23,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 23,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 37,
+          "seed_b": 51
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 37,
+          "seed_b": 79
+        },
+        {
+          "aligned_agreement": 1.0,
+          "ari": 1.0,
+          "nmi": 1.0,
+          "seed_a": 51,
+          "seed_b": 79
+        }
+      ]
+    },
+    "distribution_summary": {
+      "mean_clusters_with_at_least_5pct": 1.0,
+      "mean_dominant_cluster_fraction": 1.0,
+      "mean_effective_number_of_clusters": 1.0,
+      "mean_normalized_cluster_entropy": 0.0
+    },
+    "per_seed_distribution": {
+      "11": {
+        "cluster_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          375,
+          0,
+          0
+        ],
+        "cluster_fractions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "clusters_with_any_bouts": 1,
+        "clusters_with_at_least_10pct": 1,
+        "clusters_with_at_least_5pct": 1,
+        "count": 375,
+        "dominant_cluster": 5,
+        "dominant_cluster_fraction": 1.0,
+        "effective_number_of_clusters": 1.0,
+        "normalized_cluster_entropy": -0.0
+      },
+      "23": {
+        "cluster_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          375,
+          0,
+          0
+        ],
+        "cluster_fractions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "clusters_with_any_bouts": 1,
+        "clusters_with_at_least_10pct": 1,
+        "clusters_with_at_least_5pct": 1,
+        "count": 375,
+        "dominant_cluster": 5,
+        "dominant_cluster_fraction": 1.0,
+        "effective_number_of_clusters": 1.0,
+        "normalized_cluster_entropy": -0.0
+      },
+      "37": {
+        "cluster_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          375,
+          0,
+          0
+        ],
+        "cluster_fractions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "clusters_with_any_bouts": 1,
+        "clusters_with_at_least_10pct": 1,
+        "clusters_with_at_least_5pct": 1,
+        "count": 375,
+        "dominant_cluster": 5,
+        "dominant_cluster_fraction": 1.0,
+        "effective_number_of_clusters": 1.0,
+        "normalized_cluster_entropy": -0.0
+      },
+      "51": {
+        "cluster_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          375,
+          0,
+          0
+        ],
+        "cluster_fractions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "clusters_with_any_bouts": 1,
+        "clusters_with_at_least_10pct": 1,
+        "clusters_with_at_least_5pct": 1,
+        "count": 375,
+        "dominant_cluster": 5,
+        "dominant_cluster_fraction": 1.0,
+        "effective_number_of_clusters": 1.0,
+        "normalized_cluster_entropy": -0.0
+      },
+      "79": {
+        "cluster_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          375,
+          0,
+          0
+        ],
+        "cluster_fractions": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "clusters_with_any_bouts": 1,
+        "clusters_with_at_least_10pct": 1,
+        "clusters_with_at_least_5pct": 1,
+        "count": 375,
+        "dominant_cluster": 5,
+        "dominant_cluster_fraction": 1.0,
+        "effective_number_of_clusters": 1.0,
+        "normalized_cluster_entropy": -0.0
+      }
+    }
+  },
+  "validation_count": 375
+}

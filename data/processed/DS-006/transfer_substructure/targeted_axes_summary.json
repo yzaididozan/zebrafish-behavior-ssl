@@ -1,0 +1,711 @@
+{
+  "analysis": "targeted_kinematic_axis_replication",
+  "dataset_id": "DS-006",
+  "groups": {
+    "llc_like_turning_axes": {
+      "features": {
+        "turn_abs_mean": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.9761904761904763,
+            "mean": 0.7404761904761905,
+            "median": 0.7500000000000001,
+            "min": 0.5714285714285715
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.8571428571428572,
+            "mean": 0.7761904761904763,
+            "median": 0.773809523809524,
+            "min": 0.6666666666666669
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 0.9047619047619048,
+                "median_profile_spearman": 0.7857142857142858,
+                "train_eta_squared": 0.33107577857232895,
+                "validation_eta_squared": 0.28885374292820126
+              },
+              "23": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.31476015991624223,
+                "validation_eta_squared": 0.26079781377204536
+              },
+              "37": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.3446856070953877,
+                "validation_eta_squared": 0.2545292562666528
+              },
+              "51": {
+                "mean_profile_spearman": 0.9523809523809524,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.26764747973492237,
+                "validation_eta_squared": 0.2139935029660593
+              },
+              "79": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.3160545789097235,
+                "validation_eta_squared": 0.2308921160514522
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.9666666666666668,
+            "median_profile_spearman_mean_across_seeds": 0.9476190476190476
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.28885374292820126,
+              "23": 0.26079781377204536,
+              "37": 0.2545292562666528,
+              "51": 0.2139935029660593,
+              "79": 0.2308921160514522
+            },
+            "max": 0.28885374292820126,
+            "mean": 0.2498132863968822,
+            "min": 0.2139935029660593,
+            "std": 0.025722072357856163
+          }
+        },
+        "turn_max": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.880952380952381,
+            "mean": 0.7357142857142858,
+            "median": 0.7380952380952382,
+            "min": 0.5714285714285715
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.9285714285714287,
+            "mean": 0.7904761904761906,
+            "median": 0.7976190476190478,
+            "min": 0.6190476190476191
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 0.9285714285714287,
+                "median_profile_spearman": 0.9047619047619048,
+                "train_eta_squared": 0.36893077786296746,
+                "validation_eta_squared": 0.31063125753946974
+              },
+              "23": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.332921529132815,
+                "validation_eta_squared": 0.2776282217245322
+              },
+              "37": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.3807988049853751,
+                "validation_eta_squared": 0.2845804038459763
+              },
+              "51": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.3102332620210951,
+                "validation_eta_squared": 0.2454774927077119
+              },
+              "79": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.34769359127947536,
+                "validation_eta_squared": 0.2592885768862836
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.980952380952381,
+            "median_profile_spearman_mean_across_seeds": 0.9714285714285715
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.31063125753946974,
+              "23": 0.2776282217245322,
+              "37": 0.2845804038459763,
+              "51": 0.2454774927077119,
+              "79": 0.2592885768862836
+            },
+            "max": 0.31063125753946974,
+            "mean": 0.2755211905407947,
+            "min": 0.2454774927077119,
+            "std": 0.022295054412634546
+          }
+        },
+        "turn_net": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.9523809523809524,
+            "mean": 0.5714285714285715,
+            "median": 0.5357142857142857,
+            "min": 0.2380952380952381
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.9285714285714287,
+            "mean": 0.5333333333333334,
+            "median": 0.6071428571428572,
+            "min": 0.11904761904761905
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.01726091468154957,
+                "validation_eta_squared": 0.0142128354472602
+              },
+              "23": {
+                "mean_profile_spearman": 0.9523809523809524,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.018396166741725735,
+                "validation_eta_squared": 0.012675390251308637
+              },
+              "37": {
+                "mean_profile_spearman": 0.9523809523809524,
+                "median_profile_spearman": 0.6666666666666669,
+                "train_eta_squared": 0.008130151225529162,
+                "validation_eta_squared": 0.006867300593486261
+              },
+              "51": {
+                "mean_profile_spearman": 0.9523809523809524,
+                "median_profile_spearman": 0.8333333333333335,
+                "train_eta_squared": 0.003987884893616145,
+                "validation_eta_squared": 0.0032366894643190277
+              },
+              "79": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.007722843986670605,
+                "validation_eta_squared": 0.006564388798475505
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.9666666666666668,
+            "median_profile_spearman_mean_across_seeds": 0.8952380952380953
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.0142128354472602,
+              "23": 0.012675390251308637,
+              "37": 0.006867300593486261,
+              "51": 0.0032366894643190277,
+              "79": 0.006564388798475505
+            },
+            "max": 0.0142128354472602,
+            "mean": 0.008711320910969926,
+            "min": 0.0032366894643190277,
+            "std": 0.004097848846203037
+          }
+        },
+        "turn_rms": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.9285714285714287,
+            "mean": 0.7285714285714286,
+            "median": 0.7261904761904763,
+            "min": 0.5714285714285715
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.9761904761904763,
+            "mean": 0.7880952380952382,
+            "median": 0.7857142857142858,
+            "min": 0.6190476190476191
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 0.9047619047619048,
+                "median_profile_spearman": 0.9047619047619048,
+                "train_eta_squared": 0.337350444129004,
+                "validation_eta_squared": 0.298391309322346
+              },
+              "23": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.31606638384717184,
+                "validation_eta_squared": 0.2709773236111369
+              },
+              "37": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.3633712808715353,
+                "validation_eta_squared": 0.27895590468083203
+              },
+              "51": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.2743416368659376,
+                "validation_eta_squared": 0.22643097964958595
+              },
+              "79": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.32709988575027626,
+                "validation_eta_squared": 0.24922272536219103
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.9714285714285715,
+            "median_profile_spearman_mean_across_seeds": 0.9714285714285715
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.298391309322346,
+              "23": 0.2709773236111369,
+              "37": 0.27895590468083203,
+              "51": 0.22643097964958595,
+              "79": 0.24922272536219103
+            },
+            "max": 0.298391309322346,
+            "mean": 0.2647956485252184,
+            "min": 0.22643097964958595,
+            "std": 0.024826430027028012
+          }
+        },
+        "turn_std": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.9285714285714287,
+            "mean": 0.7285714285714286,
+            "median": 0.7261904761904763,
+            "min": 0.5714285714285715
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.9761904761904763,
+            "mean": 0.7880952380952382,
+            "median": 0.7857142857142858,
+            "min": 0.6190476190476191
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 0.9047619047619048,
+                "median_profile_spearman": 0.9047619047619048,
+                "train_eta_squared": 0.33380322532725176,
+                "validation_eta_squared": 0.2946891312827697
+              },
+              "23": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.31321875450941167,
+                "validation_eta_squared": 0.2673962421260888
+              },
+              "37": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.3608833610695022,
+                "validation_eta_squared": 0.27526827891906847
+              },
+              "51": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.2710284074115121,
+                "validation_eta_squared": 0.2226854888082124
+              },
+              "79": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.3242750883667509,
+                "validation_eta_squared": 0.2454954653509062
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.9714285714285715,
+            "median_profile_spearman_mean_across_seeds": 0.9714285714285715
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.2946891312827697,
+              "23": 0.2673962421260888,
+              "37": 0.27526827891906847,
+              "51": 0.2226854888082124,
+              "79": 0.2454954653509062
+            },
+            "max": 0.2946891312827697,
+            "mean": 0.26110692129740914,
+            "min": 0.2226854888082124,
+            "std": 0.024850708098430305
+          }
+        },
+        "turn_total_abs": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.8571428571428572,
+            "mean": 0.7476190476190476,
+            "median": 0.773809523809524,
+            "min": 0.5952380952380953
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.9523809523809524,
+            "mean": 0.7642857142857145,
+            "median": 0.773809523809524,
+            "min": 0.5714285714285715
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 0.9047619047619048,
+                "median_profile_spearman": 0.8571428571428572,
+                "train_eta_squared": 0.44144366747159103,
+                "validation_eta_squared": 0.35060335790306485
+              },
+              "23": {
+                "mean_profile_spearman": 0.9285714285714287,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.404144599794987,
+                "validation_eta_squared": 0.2967039687579429
+              },
+              "37": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.4225029224741545,
+                "validation_eta_squared": 0.2504348464286895
+              },
+              "51": {
+                "mean_profile_spearman": 0.9523809523809524,
+                "median_profile_spearman": 0.9047619047619048,
+                "train_eta_squared": 0.3996512200386121,
+                "validation_eta_squared": 0.2919244847901353
+              },
+              "79": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 0.9047619047619048,
+                "train_eta_squared": 0.4302696766271993,
+                "validation_eta_squared": 0.26835600103243146
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.9523809523809526,
+            "median_profile_spearman_mean_across_seeds": 0.9285714285714286
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.35060335790306485,
+              "23": 0.2967039687579429,
+              "37": 0.2504348464286895,
+              "51": 0.2919244847901353,
+              "79": 0.26835600103243146
+            },
+            "max": 0.35060335790306485,
+            "mean": 0.2916045317824528,
+            "min": 0.2504348464286895,
+            "std": 0.03388924692337349
+          }
+        }
+      },
+      "important_limitation": "These are kinematic-axis analogues only. DS-006 does not provide the DS-005 Long_CS/LLC class labels, so this is not a direct within-class replication."
+    },
+    "long_cs_like_duration_speed_change_axes": {
+      "features": {
+        "bout_duration": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.9047619047619048,
+            "mean": 0.26428571428571435,
+            "median": 0.3095238095238096,
+            "min": -0.4047619047619048
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.8231707317073171,
+            "mean": 0.42740681985511786,
+            "median": 0.48765241519834646,
+            "min": -0.01863677608014099
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 0.5000000000000001,
+                "median_profile_spearman": 0.27439024390243905,
+                "train_eta_squared": 0.1886449644847855,
+                "validation_eta_squared": 0.10555050396445212
+              },
+              "23": {
+                "mean_profile_spearman": 0.9523809523809524,
+                "median_profile_spearman": 0.9242930987335742,
+                "train_eta_squared": 0.18230105630864862,
+                "validation_eta_squared": 0.0637958537861937
+              },
+              "37": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.7752595676676772,
+                "train_eta_squared": 0.14200035495462757,
+                "validation_eta_squared": 0.020942779303562902
+              },
+              "51": {
+                "mean_profile_spearman": 0.6190476190476191,
+                "median_profile_spearman": 0.28576389989549517,
+                "train_eta_squared": 0.2333372024871113,
+                "validation_eta_squared": 0.15613963248301804
+              },
+              "79": {
+                "mean_profile_spearman": 0.8571428571428572,
+                "median_profile_spearman": 0.14484973648295518,
+                "train_eta_squared": 0.19606454834853593,
+                "validation_eta_squared": 0.0925362421416368
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.7809523809523811,
+            "median_profile_spearman_mean_across_seeds": 0.48091130933642817
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.10555050396445212,
+              "23": 0.0637958537861937,
+              "37": 0.020942779303562902,
+              "51": 0.15613963248301804,
+              "79": 0.0925362421416368
+            },
+            "max": 0.15613963248301804,
+            "mean": 0.08779300233577272,
+            "min": 0.020942779303562902,
+            "std": 0.044841731675749515
+          }
+        },
+        "speed_change_abs_mean": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.9285714285714287,
+            "mean": 0.3428571428571429,
+            "median": 0.3928571428571429,
+            "min": -0.1666666666666667
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.9047619047619048,
+            "mean": 0.3619047619047619,
+            "median": 0.41666666666666674,
+            "min": -0.09523809523809526
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.3397748259255216,
+                "validation_eta_squared": 0.6201015224803936
+              },
+              "23": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.17052643498301231,
+                "validation_eta_squared": 0.30068636469508186
+              },
+              "37": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.17584978657075184,
+                "validation_eta_squared": 0.34887389293802595
+              },
+              "51": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.3515600019232047,
+                "validation_eta_squared": 0.6033844150127836
+              },
+              "79": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.25507785632487695,
+                "validation_eta_squared": 0.5202551859284769
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.9904761904761905,
+            "median_profile_spearman_mean_across_seeds": 0.9904761904761905
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.6201015224803936,
+              "23": 0.30068636469508186,
+              "37": 0.34887389293802595,
+              "51": 0.6033844150127836,
+              "79": 0.5202551859284769
+            },
+            "max": 0.6201015224803936,
+            "mean": 0.4786602762109524,
+            "min": 0.30068636469508186,
+            "std": 0.13100465024100943
+          }
+        },
+        "speed_change_max": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.7619047619047621,
+            "mean": 0.22142857142857145,
+            "median": 0.28571428571428575,
+            "min": -0.30952380952380953
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.7857142857142858,
+            "mean": 0.32619047619047625,
+            "median": 0.3333333333333334,
+            "min": -0.2142857142857143
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.40800486283724186,
+                "validation_eta_squared": 0.6286093832719243
+              },
+              "23": {
+                "mean_profile_spearman": 0.880952380952381,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.13526592221103545,
+                "validation_eta_squared": 0.29044668730073286
+              },
+              "37": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.1678756118848395,
+                "validation_eta_squared": 0.34400160256248197
+              },
+              "51": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.38081591720739816,
+                "validation_eta_squared": 0.599066040205372
+              },
+              "79": {
+                "mean_profile_spearman": 0.9047619047619048,
+                "median_profile_spearman": 0.9047619047619048,
+                "train_eta_squared": 0.291063925506252,
+                "validation_eta_squared": 0.5283707788672766
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.9523809523809523,
+            "median_profile_spearman_mean_across_seeds": 0.9761904761904763
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.6286093832719243,
+              "23": 0.29044668730073286,
+              "37": 0.34400160256248197,
+              "51": 0.599066040205372,
+              "79": 0.5283707788672766
+            },
+            "max": 0.6286093832719243,
+            "mean": 0.47809889844155756,
+            "min": 0.29044668730073286,
+            "std": 0.1363885292097819
+          }
+        },
+        "speed_change_rms": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.880952380952381,
+            "mean": 0.26428571428571435,
+            "median": 0.3333333333333334,
+            "min": -0.1666666666666667
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.9047619047619048,
+            "mean": 0.38571428571428573,
+            "median": 0.48809523809523814,
+            "min": -0.09523809523809526
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.3486440561726836,
+                "validation_eta_squared": 0.6303805002739149
+              },
+              "23": {
+                "mean_profile_spearman": 0.9047619047619048,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.12189737686931285,
+                "validation_eta_squared": 0.28547150248583797
+              },
+              "37": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.14284018941298066,
+                "validation_eta_squared": 0.3371713948510238
+              },
+              "51": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.33005368556956466,
+                "validation_eta_squared": 0.6027433323476709
+              },
+              "79": {
+                "mean_profile_spearman": 0.9285714285714287,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.24127500718811945,
+                "validation_eta_squared": 0.5240503059690553
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.9619047619047618,
+            "median_profile_spearman_mean_across_seeds": 0.9904761904761905
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.6303805002739149,
+              "23": 0.28547150248583797,
+              "37": 0.3371713948510238,
+              "51": 0.6027433323476709,
+              "79": 0.5240503059690553
+            },
+            "max": 0.6303805002739149,
+            "mean": 0.47596340718550056,
+            "min": 0.28547150248583797,
+            "std": 0.13984314523106253
+          }
+        },
+        "speed_change_std": {
+          "cross_seed_validation_mean_profile_spearman": {
+            "max": 0.880952380952381,
+            "mean": 0.26428571428571435,
+            "median": 0.3333333333333334,
+            "min": -0.1666666666666667
+          },
+          "cross_seed_validation_median_profile_spearman": {
+            "max": 0.9047619047619048,
+            "mean": 0.38571428571428573,
+            "median": 0.48809523809523814,
+            "min": -0.09523809523809526
+          },
+          "train_to_validation_profile_reproducibility": {
+            "by_seed": {
+              "11": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.34863692551702424,
+                "validation_eta_squared": 0.6302316981666384
+              },
+              "23": {
+                "mean_profile_spearman": 0.9047619047619048,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.12198373682919225,
+                "validation_eta_squared": 0.2854818793064639
+              },
+              "37": {
+                "mean_profile_spearman": 1.0,
+                "median_profile_spearman": 1.0,
+                "train_eta_squared": 0.14289580807862212,
+                "validation_eta_squared": 0.3371205575011787
+              },
+              "51": {
+                "mean_profile_spearman": 0.9761904761904763,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.33007138189781915,
+                "validation_eta_squared": 0.6026159811962016
+              },
+              "79": {
+                "mean_profile_spearman": 0.9285714285714287,
+                "median_profile_spearman": 0.9761904761904763,
+                "train_eta_squared": 0.24131886515900522,
+                "validation_eta_squared": 0.5239136288113774
+              }
+            },
+            "mean_profile_spearman_mean_across_seeds": 0.9619047619047618,
+            "median_profile_spearman_mean_across_seeds": 0.9904761904761905
+          },
+          "validation_eta_squared": {
+            "by_seed": {
+              "11": 0.6302316981666384,
+              "23": 0.2854818793064639,
+              "37": 0.3371205575011787,
+              "51": 0.6026159811962016,
+              "79": 0.5239136288113774
+            },
+            "max": 0.6302316981666384,
+            "mean": 0.475872748996372,
+            "min": 0.2854818793064639,
+            "std": 0.13978505795456606
+          }
+        }
+      },
+      "important_limitation": "These are kinematic-axis analogues only. DS-006 does not provide the DS-005 Long_CS/LLC class labels, so this is not a direct within-class replication."
+    }
+  },
+  "important_limitation": "DS-006 lacks DS-005-equivalent conventional bout-class labels; these are analogous kinematic axes across the frozen transfer clusters, not direct Long_CS/LLC within-class replications.",
+  "test_partition_used": false
+}

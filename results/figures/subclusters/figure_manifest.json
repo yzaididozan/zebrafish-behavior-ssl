@@ -1,0 +1,219 @@
+{
+  "analysis": "ssl_subcluster_figures",
+  "classes": [
+    "BS",
+    "Long_CS",
+    "LLC"
+  ],
+  "cluster_mapping_to_reference": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7
+  },
+  "dataset_id": "DS-005",
+  "figure_design": "interpretable feature distributions, occupancy, and top-two-feature scatter; no UMAP/t-SNE used as primary evidence",
+  "partitions": {
+    "BS": {
+      "train": {
+        "bout_count": 3386,
+        "feature_names": [
+          "speed_mean",
+          "speed_rms",
+          "speed_std"
+        ],
+        "files": [
+          "BS/train/subcluster_occupancy.png",
+          "BS/train/feature_distributions_speed_mean.png",
+          "BS/train/feature_distributions_speed_rms.png",
+          "BS/train/feature_distributions_speed_std.png",
+          "BS/train/top2_feature_scatter.png"
+        ],
+        "scatter_points_plotted": 3386,
+        "subcluster_counts": [
+          115,
+          325,
+          153,
+          112,
+          114,
+          2272,
+          132,
+          163
+        ]
+      },
+      "validation": {
+        "bout_count": 679,
+        "feature_names": [
+          "speed_mean",
+          "speed_rms",
+          "speed_std"
+        ],
+        "files": [
+          "BS/validation/subcluster_occupancy.png",
+          "BS/validation/feature_distributions_speed_mean.png",
+          "BS/validation/feature_distributions_speed_rms.png",
+          "BS/validation/feature_distributions_speed_std.png",
+          "BS/validation/top2_feature_scatter.png"
+        ],
+        "scatter_points_plotted": 679,
+        "subcluster_counts": [
+          29,
+          72,
+          31,
+          23,
+          25,
+          435,
+          30,
+          34
+        ]
+      }
+    },
+    "LLC": {
+      "train": {
+        "bout_count": 207166,
+        "feature_names": [
+          "speed_max",
+          "speed_p95",
+          "turn_net_rad"
+        ],
+        "files": [
+          "LLC/train/subcluster_occupancy.png",
+          "LLC/train/feature_distributions_speed_max.png",
+          "LLC/train/feature_distributions_speed_p95.png",
+          "LLC/train/feature_distributions_turn_net_rad.png",
+          "LLC/train/top2_feature_scatter.png"
+        ],
+        "scatter_points_plotted": 20000,
+        "subcluster_counts": [
+          32121,
+          12652,
+          47138,
+          33907,
+          1011,
+          1782,
+          34531,
+          44024
+        ]
+      },
+      "validation": {
+        "bout_count": 42321,
+        "feature_names": [
+          "speed_max",
+          "speed_p95",
+          "turn_net_rad"
+        ],
+        "files": [
+          "LLC/validation/subcluster_occupancy.png",
+          "LLC/validation/feature_distributions_speed_max.png",
+          "LLC/validation/feature_distributions_speed_p95.png",
+          "LLC/validation/feature_distributions_turn_net_rad.png",
+          "LLC/validation/top2_feature_scatter.png"
+        ],
+        "scatter_points_plotted": 20000,
+        "subcluster_counts": [
+          6652,
+          2841,
+          9615,
+          7072,
+          266,
+          280,
+          6726,
+          8869
+        ]
+      }
+    },
+    "Long_CS": {
+      "train": {
+        "bout_count": 5831,
+        "feature_names": [
+          "bout_duration_s",
+          "accel_rms",
+          "accel_abs_std"
+        ],
+        "files": [
+          "Long_CS/train/subcluster_occupancy.png",
+          "Long_CS/train/feature_distributions_bout_duration_s.png",
+          "Long_CS/train/feature_distributions_accel_rms.png",
+          "Long_CS/train/feature_distributions_accel_abs_std.png",
+          "Long_CS/train/top2_feature_scatter.png"
+        ],
+        "scatter_points_plotted": 5831,
+        "subcluster_counts": [
+          430,
+          2831,
+          582,
+          498,
+          250,
+          109,
+          565,
+          566
+        ]
+      },
+      "validation": {
+        "bout_count": 1133,
+        "feature_names": [
+          "bout_duration_s",
+          "accel_rms",
+          "accel_abs_std"
+        ],
+        "files": [
+          "Long_CS/validation/subcluster_occupancy.png",
+          "Long_CS/validation/feature_distributions_bout_duration_s.png",
+          "Long_CS/validation/feature_distributions_accel_rms.png",
+          "Long_CS/validation/feature_distributions_accel_abs_std.png",
+          "Long_CS/validation/top2_feature_scatter.png"
+        ],
+        "scatter_points_plotted": 1133,
+        "subcluster_counts": [
+          86,
+          566,
+          117,
+          83,
+          48,
+          9,
+          101,
+          123
+        ]
+      }
+    }
+  },
+  "reference_seed": 11,
+  "sha256": {
+    "BS/train/feature_distributions_speed_mean.png": "855f7a795c72b60f340998eb132ba953046ec0e70230d491679abed0aec874bc",
+    "BS/train/feature_distributions_speed_rms.png": "586d334ff435f1d0e53e6246b301c964726f51ddfbf678609345873c0524885e",
+    "BS/train/feature_distributions_speed_std.png": "9fe4be18fc3c5a8a3f2d0aa871f3ab3a435b969ef29d24a4a010f1c77dd122b6",
+    "BS/train/subcluster_occupancy.png": "339cc368dd8fc9b16323a436fea1e7ab36ac075b729f4f887a40bb8b479e5707",
+    "BS/train/top2_feature_scatter.png": "562ad3f388e3ef8b3acd5798be280ff4a984ece43c34ea8fe9273d880bcbd8d5",
+    "BS/validation/feature_distributions_speed_mean.png": "cad36ab4ed1518c77aea4e8d83981de1dc314fac2f8138572bd6253cb0aee63a",
+    "BS/validation/feature_distributions_speed_rms.png": "1a2536309a0038f66c0ad34f85cb78231c662119df4fa77272501a6eac4f9f6d",
+    "BS/validation/feature_distributions_speed_std.png": "9c802ab3590dd46a96874de2f850cdc04714a579e84a7a7664718f592b5461c6",
+    "BS/validation/subcluster_occupancy.png": "9d10893bf997aa6ced763e6764bc87ea4c06c513f1509bdc58e944288e050667",
+    "BS/validation/top2_feature_scatter.png": "fc2044ced70e4a513cd7a49aa3d9653a974f89dd0b17bb7f65cb84ec61760e53",
+    "LLC/train/feature_distributions_speed_max.png": "5dba22660dd6a4a1216afab16d75a49782e31ea449ff715f735ef46b0a8f5534",
+    "LLC/train/feature_distributions_speed_p95.png": "d1e7399d741ee22721391b80d383a09dfc7cb71cc71b8d56c42569e5c80278f7",
+    "LLC/train/feature_distributions_turn_net_rad.png": "6eaeffd1ce3ffe7cd48e3dc51e8f05607ddfc7a02aaa3fa15885848a261be8db",
+    "LLC/train/subcluster_occupancy.png": "2c44ec1d86ee4039f512e0d16cbebede82da54d512daa37481e128373f2e95f3",
+    "LLC/train/top2_feature_scatter.png": "c7fe97ff75a375788c9f6c553f50852b7870645799fe3b70fe6a562d2d2fc92c",
+    "LLC/validation/feature_distributions_speed_max.png": "be9d433f8979e273e4beb81e0bfba45f96089b3d5ed3ce8abf3c31a2679ec681",
+    "LLC/validation/feature_distributions_speed_p95.png": "b959c1865d96654ba4899f19375e67d502e49d467ccdf6a2df4970ba092e81fc",
+    "LLC/validation/feature_distributions_turn_net_rad.png": "001e618476569c55bf7955724f2a47b98255b2ea3c673bde95c3fc4145a4aed1",
+    "LLC/validation/subcluster_occupancy.png": "6c922191c4f0df7ebaf7196d10865694458c04784eefe4979d37f62347165cfc",
+    "LLC/validation/top2_feature_scatter.png": "2f4c3d8db7618479363b103dd901a957fa3bc7671f7e7593f973c8af77bea909",
+    "Long_CS/train/feature_distributions_accel_abs_std.png": "0f8ea9a77aa06ad533753d6daab121849bab5ea93f654adb91f03f167b88d2ef",
+    "Long_CS/train/feature_distributions_accel_rms.png": "92bf0744a644b29f14080ba9b4c40a638fc02a2d823009ddc31e8e88b9fda55b",
+    "Long_CS/train/feature_distributions_bout_duration_s.png": "288b00e2f9a609813fa2d76b5686255bd2032355a00897bfe50ef18e12a87904",
+    "Long_CS/train/subcluster_occupancy.png": "54fc7e7c2ba93468794dcc92000086846e7d20b06bcaa5829d91b5b7235e3b24",
+    "Long_CS/train/top2_feature_scatter.png": "4a8df17e9cf792fc55b6da08846b7fecc22088cc542c8a80bcddb9c830af1704",
+    "Long_CS/validation/feature_distributions_accel_abs_std.png": "575e91212f4022b33bf4276255fdae4bbd41205e5f4698fe6be5b800a952f49b",
+    "Long_CS/validation/feature_distributions_accel_rms.png": "25baaae73972b524245163aaa561790f55c383278da2fd68f187dae7bcd7bb9f",
+    "Long_CS/validation/feature_distributions_bout_duration_s.png": "f467a1528b746b4355f1f3c6e8cb356158ae0ae0a35dccd871142bf11f2ca7f3",
+    "Long_CS/validation/subcluster_occupancy.png": "d6f16f3435ecbd73992165db5314363be7343ef506a75f8aee23bd4a8e8fb44d",
+    "Long_CS/validation/top2_feature_scatter.png": "c3277cdc99d91daef11b20bd532984c49477991d453a6f64c5b28d2f7bf2af3f"
+  },
+  "test_partition_used": false,
+  "visualization_seed": 11
+}

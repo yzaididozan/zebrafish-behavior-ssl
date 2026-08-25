@@ -1,0 +1,28 @@
+{
+  "input_features": [
+    "speed_mean"
+  ],
+  "k": 8,
+  "model": "multinomial_logistic_regression",
+  "normalization": {
+    "fit_partition": "train",
+    "mean": 0.858429032919734,
+    "std": 0.6047440832286274
+  },
+  "ssl_seed": 79,
+  "test_partition_used": false,
+  "train": {
+    "accuracy": 0.3078065732445384,
+    "balanced_accuracy": 0.3141669395710563,
+    "chance_accuracy": 0.125,
+    "macro_f1": 0.2717241555226667,
+    "majority_accuracy": 0.188158857957788
+  },
+  "validation": {
+    "accuracy": 0.30240882325007123,
+    "balanced_accuracy": 0.30992731728438827,
+    "chance_accuracy": 0.125,
+    "macro_f1": 0.2711240542260035,
+    "majority_accuracy": 0.19248029252540602
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "dataset_id": "DS-005",
+  "feature_names": [
+    "bout_duration_s",
+    "inter_bout_interval_s",
+    "speed_mean",
+    "speed_std",
+    "speed_median",
+    "speed_max",
+    "speed_p95",
+    "speed_rms",
+    "accel_abs_mean",
+    "accel_abs_std",
+    "accel_abs_max",
+    "accel_rms",
+    "turn_abs_total_rad",
+    "turn_net_rad",
+    "turn_abs_mean_rad",
+    "turn_abs_std_rad",
+    "turn_abs_max_rad",
+    "turn_rms_rad"
+  ],
+  "frozen_selection_file": "/Users/yasamean/zebrafish-behavior-ssl/data/processed/DS-005/baseline_clustering/selected_configuration.json",
+  "frozen_selection_score": 0.649252350828649,
+  "pca_variance_retained": 0.9579394459724426,
+  "representation": "handcrafted_baseline",
+  "selected_configuration": {
+    "k": 2,
+    "method": "gmm",
+    "pca_components": 6,
+    "seed": 20260822
+  },
+  "test_partition_used": false,
+  "train_cluster_counts": [
+    759760,
+    83081
+  ],
+  "validation_cluster_counts": [
+    151851,
+    16613
+  ]
+}

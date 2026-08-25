@@ -1,0 +1,4216 @@
+{
+  "association": {
+    "adjusted_mutual_information": 0.019638652482708407,
+    "cramers_v": 0.1568880076687552,
+    "normalized_mutual_information": 0.021694470958389996
+  },
+  "biological_uniqueness_across_recordings_verified": false,
+  "bout_id_alignment_verified": true,
+  "cluster_concentration_summary": {
+    "max_max_single_fish_well_fraction": 0.0186799501867995,
+    "mean_effective_fish_wells_per_cluster": 170.8939846432574,
+    "mean_max_single_fish_well_fraction": 0.014030031545506732,
+    "min_effective_fish_wells_per_cluster": 145.25471373438185
+  },
+  "dataset_id": "DS-006",
+  "fish_well_count": 258,
+  "fish_well_distribution_summary": {
+    "max_dominant_cluster_fraction": 0.75,
+    "mean_dominant_cluster_fraction": 0.2774978386589174,
+    "mean_normalized_cluster_entropy": 0.8991919418327735,
+    "min_normalized_cluster_entropy": 0.4172097224626076,
+    "std_normalized_cluster_entropy": 0.07625119587417883
+  },
+  "identity_unit": "canonical_fish_well",
+  "partition": "train",
+  "per_cluster": {
+    "0": {
+      "bout_count": 12505,
+      "dominant_fish_well": "DS006::Catamaran_pH_2a_t4::well09",
+      "effective_fish_wells": 180.4168305945361,
+      "fish_wells_with_bouts": 252,
+      "max_single_fish_well_fraction": 0.013354658136745303
+    },
+    "1": {
+      "bout_count": 4015,
+      "dominant_fish_well": "DS006::191119_Catamaran_pH_2b_t8::well07",
+      "effective_fish_wells": 147.40108629061018,
+      "fish_wells_with_bouts": 243,
+      "max_single_fish_well_fraction": 0.0186799501867995
+    },
+    "2": {
+      "bout_count": 9225,
+      "dominant_fish_well": "DS006::Catamaran_pH_2a_t2::well11",
+      "effective_fish_wells": 176.65663682277795,
+      "fish_wells_with_bouts": 252,
+      "max_single_fish_well_fraction": 0.017777777777777778
+    },
+    "3": {
+      "bout_count": 14983,
+      "dominant_fish_well": "DS006::Catamaran_pH_2a_t2::well04",
+      "effective_fish_wells": 184.93325144843186,
+      "fish_wells_with_bouts": 257,
+      "max_single_fish_well_fraction": 0.010211573116198358
+    },
+    "4": {
+      "bout_count": 27347,
+      "dominant_fish_well": "DS006::Catamaran_pH_2c_t6::well05",
+      "effective_fish_wells": 174.93841703623946,
+      "fish_wells_with_bouts": 257,
+      "max_single_fish_well_fraction": 0.011116393023000696
+    },
+    "5": {
+      "bout_count": 17768,
+      "dominant_fish_well": "DS006::Catamaran_pH_2c_t1::well01",
+      "effective_fish_wells": 145.25471373438185,
+      "fish_wells_with_bouts": 251,
+      "max_single_fish_well_fraction": 0.017503376857271498
+    },
+    "6": {
+      "bout_count": 13947,
+      "dominant_fish_well": "DS006::Catamaran_pH_2a_t1a::well03",
+      "effective_fish_wells": 185.2766536842677,
+      "fish_wells_with_bouts": 256,
+      "max_single_fish_well_fraction": 0.011472001147200114
+    },
+    "7": {
+      "bout_count": 18310,
+      "dominant_fish_well": "DS006::Catamaran_pH_2a_t2::well04",
+      "effective_fish_wells": 172.27428753481394,
+      "fish_wells_with_bouts": 254,
+      "max_single_fish_well_fraction": 0.012124522119060623
+    }
+  },
+  "per_fish_well": {
+    "DS006::191119_Catamaran_pH_2b_t6::well01": {
+      "bout_count": 511,
+      "cluster_counts": [
+        33,
+        49,
+        26,
+        41,
+        69,
+        177,
+        51,
+        65
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.34637964774951074,
+      "normalized_cluster_entropy": 0.9067840126730989
+    },
+    "DS006::191119_Catamaran_pH_2b_t6::well02": {
+      "bout_count": 622,
+      "cluster_counts": [
+        91,
+        26,
+        62,
+        67,
+        183,
+        75,
+        67,
+        51
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2942122186495177,
+      "normalized_cluster_entropy": 0.9348201429219937
+    },
+    "DS006::191119_Catamaran_pH_2b_t6::well03": {
+      "bout_count": 807,
+      "cluster_counts": [
+        96,
+        9,
+        55,
+        106,
+        249,
+        75,
+        65,
+        152
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.30855018587360594,
+      "normalized_cluster_entropy": 0.8916043016906171
+    },
+    "DS006::191119_Catamaran_pH_2b_t6::well04": {
+      "bout_count": 761,
+      "cluster_counts": [
+        78,
+        18,
+        64,
+        86,
+        168,
+        118,
+        101,
+        128
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22076215505913271,
+      "normalized_cluster_entropy": 0.9459414818638373
+    },
+    "DS006::191119_Catamaran_pH_2b_t6::well05": {
+      "bout_count": 740,
+      "cluster_counts": [
+        98,
+        16,
+        61,
+        92,
+        218,
+        61,
+        98,
+        96
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2945945945945946,
+      "normalized_cluster_entropy": 0.9204508618580957
+    },
+    "DS006::191119_Catamaran_pH_2b_t6::well06": {
+      "bout_count": 840,
+      "cluster_counts": [
+        75,
+        27,
+        64,
+        117,
+        267,
+        55,
+        82,
+        153
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.31785714285714284,
+      "normalized_cluster_entropy": 0.9026626968204717
+    },
+    "DS006::191119_Catamaran_pH_2b_t6::well07": {
+      "bout_count": 586,
+      "cluster_counts": [
+        68,
+        21,
+        36,
+        54,
+        150,
+        90,
+        68,
+        99
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.25597269624573377,
+      "normalized_cluster_entropy": 0.9364145572254564
+    },
+    "DS006::191119_Catamaran_pH_2b_t6::well08": {
+      "bout_count": 240,
+      "cluster_counts": [
+        19,
+        51,
+        5,
+        7,
+        12,
+        113,
+        10,
+        23
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.4708333333333333,
+      "normalized_cluster_entropy": 0.7575379501687153
+    },
+    "DS006::191119_Catamaran_pH_2b_t6::well09": {
+      "bout_count": 370,
+      "cluster_counts": [
+        43,
+        21,
+        23,
+        51,
+        90,
+        70,
+        56,
+        16
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24324324324324326,
+      "normalized_cluster_entropy": 0.9325937001257565
+    },
+    "DS006::191119_Catamaran_pH_2b_t6::well11": {
+      "bout_count": 833,
+      "cluster_counts": [
+        79,
+        14,
+        37,
+        80,
+        271,
+        58,
+        91,
+        203
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.32533013205282113,
+      "normalized_cluster_entropy": 0.8618673010822222
+    },
+    "DS006::191119_Catamaran_pH_2b_t6::well12": {
+      "bout_count": 676,
+      "cluster_counts": [
+        55,
+        46,
+        25,
+        64,
+        134,
+        153,
+        72,
+        127
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.22633136094674555,
+      "normalized_cluster_entropy": 0.9338291978218348
+    },
+    "DS006::191119_Catamaran_pH_2b_t8::well01": {
+      "bout_count": 656,
+      "cluster_counts": [
+        56,
+        46,
+        24,
+        46,
+        213,
+        116,
+        62,
+        93
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3246951219512195,
+      "normalized_cluster_entropy": 0.9018366637193846
+    },
+    "DS006::191119_Catamaran_pH_2b_t8::well02": {
+      "bout_count": 547,
+      "cluster_counts": [
+        58,
+        38,
+        47,
+        52,
+        115,
+        118,
+        58,
+        61
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.21572212065813529,
+      "normalized_cluster_entropy": 0.9613579377666372
+    },
+    "DS006::191119_Catamaran_pH_2b_t8::well03": {
+      "bout_count": 739,
+      "cluster_counts": [
+        52,
+        12,
+        50,
+        83,
+        232,
+        62,
+        84,
+        164
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.31393775372124494,
+      "normalized_cluster_entropy": 0.8821293312977535
+    },
+    "DS006::191119_Catamaran_pH_2b_t8::well05": {
+      "bout_count": 741,
+      "cluster_counts": [
+        78,
+        35,
+        43,
+        71,
+        230,
+        84,
+        65,
+        135
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.31039136302294196,
+      "normalized_cluster_entropy": 0.915973114870867
+    },
+    "DS006::191119_Catamaran_pH_2b_t8::well06": {
+      "bout_count": 809,
+      "cluster_counts": [
+        63,
+        24,
+        77,
+        114,
+        217,
+        71,
+        101,
+        142
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.26823238566131025,
+      "normalized_cluster_entropy": 0.9304510930683482
+    },
+    "DS006::191119_Catamaran_pH_2b_t8::well07": {
+      "bout_count": 721,
+      "cluster_counts": [
+        70,
+        75,
+        20,
+        84,
+        117,
+        145,
+        102,
+        108
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.20110957004160887,
+      "normalized_cluster_entropy": 0.9572032432547205
+    },
+    "DS006::191119_Catamaran_pH_2b_t8::well08": {
+      "bout_count": 699,
+      "cluster_counts": [
+        58,
+        54,
+        59,
+        46,
+        111,
+        224,
+        62,
+        85
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.32045779685264664,
+      "normalized_cluster_entropy": 0.9233582383742377
+    },
+    "DS006::191119_Catamaran_pH_2b_t8::well10": {
+      "bout_count": 635,
+      "cluster_counts": [
+        64,
+        26,
+        45,
+        72,
+        147,
+        109,
+        75,
+        97
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.231496062992126,
+      "normalized_cluster_entropy": 0.9507731342112742
+    },
+    "DS006::191119_Catamaran_pH_2b_t8::well11": {
+      "bout_count": 611,
+      "cluster_counts": [
+        50,
+        60,
+        31,
+        51,
+        108,
+        155,
+        49,
+        107
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.25368248772504093,
+      "normalized_cluster_entropy": 0.9392021548901952
+    },
+    "DS006::191119_Catamaran_pH_2b_t8::well12": {
+      "bout_count": 423,
+      "cluster_counts": [
+        15,
+        39,
+        9,
+        30,
+        47,
+        123,
+        53,
+        107
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2907801418439716,
+      "normalized_cluster_entropy": 0.8747734906985022
+    },
+    "DS006::Catamaran_pH_1a_t1a::well01": {
+      "bout_count": 398,
+      "cluster_counts": [
+        42,
+        7,
+        28,
+        57,
+        101,
+        17,
+        75,
+        71
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2537688442211055,
+      "normalized_cluster_entropy": 0.9031888097228203
+    },
+    "DS006::Catamaran_pH_1a_t1a::well02": {
+      "bout_count": 364,
+      "cluster_counts": [
+        39,
+        10,
+        28,
+        51,
+        64,
+        38,
+        79,
+        55
+      ],
+      "dominant_cluster": 6,
+      "dominant_cluster_fraction": 0.21703296703296704,
+      "normalized_cluster_entropy": 0.9470631340924556
+    },
+    "DS006::Catamaran_pH_1a_t1a::well03": {
+      "bout_count": 326,
+      "cluster_counts": [
+        43,
+        8,
+        27,
+        44,
+        86,
+        22,
+        43,
+        53
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.26380368098159507,
+      "normalized_cluster_entropy": 0.9285108455932982
+    },
+    "DS006::Catamaran_pH_1a_t1a::well04": {
+      "bout_count": 360,
+      "cluster_counts": [
+        49,
+        8,
+        30,
+        32,
+        122,
+        26,
+        32,
+        61
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3388888888888889,
+      "normalized_cluster_entropy": 0.890003008336209
+    },
+    "DS006::Catamaran_pH_1a_t1a::well05": {
+      "bout_count": 404,
+      "cluster_counts": [
+        52,
+        2,
+        34,
+        59,
+        97,
+        12,
+        59,
+        89
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2400990099009901,
+      "normalized_cluster_entropy": 0.885163024921093
+    },
+    "DS006::Catamaran_pH_1a_t1a::well06": {
+      "bout_count": 158,
+      "cluster_counts": [
+        25,
+        5,
+        11,
+        25,
+        35,
+        9,
+        36,
+        12
+      ],
+      "dominant_cluster": 6,
+      "dominant_cluster_fraction": 0.22784810126582278,
+      "normalized_cluster_entropy": 0.9176162020615342
+    },
+    "DS006::Catamaran_pH_1a_t1a::well07": {
+      "bout_count": 271,
+      "cluster_counts": [
+        38,
+        5,
+        29,
+        46,
+        50,
+        21,
+        26,
+        56
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.2066420664206642,
+      "normalized_cluster_entropy": 0.9377754264579331
+    },
+    "DS006::Catamaran_pH_1a_t1a::well08": {
+      "bout_count": 334,
+      "cluster_counts": [
+        38,
+        9,
+        29,
+        47,
+        71,
+        16,
+        58,
+        66
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2125748502994012,
+      "normalized_cluster_entropy": 0.9290764303343896
+    },
+    "DS006::Catamaran_pH_1a_t1a::well09": {
+      "bout_count": 315,
+      "cluster_counts": [
+        43,
+        12,
+        24,
+        41,
+        66,
+        28,
+        44,
+        57
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.20952380952380953,
+      "normalized_cluster_entropy": 0.9544732141817963
+    },
+    "DS006::Catamaran_pH_1a_t1a::well10": {
+      "bout_count": 390,
+      "cluster_counts": [
+        27,
+        0,
+        36,
+        38,
+        118,
+        25,
+        74,
+        72
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.30256410256410254,
+      "normalized_cluster_entropy": 0.864064855138206
+    },
+    "DS006::Catamaran_pH_1a_t1a::well11": {
+      "bout_count": 258,
+      "cluster_counts": [
+        49,
+        3,
+        30,
+        21,
+        86,
+        11,
+        37,
+        21
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3333333333333333,
+      "normalized_cluster_entropy": 0.8680550661146843
+    },
+    "DS006::Catamaran_pH_1a_t1a::well12": {
+      "bout_count": 294,
+      "cluster_counts": [
+        43,
+        4,
+        40,
+        34,
+        70,
+        21,
+        31,
+        51
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.23809523809523808,
+      "normalized_cluster_entropy": 0.9289809176923515
+    },
+    "DS006::Catamaran_pH_1a_t1c::well01": {
+      "bout_count": 84,
+      "cluster_counts": [
+        13,
+        1,
+        7,
+        6,
+        23,
+        11,
+        11,
+        12
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.27380952380952384,
+      "normalized_cluster_entropy": 0.9147568139320073
+    },
+    "DS006::Catamaran_pH_1a_t1c::well02": {
+      "bout_count": 83,
+      "cluster_counts": [
+        7,
+        5,
+        3,
+        12,
+        19,
+        6,
+        8,
+        23
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.27710843373493976,
+      "normalized_cluster_entropy": 0.9069493478436587
+    },
+    "DS006::Catamaran_pH_1a_t1c::well03": {
+      "bout_count": 80,
+      "cluster_counts": [
+        4,
+        0,
+        9,
+        14,
+        16,
+        2,
+        8,
+        27
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.3375,
+      "normalized_cluster_entropy": 0.8230832962949504
+    },
+    "DS006::Catamaran_pH_1a_t1c::well04": {
+      "bout_count": 112,
+      "cluster_counts": [
+        9,
+        3,
+        6,
+        12,
+        31,
+        8,
+        24,
+        19
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2767857142857143,
+      "normalized_cluster_entropy": 0.8996440635345166
+    },
+    "DS006::Catamaran_pH_1a_t1c::well05": {
+      "bout_count": 84,
+      "cluster_counts": [
+        12,
+        0,
+        3,
+        24,
+        13,
+        4,
+        14,
+        14
+      ],
+      "dominant_cluster": 3,
+      "dominant_cluster_fraction": 0.2857142857142857,
+      "normalized_cluster_entropy": 0.858847110443824
+    },
+    "DS006::Catamaran_pH_1a_t1c::well06": {
+      "bout_count": 37,
+      "cluster_counts": [
+        4,
+        0,
+        1,
+        3,
+        16,
+        3,
+        3,
+        7
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.43243243243243246,
+      "normalized_cluster_entropy": 0.782284933039437
+    },
+    "DS006::Catamaran_pH_1a_t1c::well07": {
+      "bout_count": 99,
+      "cluster_counts": [
+        7,
+        7,
+        15,
+        14,
+        18,
+        22,
+        6,
+        10
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2222222222222222,
+      "normalized_cluster_entropy": 0.9535414378685454
+    },
+    "DS006::Catamaran_pH_1a_t1c::well08": {
+      "bout_count": 79,
+      "cluster_counts": [
+        7,
+        17,
+        5,
+        5,
+        5,
+        23,
+        11,
+        6
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2911392405063291,
+      "normalized_cluster_entropy": 0.9131896925247815
+    },
+    "DS006::Catamaran_pH_1a_t1c::well09": {
+      "bout_count": 86,
+      "cluster_counts": [
+        4,
+        19,
+        7,
+        8,
+        6,
+        20,
+        10,
+        12
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.23255813953488372,
+      "normalized_cluster_entropy": 0.9384088908331295
+    },
+    "DS006::Catamaran_pH_1a_t1c::well10": {
+      "bout_count": 84,
+      "cluster_counts": [
+        10,
+        23,
+        6,
+        8,
+        10,
+        7,
+        8,
+        12
+      ],
+      "dominant_cluster": 1,
+      "dominant_cluster_fraction": 0.27380952380952384,
+      "normalized_cluster_entropy": 0.9535451077737036
+    },
+    "DS006::Catamaran_pH_1a_t1c::well11": {
+      "bout_count": 78,
+      "cluster_counts": [
+        4,
+        18,
+        9,
+        5,
+        9,
+        21,
+        7,
+        5
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2692307692307692,
+      "normalized_cluster_entropy": 0.9189514604175271
+    },
+    "DS006::Catamaran_pH_1a_t1c::well12": {
+      "bout_count": 98,
+      "cluster_counts": [
+        8,
+        10,
+        9,
+        12,
+        10,
+        22,
+        17,
+        10
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.22448979591836735,
+      "normalized_cluster_entropy": 0.9708859964073422
+    },
+    "DS006::Catamaran_pH_1a_t2a::well01": {
+      "bout_count": 469,
+      "cluster_counts": [
+        35,
+        7,
+        11,
+        90,
+        149,
+        21,
+        63,
+        93
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.31769722814498935,
+      "normalized_cluster_entropy": 0.8440250122294215
+    },
+    "DS006::Catamaran_pH_1a_t2a::well02": {
+      "bout_count": 392,
+      "cluster_counts": [
+        58,
+        3,
+        22,
+        69,
+        109,
+        10,
+        39,
+        82
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2780612244897959,
+      "normalized_cluster_entropy": 0.862628798709197
+    },
+    "DS006::Catamaran_pH_1a_t2a::well03": {
+      "bout_count": 393,
+      "cluster_counts": [
+        50,
+        9,
+        27,
+        70,
+        86,
+        30,
+        41,
+        80
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.21882951653944022,
+      "normalized_cluster_entropy": 0.9275591412963424
+    },
+    "DS006::Catamaran_pH_1a_t2a::well04": {
+      "bout_count": 402,
+      "cluster_counts": [
+        50,
+        11,
+        23,
+        82,
+        82,
+        21,
+        40,
+        93
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.23134328358208955,
+      "normalized_cluster_entropy": 0.9100648505029937
+    },
+    "DS006::Catamaran_pH_1a_t2a::well05": {
+      "bout_count": 248,
+      "cluster_counts": [
+        32,
+        1,
+        12,
+        30,
+        83,
+        17,
+        50,
+        23
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3346774193548387,
+      "normalized_cluster_entropy": 0.856941588061744
+    },
+    "DS006::Catamaran_pH_1a_t2a::well06": {
+      "bout_count": 345,
+      "cluster_counts": [
+        46,
+        4,
+        36,
+        59,
+        82,
+        23,
+        45,
+        50
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.23768115942028986,
+      "normalized_cluster_entropy": 0.9261272001837179
+    },
+    "DS006::Catamaran_pH_1a_t2a::well07": {
+      "bout_count": 310,
+      "cluster_counts": [
+        11,
+        13,
+        50,
+        65,
+        84,
+        7,
+        44,
+        36
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2709677419354839,
+      "normalized_cluster_entropy": 0.8847891880847312
+    },
+    "DS006::Catamaran_pH_1a_t2a::well08": {
+      "bout_count": 259,
+      "cluster_counts": [
+        34,
+        8,
+        20,
+        41,
+        94,
+        11,
+        16,
+        35
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.36293436293436293,
+      "normalized_cluster_entropy": 0.8694612746015898
+    },
+    "DS006::Catamaran_pH_1a_t2a::well09": {
+      "bout_count": 322,
+      "cluster_counts": [
+        49,
+        9,
+        7,
+        35,
+        103,
+        17,
+        47,
+        55
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3198757763975155,
+      "normalized_cluster_entropy": 0.8721447768705706
+    },
+    "DS006::Catamaran_pH_1a_t2a::well10": {
+      "bout_count": 359,
+      "cluster_counts": [
+        46,
+        13,
+        35,
+        53,
+        102,
+        20,
+        36,
+        54
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2841225626740947,
+      "normalized_cluster_entropy": 0.9265860206086398
+    },
+    "DS006::Catamaran_pH_1a_t2a::well11": {
+      "bout_count": 367,
+      "cluster_counts": [
+        65,
+        2,
+        52,
+        56,
+        106,
+        8,
+        39,
+        39
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2888283378746594,
+      "normalized_cluster_entropy": 0.8739299861154337
+    },
+    "DS006::Catamaran_pH_1a_t2a::well12": {
+      "bout_count": 38,
+      "cluster_counts": [
+        9,
+        0,
+        6,
+        4,
+        9,
+        0,
+        10,
+        0
+      ],
+      "dominant_cluster": 6,
+      "dominant_cluster_fraction": 0.2631578947368421,
+      "normalized_cluster_entropy": 0.7511713994008253
+    },
+    "DS006::Catamaran_pH_1a_t2b::well01": {
+      "bout_count": 291,
+      "cluster_counts": [
+        30,
+        30,
+        25,
+        43,
+        78,
+        8,
+        39,
+        38
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.26804123711340205,
+      "normalized_cluster_entropy": 0.9371663169937021
+    },
+    "DS006::Catamaran_pH_1a_t2b::well02": {
+      "bout_count": 265,
+      "cluster_counts": [
+        35,
+        19,
+        14,
+        32,
+        65,
+        11,
+        46,
+        43
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24528301886792453,
+      "normalized_cluster_entropy": 0.934277331150211
+    },
+    "DS006::Catamaran_pH_1a_t2b::well03": {
+      "bout_count": 282,
+      "cluster_counts": [
+        38,
+        44,
+        17,
+        45,
+        50,
+        15,
+        34,
+        39
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.1773049645390071,
+      "normalized_cluster_entropy": 0.9683172523031537
+    },
+    "DS006::Catamaran_pH_1a_t2b::well04": {
+      "bout_count": 271,
+      "cluster_counts": [
+        42,
+        37,
+        18,
+        18,
+        72,
+        10,
+        33,
+        41
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2656826568265683,
+      "normalized_cluster_entropy": 0.9315368569361704
+    },
+    "DS006::Catamaran_pH_1a_t2b::well05": {
+      "bout_count": 162,
+      "cluster_counts": [
+        26,
+        24,
+        21,
+        15,
+        28,
+        2,
+        21,
+        25
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.1728395061728395,
+      "normalized_cluster_entropy": 0.9486052150730789
+    },
+    "DS006::Catamaran_pH_1a_t2b::well06": {
+      "bout_count": 224,
+      "cluster_counts": [
+        40,
+        24,
+        9,
+        30,
+        52,
+        4,
+        43,
+        22
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.23214285714285715,
+      "normalized_cluster_entropy": 0.9141897179186268
+    },
+    "DS006::Catamaran_pH_1a_t2b::well07": {
+      "bout_count": 212,
+      "cluster_counts": [
+        27,
+        24,
+        14,
+        36,
+        56,
+        4,
+        32,
+        19
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2641509433962264,
+      "normalized_cluster_entropy": 0.9222567711325365
+    },
+    "DS006::Catamaran_pH_1a_t2b::well08": {
+      "bout_count": 150,
+      "cluster_counts": [
+        21,
+        9,
+        18,
+        20,
+        39,
+        3,
+        31,
+        9
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.26,
+      "normalized_cluster_entropy": 0.9090280357479409
+    },
+    "DS006::Catamaran_pH_1a_t2b::well09": {
+      "bout_count": 4,
+      "cluster_counts": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "dominant_cluster": 6,
+      "dominant_cluster_fraction": 0.5,
+      "normalized_cluster_entropy": 0.5
+    },
+    "DS006::Catamaran_pH_1a_t2b::well10": {
+      "bout_count": 245,
+      "cluster_counts": [
+        32,
+        33,
+        27,
+        41,
+        52,
+        5,
+        30,
+        25
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.21224489795918366,
+      "normalized_cluster_entropy": 0.9505225386920388
+    },
+    "DS006::Catamaran_pH_1a_t2b::well11": {
+      "bout_count": 206,
+      "cluster_counts": [
+        39,
+        8,
+        15,
+        24,
+        50,
+        3,
+        31,
+        36
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24271844660194175,
+      "normalized_cluster_entropy": 0.902914046032142
+    },
+    "DS006::Catamaran_pH_1a_t2b::well12": {
+      "bout_count": 70,
+      "cluster_counts": [
+        8,
+        5,
+        19,
+        6,
+        18,
+        0,
+        7,
+        7
+      ],
+      "dominant_cluster": 2,
+      "dominant_cluster_fraction": 0.2714285714285714,
+      "normalized_cluster_entropy": 0.8707531143675605
+    },
+    "DS006::Catamaran_pH_1a_t3c::well01": {
+      "bout_count": 6,
+      "cluster_counts": [
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        1,
+        0
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.6666666666666666,
+      "normalized_cluster_entropy": 0.4172097224626076
+    },
+    "DS006::Catamaran_pH_1a_t3c::well02": {
+      "bout_count": 54,
+      "cluster_counts": [
+        1,
+        5,
+        2,
+        20,
+        4,
+        4,
+        3,
+        15
+      ],
+      "dominant_cluster": 3,
+      "dominant_cluster_fraction": 0.37037037037037035,
+      "normalized_cluster_entropy": 0.8108486191873581
+    },
+    "DS006::Catamaran_pH_1a_t3c::well03": {
+      "bout_count": 66,
+      "cluster_counts": [
+        1,
+        7,
+        0,
+        18,
+        11,
+        2,
+        10,
+        17
+      ],
+      "dominant_cluster": 3,
+      "dominant_cluster_fraction": 0.2727272727272727,
+      "normalized_cluster_entropy": 0.8154544461724922
+    },
+    "DS006::Catamaran_pH_1a_t3c::well04": {
+      "bout_count": 24,
+      "cluster_counts": [
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        2,
+        18
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.75,
+      "normalized_cluster_entropy": 0.43028402765758517
+    },
+    "DS006::Catamaran_pH_1a_t3c::well05": {
+      "bout_count": 44,
+      "cluster_counts": [
+        0,
+        4,
+        7,
+        13,
+        1,
+        0,
+        0,
+        19
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.4318181818181818,
+      "normalized_cluster_entropy": 0.6344482399573904
+    },
+    "DS006::Catamaran_pH_1a_t3c::well06": {
+      "bout_count": 45,
+      "cluster_counts": [
+        0,
+        0,
+        4,
+        8,
+        9,
+        1,
+        5,
+        18
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.4,
+      "normalized_cluster_entropy": 0.7402649912700454
+    },
+    "DS006::Catamaran_pH_1a_t3c::well07": {
+      "bout_count": 88,
+      "cluster_counts": [
+        7,
+        13,
+        11,
+        10,
+        5,
+        23,
+        11,
+        8
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.26136363636363635,
+      "normalized_cluster_entropy": 0.9533880288909184
+    },
+    "DS006::Catamaran_pH_1a_t3c::well08": {
+      "bout_count": 87,
+      "cluster_counts": [
+        13,
+        25,
+        8,
+        5,
+        4,
+        13,
+        12,
+        7
+      ],
+      "dominant_cluster": 1,
+      "dominant_cluster_fraction": 0.28735632183908044,
+      "normalized_cluster_entropy": 0.9270021907483101
+    },
+    "DS006::Catamaran_pH_1a_t3c::well09": {
+      "bout_count": 60,
+      "cluster_counts": [
+        3,
+        18,
+        9,
+        6,
+        5,
+        12,
+        4,
+        3
+      ],
+      "dominant_cluster": 1,
+      "dominant_cluster_fraction": 0.3,
+      "normalized_cluster_entropy": 0.9065373344768007
+    },
+    "DS006::Catamaran_pH_1a_t3c::well10": {
+      "bout_count": 91,
+      "cluster_counts": [
+        8,
+        16,
+        5,
+        6,
+        12,
+        18,
+        16,
+        10
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.1978021978021978,
+      "normalized_cluster_entropy": 0.9589465780066978
+    },
+    "DS006::Catamaran_pH_1a_t3c::well11": {
+      "bout_count": 74,
+      "cluster_counts": [
+        4,
+        29,
+        9,
+        4,
+        4,
+        12,
+        2,
+        10
+      ],
+      "dominant_cluster": 1,
+      "dominant_cluster_fraction": 0.3918918918918919,
+      "normalized_cluster_entropy": 0.8461709199429478
+    },
+    "DS006::Catamaran_pH_1a_t3c::well12": {
+      "bout_count": 29,
+      "cluster_counts": [
+        1,
+        17,
+        0,
+        2,
+        3,
+        2,
+        2,
+        2
+      ],
+      "dominant_cluster": 1,
+      "dominant_cluster_fraction": 0.5862068965517241,
+      "normalized_cluster_entropy": 0.6740194604055214
+    },
+    "DS006::Catamaran_pH_1a_t4a::well01": {
+      "bout_count": 101,
+      "cluster_counts": [
+        11,
+        6,
+        7,
+        11,
+        13,
+        10,
+        20,
+        23
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.22772277227722773,
+      "normalized_cluster_entropy": 0.9551324109485617
+    },
+    "DS006::Catamaran_pH_1a_t4a::well02": {
+      "bout_count": 334,
+      "cluster_counts": [
+        40,
+        17,
+        15,
+        37,
+        64,
+        19,
+        85,
+        57
+      ],
+      "dominant_cluster": 6,
+      "dominant_cluster_fraction": 0.25449101796407186,
+      "normalized_cluster_entropy": 0.9226113023878856
+    },
+    "DS006::Catamaran_pH_1a_t4a::well03": {
+      "bout_count": 378,
+      "cluster_counts": [
+        32,
+        16,
+        20,
+        50,
+        117,
+        19,
+        45,
+        79
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.30952380952380953,
+      "normalized_cluster_entropy": 0.8943746927527064
+    },
+    "DS006::Catamaran_pH_1a_t4a::well04": {
+      "bout_count": 239,
+      "cluster_counts": [
+        42,
+        9,
+        8,
+        27,
+        52,
+        30,
+        44,
+        27
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2175732217573222,
+      "normalized_cluster_entropy": 0.9326248407102503
+    },
+    "DS006::Catamaran_pH_1a_t4a::well05": {
+      "bout_count": 336,
+      "cluster_counts": [
+        66,
+        11,
+        11,
+        52,
+        69,
+        22,
+        61,
+        44
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.20535714285714285,
+      "normalized_cluster_entropy": 0.9194172909559096
+    },
+    "DS006::Catamaran_pH_1a_t4a::well06": {
+      "bout_count": 112,
+      "cluster_counts": [
+        21,
+        4,
+        8,
+        14,
+        18,
+        11,
+        28,
+        8
+      ],
+      "dominant_cluster": 6,
+      "dominant_cluster_fraction": 0.25,
+      "normalized_cluster_entropy": 0.9320350620080549
+    },
+    "DS006::Catamaran_pH_1a_t4a::well07": {
+      "bout_count": 141,
+      "cluster_counts": [
+        12,
+        6,
+        12,
+        28,
+        35,
+        16,
+        15,
+        17
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24822695035460993,
+      "normalized_cluster_entropy": 0.9430420686064419
+    },
+    "DS006::Catamaran_pH_1a_t4a::well08": {
+      "bout_count": 292,
+      "cluster_counts": [
+        31,
+        11,
+        27,
+        41,
+        57,
+        17,
+        43,
+        65
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.2226027397260274,
+      "normalized_cluster_entropy": 0.9417904698750238
+    },
+    "DS006::Catamaran_pH_1a_t4a::well09": {
+      "bout_count": 219,
+      "cluster_counts": [
+        34,
+        13,
+        19,
+        37,
+        59,
+        12,
+        16,
+        29
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2694063926940639,
+      "normalized_cluster_entropy": 0.9332748509146269
+    },
+    "DS006::Catamaran_pH_1a_t4a::well10": {
+      "bout_count": 316,
+      "cluster_counts": [
+        33,
+        17,
+        24,
+        44,
+        73,
+        20,
+        72,
+        33
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2310126582278481,
+      "normalized_cluster_entropy": 0.9375457702614632
+    },
+    "DS006::Catamaran_pH_1a_t4a::well11": {
+      "bout_count": 265,
+      "cluster_counts": [
+        45,
+        1,
+        24,
+        48,
+        50,
+        10,
+        52,
+        35
+      ],
+      "dominant_cluster": 6,
+      "dominant_cluster_fraction": 0.19622641509433963,
+      "normalized_cluster_entropy": 0.9013827859668173
+    },
+    "DS006::Catamaran_pH_1a_t4a::well12": {
+      "bout_count": 86,
+      "cluster_counts": [
+        14,
+        1,
+        4,
+        13,
+        21,
+        1,
+        9,
+        23
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.26744186046511625,
+      "normalized_cluster_entropy": 0.8466673169732314
+    },
+    "DS006::Catamaran_pH_2a_t1a::well01": {
+      "bout_count": 914,
+      "cluster_counts": [
+        93,
+        14,
+        100,
+        106,
+        294,
+        34,
+        129,
+        144
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.32166301969365424,
+      "normalized_cluster_entropy": 0.8864205604953885
+    },
+    "DS006::Catamaran_pH_2a_t1a::well02": {
+      "bout_count": 796,
+      "cluster_counts": [
+        102,
+        21,
+        69,
+        81,
+        141,
+        166,
+        117,
+        99
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.20854271356783918,
+      "normalized_cluster_entropy": 0.9513563004903647
+    },
+    "DS006::Catamaran_pH_2a_t1a::well03": {
+      "bout_count": 921,
+      "cluster_counts": [
+        81,
+        9,
+        82,
+        143,
+        221,
+        98,
+        160,
+        127
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.23995656894679696,
+      "normalized_cluster_entropy": 0.92416297293328
+    },
+    "DS006::Catamaran_pH_2a_t1a::well04": {
+      "bout_count": 848,
+      "cluster_counts": [
+        132,
+        21,
+        70,
+        88,
+        232,
+        80,
+        142,
+        83
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.27358490566037735,
+      "normalized_cluster_entropy": 0.9262971147710882
+    },
+    "DS006::Catamaran_pH_2a_t1a::well05": {
+      "bout_count": 696,
+      "cluster_counts": [
+        102,
+        25,
+        61,
+        88,
+        148,
+        95,
+        92,
+        85
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.21264367816091953,
+      "normalized_cluster_entropy": 0.9623077648564952
+    },
+    "DS006::Catamaran_pH_2a_t1a::well06": {
+      "bout_count": 632,
+      "cluster_counts": [
+        82,
+        16,
+        76,
+        97,
+        175,
+        67,
+        76,
+        43
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.27689873417721517,
+      "normalized_cluster_entropy": 0.9288366750791938
+    },
+    "DS006::Catamaran_pH_2a_t1a::well08": {
+      "bout_count": 372,
+      "cluster_counts": [
+        30,
+        12,
+        50,
+        72,
+        89,
+        36,
+        14,
+        69
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.239247311827957,
+      "normalized_cluster_entropy": 0.9163661903479058
+    },
+    "DS006::Catamaran_pH_2a_t1a::well09": {
+      "bout_count": 872,
+      "cluster_counts": [
+        89,
+        15,
+        95,
+        124,
+        194,
+        112,
+        129,
+        114
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22247706422018348,
+      "normalized_cluster_entropy": 0.9465794539055029
+    },
+    "DS006::Catamaran_pH_2a_t1a::well10": {
+      "bout_count": 691,
+      "cluster_counts": [
+        68,
+        17,
+        74,
+        79,
+        156,
+        99,
+        74,
+        124
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22575976845151954,
+      "normalized_cluster_entropy": 0.9466015149177848
+    },
+    "DS006::Catamaran_pH_2a_t1a::well11": {
+      "bout_count": 634,
+      "cluster_counts": [
+        109,
+        18,
+        63,
+        69,
+        158,
+        60,
+        62,
+        95
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24921135646687698,
+      "normalized_cluster_entropy": 0.9405531719240956
+    },
+    "DS006::Catamaran_pH_2a_t1a::well12": {
+      "bout_count": 279,
+      "cluster_counts": [
+        35,
+        3,
+        61,
+        43,
+        64,
+        30,
+        25,
+        18
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22939068100358423,
+      "normalized_cluster_entropy": 0.913839806718034
+    },
+    "DS006::Catamaran_pH_2a_t2::well01": {
+      "bout_count": 600,
+      "cluster_counts": [
+        128,
+        2,
+        31,
+        54,
+        205,
+        54,
+        47,
+        79
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3416666666666667,
+      "normalized_cluster_entropy": 0.8504586127269024
+    },
+    "DS006::Catamaran_pH_2a_t2::well02": {
+      "bout_count": 916,
+      "cluster_counts": [
+        115,
+        14,
+        79,
+        129,
+        249,
+        66,
+        146,
+        118
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2718340611353712,
+      "normalized_cluster_entropy": 0.9195387888246035
+    },
+    "DS006::Catamaran_pH_2a_t2::well03": {
+      "bout_count": 27,
+      "cluster_counts": [
+        0,
+        2,
+        0,
+        1,
+        14,
+        0,
+        10,
+        0
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.5185185185185185,
+      "normalized_cluster_entropy": 0.49209521852757493
+    },
+    "DS006::Catamaran_pH_2a_t2::well04": {
+      "bout_count": 996,
+      "cluster_counts": [
+        78,
+        12,
+        55,
+        153,
+        257,
+        75,
+        144,
+        222
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2580321285140562,
+      "normalized_cluster_entropy": 0.8939389034861558
+    },
+    "DS006::Catamaran_pH_2a_t2::well05": {
+      "bout_count": 825,
+      "cluster_counts": [
+        79,
+        8,
+        42,
+        116,
+        249,
+        67,
+        87,
+        177
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3018181818181818,
+      "normalized_cluster_entropy": 0.8800137274295847
+    },
+    "DS006::Catamaran_pH_2a_t2::well06": {
+      "bout_count": 904,
+      "cluster_counts": [
+        116,
+        24,
+        63,
+        103,
+        248,
+        91,
+        100,
+        159
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2743362831858407,
+      "normalized_cluster_entropy": 0.927217806411927
+    },
+    "DS006::Catamaran_pH_2a_t2::well07": {
+      "bout_count": 678,
+      "cluster_counts": [
+        128,
+        9,
+        67,
+        85,
+        154,
+        65,
+        89,
+        81
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22713864306784662,
+      "normalized_cluster_entropy": 0.9343771981108933
+    },
+    "DS006::Catamaran_pH_2a_t2::well08": {
+      "bout_count": 670,
+      "cluster_counts": [
+        97,
+        9,
+        44,
+        61,
+        162,
+        37,
+        55,
+        205
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.30597014925373134,
+      "normalized_cluster_entropy": 0.868252269665014
+    },
+    "DS006::Catamaran_pH_2a_t2::well09": {
+      "bout_count": 628,
+      "cluster_counts": [
+        54,
+        45,
+        78,
+        94,
+        88,
+        106,
+        64,
+        99
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.16878980891719744,
+      "normalized_cluster_entropy": 0.9823969929467428
+    },
+    "DS006::Catamaran_pH_2a_t2::well10": {
+      "bout_count": 887,
+      "cluster_counts": [
+        99,
+        21,
+        68,
+        80,
+        221,
+        81,
+        148,
+        169
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2491544532130778,
+      "normalized_cluster_entropy": 0.9265525217132137
+    },
+    "DS006::Catamaran_pH_2a_t2::well11": {
+      "bout_count": 730,
+      "cluster_counts": [
+        90,
+        19,
+        164,
+        141,
+        127,
+        68,
+        45,
+        76
+      ],
+      "dominant_cluster": 2,
+      "dominant_cluster_fraction": 0.22465753424657534,
+      "normalized_cluster_entropy": 0.9323289760720807
+    },
+    "DS006::Catamaran_pH_2a_t2::well12": {
+      "bout_count": 501,
+      "cluster_counts": [
+        43,
+        10,
+        58,
+        105,
+        124,
+        39,
+        45,
+        77
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24750499001996007,
+      "normalized_cluster_entropy": 0.9207370185798073
+    },
+    "DS006::Catamaran_pH_2a_t4::well01": {
+      "bout_count": 610,
+      "cluster_counts": [
+        53,
+        12,
+        33,
+        92,
+        151,
+        63,
+        81,
+        125
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24754098360655738,
+      "normalized_cluster_entropy": 0.9164345558268181
+    },
+    "DS006::Catamaran_pH_2a_t4::well02": {
+      "bout_count": 799,
+      "cluster_counts": [
+        81,
+        2,
+        30,
+        102,
+        243,
+        57,
+        70,
+        214
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3041301627033792,
+      "normalized_cluster_entropy": 0.8413639692143774
+    },
+    "DS006::Catamaran_pH_2a_t4::well03": {
+      "bout_count": 759,
+      "cluster_counts": [
+        128,
+        11,
+        35,
+        113,
+        191,
+        62,
+        93,
+        126
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2516469038208169,
+      "normalized_cluster_entropy": 0.9108878646888399
+    },
+    "DS006::Catamaran_pH_2a_t4::well04": {
+      "bout_count": 108,
+      "cluster_counts": [
+        21,
+        3,
+        4,
+        23,
+        28,
+        5,
+        17,
+        7
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.25925925925925924,
+      "normalized_cluster_entropy": 0.8800569160991271
+    },
+    "DS006::Catamaran_pH_2a_t4::well05": {
+      "bout_count": 415,
+      "cluster_counts": [
+        70,
+        3,
+        30,
+        63,
+        95,
+        23,
+        98,
+        33
+      ],
+      "dominant_cluster": 6,
+      "dominant_cluster_fraction": 0.236144578313253,
+      "normalized_cluster_entropy": 0.8905836893231303
+    },
+    "DS006::Catamaran_pH_2a_t4::well06": {
+      "bout_count": 878,
+      "cluster_counts": [
+        116,
+        3,
+        70,
+        140,
+        243,
+        45,
+        117,
+        144
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2767653758542141,
+      "normalized_cluster_entropy": 0.8916313223715446
+    },
+    "DS006::Catamaran_pH_2a_t4::well07": {
+      "bout_count": 721,
+      "cluster_counts": [
+        86,
+        6,
+        67,
+        108,
+        203,
+        49,
+        74,
+        128
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2815533980582524,
+      "normalized_cluster_entropy": 0.9034960177498023
+    },
+    "DS006::Catamaran_pH_2a_t4::well09": {
+      "bout_count": 659,
+      "cluster_counts": [
+        167,
+        6,
+        68,
+        65,
+        183,
+        38,
+        55,
+        77
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.27769347496206376,
+      "normalized_cluster_entropy": 0.8809627217788267
+    },
+    "DS006::Catamaran_pH_2a_t4::well10": {
+      "bout_count": 798,
+      "cluster_counts": [
+        142,
+        7,
+        85,
+        85,
+        208,
+        75,
+        93,
+        103
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2606516290726817,
+      "normalized_cluster_entropy": 0.9200915779634495
+    },
+    "DS006::Catamaran_pH_2a_t4::well11": {
+      "bout_count": 686,
+      "cluster_counts": [
+        97,
+        10,
+        63,
+        89,
+        175,
+        80,
+        101,
+        71
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.25510204081632654,
+      "normalized_cluster_entropy": 0.932161853747624
+    },
+    "DS006::Catamaran_pH_2a_t4::well12": {
+      "bout_count": 778,
+      "cluster_counts": [
+        62,
+        13,
+        63,
+        126,
+        187,
+        69,
+        95,
+        163
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2403598971722365,
+      "normalized_cluster_entropy": 0.9185574463711078
+    },
+    "DS006::Catamaran_pH_2a_t5::well01": {
+      "bout_count": 180,
+      "cluster_counts": [
+        14,
+        2,
+        14,
+        23,
+        59,
+        10,
+        26,
+        32
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3277777777777778,
+      "normalized_cluster_entropy": 0.876627853702827
+    },
+    "DS006::Catamaran_pH_2a_t5::well02": {
+      "bout_count": 172,
+      "cluster_counts": [
+        8,
+        0,
+        17,
+        46,
+        35,
+        8,
+        2,
+        56
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.32558139534883723,
+      "normalized_cluster_entropy": 0.7732752680243855
+    },
+    "DS006::Catamaran_pH_2a_t5::well03": {
+      "bout_count": 169,
+      "cluster_counts": [
+        11,
+        4,
+        19,
+        28,
+        42,
+        18,
+        28,
+        19
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2485207100591716,
+      "normalized_cluster_entropy": 0.9320034990097186
+    },
+    "DS006::Catamaran_pH_2a_t5::well04": {
+      "bout_count": 174,
+      "cluster_counts": [
+        0,
+        0,
+        6,
+        36,
+        31,
+        2,
+        8,
+        91
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.5229885057471264,
+      "normalized_cluster_entropy": 0.6161986500792224
+    },
+    "DS006::Catamaran_pH_2a_t5::well05": {
+      "bout_count": 189,
+      "cluster_counts": [
+        34,
+        3,
+        12,
+        24,
+        38,
+        7,
+        16,
+        55
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.291005291005291,
+      "normalized_cluster_entropy": 0.8772998762575492
+    },
+    "DS006::Catamaran_pH_2a_t5::well06": {
+      "bout_count": 193,
+      "cluster_counts": [
+        26,
+        4,
+        11,
+        18,
+        76,
+        14,
+        23,
+        21
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.39378238341968913,
+      "normalized_cluster_entropy": 0.8594029825421675
+    },
+    "DS006::Catamaran_pH_2a_t5::well07": {
+      "bout_count": 119,
+      "cluster_counts": [
+        19,
+        3,
+        5,
+        18,
+        20,
+        23,
+        12,
+        19
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.19327731092436976,
+      "normalized_cluster_entropy": 0.9359631748585847
+    },
+    "DS006::Catamaran_pH_2a_t5::well08": {
+      "bout_count": 169,
+      "cluster_counts": [
+        15,
+        2,
+        27,
+        25,
+        29,
+        34,
+        15,
+        22
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.20118343195266272,
+      "normalized_cluster_entropy": 0.9370825611231167
+    },
+    "DS006::Catamaran_pH_2a_t5::well09": {
+      "bout_count": 158,
+      "cluster_counts": [
+        27,
+        5,
+        14,
+        13,
+        28,
+        21,
+        26,
+        24
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.17721518987341772,
+      "normalized_cluster_entropy": 0.9567551340707767
+    },
+    "DS006::Catamaran_pH_2a_t5::well10": {
+      "bout_count": 145,
+      "cluster_counts": [
+        9,
+        3,
+        26,
+        23,
+        13,
+        30,
+        15,
+        26
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.20689655172413793,
+      "normalized_cluster_entropy": 0.9320046484279441
+    },
+    "DS006::Catamaran_pH_2a_t5::well11": {
+      "bout_count": 132,
+      "cluster_counts": [
+        19,
+        8,
+        9,
+        22,
+        25,
+        24,
+        18,
+        7
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.1893939393939394,
+      "normalized_cluster_entropy": 0.9537043968051659
+    },
+    "DS006::Catamaran_pH_2a_t5::well12": {
+      "bout_count": 164,
+      "cluster_counts": [
+        10,
+        16,
+        15,
+        17,
+        27,
+        41,
+        19,
+        19
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.25,
+      "normalized_cluster_entropy": 0.9590776022652383
+    },
+    "DS006::Catamaran_pH_2a_t6::well01": {
+      "bout_count": 158,
+      "cluster_counts": [
+        30,
+        2,
+        3,
+        12,
+        32,
+        61,
+        7,
+        11
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.3860759493670886,
+      "normalized_cluster_entropy": 0.7964894366712234
+    },
+    "DS006::Catamaran_pH_2a_t6::well02": {
+      "bout_count": 181,
+      "cluster_counts": [
+        8,
+        1,
+        28,
+        32,
+        38,
+        16,
+        16,
+        42
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.23204419889502761,
+      "normalized_cluster_entropy": 0.8931263176369854
+    },
+    "DS006::Catamaran_pH_2a_t6::well03": {
+      "bout_count": 134,
+      "cluster_counts": [
+        21,
+        0,
+        18,
+        27,
+        34,
+        8,
+        16,
+        10
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2537313432835821,
+      "normalized_cluster_entropy": 0.8880190435503162
+    },
+    "DS006::Catamaran_pH_2a_t6::well04": {
+      "bout_count": 156,
+      "cluster_counts": [
+        14,
+        1,
+        17,
+        42,
+        34,
+        4,
+        14,
+        30
+      ],
+      "dominant_cluster": 3,
+      "dominant_cluster_fraction": 0.2692307692307692,
+      "normalized_cluster_entropy": 0.8670345166584765
+    },
+    "DS006::Catamaran_pH_2a_t6::well05": {
+      "bout_count": 183,
+      "cluster_counts": [
+        41,
+        5,
+        19,
+        16,
+        31,
+        40,
+        17,
+        14
+      ],
+      "dominant_cluster": 0,
+      "dominant_cluster_fraction": 0.22404371584699453,
+      "normalized_cluster_entropy": 0.929227920508604
+    },
+    "DS006::Catamaran_pH_2a_t6::well06": {
+      "bout_count": 194,
+      "cluster_counts": [
+        31,
+        9,
+        15,
+        25,
+        38,
+        19,
+        22,
+        35
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.1958762886597938,
+      "normalized_cluster_entropy": 0.9618722467378938
+    },
+    "DS006::Catamaran_pH_2a_t6::well07": {
+      "bout_count": 155,
+      "cluster_counts": [
+        17,
+        5,
+        19,
+        20,
+        43,
+        28,
+        13,
+        10
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.27741935483870966,
+      "normalized_cluster_entropy": 0.9253618706110278
+    },
+    "DS006::Catamaran_pH_2a_t6::well08": {
+      "bout_count": 53,
+      "cluster_counts": [
+        8,
+        0,
+        16,
+        7,
+        4,
+        9,
+        6,
+        3
+      ],
+      "dominant_cluster": 2,
+      "dominant_cluster_fraction": 0.3018867924528302,
+      "normalized_cluster_entropy": 0.8750585667797177
+    },
+    "DS006::Catamaran_pH_2a_t6::well09": {
+      "bout_count": 183,
+      "cluster_counts": [
+        13,
+        12,
+        20,
+        26,
+        11,
+        42,
+        24,
+        35
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.22950819672131148,
+      "normalized_cluster_entropy": 0.9499138876502301
+    },
+    "DS006::Catamaran_pH_2a_t6::well10": {
+      "bout_count": 128,
+      "cluster_counts": [
+        21,
+        2,
+        16,
+        14,
+        14,
+        17,
+        35,
+        9
+      ],
+      "dominant_cluster": 6,
+      "dominant_cluster_fraction": 0.2734375,
+      "normalized_cluster_entropy": 0.9208705661372988
+    },
+    "DS006::Catamaran_pH_2a_t6::well11": {
+      "bout_count": 138,
+      "cluster_counts": [
+        4,
+        26,
+        8,
+        12,
+        8,
+        50,
+        13,
+        17
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.36231884057971014,
+      "normalized_cluster_entropy": 0.8694685947566156
+    },
+    "DS006::Catamaran_pH_2a_t6::well12": {
+      "bout_count": 183,
+      "cluster_counts": [
+        25,
+        12,
+        18,
+        15,
+        11,
+        57,
+        16,
+        29
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.3114754098360656,
+      "normalized_cluster_entropy": 0.923834570531454
+    },
+    "DS006::Catamaran_pH_2b_t1::well01": {
+      "bout_count": 575,
+      "cluster_counts": [
+        54,
+        10,
+        78,
+        97,
+        128,
+        73,
+        55,
+        80
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22260869565217392,
+      "normalized_cluster_entropy": 0.9421699039948146
+    },
+    "DS006::Catamaran_pH_2b_t1::well02": {
+      "bout_count": 674,
+      "cluster_counts": [
+        55,
+        8,
+        86,
+        137,
+        163,
+        81,
+        59,
+        85
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24183976261127596,
+      "normalized_cluster_entropy": 0.9213664516050298
+    },
+    "DS006::Catamaran_pH_2b_t1::well03": {
+      "bout_count": 690,
+      "cluster_counts": [
+        52,
+        7,
+        48,
+        119,
+        126,
+        178,
+        49,
+        111
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2579710144927536,
+      "normalized_cluster_entropy": 0.9001244600887444
+    },
+    "DS006::Catamaran_pH_2b_t1::well04": {
+      "bout_count": 535,
+      "cluster_counts": [
+        69,
+        26,
+        36,
+        76,
+        123,
+        91,
+        62,
+        52
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22990654205607478,
+      "normalized_cluster_entropy": 0.9548506692985819
+    },
+    "DS006::Catamaran_pH_2b_t1::well05": {
+      "bout_count": 301,
+      "cluster_counts": [
+        59,
+        2,
+        29,
+        38,
+        79,
+        25,
+        26,
+        43
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.26245847176079734,
+      "normalized_cluster_entropy": 0.9073144932985028
+    },
+    "DS006::Catamaran_pH_2b_t1::well06": {
+      "bout_count": 553,
+      "cluster_counts": [
+        61,
+        7,
+        34,
+        89,
+        120,
+        102,
+        67,
+        73
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.21699819168173598,
+      "normalized_cluster_entropy": 0.928280968488551
+    },
+    "DS006::Catamaran_pH_2b_t1::well07": {
+      "bout_count": 826,
+      "cluster_counts": [
+        69,
+        46,
+        51,
+        63,
+        205,
+        178,
+        71,
+        143
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24818401937046006,
+      "normalized_cluster_entropy": 0.9269718892333847
+    },
+    "DS006::Catamaran_pH_2b_t1::well08": {
+      "bout_count": 628,
+      "cluster_counts": [
+        78,
+        34,
+        40,
+        73,
+        131,
+        74,
+        71,
+        127
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2085987261146497,
+      "normalized_cluster_entropy": 0.9575262426080644
+    },
+    "DS006::Catamaran_pH_2b_t1::well10": {
+      "bout_count": 415,
+      "cluster_counts": [
+        19,
+        34,
+        15,
+        23,
+        101,
+        79,
+        51,
+        93
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2433734939759036,
+      "normalized_cluster_entropy": 0.9036131561191445
+    },
+    "DS006::Catamaran_pH_2b_t1::well11": {
+      "bout_count": 474,
+      "cluster_counts": [
+        22,
+        35,
+        13,
+        34,
+        94,
+        127,
+        53,
+        96
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2679324894514768,
+      "normalized_cluster_entropy": 0.8967102351599797
+    },
+    "DS006::Catamaran_pH_2b_t1::well12": {
+      "bout_count": 340,
+      "cluster_counts": [
+        14,
+        17,
+        29,
+        25,
+        92,
+        76,
+        39,
+        48
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.27058823529411763,
+      "normalized_cluster_entropy": 0.9119668136514586
+    },
+    "DS006::Catamaran_pH_2b_t2::well01": {
+      "bout_count": 820,
+      "cluster_counts": [
+        30,
+        22,
+        41,
+        94,
+        135,
+        265,
+        71,
+        162
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.3231707317073171,
+      "normalized_cluster_entropy": 0.8706507181751009
+    },
+    "DS006::Catamaran_pH_2b_t2::well02": {
+      "bout_count": 543,
+      "cluster_counts": [
+        34,
+        25,
+        57,
+        82,
+        78,
+        165,
+        49,
+        53
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.30386740331491713,
+      "normalized_cluster_entropy": 0.9243595538179901
+    },
+    "DS006::Catamaran_pH_2b_t2::well03": {
+      "bout_count": 727,
+      "cluster_counts": [
+        78,
+        4,
+        69,
+        106,
+        158,
+        125,
+        81,
+        106
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2173314993122421,
+      "normalized_cluster_entropy": 0.9291187797867034
+    },
+    "DS006::Catamaran_pH_2b_t2::well04": {
+      "bout_count": 615,
+      "cluster_counts": [
+        63,
+        7,
+        43,
+        87,
+        157,
+        43,
+        95,
+        120
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2552845528455285,
+      "normalized_cluster_entropy": 0.9084003331278022
+    },
+    "DS006::Catamaran_pH_2b_t2::well05": {
+      "bout_count": 772,
+      "cluster_counts": [
+        36,
+        16,
+        78,
+        117,
+        223,
+        63,
+        79,
+        160
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.28886010362694303,
+      "normalized_cluster_entropy": 0.8961524180940542
+    },
+    "DS006::Catamaran_pH_2b_t2::well06": {
+      "bout_count": 705,
+      "cluster_counts": [
+        75,
+        10,
+        49,
+        119,
+        137,
+        100,
+        87,
+        128
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.19432624113475178,
+      "normalized_cluster_entropy": 0.9366459257321422
+    },
+    "DS006::Catamaran_pH_2b_t2::well07": {
+      "bout_count": 485,
+      "cluster_counts": [
+        37,
+        12,
+        21,
+        96,
+        132,
+        46,
+        57,
+        84
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2721649484536082,
+      "normalized_cluster_entropy": 0.9027870762487101
+    },
+    "DS006::Catamaran_pH_2b_t2::well08": {
+      "bout_count": 658,
+      "cluster_counts": [
+        63,
+        26,
+        57,
+        63,
+        106,
+        184,
+        71,
+        88
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2796352583586626,
+      "normalized_cluster_entropy": 0.9370712123883672
+    },
+    "DS006::Catamaran_pH_2b_t2::well09": {
+      "bout_count": 162,
+      "cluster_counts": [
+        25,
+        9,
+        2,
+        13,
+        51,
+        18,
+        30,
+        14
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3148148148148148,
+      "normalized_cluster_entropy": 0.8836671298982639
+    },
+    "DS006::Catamaran_pH_2b_t2::well10": {
+      "bout_count": 401,
+      "cluster_counts": [
+        31,
+        15,
+        38,
+        56,
+        71,
+        72,
+        39,
+        79
+      ],
+      "dominant_cluster": 7,
+      "dominant_cluster_fraction": 0.1970074812967581,
+      "normalized_cluster_entropy": 0.952467374959204
+    },
+    "DS006::Catamaran_pH_2b_t2::well11": {
+      "bout_count": 615,
+      "cluster_counts": [
+        31,
+        40,
+        29,
+        134,
+        112,
+        87,
+        54,
+        128
+      ],
+      "dominant_cluster": 3,
+      "dominant_cluster_fraction": 0.21788617886178863,
+      "normalized_cluster_entropy": 0.9288421836399531
+    },
+    "DS006::Catamaran_pH_2b_t2::well12": {
+      "bout_count": 533,
+      "cluster_counts": [
+        36,
+        51,
+        17,
+        44,
+        46,
+        219,
+        43,
+        77
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.41088180112570355,
+      "normalized_cluster_entropy": 0.85688716203871
+    },
+    "DS006::Catamaran_pH_2b_t4::well01": {
+      "bout_count": 525,
+      "cluster_counts": [
+        76,
+        26,
+        33,
+        59,
+        108,
+        85,
+        74,
+        64
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2057142857142857,
+      "normalized_cluster_entropy": 0.9622670782121396
+    },
+    "DS006::Catamaran_pH_2b_t4::well02": {
+      "bout_count": 649,
+      "cluster_counts": [
+        74,
+        6,
+        33,
+        93,
+        193,
+        103,
+        42,
+        105
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.29738058551617874,
+      "normalized_cluster_entropy": 0.8874491456057699
+    },
+    "DS006::Catamaran_pH_2b_t4::well03": {
+      "bout_count": 416,
+      "cluster_counts": [
+        47,
+        0,
+        39,
+        75,
+        110,
+        32,
+        63,
+        50
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2644230769230769,
+      "normalized_cluster_entropy": 0.8976876163766693
+    },
+    "DS006::Catamaran_pH_2b_t4::well04": {
+      "bout_count": 934,
+      "cluster_counts": [
+        113,
+        8,
+        65,
+        104,
+        223,
+        109,
+        106,
+        206
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.23875802997858672,
+      "normalized_cluster_entropy": 0.913328706543908
+    },
+    "DS006::Catamaran_pH_2b_t4::well05": {
+      "bout_count": 685,
+      "cluster_counts": [
+        75,
+        8,
+        60,
+        119,
+        216,
+        70,
+        79,
+        58
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.31532846715328466,
+      "normalized_cluster_entropy": 0.8976873391686665
+    },
+    "DS006::Catamaran_pH_2b_t4::well06": {
+      "bout_count": 632,
+      "cluster_counts": [
+        64,
+        12,
+        46,
+        80,
+        178,
+        76,
+        67,
+        109
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.28164556962025317,
+      "normalized_cluster_entropy": 0.9195404411258317
+    },
+    "DS006::Catamaran_pH_2b_t4::well07": {
+      "bout_count": 774,
+      "cluster_counts": [
+        83,
+        25,
+        84,
+        87,
+        147,
+        173,
+        89,
+        86
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2235142118863049,
+      "normalized_cluster_entropy": 0.9522798810184612
+    },
+    "DS006::Catamaran_pH_2b_t4::well08": {
+      "bout_count": 619,
+      "cluster_counts": [
+        66,
+        26,
+        61,
+        45,
+        89,
+        227,
+        47,
+        58
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.3667205169628433,
+      "normalized_cluster_entropy": 0.8921024818098207
+    },
+    "DS006::Catamaran_pH_2b_t4::well09": {
+      "bout_count": 683,
+      "cluster_counts": [
+        28,
+        60,
+        28,
+        80,
+        98,
+        252,
+        48,
+        89
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.3689604685212299,
+      "normalized_cluster_entropy": 0.8778123416024949
+    },
+    "DS006::Catamaran_pH_2b_t4::well10": {
+      "bout_count": 864,
+      "cluster_counts": [
+        73,
+        40,
+        56,
+        70,
+        280,
+        127,
+        69,
+        149
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.32407407407407407,
+      "normalized_cluster_entropy": 0.905987770610693
+    },
+    "DS006::Catamaran_pH_2b_t4::well11": {
+      "bout_count": 707,
+      "cluster_counts": [
+        82,
+        27,
+        83,
+        78,
+        97,
+        186,
+        85,
+        69
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.26308345120226306,
+      "normalized_cluster_entropy": 0.9496949899775836
+    },
+    "DS006::Catamaran_pH_2b_t4::well12": {
+      "bout_count": 657,
+      "cluster_counts": [
+        63,
+        46,
+        54,
+        52,
+        86,
+        250,
+        30,
+        76
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.380517503805175,
+      "normalized_cluster_entropy": 0.8855211245827596
+    },
+    "DS006::Catamaran_pH_2c_t1::well01": {
+      "bout_count": 810,
+      "cluster_counts": [
+        13,
+        16,
+        73,
+        76,
+        88,
+        311,
+        76,
+        157
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.38395061728395063,
+      "normalized_cluster_entropy": 0.8326696372391459
+    },
+    "DS006::Catamaran_pH_2c_t1::well02": {
+      "bout_count": 624,
+      "cluster_counts": [
+        87,
+        2,
+        55,
+        136,
+        142,
+        45,
+        80,
+        77
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22756410256410256,
+      "normalized_cluster_entropy": 0.9075805973548636
+    },
+    "DS006::Catamaran_pH_2c_t1::well03": {
+      "bout_count": 765,
+      "cluster_counts": [
+        100,
+        13,
+        58,
+        135,
+        215,
+        72,
+        88,
+        84
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.28104575163398693,
+      "normalized_cluster_entropy": 0.9172425467961066
+    },
+    "DS006::Catamaran_pH_2c_t1::well04": {
+      "bout_count": 830,
+      "cluster_counts": [
+        73,
+        15,
+        76,
+        98,
+        207,
+        87,
+        128,
+        146
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2493975903614458,
+      "normalized_cluster_entropy": 0.9301751684174315
+    },
+    "DS006::Catamaran_pH_2c_t1::well05": {
+      "bout_count": 868,
+      "cluster_counts": [
+        65,
+        5,
+        60,
+        97,
+        255,
+        85,
+        95,
+        206
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.29377880184331795,
+      "normalized_cluster_entropy": 0.8772827160714144
+    },
+    "DS006::Catamaran_pH_2c_t1::well06": {
+      "bout_count": 646,
+      "cluster_counts": [
+        53,
+        9,
+        55,
+        144,
+        133,
+        80,
+        82,
+        90
+      ],
+      "dominant_cluster": 3,
+      "dominant_cluster_fraction": 0.22291021671826625,
+      "normalized_cluster_entropy": 0.9279753462409159
+    },
+    "DS006::Catamaran_pH_2c_t1::well07": {
+      "bout_count": 927,
+      "cluster_counts": [
+        98,
+        41,
+        100,
+        119,
+        105,
+        234,
+        134,
+        96
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2524271844660194,
+      "normalized_cluster_entropy": 0.9559377418137669
+    },
+    "DS006::Catamaran_pH_2c_t1::well08": {
+      "bout_count": 746,
+      "cluster_counts": [
+        54,
+        21,
+        59,
+        115,
+        188,
+        120,
+        103,
+        86
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2520107238605898,
+      "normalized_cluster_entropy": 0.934465572989993
+    },
+    "DS006::Catamaran_pH_2c_t1::well09": {
+      "bout_count": 624,
+      "cluster_counts": [
+        121,
+        18,
+        52,
+        98,
+        137,
+        84,
+        66,
+        48
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.21955128205128205,
+      "normalized_cluster_entropy": 0.9405941143033903
+    },
+    "DS006::Catamaran_pH_2c_t1::well10": {
+      "bout_count": 713,
+      "cluster_counts": [
+        54,
+        55,
+        24,
+        54,
+        135,
+        209,
+        99,
+        83
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.29312762973352036,
+      "normalized_cluster_entropy": 0.9146597321567231
+    },
+    "DS006::Catamaran_pH_2c_t1::well11": {
+      "bout_count": 570,
+      "cluster_counts": [
+        57,
+        10,
+        50,
+        81,
+        147,
+        63,
+        93,
+        69
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2578947368421053,
+      "normalized_cluster_entropy": 0.9311586104437799
+    },
+    "DS006::Catamaran_pH_2c_t1::well12": {
+      "bout_count": 700,
+      "cluster_counts": [
+        71,
+        30,
+        47,
+        71,
+        112,
+        185,
+        76,
+        108
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2642857142857143,
+      "normalized_cluster_entropy": 0.9401007765212022
+    },
+    "DS006::Catamaran_pH_2c_t3::well01": {
+      "bout_count": 808,
+      "cluster_counts": [
+        42,
+        5,
+        37,
+        102,
+        261,
+        102,
+        69,
+        190
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.32301980198019803,
+      "normalized_cluster_entropy": 0.8485062472510462
+    },
+    "DS006::Catamaran_pH_2c_t3::well02": {
+      "bout_count": 613,
+      "cluster_counts": [
+        54,
+        6,
+        46,
+        74,
+        166,
+        74,
+        66,
+        127
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2707993474714519,
+      "normalized_cluster_entropy": 0.9059904620599649
+    },
+    "DS006::Catamaran_pH_2c_t3::well03": {
+      "bout_count": 764,
+      "cluster_counts": [
+        50,
+        6,
+        38,
+        96,
+        200,
+        92,
+        117,
+        165
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2617801047120419,
+      "normalized_cluster_entropy": 0.8899042840716203
+    },
+    "DS006::Catamaran_pH_2c_t3::well04": {
+      "bout_count": 551,
+      "cluster_counts": [
+        70,
+        10,
+        35,
+        55,
+        125,
+        108,
+        64,
+        84
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22686025408348456,
+      "normalized_cluster_entropy": 0.9294502461711586
+    },
+    "DS006::Catamaran_pH_2c_t3::well05": {
+      "bout_count": 330,
+      "cluster_counts": [
+        29,
+        9,
+        39,
+        39,
+        73,
+        68,
+        40,
+        33
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22121212121212122,
+      "normalized_cluster_entropy": 0.9435024121420159
+    },
+    "DS006::Catamaran_pH_2c_t3::well06": {
+      "bout_count": 703,
+      "cluster_counts": [
+        73,
+        30,
+        53,
+        78,
+        157,
+        128,
+        68,
+        116
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2233285917496444,
+      "normalized_cluster_entropy": 0.9506424674929274
+    },
+    "DS006::Catamaran_pH_2c_t3::well07": {
+      "bout_count": 261,
+      "cluster_counts": [
+        28,
+        8,
+        25,
+        25,
+        33,
+        65,
+        32,
+        45
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.24904214559386972,
+      "normalized_cluster_entropy": 0.9443581285796641
+    },
+    "DS006::Catamaran_pH_2c_t3::well08": {
+      "bout_count": 524,
+      "cluster_counts": [
+        44,
+        33,
+        38,
+        60,
+        143,
+        92,
+        60,
+        54
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2729007633587786,
+      "normalized_cluster_entropy": 0.9438882394589654
+    },
+    "DS006::Catamaran_pH_2c_t3::well09": {
+      "bout_count": 449,
+      "cluster_counts": [
+        50,
+        24,
+        35,
+        50,
+        75,
+        93,
+        64,
+        58
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2071269487750557,
+      "normalized_cluster_entropy": 0.9672835712496539
+    },
+    "DS006::Catamaran_pH_2c_t3::well10": {
+      "bout_count": 13,
+      "cluster_counts": [
+        0,
+        0,
+        4,
+        5,
+        0,
+        3,
+        0,
+        1
+      ],
+      "dominant_cluster": 3,
+      "dominant_cluster_fraction": 0.38461538461538464,
+      "normalized_cluster_entropy": 0.6087484194675364
+    },
+    "DS006::Catamaran_pH_2c_t3::well11": {
+      "bout_count": 380,
+      "cluster_counts": [
+        14,
+        25,
+        13,
+        36,
+        69,
+        124,
+        26,
+        73
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.3263157894736842,
+      "normalized_cluster_entropy": 0.8728470049554845
+    },
+    "DS006::Catamaran_pH_2c_t3::well12": {
+      "bout_count": 606,
+      "cluster_counts": [
+        80,
+        6,
+        55,
+        73,
+        174,
+        48,
+        62,
+        108
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2871287128712871,
+      "normalized_cluster_entropy": 0.90672664717121
+    },
+    "DS006::Catamaran_pH_2c_t4::well01": {
+      "bout_count": 671,
+      "cluster_counts": [
+        34,
+        4,
+        45,
+        75,
+        181,
+        125,
+        82,
+        125
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2697466467958271,
+      "normalized_cluster_entropy": 0.8868839546843121
+    },
+    "DS006::Catamaran_pH_2c_t4::well02": {
+      "bout_count": 626,
+      "cluster_counts": [
+        75,
+        20,
+        38,
+        84,
+        135,
+        77,
+        100,
+        97
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.21565495207667731,
+      "normalized_cluster_entropy": 0.9494601126547473
+    },
+    "DS006::Catamaran_pH_2c_t4::well03": {
+      "bout_count": 637,
+      "cluster_counts": [
+        79,
+        10,
+        63,
+        83,
+        192,
+        74,
+        59,
+        77
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.30141287284144425,
+      "normalized_cluster_entropy": 0.9164858976343532
+    },
+    "DS006::Catamaran_pH_2c_t4::well04": {
+      "bout_count": 558,
+      "cluster_counts": [
+        59,
+        2,
+        62,
+        102,
+        158,
+        44,
+        66,
+        65
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2831541218637993,
+      "normalized_cluster_entropy": 0.9007406970171616
+    },
+    "DS006::Catamaran_pH_2c_t4::well05": {
+      "bout_count": 593,
+      "cluster_counts": [
+        90,
+        7,
+        58,
+        90,
+        182,
+        36,
+        64,
+        66
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.3069139966273187,
+      "normalized_cluster_entropy": 0.89895215441759
+    },
+    "DS006::Catamaran_pH_2c_t4::well06": {
+      "bout_count": 721,
+      "cluster_counts": [
+        98,
+        19,
+        66,
+        114,
+        161,
+        90,
+        96,
+        77
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22330097087378642,
+      "normalized_cluster_entropy": 0.951916208128809
+    },
+    "DS006::Catamaran_pH_2c_t4::well07": {
+      "bout_count": 578,
+      "cluster_counts": [
+        47,
+        19,
+        52,
+        94,
+        117,
+        101,
+        47,
+        101
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.20242214532871972,
+      "normalized_cluster_entropy": 0.9451669322745738
+    },
+    "DS006::Catamaran_pH_2c_t4::well08": {
+      "bout_count": 604,
+      "cluster_counts": [
+        49,
+        24,
+        42,
+        69,
+        67,
+        179,
+        95,
+        79
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.29635761589403975,
+      "normalized_cluster_entropy": 0.9264376926658882
+    },
+    "DS006::Catamaran_pH_2c_t4::well09": {
+      "bout_count": 793,
+      "cluster_counts": [
+        58,
+        21,
+        61,
+        67,
+        195,
+        148,
+        89,
+        154
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2459016393442623,
+      "normalized_cluster_entropy": 0.9211706499824347
+    },
+    "DS006::Catamaran_pH_2c_t4::well10": {
+      "bout_count": 200,
+      "cluster_counts": [
+        15,
+        14,
+        28,
+        11,
+        21,
+        89,
+        17,
+        5
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.445,
+      "normalized_cluster_entropy": 0.8242162907988861
+    },
+    "DS006::Catamaran_pH_2c_t4::well11": {
+      "bout_count": 662,
+      "cluster_counts": [
+        63,
+        9,
+        34,
+        80,
+        161,
+        119,
+        83,
+        113
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.243202416918429,
+      "normalized_cluster_entropy": 0.9159112246498452
+    },
+    "DS006::Catamaran_pH_2c_t4::well12": {
+      "bout_count": 732,
+      "cluster_counts": [
+        76,
+        14,
+        39,
+        79,
+        185,
+        123,
+        76,
+        140
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2527322404371585,
+      "normalized_cluster_entropy": 0.9166851039642667
+    },
+    "DS006::Catamaran_pH_2c_t6::well01": {
+      "bout_count": 512,
+      "cluster_counts": [
+        32,
+        32,
+        36,
+        31,
+        72,
+        193,
+        33,
+        83
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.376953125,
+      "normalized_cluster_entropy": 0.8744339370370273
+    },
+    "DS006::Catamaran_pH_2c_t6::well02": {
+      "bout_count": 782,
+      "cluster_counts": [
+        29,
+        29,
+        41,
+        68,
+        123,
+        247,
+        72,
+        173
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.31585677749360613,
+      "normalized_cluster_entropy": 0.875042674569243
+    },
+    "DS006::Catamaran_pH_2c_t6::well03": {
+      "bout_count": 701,
+      "cluster_counts": [
+        59,
+        9,
+        30,
+        95,
+        211,
+        50,
+        79,
+        168
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.30099857346647646,
+      "normalized_cluster_entropy": 0.8694920135129086
+    },
+    "DS006::Catamaran_pH_2c_t6::well04": {
+      "bout_count": 504,
+      "cluster_counts": [
+        51,
+        1,
+        45,
+        69,
+        96,
+        116,
+        59,
+        67
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.23015873015873015,
+      "normalized_cluster_entropy": 0.916301389532959
+    },
+    "DS006::Catamaran_pH_2c_t6::well05": {
+      "bout_count": 888,
+      "cluster_counts": [
+        107,
+        10,
+        60,
+        128,
+        304,
+        47,
+        113,
+        119
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.34234234234234234,
+      "normalized_cluster_entropy": 0.8757028635083807
+    },
+    "DS006::Catamaran_pH_2c_t6::well06": {
+      "bout_count": 421,
+      "cluster_counts": [
+        41,
+        13,
+        48,
+        56,
+        139,
+        22,
+        49,
+        53
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.33016627078384797,
+      "normalized_cluster_entropy": 0.9047866023308417
+    },
+    "DS006::Catamaran_pH_2c_t6::well07": {
+      "bout_count": 810,
+      "cluster_counts": [
+        66,
+        28,
+        46,
+        97,
+        187,
+        146,
+        71,
+        169
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2308641975308642,
+      "normalized_cluster_entropy": 0.9258702032992893
+    },
+    "DS006::Catamaran_pH_2c_t6::well08": {
+      "bout_count": 565,
+      "cluster_counts": [
+        51,
+        12,
+        52,
+        79,
+        115,
+        115,
+        67,
+        74
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.20353982300884957,
+      "normalized_cluster_entropy": 0.9428704802023561
+    },
+    "DS006::Catamaran_pH_2c_t6::well09": {
+      "bout_count": 783,
+      "cluster_counts": [
+        61,
+        4,
+        72,
+        108,
+        247,
+        82,
+        82,
+        127
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.31545338441890164,
+      "normalized_cluster_entropy": 0.8896936633764162
+    },
+    "DS006::Catamaran_pH_2c_t6::well10": {
+      "bout_count": 536,
+      "cluster_counts": [
+        67,
+        6,
+        22,
+        81,
+        144,
+        60,
+        96,
+        60
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.26865671641791045,
+      "normalized_cluster_entropy": 0.9032327349046936
+    },
+    "DS006::Catamaran_pH_2c_t6::well11": {
+      "bout_count": 599,
+      "cluster_counts": [
+        43,
+        18,
+        28,
+        56,
+        150,
+        113,
+        84,
+        107
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.25041736227045075,
+      "normalized_cluster_entropy": 0.915481579390014
+    },
+    "DS006::Catamaran_pH_2c_t6::well12": {
+      "bout_count": 588,
+      "cluster_counts": [
+        51,
+        33,
+        48,
+        63,
+        125,
+        122,
+        57,
+        89
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.21258503401360543,
+      "normalized_cluster_entropy": 0.9545996645354105
+    },
+    "DS006::Catamaran_pH_2c_t7::well01": {
+      "bout_count": 562,
+      "cluster_counts": [
+        61,
+        8,
+        39,
+        89,
+        120,
+        95,
+        53,
+        97
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.21352313167259787,
+      "normalized_cluster_entropy": 0.9303482612293739
+    },
+    "DS006::Catamaran_pH_2c_t7::well02": {
+      "bout_count": 262,
+      "cluster_counts": [
+        34,
+        5,
+        21,
+        22,
+        59,
+        37,
+        33,
+        51
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22519083969465647,
+      "normalized_cluster_entropy": 0.9341512404802725
+    },
+    "DS006::Catamaran_pH_2c_t7::well03": {
+      "bout_count": 569,
+      "cluster_counts": [
+        58,
+        5,
+        54,
+        61,
+        148,
+        78,
+        94,
+        71
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2601054481546573,
+      "normalized_cluster_entropy": 0.9219184333014503
+    },
+    "DS006::Catamaran_pH_2c_t7::well04": {
+      "bout_count": 550,
+      "cluster_counts": [
+        66,
+        16,
+        55,
+        64,
+        103,
+        102,
+        91,
+        53
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.18727272727272729,
+      "normalized_cluster_entropy": 0.9556469472570928
+    },
+    "DS006::Catamaran_pH_2c_t7::well05": {
+      "bout_count": 598,
+      "cluster_counts": [
+        63,
+        13,
+        79,
+        72,
+        132,
+        109,
+        64,
+        66
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22073578595317725,
+      "normalized_cluster_entropy": 0.9467799573080501
+    },
+    "DS006::Catamaran_pH_2c_t7::well06": {
+      "bout_count": 571,
+      "cluster_counts": [
+        62,
+        7,
+        5,
+        75,
+        199,
+        45,
+        59,
+        119
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.34851138353765326,
+      "normalized_cluster_entropy": 0.8329722472639525
+    },
+    "DS006::Catamaran_pH_2c_t7::well07": {
+      "bout_count": 559,
+      "cluster_counts": [
+        59,
+        32,
+        28,
+        73,
+        119,
+        124,
+        54,
+        70
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.22182468694096602,
+      "normalized_cluster_entropy": 0.9455404515006248
+    },
+    "DS006::Catamaran_pH_2c_t7::well08": {
+      "bout_count": 561,
+      "cluster_counts": [
+        52,
+        23,
+        42,
+        92,
+        120,
+        70,
+        92,
+        70
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.21390374331550802,
+      "normalized_cluster_entropy": 0.955892893079245
+    },
+    "DS006::Catamaran_pH_2c_t7::well09": {
+      "bout_count": 539,
+      "cluster_counts": [
+        39,
+        27,
+        24,
+        36,
+        91,
+        136,
+        65,
+        121
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.2523191094619666,
+      "normalized_cluster_entropy": 0.9125247872820811
+    },
+    "DS006::Catamaran_pH_2c_t7::well10": {
+      "bout_count": 313,
+      "cluster_counts": [
+        32,
+        36,
+        29,
+        18,
+        14,
+        151,
+        22,
+        11
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.48242811501597443,
+      "normalized_cluster_entropy": 0.798993793601066
+    },
+    "DS006::Catamaran_pH_2c_t7::well11": {
+      "bout_count": 458,
+      "cluster_counts": [
+        51,
+        5,
+        51,
+        36,
+        113,
+        87,
+        57,
+        58
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24672489082969432,
+      "normalized_cluster_entropy": 0.923280257732462
+    },
+    "DS006::Catamaran_pH_2c_t7::well12": {
+      "bout_count": 379,
+      "cluster_counts": [
+        27,
+        35,
+        29,
+        31,
+        66,
+        130,
+        28,
+        33
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.34300791556728233,
+      "normalized_cluster_entropy": 0.9069985105601273
+    },
+    "DS006::Catamaran_pH_2c_t8::well01": {
+      "bout_count": 473,
+      "cluster_counts": [
+        38,
+        30,
+        38,
+        35,
+        41,
+        214,
+        21,
+        56
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.452431289640592,
+      "normalized_cluster_entropy": 0.8340917274938164
+    },
+    "DS006::Catamaran_pH_2c_t8::well02": {
+      "bout_count": 539,
+      "cluster_counts": [
+        84,
+        29,
+        34,
+        62,
+        110,
+        105,
+        65,
+        50
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.20408163265306123,
+      "normalized_cluster_entropy": 0.9563390000165406
+    },
+    "DS006::Catamaran_pH_2c_t8::well03": {
+      "bout_count": 576,
+      "cluster_counts": [
+        94,
+        19,
+        36,
+        62,
+        104,
+        95,
+        79,
+        87
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.18055555555555555,
+      "normalized_cluster_entropy": 0.955000334490042
+    },
+    "DS006::Catamaran_pH_2c_t8::well04": {
+      "bout_count": 460,
+      "cluster_counts": [
+        27,
+        33,
+        50,
+        50,
+        55,
+        168,
+        38,
+        39
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.3652173913043478,
+      "normalized_cluster_entropy": 0.9016353569873374
+    },
+    "DS006::Catamaran_pH_2c_t8::well05": {
+      "bout_count": 535,
+      "cluster_counts": [
+        57,
+        17,
+        37,
+        64,
+        74,
+        174,
+        65,
+        47
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.3252336448598131,
+      "normalized_cluster_entropy": 0.9115973169112248
+    },
+    "DS006::Catamaran_pH_2c_t8::well06": {
+      "bout_count": 539,
+      "cluster_counts": [
+        51,
+        9,
+        35,
+        71,
+        130,
+        79,
+        88,
+        76
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.24118738404452691,
+      "normalized_cluster_entropy": 0.9293774345273236
+    },
+    "DS006::Catamaran_pH_2c_t8::well07": {
+      "bout_count": 354,
+      "cluster_counts": [
+        40,
+        25,
+        34,
+        33,
+        46,
+        121,
+        28,
+        27
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.3418079096045198,
+      "normalized_cluster_entropy": 0.9179528169334303
+    },
+    "DS006::Catamaran_pH_2c_t8::well08": {
+      "bout_count": 360,
+      "cluster_counts": [
+        25,
+        36,
+        38,
+        28,
+        33,
+        123,
+        43,
+        34
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.3416666666666667,
+      "normalized_cluster_entropy": 0.9204896438922826
+    },
+    "DS006::Catamaran_pH_2c_t8::well09": {
+      "bout_count": 384,
+      "cluster_counts": [
+        37,
+        28,
+        15,
+        50,
+        80,
+        78,
+        52,
+        44
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.20833333333333334,
+      "normalized_cluster_entropy": 0.9512328492036057
+    },
+    "DS006::Catamaran_pH_2c_t8::well10": {
+      "bout_count": 498,
+      "cluster_counts": [
+        55,
+        20,
+        35,
+        46,
+        128,
+        107,
+        35,
+        72
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.2570281124497992,
+      "normalized_cluster_entropy": 0.925677635351246
+    },
+    "DS006::Catamaran_pH_2c_t8::well11": {
+      "bout_count": 448,
+      "cluster_counts": [
+        70,
+        13,
+        38,
+        59,
+        79,
+        94,
+        53,
+        42
+      ],
+      "dominant_cluster": 5,
+      "dominant_cluster_fraction": 0.20982142857142858,
+      "normalized_cluster_entropy": 0.9507850782175399
+    },
+    "DS006::Catamaran_pH_2c_t8::well12": {
+      "bout_count": 678,
+      "cluster_counts": [
+        89,
+        29,
+        43,
+        80,
+        152,
+        49,
+        115,
+        121
+      ],
+      "dominant_cluster": 4,
+      "dominant_cluster_fraction": 0.22418879056047197,
+      "normalized_cluster_entropy": 0.943540306673871
+    }
+  },
+  "ssl_encoder_seed": 79,
+  "test_partition_used": false
+}

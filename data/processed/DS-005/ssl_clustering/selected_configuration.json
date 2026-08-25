@@ -1,0 +1,19 @@
+{
+  "clustering_seed": 20260822,
+  "k": 8,
+  "mean_selection_score": 0.4697274058968248,
+  "mean_stability_ari": 0.9795828502953083,
+  "mean_validation_silhouette": 0.1266591489315033,
+  "method": "kmeans",
+  "pca_fit_partition": "train",
+  "pca_variance_target": 0.95,
+  "ssl_training_seeds": [
+    11,
+    23,
+    37,
+    51,
+    79
+  ],
+  "standardize_fit_partition": "train",
+  "test_partition_used": false
+}

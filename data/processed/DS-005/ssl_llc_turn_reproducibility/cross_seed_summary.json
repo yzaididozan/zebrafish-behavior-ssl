@@ -1,0 +1,723 @@
+{
+  "dataset_id": "DS-005",
+  "feature": "turn_net_rad",
+  "known_class": "LLC",
+  "neutral_threshold_rad": 0.1,
+  "reference_seed": 11,
+  "ssl_training_seeds": [
+    11,
+    23,
+    37,
+    51,
+    79
+  ],
+  "test_partition_used": false,
+  "train": {
+    "directional_consistency": {
+      "0": {
+        "counts": {
+          "missing": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 5
+        },
+        "directions_by_seed": {
+          "11": "positive",
+          "23": "positive",
+          "37": "positive",
+          "51": "positive",
+          "79": "positive"
+        },
+        "modal_consistency_fraction": 1.0,
+        "modal_direction": "positive"
+      },
+      "1": {
+        "counts": {
+          "missing": 0,
+          "negative": 0,
+          "neutral": 5,
+          "positive": 0
+        },
+        "directions_by_seed": {
+          "11": "neutral",
+          "23": "neutral",
+          "37": "neutral",
+          "51": "neutral",
+          "79": "neutral"
+        },
+        "modal_consistency_fraction": 1.0,
+        "modal_direction": "neutral"
+      },
+      "2": {
+        "counts": {
+          "missing": 0,
+          "negative": 3,
+          "neutral": 1,
+          "positive": 1
+        },
+        "directions_by_seed": {
+          "11": "negative",
+          "23": "positive",
+          "37": "negative",
+          "51": "neutral",
+          "79": "negative"
+        },
+        "modal_consistency_fraction": 0.6,
+        "modal_direction": "negative"
+      },
+      "3": {
+        "counts": {
+          "missing": 0,
+          "negative": 2,
+          "neutral": 0,
+          "positive": 3
+        },
+        "directions_by_seed": {
+          "11": "positive",
+          "23": "negative",
+          "37": "positive",
+          "51": "negative",
+          "79": "positive"
+        },
+        "modal_consistency_fraction": 0.6,
+        "modal_direction": "positive"
+      },
+      "4": {
+        "counts": {
+          "missing": 0,
+          "negative": 3,
+          "neutral": 0,
+          "positive": 2
+        },
+        "directions_by_seed": {
+          "11": "negative",
+          "23": "negative",
+          "37": "positive",
+          "51": "negative",
+          "79": "positive"
+        },
+        "modal_consistency_fraction": 0.6,
+        "modal_direction": "negative"
+      },
+      "5": {
+        "counts": {
+          "missing": 0,
+          "negative": 0,
+          "neutral": 5,
+          "positive": 0
+        },
+        "directions_by_seed": {
+          "11": "neutral",
+          "23": "neutral",
+          "37": "neutral",
+          "51": "neutral",
+          "79": "neutral"
+        },
+        "modal_consistency_fraction": 1.0,
+        "modal_direction": "neutral"
+      },
+      "6": {
+        "counts": {
+          "missing": 0,
+          "negative": 5,
+          "neutral": 0,
+          "positive": 0
+        },
+        "directions_by_seed": {
+          "11": "negative",
+          "23": "negative",
+          "37": "negative",
+          "51": "negative",
+          "79": "negative"
+        },
+        "modal_consistency_fraction": 1.0,
+        "modal_direction": "negative"
+      },
+      "7": {
+        "counts": {
+          "missing": 0,
+          "negative": 0,
+          "neutral": 2,
+          "positive": 3
+        },
+        "directions_by_seed": {
+          "11": "neutral",
+          "23": "positive",
+          "37": "neutral",
+          "51": "positive",
+          "79": "positive"
+        },
+        "modal_consistency_fraction": 0.6,
+        "modal_direction": "positive"
+      }
+    },
+    "eta_squared": {
+      "max": 0.2675587833946826,
+      "mean": 0.16032335819795768,
+      "min": 0.05578690447788563,
+      "std": 0.0760184168912267
+    },
+    "mean_profile_spearman": {
+      "finite_pair_count": 10,
+      "max_rho": 0.880952380952381,
+      "mean_rho": 0.30952380952380965,
+      "median_rho": 0.2142857142857143,
+      "min_rho": -0.28571428571428575,
+      "pair_count": 10,
+      "pairs": [
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.735764859879812,
+          "rho": 0.14285714285714288,
+          "seed_a": 11,
+          "seed_b": 23
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.020815127253525276,
+          "rho": 0.7857142857142858,
+          "seed_a": 11,
+          "seed_b": 37
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.5701563208157683,
+          "rho": 0.2380952380952381,
+          "seed_a": 11,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.1017330374542646,
+          "rho": 0.6190476190476191,
+          "seed_a": 11,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.4927262450169573,
+          "rho": -0.28571428571428575,
+          "seed_a": 23,
+          "seed_b": 37
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.0038503204637324014,
+          "rho": 0.880952380952381,
+          "seed_a": 23,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.693238811728395,
+          "rho": -0.1666666666666667,
+          "seed_a": 23,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.7788857260523797,
+          "rho": -0.11904761904761905,
+          "seed_a": 37,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.014902667686230067,
+          "rho": 0.8095238095238096,
+          "seed_a": 37,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.6514014957024814,
+          "rho": 0.19047619047619052,
+          "seed_a": 51,
+          "seed_b": 79
+        }
+      ]
+    },
+    "median_profile_spearman": {
+      "finite_pair_count": 10,
+      "max_rho": 0.9047619047619048,
+      "mean_rho": 0.3285714285714286,
+      "median_rho": 0.28571428571428575,
+      "min_rho": -0.19047619047619052,
+      "pair_count": 10,
+      "pairs": [
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.4927262450169573,
+          "rho": 0.28571428571428575,
+          "seed_a": 11,
+          "seed_b": 23
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.18272075053971484,
+          "rho": 0.523809523809524,
+          "seed_a": 11,
+          "seed_b": 37
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.4927262450169573,
+          "rho": 0.28571428571428575,
+          "seed_a": 11,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.03655276105286081,
+          "rho": 0.7380952380952381,
+          "seed_a": 11,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.6514014957024814,
+          "rho": -0.19047619047619052,
+          "seed_a": 23,
+          "seed_b": 37
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.5701563208157683,
+          "rho": 0.2380952380952381,
+          "seed_a": 23,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.9108491685195836,
+          "rho": -0.04761904761904763,
+          "seed_a": 23,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.4927262450169573,
+          "rho": 0.28571428571428575,
+          "seed_a": 37,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.0020082755054294677,
+          "rho": 0.9047619047619048,
+          "seed_a": 37,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.530922861565801,
+          "rho": 0.261904761904762,
+          "seed_a": 51,
+          "seed_b": 79
+        }
+      ]
+    },
+    "standardized_mean_range": {
+      "max": 1.6135443071962141,
+      "mean": 1.1847878174853481,
+      "min": 0.7342470347895578,
+      "std": 0.2972389115113806
+    }
+  },
+  "train_derived_cluster_mappings_to_reference": {
+    "11": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7
+    },
+    "23": {
+      "0": 6,
+      "1": 2,
+      "2": 7,
+      "3": 1,
+      "4": 0,
+      "5": 5,
+      "6": 3,
+      "7": 4
+    },
+    "37": {
+      "0": 3,
+      "1": 1,
+      "2": 6,
+      "3": 7,
+      "4": 0,
+      "5": 5,
+      "6": 4,
+      "7": 2
+    },
+    "51": {
+      "0": 6,
+      "1": 2,
+      "2": 0,
+      "3": 5,
+      "4": 7,
+      "5": 3,
+      "6": 4,
+      "7": 1
+    },
+    "79": {
+      "0": 7,
+      "1": 4,
+      "2": 0,
+      "3": 5,
+      "4": 2,
+      "5": 6,
+      "6": 1,
+      "7": 3
+    }
+  },
+  "train_validation_generalization": {
+    "max_rho": 1.0,
+    "mean_profile_spearman_by_seed": {
+      "11": {
+        "clusters_compared": 8,
+        "pvalue": 0.0,
+        "rho": 1.0
+      },
+      "23": {
+        "clusters_compared": 8,
+        "pvalue": 3.3143960262001043e-05,
+        "rho": 0.9761904761904763
+      },
+      "37": {
+        "clusters_compared": 8,
+        "pvalue": 0.0020082755054294677,
+        "rho": 0.9047619047619048
+      },
+      "51": {
+        "clusters_compared": 8,
+        "pvalue": 3.3143960262001043e-05,
+        "rho": 0.9761904761904763
+      },
+      "79": {
+        "clusters_compared": 8,
+        "pvalue": 0.0020082755054294677,
+        "rho": 0.9047619047619048
+      }
+    },
+    "mean_rho": 0.9523809523809523,
+    "min_rho": 0.9047619047619048
+  },
+  "validation": {
+    "directional_consistency": {
+      "0": {
+        "counts": {
+          "missing": 0,
+          "negative": 0,
+          "neutral": 0,
+          "positive": 5
+        },
+        "directions_by_seed": {
+          "11": "positive",
+          "23": "positive",
+          "37": "positive",
+          "51": "positive",
+          "79": "positive"
+        },
+        "modal_consistency_fraction": 1.0,
+        "modal_direction": "positive"
+      },
+      "1": {
+        "counts": {
+          "missing": 0,
+          "negative": 1,
+          "neutral": 4,
+          "positive": 0
+        },
+        "directions_by_seed": {
+          "11": "neutral",
+          "23": "neutral",
+          "37": "neutral",
+          "51": "negative",
+          "79": "neutral"
+        },
+        "modal_consistency_fraction": 0.8,
+        "modal_direction": "neutral"
+      },
+      "2": {
+        "counts": {
+          "missing": 0,
+          "negative": 3,
+          "neutral": 1,
+          "positive": 1
+        },
+        "directions_by_seed": {
+          "11": "negative",
+          "23": "positive",
+          "37": "negative",
+          "51": "neutral",
+          "79": "negative"
+        },
+        "modal_consistency_fraction": 0.6,
+        "modal_direction": "negative"
+      },
+      "3": {
+        "counts": {
+          "missing": 0,
+          "negative": 2,
+          "neutral": 0,
+          "positive": 3
+        },
+        "directions_by_seed": {
+          "11": "positive",
+          "23": "negative",
+          "37": "positive",
+          "51": "negative",
+          "79": "positive"
+        },
+        "modal_consistency_fraction": 0.6,
+        "modal_direction": "positive"
+      },
+      "4": {
+        "counts": {
+          "missing": 0,
+          "negative": 3,
+          "neutral": 1,
+          "positive": 1
+        },
+        "directions_by_seed": {
+          "11": "negative",
+          "23": "negative",
+          "37": "neutral",
+          "51": "negative",
+          "79": "positive"
+        },
+        "modal_consistency_fraction": 0.6,
+        "modal_direction": "negative"
+      },
+      "5": {
+        "counts": {
+          "missing": 0,
+          "negative": 0,
+          "neutral": 1,
+          "positive": 4
+        },
+        "directions_by_seed": {
+          "11": "positive",
+          "23": "neutral",
+          "37": "positive",
+          "51": "positive",
+          "79": "positive"
+        },
+        "modal_consistency_fraction": 0.8,
+        "modal_direction": "positive"
+      },
+      "6": {
+        "counts": {
+          "missing": 0,
+          "negative": 5,
+          "neutral": 0,
+          "positive": 0
+        },
+        "directions_by_seed": {
+          "11": "negative",
+          "23": "negative",
+          "37": "negative",
+          "51": "negative",
+          "79": "negative"
+        },
+        "modal_consistency_fraction": 1.0,
+        "modal_direction": "negative"
+      },
+      "7": {
+        "counts": {
+          "missing": 0,
+          "negative": 0,
+          "neutral": 2,
+          "positive": 3
+        },
+        "directions_by_seed": {
+          "11": "neutral",
+          "23": "positive",
+          "37": "neutral",
+          "51": "positive",
+          "79": "positive"
+        },
+        "modal_consistency_fraction": 0.6,
+        "modal_direction": "positive"
+      }
+    },
+    "eta_squared": {
+      "max": 0.267404954269906,
+      "mean": 0.16444980706228507,
+      "min": 0.05872591379844651,
+      "std": 0.0755968878465213
+    },
+    "mean_profile_spearman": {
+      "finite_pair_count": 10,
+      "max_rho": 0.9285714285714287,
+      "mean_rho": 0.4238095238095239,
+      "median_rho": 0.3571428571428572,
+      "min_rho": -0.11904761904761905,
+      "pair_count": 10,
+      "pairs": [
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.6514014957024814,
+          "rho": 0.19047619047619052,
+          "seed_a": 11,
+          "seed_b": 23
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.0008629681828999769,
+          "rho": 0.9285714285714287,
+          "seed_a": 11,
+          "seed_b": 37
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.4197530864197531,
+          "rho": 0.3333333333333334,
+          "seed_a": 11,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.028004939153071805,
+          "rho": 0.7619047619047621,
+          "seed_a": 11,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.7788857260523797,
+          "rho": -0.11904761904761905,
+          "seed_a": 23,
+          "seed_b": 37
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.006530017254715292,
+          "rho": 0.8571428571428572,
+          "seed_a": 23,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 1.0,
+          "rho": 0.0,
+          "seed_a": 23,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.8225054302036114,
+          "rho": 0.09523809523809526,
+          "seed_a": 37,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.014902667686230067,
+          "rho": 0.8095238095238096,
+          "seed_a": 37,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.35181255311756476,
+          "rho": 0.38095238095238104,
+          "seed_a": 51,
+          "seed_b": 79
+        }
+      ]
+    },
+    "median_profile_spearman": {
+      "finite_pair_count": 10,
+      "max_rho": 0.9523809523809524,
+      "mean_rho": 0.3,
+      "median_rho": 0.29761904761904767,
+      "min_rho": -0.261904761904762,
+      "pair_count": 10,
+      "pairs": [
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.2894032248467901,
+          "rho": 0.4285714285714286,
+          "seed_a": 11,
+          "seed_b": 23
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.20703124999999997,
+          "rho": 0.5000000000000001,
+          "seed_a": 11,
+          "seed_b": 37
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.5701563208157683,
+          "rho": 0.2380952380952381,
+          "seed_a": 11,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.2894032248467901,
+          "rho": 0.4285714285714286,
+          "seed_a": 11,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.7788857260523797,
+          "rho": -0.11904761904761905,
+          "seed_a": 23,
+          "seed_b": 37
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.4927262450169573,
+          "rho": 0.28571428571428575,
+          "seed_a": 23,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.530922861565801,
+          "rho": -0.261904761904762,
+          "seed_a": 23,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.5701563208157683,
+          "rho": 0.2380952380952381,
+          "seed_a": 37,
+          "seed_b": 51
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.00026040002438725105,
+          "rho": 0.9523809523809524,
+          "seed_a": 37,
+          "seed_b": 79
+        },
+        {
+          "clusters_compared": 8,
+          "pvalue": 0.4556448907375822,
+          "rho": 0.30952380952380953,
+          "seed_a": 51,
+          "seed_b": 79
+        }
+      ]
+    },
+    "standardized_mean_range": {
+      "max": 1.620467772881441,
+      "mean": 1.2010116147488055,
+      "min": 0.7547362389147768,
+      "std": 0.29369151615337974
+    }
+  }
+}

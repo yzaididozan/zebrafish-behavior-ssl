@@ -264,7 +264,16 @@ fish_well_slots: 384
 usable_fish_well_units: 374
 accepted_bouts: 163065
 authoritative_frame_rate_hz: 160
+independence_from_ds005: CONFIRMED
+direct_fish_or_recording_overlap: "no evidence found"
 ```
+
+DS-006 is a separately sourced and acquired Reddy et al. (2022) dataset, not a
+resplit or known reuse of the Marques et al. fish or recordings underlying
+DS-005. The datasets have different assays, acquisition rates, durations,
+stimulus conditions, and tracking pipelines. Some investigators overlap and the
+datasets were later analyzed together in Sridhar et al. (2024), but this does
+not create known fish- or recording-level overlap.
 
 ### Recording-level split
 
@@ -488,13 +497,38 @@ Baseline discovery/clustering                     ✅
 Input B SSL implementation                        ✅
 Input B representation freeze                     ✅
 SSL objective / encoder / seeds                    ✅
-Full multi-seed SSL training                      🔄
+Full multi-seed SSL training                      ✅ five seeds complete
 
-Input A vs Input B comparison                      ⬜
+SSL clustering and stability analysis             ✅ TRAIN / VALIDATION complete
+Input A vs Input B comparison                      ✅ linear + nonlinear probes complete
+Nuisance and known-class validation                ✅ TRAIN / VALIDATION complete
+Within-class characterization                      ✅ Long_CS primary; LLC secondary
+Validation analysis freeze                        ✅ documented; commit/timestamp pending
 Independent DS-006 replication analysis           🟨 preprocessing complete
 Final DS-005 held-out TEST evaluation              🔒 not yet opened
 Final DS-006 held-out TEST evaluation              🔒 sealed
 ```
+
+## Current TRAIN / VALIDATION Findings
+
+The five frozen SSL seeds produced complete TRAIN and VALIDATION embeddings and
+downstream analyses without using the protected DS-005 TEST partition.
+
+- SSL and baseline partitions differ strongly (mean VALIDATION ARI `0.0180`,
+  NMI `0.0475`).
+- SSL clustering is moderately reproducible across training seeds (mean
+  VALIDATION pairwise ARI `0.3582`, NMI `0.4598`, aligned agreement `0.5655`).
+- Fish-identity and context associations are low, but speed remains an important
+  correlate of SSL cluster membership (mean VALIDATION eta-squared `0.4579`).
+- A nonlinear probe reconstructs SSL labels from the 18 handcrafted features
+  with mean VALIDATION balanced accuracy `0.9016`. The results therefore do not
+  support a claim that SSL information is fundamentally absent from Input A.
+- `Long_CS` is frozen as the primary within-class case study; `LLC` is secondary,
+  and `BS` is supporting evidence.
+
+The controlling pre-TEST interpretation and analysis plan are recorded in
+[`docs/validation-freeze.md`](docs/validation-freeze.md). These are validation
+findings, not final confirmatory or external-replication results.
 
 ---
 

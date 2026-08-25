@@ -1,0 +1,145 @@
+{
+  "analysis": "ds005_ds006_directional_replication_comparison",
+  "criterion": "direction and scientific interpretation, not individual p-values",
+  "ds005_frozen_reference": {
+    "cluster_aligned": 0.565489,
+    "cluster_ari": 0.358195,
+    "cluster_nmi": 0.459763,
+    "cluster_silhouette": 0.126659,
+    "context_ami": 0.031447,
+    "context_entropy": 0.932587,
+    "context_nmi": 0.031566,
+    "context_v": 0.151235,
+    "identity_ami": 0.031737,
+    "identity_entropy": 0.923046,
+    "identity_nmi": 0.032191,
+    "identity_v": 0.184327,
+    "llc_turn_net_crossseed_rho": 0.42381,
+    "llc_turn_net_eta2": 0.16445,
+    "llc_turn_net_trainval_rho": 0.952381,
+    "longcs_accel_abs_std_eta2": 0.532868,
+    "longcs_accel_rms_eta2": 0.538565,
+    "longcs_accel_rms_trainval_rho": 0.819048,
+    "longcs_duration_eta2": 0.525723,
+    "longcs_duration_trainval_rho": 0.861905,
+    "speed_balacc": 0.294657,
+    "speed_eta2": 0.457877,
+    "speed_macro_f1": 0.235911
+  },
+  "ds006_direct_long_cs_llc_class_mapping_available": false,
+  "ds006_metrics": {
+    "cluster_aligned": 0.5373719139899124,
+    "cluster_ari": 0.36130883733395347,
+    "cluster_nmi": 0.5015192524849036,
+    "cluster_silhouette": 0.16118374168872834,
+    "context_max_ami": 0.0178308019174633,
+    "context_max_nmi": 0.018260629364861652,
+    "context_max_v": 0.11803926767915866,
+    "context_min_entropy": 0.9562492845544049,
+    "context_nmi_by_field": {
+      "condition_code": 0.007569766328477325,
+      "condition_label": 0.007569766328477325,
+      "family": 0.012493414778403605,
+      "recording_id": 0.018260629364861652,
+      "well": 0.007868199534463785
+    },
+    "direct_class_labels_available": false,
+    "duration_eta2": 0.08779300233577272,
+    "duration_trainval_rho": 0.7809523809523811,
+    "identity_ami": 0.027882056811799165,
+    "identity_entropy": 0.8747272237715704,
+    "identity_nmi": 0.0315127154651218,
+    "identity_v": 0.16305999661644874,
+    "speed_balacc": 0.27637725276152647,
+    "speed_change_rms_eta2": 0.47596340718550056,
+    "speed_change_rms_trainval_rho": 0.9619047619047618,
+    "speed_change_std_eta2": 0.475872748996372,
+    "speed_eta2": 0.5454210820699339,
+    "speed_macro_f1": 0.21758882548694078,
+    "turn_net_eta2": 0.008711320910969926,
+    "turn_net_trainval_rho": 0.9666666666666668,
+    "turn_total_abs_crossseed_rho": 0.7476190476190476,
+    "turn_total_abs_eta2": 0.2916045317824528,
+    "turn_total_abs_trainval_rho": 0.9523809523809526
+  },
+  "ds006_test_partition_used": false,
+  "rows": [
+    {
+      "claim": "Moderately reproducible k=8 organization across encoder seeds",
+      "ds005": "ARI=0.358; NMI=0.460; aligned=0.565; silhouette=0.127",
+      "ds006": "ARI=0.361; NMI=0.502; aligned=0.537; silhouette=0.161",
+      "reason": "Cross-seed clustering stability is extremely similar in direction and magnitude.",
+      "status": "REPLICATED"
+    },
+    {
+      "claim": "Speed-related but not reducible to mean speed",
+      "ds005": "eta\u00b2=0.458; speed-only balacc=0.295; macro-F1=0.236",
+      "ds006": "eta\u00b2=0.545; speed-only balacc=0.276; macro-F1=0.218",
+      "reason": "Both datasets show strong speed association but poor mean-speed-only recovery of k=8 labels.",
+      "status": "REPLICATED"
+    },
+    {
+      "claim": "Low subject/fish identity leakage",
+      "ds005": "NMI=0.032; AMI=0.032; V=0.184",
+      "ds006": "NMI=0.032; AMI=0.028; V=0.163",
+      "reason": "DS-006 fish-well identity associations remain low and comparable to DS-005.",
+      "status": "REPLICATED"
+    },
+    {
+      "claim": "Low recording/context leakage",
+      "ds005": "NMI=0.032; AMI=0.031; V=0.151",
+      "ds006": "max field NMI=0.018; max AMI=0.018; max V=0.118",
+      "reason": "All tested DS-006 context fields show very low held-out associations.",
+      "status": "REPLICATED"
+    },
+    {
+      "claim": "Acceleration/speed-change heterogeneity",
+      "ds005": "Long_CS accel_rms eta\u00b2=0.539; accel_abs_std eta\u00b2=0.533",
+      "ds006": "speed_change_rms eta\u00b2=0.476; speed_change_std eta\u00b2=0.476; train\u2192val rho=0.962",
+      "reason": "The exact Long_CS label is unavailable, but the same acceleration/speed-change axis is strong and highly reproducible.",
+      "status": "REPLICATED"
+    },
+    {
+      "claim": "Long_CS-like duration heterogeneity",
+      "ds005": "duration eta\u00b2=0.526; train\u2192val rho=0.862",
+      "ds006": "duration eta\u00b2=0.088; train\u2192val rho=0.781",
+      "reason": "DS-006 duration association is much weaker, and no direct Long_CS label exists.",
+      "status": "NOT_STRONGLY_REPLICATED"
+    },
+    {
+      "claim": "LLC-like signed net-turning structure",
+      "ds005": "turn_net eta\u00b2=0.164; train\u2192val rho=0.952",
+      "ds006": "turn_net eta\u00b2=0.009; train\u2192val rho=0.967",
+      "reason": "Signed net turning is very weak in DS-006 despite stable within-seed profile ordering.",
+      "status": "NOT_STRONGLY_REPLICATED"
+    },
+    {
+      "claim": "Turning magnitude/intensity as a reproducible axis",
+      "ds005": "Related turning features present, but signed turn_net was the primary LLC result.",
+      "ds006": "turn_total_abs eta\u00b2=0.292; train\u2192val rho=0.952; cross-seed rho=0.748",
+      "reason": "DS-006 shows robust turning magnitude, but this is not the same as reproducing signed turn direction.",
+      "status": "PARTIAL"
+    },
+    {
+      "claim": "Direct within-Long_CS / within-LLC subdivision replication",
+      "ds005": "Available",
+      "ds006": "Unavailable",
+      "reason": "DS-006 lacks DS-005-equivalent conventional bout-class labels.",
+      "status": "NOT_DIRECTLY_TESTABLE"
+    }
+  ],
+  "source_sha256": {
+    "clustering": "b50818397635f8798760d75b7223c9e9ab932b30cfd915f7dba43e4401cc1c58",
+    "context": "8643618c0b384a3846abbfc1772af25c36135d61446428a75e44bae66e45b5fd",
+    "identity": "13060f18c77b3198f486f9f2563a5687eb4870bdfd265aa6f47fb501be9a3b8f",
+    "speed": "2ec63599b6feb254afb05c8069238308fc45ec753c2bfe30ba6bf27f16cd6905",
+    "substructure": "2691aba0bf4f7744b653c37bff7a46a94022885d7b56d9ede8e2fdd3475f8833",
+    "targeted": "3ab92db21c3570cc4a564422a5cdb03e2fb745fff4c62da608f9422b3e7195d6"
+  },
+  "status_counts": {
+    "NOT_DIRECTLY_TESTABLE": 1,
+    "NOT_STRONGLY_REPLICATED": 2,
+    "PARTIAL": 1,
+    "REPLICATED": 5
+  }
+}

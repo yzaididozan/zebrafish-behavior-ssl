@@ -1,0 +1,163 @@
+{
+  "alignment_rule": "Hungarian mapping estimated on TRAIN same-bout cluster assignments; same mapping applied unchanged to VALIDATION.",
+  "known_class_names": [
+    "AS",
+    "BS",
+    "HAT",
+    "J_turn",
+    "LLC",
+    "Long_CS",
+    "O_bend",
+    "RT",
+    "SAT",
+    "SLC",
+    "Slow1",
+    "Slow2"
+  ],
+  "reference_seed": 11,
+  "test_partition_used": false,
+  "train": {
+    "mean_pairwise_js_similarity_all_clusters": 0.8904711264965723,
+    "min_pairwise_js_similarity_all_clusters": 0.5789760492311955,
+    "per_aligned_cluster": {
+      "0": {
+        "mean_pairwise_js_similarity": 0.9195064985509379,
+        "min_pairwise_js_similarity": 0.8459261097043884,
+        "pair_count": 10
+      },
+      "1": {
+        "mean_pairwise_js_similarity": 0.9296891220028055,
+        "min_pairwise_js_similarity": 0.8824855495985041,
+        "pair_count": 10
+      },
+      "2": {
+        "mean_pairwise_js_similarity": 0.8056406435714436,
+        "min_pairwise_js_similarity": 0.5789760492311955,
+        "pair_count": 10
+      },
+      "3": {
+        "mean_pairwise_js_similarity": 0.9016648316682602,
+        "min_pairwise_js_similarity": 0.83959228633023,
+        "pair_count": 10
+      },
+      "4": {
+        "mean_pairwise_js_similarity": 0.8290419655366655,
+        "min_pairwise_js_similarity": 0.6092229591291658,
+        "pair_count": 10
+      },
+      "5": {
+        "mean_pairwise_js_similarity": 0.9011313658151302,
+        "min_pairwise_js_similarity": 0.8160951727277896,
+        "pair_count": 10
+      },
+      "6": {
+        "mean_pairwise_js_similarity": 0.9463741897275095,
+        "min_pairwise_js_similarity": 0.9106399297821273,
+        "pair_count": 10
+      },
+      "7": {
+        "mean_pairwise_js_similarity": 0.8907203950998241,
+        "min_pairwise_js_similarity": 0.7880200632721943,
+        "pair_count": 10
+      }
+    }
+  },
+  "train_derived_cluster_mappings_to_reference": {
+    "11": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7
+    },
+    "23": {
+      "0": 6,
+      "1": 2,
+      "2": 7,
+      "3": 1,
+      "4": 0,
+      "5": 5,
+      "6": 3,
+      "7": 4
+    },
+    "37": {
+      "0": 3,
+      "1": 1,
+      "2": 6,
+      "3": 7,
+      "4": 0,
+      "5": 5,
+      "6": 4,
+      "7": 2
+    },
+    "51": {
+      "0": 6,
+      "1": 2,
+      "2": 0,
+      "3": 5,
+      "4": 7,
+      "5": 3,
+      "6": 4,
+      "7": 1
+    },
+    "79": {
+      "0": 7,
+      "1": 4,
+      "2": 0,
+      "3": 5,
+      "4": 2,
+      "5": 6,
+      "6": 1,
+      "7": 3
+    }
+  },
+  "validation": {
+    "mean_pairwise_js_similarity_all_clusters": 0.8903272891432579,
+    "min_pairwise_js_similarity_all_clusters": 0.5837733198817934,
+    "per_aligned_cluster": {
+      "0": {
+        "mean_pairwise_js_similarity": 0.9134905378474002,
+        "min_pairwise_js_similarity": 0.8390498227905383,
+        "pair_count": 10
+      },
+      "1": {
+        "mean_pairwise_js_similarity": 0.9282765102149979,
+        "min_pairwise_js_similarity": 0.8829781137631074,
+        "pair_count": 10
+      },
+      "2": {
+        "mean_pairwise_js_similarity": 0.8053704127929299,
+        "min_pairwise_js_similarity": 0.5837733198817934,
+        "pair_count": 10
+      },
+      "3": {
+        "mean_pairwise_js_similarity": 0.9040330686752134,
+        "min_pairwise_js_similarity": 0.8508513805936009,
+        "pair_count": 10
+      },
+      "4": {
+        "mean_pairwise_js_similarity": 0.8296447937963624,
+        "min_pairwise_js_similarity": 0.6198455492497459,
+        "pair_count": 10
+      },
+      "5": {
+        "mean_pairwise_js_similarity": 0.9031222574374835,
+        "min_pairwise_js_similarity": 0.8261982615431945,
+        "pair_count": 10
+      },
+      "6": {
+        "mean_pairwise_js_similarity": 0.9448004253780725,
+        "min_pairwise_js_similarity": 0.9057608461431823,
+        "pair_count": 10
+      },
+      "7": {
+        "mean_pairwise_js_similarity": 0.8938803070036038,
+        "min_pairwise_js_similarity": 0.7996751176689343,
+        "pair_count": 10
+      }
+    }
+  }
+}

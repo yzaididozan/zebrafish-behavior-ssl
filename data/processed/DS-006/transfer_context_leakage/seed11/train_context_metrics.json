@@ -1,0 +1,1168 @@
+{
+  "bout_id_alignment_verified": true,
+  "dataset_id": "DS-006",
+  "fields": {
+    "condition_code": {
+      "association": {
+        "adjusted_mutual_information": 0.004236216338379071,
+        "cramers_v": 0.08094199304498995,
+        "normalized_mutual_information": 0.004278822213409905
+      },
+      "category_count": 3,
+      "category_distribution_summary": {
+        "max_dominant_cluster_fraction": 0.251865671641791,
+        "mean_dominant_cluster_fraction": 0.21552265655869984,
+        "mean_normalized_cluster_entropy": 0.954085299045241,
+        "min_normalized_cluster_entropy": 0.9487632360964166,
+        "std_normalized_cluster_entropy": 0.005866438861914388
+      },
+      "cluster_concentration_summary": {
+        "max_max_single_category_fraction": 0.5708377060312365,
+        "max_top3_category_fraction": 1.0,
+        "mean_effective_categories_per_cluster": 2.080047190442795,
+        "mean_max_single_category_fraction": 0.546495696462936,
+        "mean_top3_category_fraction": 1.0,
+        "min_effective_categories_per_cluster": 2.0006262678477817
+      },
+      "per_category": {
+        "0": {
+          "bout_count": 63617,
+          "cluster_counts": [
+            8016,
+            8492,
+            9247,
+            13065,
+            875,
+            7399,
+            9206,
+            7317
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.2053696339028876,
+          "normalized_cluster_entropy": 0.9487632360964166
+        },
+        "2": {
+          "bout_count": 2680,
+          "cluster_counts": [
+            216,
+            220,
+            198,
+            402,
+            186,
+            433,
+            350,
+            675
+          ],
+          "dominant_cluster": 7,
+          "dominant_cluster_fraction": 0.251865671641791,
+          "normalized_cluster_entropy": 0.9512345801753949
+        },
+        "3": {
+          "bout_count": 51803,
+          "cluster_counts": [
+            6033,
+            6317,
+            6754,
+            9808,
+            1278,
+            6780,
+            6862,
+            7971
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.18933266413142097,
+          "normalized_cluster_entropy": 0.9622580808639115
+        }
+      },
+      "per_cluster": {
+        "0": {
+          "bout_count": 14265,
+          "categories_with_bouts": 3,
+          "dominant_category": "0",
+          "effective_categories": 2.020756931273516,
+          "max_single_category_fraction": 0.5619348054679285,
+          "top3_category_fraction": 1.0
+        },
+        "1": {
+          "bout_count": 15029,
+          "categories_with_bouts": 3,
+          "dominant_category": "0",
+          "effective_categories": 2.0154990829455315,
+          "max_single_category_fraction": 0.5650409208862865,
+          "top3_category_fraction": 1.0
+        },
+        "2": {
+          "bout_count": 16199,
+          "categories_with_bouts": 3,
+          "dominant_category": "0",
+          "effective_categories": 2.0006262678477817,
+          "max_single_category_fraction": 0.5708377060312365,
+          "top3_category_fraction": 1.0
+        },
+        "3": {
+          "bout_count": 23275,
+          "categories_with_bouts": 3,
+          "dominant_category": "0",
+          "effective_categories": 2.028534589613743,
+          "max_single_category_fraction": 0.5613319011815252,
+          "top3_category_fraction": 1.0
+        },
+        "4": {
+          "bout_count": 2339,
+          "categories_with_bouts": 3,
+          "dominant_category": "3",
+          "effective_categories": 2.2481650952021877,
+          "max_single_category_fraction": 0.546387345019239,
+          "top3_category_fraction": 1.0
+        },
+        "5": {
+          "bout_count": 14612,
+          "categories_with_bouts": 3,
+          "dominant_category": "0",
+          "effective_categories": 2.116038032889437,
+          "max_single_category_fraction": 0.5063646318094717,
+          "top3_category_fraction": 1.0
+        },
+        "6": {
+          "bout_count": 16418,
+          "categories_with_bouts": 3,
+          "dominant_category": "0",
+          "effective_categories": 2.0426702398712093,
+          "max_single_category_fraction": 0.5607260324034596,
+          "top3_category_fraction": 1.0
+        },
+        "7": {
+          "bout_count": 15963,
+          "categories_with_bouts": 3,
+          "dominant_category": "3",
+          "effective_categories": 2.1680872838989522,
+          "max_single_category_fraction": 0.49934222890434127,
+          "top3_category_fraction": 1.0
+        }
+      }
+    },
+    "condition_label": {
+      "association": {
+        "adjusted_mutual_information": 0.004236216338379071,
+        "cramers_v": 0.08094199304498995,
+        "normalized_mutual_information": 0.004278822213409905
+      },
+      "category_count": 3,
+      "category_distribution_summary": {
+        "max_dominant_cluster_fraction": 0.251865671641791,
+        "mean_dominant_cluster_fraction": 0.21552265655869984,
+        "mean_normalized_cluster_entropy": 0.954085299045241,
+        "min_normalized_cluster_entropy": 0.9487632360964166,
+        "std_normalized_cluster_entropy": 0.005866438861914388
+      },
+      "cluster_concentration_summary": {
+        "max_max_single_category_fraction": 0.5708377060312365,
+        "max_top3_category_fraction": 1.0,
+        "mean_effective_categories_per_cluster": 2.080047190442795,
+        "mean_max_single_category_fraction": 0.546495696462936,
+        "mean_top3_category_fraction": 1.0,
+        "min_effective_categories_per_cluster": 2.0006262678477817
+      },
+      "per_category": {
+        "double_sharp_pH": {
+          "bout_count": 51803,
+          "cluster_counts": [
+            6033,
+            6317,
+            6754,
+            9808,
+            1278,
+            6780,
+            6862,
+            7971
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.18933266413142097,
+          "normalized_cluster_entropy": 0.9622580808639115
+        },
+        "exploratory": {
+          "bout_count": 63617,
+          "cluster_counts": [
+            8016,
+            8492,
+            9247,
+            13065,
+            875,
+            7399,
+            9206,
+            7317
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.2053696339028876,
+          "normalized_cluster_entropy": 0.9487632360964166
+        },
+        "homogeneous_pH": {
+          "bout_count": 2680,
+          "cluster_counts": [
+            216,
+            220,
+            198,
+            402,
+            186,
+            433,
+            350,
+            675
+          ],
+          "dominant_cluster": 7,
+          "dominant_cluster_fraction": 0.251865671641791,
+          "normalized_cluster_entropy": 0.9512345801753949
+        }
+      },
+      "per_cluster": {
+        "0": {
+          "bout_count": 14265,
+          "categories_with_bouts": 3,
+          "dominant_category": "exploratory",
+          "effective_categories": 2.020756931273516,
+          "max_single_category_fraction": 0.5619348054679285,
+          "top3_category_fraction": 1.0
+        },
+        "1": {
+          "bout_count": 15029,
+          "categories_with_bouts": 3,
+          "dominant_category": "exploratory",
+          "effective_categories": 2.015499082945532,
+          "max_single_category_fraction": 0.5650409208862865,
+          "top3_category_fraction": 1.0
+        },
+        "2": {
+          "bout_count": 16199,
+          "categories_with_bouts": 3,
+          "dominant_category": "exploratory",
+          "effective_categories": 2.0006262678477817,
+          "max_single_category_fraction": 0.5708377060312365,
+          "top3_category_fraction": 1.0
+        },
+        "3": {
+          "bout_count": 23275,
+          "categories_with_bouts": 3,
+          "dominant_category": "exploratory",
+          "effective_categories": 2.028534589613743,
+          "max_single_category_fraction": 0.5613319011815252,
+          "top3_category_fraction": 1.0
+        },
+        "4": {
+          "bout_count": 2339,
+          "categories_with_bouts": 3,
+          "dominant_category": "double_sharp_pH",
+          "effective_categories": 2.2481650952021877,
+          "max_single_category_fraction": 0.546387345019239,
+          "top3_category_fraction": 1.0
+        },
+        "5": {
+          "bout_count": 14612,
+          "categories_with_bouts": 3,
+          "dominant_category": "exploratory",
+          "effective_categories": 2.1160380328894366,
+          "max_single_category_fraction": 0.5063646318094717,
+          "top3_category_fraction": 1.0
+        },
+        "6": {
+          "bout_count": 16418,
+          "categories_with_bouts": 3,
+          "dominant_category": "exploratory",
+          "effective_categories": 2.0426702398712093,
+          "max_single_category_fraction": 0.5607260324034596,
+          "top3_category_fraction": 1.0
+        },
+        "7": {
+          "bout_count": 15963,
+          "categories_with_bouts": 3,
+          "dominant_category": "double_sharp_pH",
+          "effective_categories": 2.1680872838989527,
+          "max_single_category_fraction": 0.49934222890434127,
+          "top3_category_fraction": 1.0
+        }
+      }
+    },
+    "family": {
+      "association": {
+        "adjusted_mutual_information": 0.011456243930946757,
+        "cramers_v": 0.11194065525380638,
+        "normalized_mutual_information": 0.011509272061029715
+      },
+      "category_count": 4,
+      "category_distribution_summary": {
+        "max_dominant_cluster_fraction": 0.2090245067922725,
+        "mean_dominant_cluster_fraction": 0.19937496671251476,
+        "mean_normalized_cluster_entropy": 0.946003650401221,
+        "min_normalized_cluster_entropy": 0.9360610041110513,
+        "std_normalized_cluster_entropy": 0.007952591913043575
+      },
+      "cluster_concentration_summary": {
+        "max_max_single_category_fraction": 0.41539810812503913,
+        "max_top3_category_fraction": 0.9490829455242267,
+        "mean_effective_categories_per_cluster": 3.5205684828826884,
+        "mean_max_single_category_fraction": 0.3510324118875685,
+        "mean_top3_category_fraction": 0.8811907904116831,
+        "min_effective_categories_per_cluster": 3.0545803810400125
+      },
+      "per_category": {
+        "pH_1a": {
+          "bout_count": 14649,
+          "cluster_counts": [
+            3026,
+            1663,
+            1994,
+            3062,
+            641,
+            744,
+            2506,
+            1013
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.2090245067922725,
+          "normalized_cluster_entropy": 0.9360610041110513
+        },
+        "pH_2a": {
+          "bout_count": 27038,
+          "cluster_counts": [
+            3919,
+            3344,
+            3910,
+            5454,
+            248,
+            2850,
+            4461,
+            2852
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.2017161032620756,
+          "normalized_cluster_entropy": 0.9405100732161681
+        },
+        "pH_2b": {
+          "bout_count": 34759,
+          "cluster_counts": [
+            3260,
+            4641,
+            4853,
+            6811,
+            764,
+            4997,
+            3966,
+            5467
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.1959492505538134,
+          "normalized_cluster_entropy": 0.9552710796359188
+        },
+        "pH_2c": {
+          "bout_count": 41654,
+          "cluster_counts": [
+            4060,
+            5381,
+            5442,
+            7948,
+            686,
+            6021,
+            5485,
+            6631
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.19081000624189753,
+          "normalized_cluster_entropy": 0.9521724446417459
+        }
+      },
+      "per_cluster": {
+        "0": {
+          "bout_count": 14265,
+          "categories_with_bouts": 4,
+          "dominant_category": "pH_2c",
+          "effective_categories": 3.9415895580785474,
+          "max_single_category_fraction": 0.2846126883981774,
+          "top3_category_fraction": 0.7878724150017526
+        },
+        "1": {
+          "bout_count": 15029,
+          "categories_with_bouts": 4,
+          "dominant_category": "pH_2c",
+          "effective_categories": 3.505028192273582,
+          "max_single_category_fraction": 0.35804112050036596,
+          "top3_category_fraction": 0.8893472619602103
+        },
+        "2": {
+          "bout_count": 16199,
+          "categories_with_bouts": 4,
+          "dominant_category": "pH_2c",
+          "effective_categories": 3.6228577005496354,
+          "max_single_category_fraction": 0.33594666337428236,
+          "top3_category_fraction": 0.8769059818507315
+        },
+        "3": {
+          "bout_count": 23275,
+          "categories_with_bouts": 4,
+          "dominant_category": "pH_2c",
+          "effective_categories": 3.6435091150844805,
+          "max_single_category_fraction": 0.34148227712137486,
+          "top3_category_fraction": 0.8684425349087004
+        },
+        "4": {
+          "bout_count": 2339,
+          "categories_with_bouts": 4,
+          "dominant_category": "pH_2b",
+          "effective_categories": 3.583548451964627,
+          "max_single_category_fraction": 0.3266353142368534,
+          "top3_category_fraction": 0.8939717828131681
+        },
+        "5": {
+          "bout_count": 14612,
+          "categories_with_bouts": 4,
+          "dominant_category": "pH_2c",
+          "effective_categories": 3.0545803810400125,
+          "max_single_category_fraction": 0.41205858198740763,
+          "top3_category_fraction": 0.9490829455242267
+        },
+        "6": {
+          "bout_count": 16418,
+          "categories_with_bouts": 4,
+          "dominant_category": "pH_2c",
+          "effective_categories": 3.744023281192353,
+          "max_single_category_fraction": 0.3340845413570471,
+          "top3_category_fraction": 0.8473626507491777
+        },
+        "7": {
+          "bout_count": 15963,
+          "categories_with_bouts": 4,
+          "dominant_category": "pH_2c",
+          "effective_categories": 3.0694111828782673,
+          "max_single_category_fraction": 0.41539810812503913,
+          "top3_category_fraction": 0.9365407504854977
+        }
+      }
+    },
+    "recording_id": {
+      "association": {
+        "adjusted_mutual_information": 0.01191257585003436,
+        "cramers_v": 0.09643991883476351,
+        "normalized_mutual_information": 0.012161251752201618
+      },
+      "category_count": 22,
+      "category_distribution_summary": {
+        "max_dominant_cluster_fraction": 0.23421588594704684,
+        "mean_dominant_cluster_fraction": 0.2017520837479476,
+        "mean_normalized_cluster_entropy": 0.9423760086649743,
+        "min_normalized_cluster_entropy": 0.8966698193872241,
+        "std_normalized_cluster_entropy": 0.019273703882184554
+      },
+      "cluster_concentration_summary": {
+        "max_max_single_category_fraction": 0.10944848225737494,
+        "max_top3_category_fraction": 0.30825138948268493,
+        "mean_effective_categories_per_cluster": 17.147834061326012,
+        "mean_max_single_category_fraction": 0.08728303816470423,
+        "mean_top3_category_fraction": 0.24512066009005506,
+        "min_effective_categories_per_cluster": 15.86544861706191
+      },
+      "per_category": {
+        "191119_Catamaran_pH_2b_t6": {
+          "bout_count": 6986,
+          "cluster_counts": [
+            803,
+            959,
+            1084,
+            1309,
+            149,
+            873,
+            843,
+            966
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.187374749498998,
+          "normalized_cluster_entropy": 0.9593321560063423
+        },
+        "191119_Catamaran_pH_2b_t8": {
+          "bout_count": 6581,
+          "cluster_counts": [
+            624,
+            904,
+            920,
+            1207,
+            253,
+            969,
+            667,
+            1037
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.1834067770855493,
+          "normalized_cluster_entropy": 0.9679089049693642
+        },
+        "Catamaran_pH_1a_t1a": {
+          "bout_count": 3872,
+          "cluster_counts": [
+            760,
+            499,
+            569,
+            788,
+            53,
+            207,
+            736,
+            260
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.20351239669421486,
+          "normalized_cluster_entropy": 0.914527148879888
+        },
+        "Catamaran_pH_1a_t1c": {
+          "bout_count": 1004,
+          "cluster_counts": [
+            136,
+            114,
+            105,
+            165,
+            64,
+            119,
+            121,
+            180
+          ],
+          "dominant_cluster": 7,
+          "dominant_cluster_fraction": 0.17928286852589642,
+          "normalized_cluster_entropy": 0.9820541343137561
+        },
+        "Catamaran_pH_1a_t2a": {
+          "bout_count": 3904,
+          "cluster_counts": [
+            857,
+            435,
+            610,
+            912,
+            62,
+            189,
+            650,
+            189
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.2336065573770492,
+          "normalized_cluster_entropy": 0.8966698193872241
+        },
+        "Catamaran_pH_1a_t2b": {
+          "bout_count": 2382,
+          "cluster_counts": [
+            533,
+            253,
+            345,
+            476,
+            256,
+            43,
+            397,
+            79
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.2237615449202351,
+          "normalized_cluster_entropy": 0.9130285098238027
+        },
+        "Catamaran_pH_1a_t3c": {
+          "bout_count": 668,
+          "cluster_counts": [
+            97,
+            40,
+            47,
+            129,
+            106,
+            56,
+            71,
+            122
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.19311377245508982,
+          "normalized_cluster_entropy": 0.9626638530040633
+        },
+        "Catamaran_pH_1a_t4a": {
+          "bout_count": 2819,
+          "cluster_counts": [
+            643,
+            322,
+            318,
+            592,
+            100,
+            130,
+            531,
+            183
+          ],
+          "dominant_cluster": 0,
+          "dominant_cluster_fraction": 0.22809506917346578,
+          "normalized_cluster_entropy": 0.9190613216713164
+        },
+        "Catamaran_pH_2a_t1a": {
+          "bout_count": 7655,
+          "cluster_counts": [
+            1019,
+            901,
+            978,
+            1433,
+            66,
+            976,
+            1391,
+            891
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.18719790986283474,
+          "normalized_cluster_entropy": 0.942856168706223
+        },
+        "Catamaran_pH_2a_t2": {
+          "bout_count": 8362,
+          "cluster_counts": [
+            1261,
+            1085,
+            1367,
+            1678,
+            92,
+            775,
+            1354,
+            750
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.20066969624491748,
+          "normalized_cluster_entropy": 0.9376419753990343
+        },
+        "Catamaran_pH_2a_t4": {
+          "bout_count": 7211,
+          "cluster_counts": [
+            1173,
+            998,
+            1169,
+            1507,
+            33,
+            582,
+            1152,
+            597
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.20898627097489947,
+          "normalized_cluster_entropy": 0.9225093620494278
+        },
+        "Catamaran_pH_2a_t5": {
+          "bout_count": 1964,
+          "cluster_counts": [
+            275,
+            184,
+            229,
+            460,
+            26,
+            261,
+            278,
+            251
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.23421588594704684,
+          "normalized_cluster_entropy": 0.9390823134321897
+        },
+        "Catamaran_pH_2a_t6": {
+          "bout_count": 1846,
+          "cluster_counts": [
+            191,
+            176,
+            167,
+            376,
+            31,
+            256,
+            286,
+            363
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.20368364030335862,
+          "normalized_cluster_entropy": 0.9385157051917803
+        },
+        "Catamaran_pH_2b_t1": {
+          "bout_count": 6011,
+          "cluster_counts": [
+            573,
+            830,
+            785,
+            1252,
+            100,
+            798,
+            736,
+            937
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.20828481117950423,
+          "normalized_cluster_entropy": 0.9488813568666231
+        },
+        "Catamaran_pH_2b_t2": {
+          "bout_count": 7036,
+          "cluster_counts": [
+            626,
+            913,
+            872,
+            1528,
+            125,
+            1037,
+            806,
+            1129
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.21716884593519045,
+          "normalized_cluster_entropy": 0.9455683099045322
+        },
+        "Catamaran_pH_2b_t4": {
+          "bout_count": 8145,
+          "cluster_counts": [
+            634,
+            1035,
+            1192,
+            1515,
+            137,
+            1320,
+            914,
+            1398
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.1860036832412523,
+          "normalized_cluster_entropy": 0.9457144514644784
+        },
+        "Catamaran_pH_2c_t1": {
+          "bout_count": 8823,
+          "cluster_counts": [
+            868,
+            1104,
+            990,
+            1707,
+            104,
+            1227,
+            1341,
+            1482
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.1934716082964978,
+          "normalized_cluster_entropy": 0.9445494736333284
+        },
+        "Catamaran_pH_2c_t3": {
+          "bout_count": 6002,
+          "cluster_counts": [
+            565,
+            887,
+            876,
+            1271,
+            70,
+            778,
+            701,
+            854
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.21176274575141618,
+          "normalized_cluster_entropy": 0.9423682335916506
+        },
+        "Catamaran_pH_2c_t4": {
+          "bout_count": 7375,
+          "cluster_counts": [
+            739,
+            939,
+            1021,
+            1448,
+            84,
+            1050,
+            997,
+            1097
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.19633898305084746,
+          "normalized_cluster_entropy": 0.9467730154983492
+        },
+        "Catamaran_pH_2c_t6": {
+          "bout_count": 7689,
+          "cluster_counts": [
+            808,
+            1124,
+            1134,
+            1475,
+            102,
+            950,
+            974,
+            1122
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.19183248796982702,
+          "normalized_cluster_entropy": 0.9498524159007008
+        },
+        "Catamaran_pH_2c_t7": {
+          "bout_count": 5921,
+          "cluster_counts": [
+            592,
+            732,
+            768,
+            1043,
+            114,
+            925,
+            785,
+            962
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.17615267691268366,
+          "normalized_cluster_entropy": 0.9563575876882097
+        },
+        "Catamaran_pH_2c_t8": {
+          "bout_count": 5844,
+          "cluster_counts": [
+            488,
+            595,
+            653,
+            1004,
+            212,
+            1091,
+            687,
+            1114
+          ],
+          "dominant_cluster": 7,
+          "dominant_cluster_fraction": 0.19062286105407256,
+          "normalized_cluster_entropy": 0.9563559732471522
+        }
+      },
+      "per_cluster": {
+        "0": {
+          "bout_count": 14265,
+          "categories_with_bouts": 22,
+          "dominant_category": "Catamaran_pH_2a_t2",
+          "effective_categories": 18.216593526738098,
+          "max_single_category_fraction": 0.08839817735716789,
+          "top3_category_fraction": 0.24206098843322815
+        },
+        "1": {
+          "bout_count": 15029,
+          "categories_with_bouts": 22,
+          "dominant_category": "Catamaran_pH_2c_t6",
+          "effective_categories": 17.319392579027916,
+          "max_single_category_fraction": 0.07478874176591922,
+          "top3_category_fraction": 0.22044048173531172
+        },
+        "2": {
+          "bout_count": 16199,
+          "categories_with_bouts": 22,
+          "dominant_category": "Catamaran_pH_2a_t2",
+          "effective_categories": 17.363793357522393,
+          "max_single_category_fraction": 0.0843879251805667,
+          "top3_category_fraction": 0.23013766281869252
+        },
+        "3": {
+          "bout_count": 23275,
+          "categories_with_bouts": 22,
+          "dominant_category": "Catamaran_pH_2c_t1",
+          "effective_categories": 18.159139985999655,
+          "max_single_category_fraction": 0.0733404940923738,
+          "top3_category_fraction": 0.21108485499462942
+        },
+        "4": {
+          "bout_count": 2339,
+          "categories_with_bouts": 22,
+          "dominant_category": "Catamaran_pH_1a_t2b",
+          "effective_categories": 16.341497728406416,
+          "max_single_category_fraction": 0.10944848225737494,
+          "top3_category_fraction": 0.30825138948268493
+        },
+        "5": {
+          "bout_count": 14612,
+          "categories_with_bouts": 22,
+          "dominant_category": "Catamaran_pH_2b_t4",
+          "effective_categories": 15.86544861706191,
+          "max_single_category_fraction": 0.0903367095537914,
+          "top3_category_fraction": 0.24897344648234326
+        },
+        "6": {
+          "bout_count": 16418,
+          "categories_with_bouts": 22,
+          "dominant_category": "Catamaran_pH_2a_t1a",
+          "effective_categories": 17.756197360641064,
+          "max_single_category_fraction": 0.08472408332318188,
+          "top3_category_fraction": 0.24887318796442928
+        },
+        "7": {
+          "bout_count": 15963,
+          "categories_with_bouts": 22,
+          "dominant_category": "Catamaran_pH_2c_t1",
+          "effective_categories": 16.16060933521066,
+          "max_single_category_fraction": 0.09283969178725804,
+          "top3_category_fraction": 0.2511432688091211
+        }
+      }
+    },
+    "well": {
+      "association": {
+        "adjusted_mutual_information": 0.0030988721739650905,
+        "cramers_v": 0.04541349213025954,
+        "normalized_mutual_information": 0.0032442698388772642
+      },
+      "category_count": 12,
+      "category_distribution_summary": {
+        "max_dominant_cluster_fraction": 0.2165476844224785,
+        "mean_dominant_cluster_fraction": 0.19668872867527368,
+        "mean_normalized_cluster_entropy": 0.9547410805698759,
+        "min_normalized_cluster_entropy": 0.9436911158660759,
+        "std_normalized_cluster_entropy": 0.007931592275388935
+      },
+      "cluster_concentration_summary": {
+        "max_max_single_category_fraction": 0.11115861479264642,
+        "max_top3_category_fraction": 0.3215049166310389,
+        "mean_effective_categories_per_cluster": 11.68622836767667,
+        "mean_max_single_category_fraction": 0.10393215771362221,
+        "mean_top3_category_fraction": 0.30101823397277394,
+        "min_effective_categories_per_cluster": 11.380704736030822
+      },
+      "per_category": {
+        "1": {
+          "bout_count": 10734,
+          "cluster_counts": [
+            1122,
+            1420,
+            1654,
+            2007,
+            185,
+            1454,
+            1257,
+            1635
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.1869759642258245,
+          "normalized_cluster_entropy": 0.9540585108866175
+        },
+        "10": {
+          "bout_count": 8722,
+          "cluster_counts": [
+            915,
+            1150,
+            1311,
+            1592,
+            239,
+            997,
+            1215,
+            1303
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.18252694336161432,
+          "normalized_cluster_entropy": 0.9637490601162341
+        },
+        "11": {
+          "bout_count": 9925,
+          "cluster_counts": [
+            1264,
+            1265,
+            1245,
+            1920,
+            221,
+            1232,
+            1345,
+            1433
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.19345088161209067,
+          "normalized_cluster_entropy": 0.9604414291792442
+        },
+        "12": {
+          "bout_count": 8832,
+          "cluster_counts": [
+            910,
+            1084,
+            1054,
+            1660,
+            227,
+            1269,
+            1048,
+            1580
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.18795289855072464,
+          "normalized_cluster_entropy": 0.9585037981522432
+        },
+        "2": {
+          "bout_count": 10837,
+          "cluster_counts": [
+            1252,
+            1466,
+            1551,
+            2239,
+            173,
+            1328,
+            1500,
+            1328
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.20660699455568884,
+          "normalized_cluster_entropy": 0.9513453612239676
+        },
+        "3": {
+          "bout_count": 10926,
+          "cluster_counts": [
+            1533,
+            1404,
+            1551,
+            2366,
+            146,
+            1229,
+            1621,
+            1076
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.2165476844224785,
+          "normalized_cluster_entropy": 0.9437351305000158
+        },
+        "4": {
+          "bout_count": 9988,
+          "cluster_counts": [
+            1299,
+            1262,
+            1392,
+            2089,
+            140,
+            1170,
+            1496,
+            1140
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.2091509811774129,
+          "normalized_cluster_entropy": 0.9481724025646507
+        },
+        "5": {
+          "bout_count": 10637,
+          "cluster_counts": [
+            1480,
+            1589,
+            1576,
+            2136,
+            137,
+            1077,
+            1642,
+            1000
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.2008084986368337,
+          "normalized_cluster_entropy": 0.9436911158660759
+        },
+        "6": {
+          "bout_count": 10862,
+          "cluster_counts": [
+            1439,
+            1378,
+            1530,
+            2337,
+            136,
+            1200,
+            1665,
+            1177
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.2151537470079175,
+          "normalized_cluster_entropy": 0.9439396037085719
+        },
+        "7": {
+          "bout_count": 9675,
+          "cluster_counts": [
+            1110,
+            1088,
+            1182,
+            1861,
+            260,
+            1340,
+            1335,
+            1499
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.1923514211886305,
+          "normalized_cluster_entropy": 0.9624061095859607
+        },
+        "8": {
+          "bout_count": 8669,
+          "cluster_counts": [
+            977,
+            962,
+            977,
+            1533,
+            253,
+            1245,
+            1130,
+            1592
+          ],
+          "dominant_cluster": 7,
+          "dominant_cluster_fraction": 0.18364286538239705,
+          "normalized_cluster_entropy": 0.9623080956919631
+        },
+        "9": {
+          "bout_count": 8293,
+          "cluster_counts": [
+            964,
+            961,
+            1176,
+            1535,
+            222,
+            1071,
+            1164,
+            1200
+          ],
+          "dominant_cluster": 3,
+          "dominant_cluster_fraction": 0.1850958639816713,
+          "normalized_cluster_entropy": 0.9645423493629675
+        }
+      },
+      "per_cluster": {
+        "0": {
+          "bout_count": 14265,
+          "categories_with_bouts": 12,
+          "dominant_category": "3",
+          "effective_categories": 11.625392161595572,
+          "max_single_category_fraction": 0.107465825446898,
+          "top3_category_fraction": 0.31209253417455307
+        },
+        "1": {
+          "bout_count": 15029,
+          "categories_with_bouts": 12,
+          "dominant_category": "5",
+          "effective_categories": 11.713038066168906,
+          "max_single_category_fraction": 0.10572892408011178,
+          "top3_category_fraction": 0.29775766850755203
+        },
+        "2": {
+          "bout_count": 16199,
+          "categories_with_bouts": 12,
+          "dominant_category": "1",
+          "effective_categories": 11.702322455736157,
+          "max_single_category_fraction": 0.10210506821408728,
+          "top3_category_fraction": 0.2951416754120625
+        },
+        "3": {
+          "bout_count": 23275,
+          "categories_with_bouts": 12,
+          "dominant_category": "3",
+          "effective_categories": 11.732465931381727,
+          "max_single_category_fraction": 0.10165413533834586,
+          "top3_category_fraction": 0.29825993555316865
+        },
+        "4": {
+          "bout_count": 2339,
+          "categories_with_bouts": 12,
+          "dominant_category": "7",
+          "effective_categories": 11.380704736030822,
+          "max_single_category_fraction": 0.11115861479264642,
+          "top3_category_fraction": 0.3215049166310389
+        },
+        "5": {
+          "bout_count": 14612,
+          "categories_with_bouts": 12,
+          "dominant_category": "1",
+          "effective_categories": 11.880289542022151,
+          "max_single_category_fraction": 0.09950725431152477,
+          "top3_category_fraction": 0.28209690665206677
+        },
+        "6": {
+          "bout_count": 16418,
+          "categories_with_bouts": 12,
+          "dominant_category": "6",
+          "effective_categories": 11.739160261426978,
+          "max_single_category_fraction": 0.10141308320136436,
+          "top3_category_fraction": 0.3001583627725667
+        },
+        "7": {
+          "bout_count": 15963,
+          "categories_with_bouts": 12,
+          "dominant_category": "1",
+          "effective_categories": 11.716453787051048,
+          "max_single_category_fraction": 0.10242435632399925,
+          "top3_category_fraction": 0.30113387207918313
+        }
+      }
+    }
+  },
+  "partition": "train",
+  "ssl_encoder_seed": 11,
+  "test_partition_used": false
+}

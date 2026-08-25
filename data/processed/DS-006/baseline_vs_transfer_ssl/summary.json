@@ -1,0 +1,478 @@
+{
+  "aggregate": {
+    "linear_validation_accuracy": {
+      "max": 0.42867002920095565,
+      "mean": 0.3955933103265198,
+      "min": 0.3709583222723653,
+      "std": 0.020230653271760456
+    },
+    "linear_validation_balanced_accuracy": {
+      "max": 0.4247967375064089,
+      "mean": 0.37745576979599715,
+      "min": 0.32967633768446636,
+      "std": 0.036563959360928926
+    },
+    "linear_validation_macro_f1": {
+      "max": 0.392723082011153,
+      "mean": 0.34483174082077195,
+      "min": 0.2948983759624568,
+      "std": 0.034848584016577575
+    },
+    "nonlinear_validation_accuracy": {
+      "max": 0.4623838598354128,
+      "mean": 0.42354127953278475,
+      "min": 0.4027077249800903,
+      "std": 0.0218000398509018
+    },
+    "nonlinear_validation_balanced_accuracy": {
+      "max": 0.46588776414628413,
+      "mean": 0.412155334804016,
+      "min": 0.36959833735660874,
+      "std": 0.037351877838587365
+    },
+    "nonlinear_validation_macro_f1": {
+      "max": 0.4556978837809559,
+      "mean": 0.3886535053026292,
+      "min": 0.34552618030291404,
+      "std": 0.04116769086643161
+    },
+    "validation_ami": {
+      "max": 0.13552315848907626,
+      "mean": 0.11991762435657512,
+      "min": 0.0991088363187505,
+      "std": 0.011762667262408799
+    },
+    "validation_ari": {
+      "max": 0.06350577698740778,
+      "mean": 0.058650755811462243,
+      "min": 0.050422717754389,
+      "std": 0.004972085177324842
+    },
+    "validation_h_baseline_given_ssl_norm": {
+      "max": 0.7707176044340902,
+      "mean": 0.7194463721226732,
+      "min": 0.6802818495929881,
+      "std": 0.02912552898633395
+    },
+    "validation_h_ssl_given_baseline_norm": {
+      "max": 0.9366761801612976,
+      "mean": 0.9236408817192135,
+      "min": 0.9139156022816064,
+      "std": 0.007359208248834924
+    },
+    "validation_nmi": {
+      "max": 0.13564599110856823,
+      "mean": 0.1200438351870651,
+      "min": 0.09923943063837591,
+      "std": 0.011760183680937685
+    }
+  },
+  "analysis": "baseline_vs_transfer_ssl",
+  "baseline_cluster_k": 2,
+  "chance_balanced_accuracy": 0.125,
+  "dataset_id": "DS-006",
+  "feature_count": 18,
+  "interpretation_guardrails": {
+    "high_nonlinear_probe_accuracy_supports_reorganization_interpretation": true,
+    "low_cluster_agreement_does_not_imply_features_lack_information": true,
+    "nonlinear_probe_tests_recoverability_from_all_18_features": true,
+    "probe_hyperparameter_selection_performed": false,
+    "test_partition_used": false
+  },
+  "per_seed": {
+    "11": {
+      "analysis": "baseline_vs_transfer_ssl",
+      "baseline_cluster_k": 2,
+      "baseline_train_labels_source": "data/processed/DS-006/baseline_clustering/train_labels.npy",
+      "baseline_validation_labels_source": "data/processed/DS-006/baseline_clustering/validation_labels.npy",
+      "bout_id_alignment_verified": true,
+      "cluster_refitting_performed": false,
+      "dataset_id": "DS-006",
+      "feature_count": 18,
+      "feature_manifest": "data/processed/DS-006/baseline/feature_manifest.json",
+      "feature_manifest_sha256": "5dcaf8447e969114cb7f1fa40ae24ed66194ec388fb02802583e2b716b14f315",
+      "linear_18_feature_probe": {
+        "chance_balanced_accuracy": 0.125,
+        "feature_count": 18,
+        "fit_partition": "train",
+        "model": "median_imputer + StandardScaler + multinomial_logistic_regression",
+        "train": {
+          "accuracy": 0.3986282811176969,
+          "balanced_accuracy": 0.42072282944970324,
+          "macro_f1": 0.38487645194836373
+        },
+        "validation": {
+          "accuracy": 0.4023360764534112,
+          "balanced_accuracy": 0.4142175811147111,
+          "macro_f1": 0.3741096987562994
+        }
+      },
+      "nonlinear_18_feature_probe": {
+        "chance_balanced_accuracy": 0.125,
+        "feature_count": 18,
+        "fit_partition": "train",
+        "model": "median_imputer + HistGradientBoostingClassifier",
+        "parameters": {
+          "l2_regularization": 0.0,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 31,
+          "random_state": 20260822
+        },
+        "train": {
+          "accuracy": 0.47975444538526674,
+          "balanced_accuracy": 0.5109358215060527,
+          "macro_f1": 0.48566740066165853
+        },
+        "validation": {
+          "accuracy": 0.4319617732943987,
+          "balanced_accuracy": 0.4469305897718705,
+          "macro_f1": 0.4165288625157979
+        }
+      },
+      "probe_hyperparameter_selection_performed": false,
+      "ssl_cluster_k": 8,
+      "ssl_encoder_seed": 11,
+      "test_partition_used": false,
+      "train_cluster_comparison": {
+        "adjusted_mutual_information": 0.09431426181647318,
+        "adjusted_rand_index": 0.03409682088468724,
+        "conditional_entropy_baseline_given_ssl": 0.3297516544019528,
+        "conditional_entropy_ssl_given_baseline": 1.8763564169450861,
+        "entropy_baseline": 0.4446486512258364,
+        "entropy_ssl": 1.9912534137689697,
+        "normalized_conditional_entropy_baseline_given_ssl": 0.7416004827471576,
+        "normalized_conditional_entropy_ssl_given_baseline": 0.9422991588969026,
+        "normalized_mutual_information": 0.09433630232923865
+      },
+      "validation_cluster_comparison": {
+        "adjusted_mutual_information": 0.12256759004384335,
+        "adjusted_rand_index": 0.05541306095314965,
+        "conditional_entropy_baseline_given_ssl": 0.39559075056724907,
+        "conditional_entropy_ssl_given_baseline": 1.8849734489616379,
+        "entropy_baseline": 0.5550614266131892,
+        "entropy_ssl": 2.044444125007578,
+        "normalized_conditional_entropy_baseline_given_ssl": 0.7126972468272922,
+        "normalized_conditional_entropy_ssl_given_baseline": 0.9219980267030535,
+        "normalized_mutual_information": 0.12269308364932112
+      }
+    },
+    "23": {
+      "analysis": "baseline_vs_transfer_ssl",
+      "baseline_cluster_k": 2,
+      "baseline_train_labels_source": "data/processed/DS-006/baseline_clustering/train_labels.npy",
+      "baseline_validation_labels_source": "data/processed/DS-006/baseline_clustering/validation_labels.npy",
+      "bout_id_alignment_verified": true,
+      "cluster_refitting_performed": false,
+      "dataset_id": "DS-006",
+      "feature_count": 18,
+      "feature_manifest": "data/processed/DS-006/baseline/feature_manifest.json",
+      "feature_manifest_sha256": "5dcaf8447e969114cb7f1fa40ae24ed66194ec388fb02802583e2b716b14f315",
+      "linear_18_feature_probe": {
+        "chance_balanced_accuracy": 0.125,
+        "feature_count": 18,
+        "fit_partition": "train",
+        "model": "median_imputer + StandardScaler + multinomial_logistic_regression",
+        "train": {
+          "accuracy": 0.3862912785774767,
+          "balanced_accuracy": 0.36770897685461745,
+          "macro_f1": 0.3448290151850526
+        },
+        "validation": {
+          "accuracy": 0.37839129280594636,
+          "balanced_accuracy": 0.3506497129873307,
+          "macro_f1": 0.3258705221429071
+        }
+      },
+      "nonlinear_18_feature_probe": {
+        "chance_balanced_accuracy": 0.125,
+        "feature_count": 18,
+        "fit_partition": "train",
+        "model": "median_imputer + HistGradientBoostingClassifier",
+        "parameters": {
+          "l2_regularization": 0.0,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 31,
+          "random_state": 20260822
+        },
+        "train": {
+          "accuracy": 0.5193649449618967,
+          "balanced_accuracy": 0.5228457759937056,
+          "macro_f1": 0.5057918131941276
+        },
+        "validation": {
+          "accuracy": 0.4077515264135917,
+          "balanced_accuracy": 0.3916790637932129,
+          "macro_f1": 0.36335586774716117
+        }
+      },
+      "probe_hyperparameter_selection_performed": false,
+      "ssl_cluster_k": 8,
+      "ssl_encoder_seed": 23,
+      "test_partition_used": false,
+      "train_cluster_comparison": {
+        "adjusted_mutual_information": 0.08414300408078193,
+        "adjusted_rand_index": 0.04880156834410078,
+        "conditional_entropy_baseline_given_ssl": 0.342298224354885,
+        "conditional_entropy_ssl_given_baseline": 1.8851290142359847,
+        "entropy_baseline": 0.4446486512258364,
+        "entropy_ssl": 1.9874794411069359,
+        "normalized_conditional_entropy_baseline_given_ssl": 0.7698173004938055,
+        "normalized_conditional_entropy_ssl_given_baseline": 0.9485023971800449,
+        "normalized_mutual_information": 0.084165325990526
+      },
+      "validation_cluster_comparison": {
+        "adjusted_mutual_information": 0.0991088363187505,
+        "adjusted_rand_index": 0.06191808985316644,
+        "conditional_entropy_baseline_given_ssl": 0.4277956130330858,
+        "conditional_entropy_ssl_given_baseline": 1.882496293384913,
+        "entropy_baseline": 0.5550614266131892,
+        "entropy_ssl": 2.0097621069650167,
+        "normalized_conditional_entropy_baseline_given_ssl": 0.7707176044340902,
+        "normalized_conditional_entropy_ssl_given_baseline": 0.9366761801612976,
+        "normalized_mutual_information": 0.09923943063837591
+      }
+    },
+    "37": {
+      "analysis": "baseline_vs_transfer_ssl",
+      "baseline_cluster_k": 2,
+      "baseline_train_labels_source": "data/processed/DS-006/baseline_clustering/train_labels.npy",
+      "baseline_validation_labels_source": "data/processed/DS-006/baseline_clustering/validation_labels.npy",
+      "bout_id_alignment_verified": true,
+      "cluster_refitting_performed": false,
+      "dataset_id": "DS-006",
+      "feature_count": 18,
+      "feature_manifest": "data/processed/DS-006/baseline/feature_manifest.json",
+      "feature_manifest_sha256": "5dcaf8447e969114cb7f1fa40ae24ed66194ec388fb02802583e2b716b14f315",
+      "linear_18_feature_probe": {
+        "chance_balanced_accuracy": 0.125,
+        "feature_count": 18,
+        "fit_partition": "train",
+        "model": "median_imputer + StandardScaler + multinomial_logistic_regression",
+        "train": {
+          "accuracy": 0.3747332768839966,
+          "balanced_accuracy": 0.34667475542337084,
+          "macro_f1": 0.3125330114373167
+        },
+        "validation": {
+          "accuracy": 0.3709583222723653,
+          "balanced_accuracy": 0.32967633768446636,
+          "macro_f1": 0.2948983759624568
+        }
+      },
+      "nonlinear_18_feature_probe": {
+        "chance_balanced_accuracy": 0.125,
+        "feature_count": 18,
+        "fit_partition": "train",
+        "model": "median_imputer + HistGradientBoostingClassifier",
+        "parameters": {
+          "l2_regularization": 0.0,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 31,
+          "random_state": 20260822
+        },
+        "train": {
+          "accuracy": 0.49156646909398816,
+          "balanced_accuracy": 0.47448797061342995,
+          "macro_f1": 0.46112010957949456
+        },
+        "validation": {
+          "accuracy": 0.4027077249800903,
+          "balanced_accuracy": 0.36959833735660874,
+          "macro_f1": 0.34552618030291404
+        }
+      },
+      "probe_hyperparameter_selection_performed": false,
+      "ssl_cluster_k": 8,
+      "ssl_encoder_seed": 37,
+      "test_partition_used": false,
+      "train_cluster_comparison": {
+        "adjusted_mutual_information": 0.10921874469250273,
+        "adjusted_rand_index": 0.04313816473153783,
+        "conditional_entropy_baseline_given_ssl": 0.30869025598741084,
+        "conditional_entropy_ssl_given_baseline": 1.9085626328892655,
+        "entropy_baseline": 0.4446486512258364,
+        "entropy_ssl": 2.044521028127691,
+        "normalized_conditional_entropy_baseline_given_ssl": 0.6942340995219336,
+        "normalized_conditional_entropy_ssl_given_baseline": 0.9335011020341856,
+        "normalized_mutual_information": 0.10923995769845338
+      },
+      "validation_cluster_comparison": {
+        "adjusted_mutual_information": 0.13552315848907626,
+        "adjusted_rand_index": 0.06350577698740778,
+        "conditional_entropy_baseline_given_ssl": 0.377598213934143,
+        "conditional_entropy_ssl_given_baseline": 1.88403942174233,
+        "entropy_baseline": 0.5550614266131892,
+        "entropy_ssl": 2.061502634421376,
+        "normalized_conditional_entropy_baseline_given_ssl": 0.6802818495929881,
+        "normalized_conditional_entropy_ssl_given_baseline": 0.9139156022816064,
+        "normalized_mutual_information": 0.13564599110856823
+      }
+    },
+    "51": {
+      "analysis": "baseline_vs_transfer_ssl",
+      "baseline_cluster_k": 2,
+      "baseline_train_labels_source": "data/processed/DS-006/baseline_clustering/train_labels.npy",
+      "baseline_validation_labels_source": "data/processed/DS-006/baseline_clustering/validation_labels.npy",
+      "bout_id_alignment_verified": true,
+      "cluster_refitting_performed": false,
+      "dataset_id": "DS-006",
+      "feature_count": 18,
+      "feature_manifest": "data/processed/DS-006/baseline/feature_manifest.json",
+      "feature_manifest_sha256": "5dcaf8447e969114cb7f1fa40ae24ed66194ec388fb02802583e2b716b14f315",
+      "linear_18_feature_probe": {
+        "chance_balanced_accuracy": 0.125,
+        "feature_count": 18,
+        "fit_partition": "train",
+        "model": "median_imputer + StandardScaler + multinomial_logistic_regression",
+        "train": {
+          "accuracy": 0.43867908552074514,
+          "balanced_accuracy": 0.42758678938503514,
+          "macro_f1": 0.40026966150445725
+        },
+        "validation": {
+          "accuracy": 0.42867002920095565,
+          "balanced_accuracy": 0.4247967375064089,
+          "macro_f1": 0.392723082011153
+        }
+      },
+      "nonlinear_18_feature_probe": {
+        "chance_balanced_accuracy": 0.125,
+        "feature_count": 18,
+        "fit_partition": "train",
+        "model": "median_imputer + HistGradientBoostingClassifier",
+        "parameters": {
+          "l2_regularization": 0.0,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 31,
+          "random_state": 20260822
+        },
+        "train": {
+          "accuracy": 0.5523962743437765,
+          "balanced_accuracy": 0.5611613046996398,
+          "macro_f1": 0.5550912955971788
+        },
+        "validation": {
+          "accuracy": 0.4623838598354128,
+          "balanced_accuracy": 0.46588776414628413,
+          "macro_f1": 0.4556978837809559
+        }
+      },
+      "probe_hyperparameter_selection_performed": false,
+      "ssl_cluster_k": 8,
+      "ssl_encoder_seed": 51,
+      "test_partition_used": false,
+      "train_cluster_comparison": {
+        "adjusted_mutual_information": 0.08974011726054519,
+        "adjusted_rand_index": 0.029793961168511796,
+        "conditional_entropy_baseline_given_ssl": 0.33592370661080345,
+        "conditional_entropy_ssl_given_baseline": 1.8691319296182856,
+        "entropy_baseline": 0.4446486512258364,
+        "entropy_ssl": 1.9778568742333182,
+        "normalized_conditional_entropy_baseline_given_ssl": 0.7554812224993983,
+        "normalized_conditional_entropy_ssl_given_baseline": 0.9450289118330779,
+        "normalized_mutual_information": 0.08976239143514471
+      },
+      "validation_cluster_comparison": {
+        "adjusted_mutual_information": 0.11961607456734129,
+        "adjusted_rand_index": 0.050422717754389,
+        "conditional_entropy_baseline_given_ssl": 0.39955997412015537,
+        "conditional_entropy_ssl_given_baseline": 1.886709993962163,
+        "entropy_baseline": 0.5550614266131892,
+        "entropy_ssl": 2.0422114464551964,
+        "normalized_conditional_entropy_baseline_given_ssl": 0.71984820951826,
+        "normalized_conditional_entropy_ssl_given_baseline": 0.9238563407511265,
+        "normalized_mutual_information": 0.11974209880329344
+      }
+    },
+    "79": {
+      "analysis": "baseline_vs_transfer_ssl",
+      "baseline_cluster_k": 2,
+      "baseline_train_labels_source": "data/processed/DS-006/baseline_clustering/train_labels.npy",
+      "baseline_validation_labels_source": "data/processed/DS-006/baseline_clustering/validation_labels.npy",
+      "bout_id_alignment_verified": true,
+      "cluster_refitting_performed": false,
+      "dataset_id": "DS-006",
+      "feature_count": 18,
+      "feature_manifest": "data/processed/DS-006/baseline/feature_manifest.json",
+      "feature_manifest_sha256": "5dcaf8447e969114cb7f1fa40ae24ed66194ec388fb02802583e2b716b14f315",
+      "linear_18_feature_probe": {
+        "chance_balanced_accuracy": 0.125,
+        "feature_count": 18,
+        "fit_partition": "train",
+        "model": "median_imputer + StandardScaler + multinomial_logistic_regression",
+        "train": {
+          "accuracy": 0.3905165114309907,
+          "balanced_accuracy": 0.37004486260770064,
+          "macro_f1": 0.345340291263302
+        },
+        "validation": {
+          "accuracy": 0.3976108308999204,
+          "balanced_accuracy": 0.3679384796870686,
+          "macro_f1": 0.33655702523104347
+        }
+      },
+      "nonlinear_18_feature_probe": {
+        "chance_balanced_accuracy": 0.125,
+        "feature_count": 18,
+        "fit_partition": "train",
+        "model": "median_imputer + HistGradientBoostingClassifier",
+        "parameters": {
+          "l2_regularization": 0.0,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 31,
+          "random_state": 20260822
+        },
+        "train": {
+          "accuracy": 0.4754445385266723,
+          "balanced_accuracy": 0.4653319316999706,
+          "macro_f1": 0.4531309832523257
+        },
+        "validation": {
+          "accuracy": 0.41290151314043005,
+          "balanced_accuracy": 0.38668091895210377,
+          "macro_f1": 0.36215873216631744
+        }
+      },
+      "probe_hyperparameter_selection_performed": false,
+      "ssl_cluster_k": 8,
+      "ssl_encoder_seed": 79,
+      "test_partition_used": false,
+      "train_cluster_comparison": {
+        "adjusted_mutual_information": 0.09659329872310417,
+        "adjusted_rand_index": 0.04269321207392851,
+        "conditional_entropy_baseline_given_ssl": 0.3275770266825288,
+        "conditional_entropy_ssl_given_baseline": 1.8617366292618036,
+        "entropy_baseline": 0.4446486512258364,
+        "entropy_ssl": 1.9788082538051115,
+        "normalized_conditional_entropy_baseline_given_ssl": 0.736709817469238,
+        "normalized_conditional_entropy_ssl_given_baseline": 0.9408373073448691,
+        "normalized_mutual_information": 0.09661539621379178
+      },
+      "validation_cluster_comparison": {
+        "adjusted_mutual_information": 0.12277246236386408,
+        "adjusted_rand_index": 0.06199413350919831,
+        "conditional_entropy_baseline_given_ssl": 0.3961400967558386,
+        "conditional_entropy_ssl_given_baseline": 1.8722365561352132,
+        "entropy_baseline": 0.5550614266131892,
+        "entropy_ssl": 2.0311578859925636,
+        "normalized_conditional_entropy_baseline_given_ssl": 0.713686950240735,
+        "normalized_conditional_entropy_ssl_given_baseline": 0.9217582586989832,
+        "normalized_mutual_information": 0.12289857173576674
+      }
+    }
+  },
+  "seeds": [
+    11,
+    23,
+    37,
+    51,
+    79
+  ],
+  "ssl_cluster_k": 8,
+  "test_partition_used": false
+}

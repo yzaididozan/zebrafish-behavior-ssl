@@ -1,0 +1,605 @@
+{
+  "analysis": "ssl_subcluster_characterization",
+  "candidate_classes": [
+    "BS",
+    "Long_CS",
+    "HAT",
+    "SLC",
+    "Slow2",
+    "LLC"
+  ],
+  "classes": {
+    "BS": {
+      "top_validation_categorical_variables": [
+        {
+          "validation_mean_cramers_v": 0.27425479413282516,
+          "validation_mean_nmi": 0.0894415219035251,
+          "variable": "stimulus_code"
+        },
+        {
+          "validation_mean_cramers_v": 0.2209830382485834,
+          "validation_mean_nmi": 0.07338680696970602,
+          "variable": "context_name"
+        },
+        {
+          "validation_mean_cramers_v": 0.2209830382485834,
+          "validation_mean_nmi": 0.07338680696970601,
+          "variable": "context_id"
+        }
+      ],
+      "top_validation_continuous_variables": [
+        {
+          "train_mean_eta_squared": 0.34269294930957717,
+          "validation_mean_eta_squared": 0.3502010112581155,
+          "validation_mean_standardized_mean_range": 1.4218304483544668,
+          "variable": "speed_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.32471821424630815,
+          "validation_mean_eta_squared": 0.3292688614677754,
+          "validation_mean_standardized_mean_range": 1.363782834181825,
+          "variable": "speed_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.29032175200463517,
+          "validation_mean_eta_squared": 0.3036246096629893,
+          "validation_mean_standardized_mean_range": 1.297649880404606,
+          "variable": "speed_p95"
+        },
+        {
+          "train_mean_eta_squared": 0.28783523503992525,
+          "validation_mean_eta_squared": 0.2955514300060558,
+          "validation_mean_standardized_mean_range": 1.2805792884177782,
+          "variable": "speed_std"
+        },
+        {
+          "train_mean_eta_squared": 0.23115302464198556,
+          "validation_mean_eta_squared": 0.2817710391011484,
+          "validation_mean_standardized_mean_range": 1.3847192668071164,
+          "variable": "speed_median"
+        },
+        {
+          "train_mean_eta_squared": 0.259128726168735,
+          "validation_mean_eta_squared": 0.27609049406201114,
+          "validation_mean_standardized_mean_range": 1.2184697490773393,
+          "variable": "speed_max"
+        },
+        {
+          "train_mean_eta_squared": 0.19982658124287675,
+          "validation_mean_eta_squared": 0.24643046417973072,
+          "validation_mean_standardized_mean_range": 1.1115674541321792,
+          "variable": "accel_abs_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.21641648245761164,
+          "validation_mean_eta_squared": 0.243830573428336,
+          "validation_mean_standardized_mean_range": 1.1241948113038005,
+          "variable": "accel_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.2153638281057893,
+          "validation_mean_eta_squared": 0.23681587159697312,
+          "validation_mean_standardized_mean_range": 1.1108585912850293,
+          "variable": "accel_abs_std"
+        },
+        {
+          "train_mean_eta_squared": 0.20474175928150334,
+          "validation_mean_eta_squared": 0.2275944438505973,
+          "validation_mean_standardized_mean_range": 1.987696695377163,
+          "variable": "bout_duration_s"
+        }
+      ],
+      "train_count": 3386,
+      "validation_count": 679
+    },
+    "HAT": {
+      "top_validation_categorical_variables": [
+        {
+          "validation_mean_cramers_v": 0.13445684982397194,
+          "validation_mean_nmi": 0.026879882552601014,
+          "variable": "context_id"
+        },
+        {
+          "validation_mean_cramers_v": 0.13445684982397194,
+          "validation_mean_nmi": 0.026879882552601014,
+          "variable": "context_name"
+        },
+        {
+          "validation_mean_cramers_v": 0.08870393496109719,
+          "validation_mean_nmi": 0.014084139602430828,
+          "variable": "stimulus_code"
+        }
+      ],
+      "top_validation_continuous_variables": [
+        {
+          "train_mean_eta_squared": 0.5552337646700188,
+          "validation_mean_eta_squared": 0.5716483511651888,
+          "validation_mean_standardized_mean_range": 2.3342900423708706,
+          "variable": "speed_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.5311911631188675,
+          "validation_mean_eta_squared": 0.5542904590407176,
+          "validation_mean_standardized_mean_range": 2.3888886707320487,
+          "variable": "speed_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.5198433981941831,
+          "validation_mean_eta_squared": 0.5324747885400262,
+          "validation_mean_standardized_mean_range": 2.179564403111129,
+          "variable": "speed_std"
+        },
+        {
+          "train_mean_eta_squared": 0.5043906204587469,
+          "validation_mean_eta_squared": 0.5143735258567328,
+          "validation_mean_standardized_mean_range": 2.1439399071254983,
+          "variable": "speed_p95"
+        },
+        {
+          "train_mean_eta_squared": 0.47613429487781467,
+          "validation_mean_eta_squared": 0.5021361662606358,
+          "validation_mean_standardized_mean_range": 1.972648075776572,
+          "variable": "speed_max"
+        },
+        {
+          "train_mean_eta_squared": 0.3797046325946575,
+          "validation_mean_eta_squared": 0.4188716104605315,
+          "validation_mean_standardized_mean_range": 1.9695992648134841,
+          "variable": "speed_median"
+        },
+        {
+          "train_mean_eta_squared": 0.38541228931465893,
+          "validation_mean_eta_squared": 0.388881704389371,
+          "validation_mean_standardized_mean_range": 1.8132162965852963,
+          "variable": "accel_abs_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.3419472068178194,
+          "validation_mean_eta_squared": 0.3477845922498798,
+          "validation_mean_standardized_mean_range": 1.6998636201743191,
+          "variable": "turn_abs_total_rad"
+        },
+        {
+          "train_mean_eta_squared": 0.3419472070281799,
+          "validation_mean_eta_squared": 0.34778459109342263,
+          "validation_mean_standardized_mean_range": 1.6998636181137718,
+          "variable": "turn_abs_mean_rad"
+        },
+        {
+          "train_mean_eta_squared": 0.31363430030197226,
+          "validation_mean_eta_squared": 0.3448385100941189,
+          "validation_mean_standardized_mean_range": 1.6322825508597725,
+          "variable": "accel_rms"
+        }
+      ],
+      "train_count": 112739,
+      "validation_count": 22343
+    },
+    "LLC": {
+      "top_validation_categorical_variables": [
+        {
+          "validation_mean_cramers_v": 0.1807683764804564,
+          "validation_mean_nmi": 0.03398902756956154,
+          "variable": "context_id"
+        },
+        {
+          "validation_mean_cramers_v": 0.1807683764804564,
+          "validation_mean_nmi": 0.03398902756956154,
+          "variable": "context_name"
+        },
+        {
+          "validation_mean_cramers_v": 0.08089234314647271,
+          "validation_mean_nmi": 0.010506436783518628,
+          "variable": "stimulus_code"
+        }
+      ],
+      "top_validation_continuous_variables": [
+        {
+          "train_mean_eta_squared": 0.2610105967932531,
+          "validation_mean_eta_squared": 0.20914629467877371,
+          "validation_mean_standardized_mean_range": 5.740531187294005,
+          "variable": "speed_max"
+        },
+        {
+          "train_mean_eta_squared": 0.26647568957416545,
+          "validation_mean_eta_squared": 0.20833983899209013,
+          "validation_mean_standardized_mean_range": 6.079330301180368,
+          "variable": "speed_p95"
+        },
+        {
+          "train_mean_eta_squared": 0.24876522585613384,
+          "validation_mean_eta_squared": 0.19775381035556838,
+          "validation_mean_standardized_mean_range": 5.992711411028083,
+          "variable": "speed_std"
+        },
+        {
+          "train_mean_eta_squared": 0.23326577994196213,
+          "validation_mean_eta_squared": 0.18365738056503156,
+          "validation_mean_standardized_mean_range": 5.7809279285327815,
+          "variable": "speed_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.18842607603695638,
+          "validation_mean_eta_squared": 0.17166180596494507,
+          "validation_mean_standardized_mean_range": 5.140852406888834,
+          "variable": "accel_abs_std"
+        },
+        {
+          "train_mean_eta_squared": 0.19162632892046522,
+          "validation_mean_eta_squared": 0.17158226319075304,
+          "validation_mean_standardized_mean_range": 5.212675804474701,
+          "variable": "accel_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.16032335819795768,
+          "validation_mean_eta_squared": 0.16444980706228507,
+          "validation_mean_standardized_mean_range": 1.2010116147488055,
+          "variable": "turn_net_rad"
+        },
+        {
+          "train_mean_eta_squared": 0.19587380259072326,
+          "validation_mean_eta_squared": 0.15692571971715405,
+          "validation_mean_standardized_mean_range": 5.256385503193005,
+          "variable": "speed_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.1717226860042696,
+          "validation_mean_eta_squared": 0.15083563218018806,
+          "validation_mean_standardized_mean_range": 4.849162608993948,
+          "variable": "accel_abs_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.1400542289862015,
+          "validation_mean_eta_squared": 0.14061256612534492,
+          "validation_mean_standardized_mean_range": 2.24677948449668,
+          "variable": "turn_abs_mean_rad"
+        }
+      ],
+      "train_count": 207166,
+      "validation_count": 42321
+    },
+    "Long_CS": {
+      "top_validation_categorical_variables": [
+        {
+          "validation_mean_cramers_v": 0.218753304986246,
+          "validation_mean_nmi": 0.08347223315088051,
+          "variable": "stimulus_code"
+        },
+        {
+          "validation_mean_cramers_v": 0.13602761273016378,
+          "validation_mean_nmi": 0.03266593830730178,
+          "variable": "context_id"
+        },
+        {
+          "validation_mean_cramers_v": 0.13602761273016378,
+          "validation_mean_nmi": 0.03266593830730178,
+          "variable": "context_name"
+        }
+      ],
+      "top_validation_continuous_variables": [
+        {
+          "train_mean_eta_squared": 0.38749191356335405,
+          "validation_mean_eta_squared": 0.5385654482990845,
+          "validation_mean_standardized_mean_range": 7.9688949702408705,
+          "variable": "accel_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.36121798233013297,
+          "validation_mean_eta_squared": 0.5328683806907815,
+          "validation_mean_standardized_mean_range": 7.934481938331826,
+          "variable": "accel_abs_std"
+        },
+        {
+          "train_mean_eta_squared": 0.5600924956733921,
+          "validation_mean_eta_squared": 0.5257229065897244,
+          "validation_mean_standardized_mean_range": 1.799219675383886,
+          "variable": "bout_duration_s"
+        },
+        {
+          "train_mean_eta_squared": 0.30562103457892875,
+          "validation_mean_eta_squared": 0.48594968884685946,
+          "validation_mean_standardized_mean_range": 7.6053261634119185,
+          "variable": "accel_abs_max"
+        },
+        {
+          "train_mean_eta_squared": 0.450694555859668,
+          "validation_mean_eta_squared": 0.442789907019121,
+          "validation_mean_standardized_mean_range": 7.085386658351693,
+          "variable": "accel_abs_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.25460144434443716,
+          "validation_mean_eta_squared": 0.4142116627023035,
+          "validation_mean_standardized_mean_range": 6.963013621435079,
+          "variable": "speed_max"
+        },
+        {
+          "train_mean_eta_squared": 0.35153619382556833,
+          "validation_mean_eta_squared": 0.3438963143233031,
+          "validation_mean_standardized_mean_range": 1.703574421398049,
+          "variable": "speed_median"
+        },
+        {
+          "train_mean_eta_squared": 0.315578238745326,
+          "validation_mean_eta_squared": 0.3426062063713937,
+          "validation_mean_standardized_mean_range": 6.0899446598127,
+          "variable": "speed_std"
+        },
+        {
+          "train_mean_eta_squared": 0.3511868168607405,
+          "validation_mean_eta_squared": 0.33285363291836123,
+          "validation_mean_standardized_mean_range": 5.507037081841579,
+          "variable": "speed_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.3996928736206861,
+          "validation_mean_eta_squared": 0.2928181596827074,
+          "validation_mean_standardized_mean_range": 3.1144171723644685,
+          "variable": "speed_mean"
+        }
+      ],
+      "train_count": 5831,
+      "validation_count": 1133
+    },
+    "SLC": {
+      "top_validation_categorical_variables": [
+        {
+          "validation_mean_cramers_v": 0.09595496026932374,
+          "validation_mean_nmi": 0.018370015319636546,
+          "variable": "stimulus_code"
+        },
+        {
+          "validation_mean_cramers_v": 0.10030938662651294,
+          "validation_mean_nmi": 0.018055089260953578,
+          "variable": "context_id"
+        },
+        {
+          "validation_mean_cramers_v": 0.10030938662651294,
+          "validation_mean_nmi": 0.018055089260953578,
+          "variable": "context_name"
+        }
+      ],
+      "top_validation_continuous_variables": [
+        {
+          "train_mean_eta_squared": 0.2765651966014005,
+          "validation_mean_eta_squared": 0.2872951415980249,
+          "validation_mean_standardized_mean_range": 10.922537582067067,
+          "variable": "speed_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.2788099306026671,
+          "validation_mean_eta_squared": 0.27971133514210655,
+          "validation_mean_standardized_mean_range": 9.51422252581408,
+          "variable": "speed_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.2561809125607567,
+          "validation_mean_eta_squared": 0.27332240904773575,
+          "validation_mean_standardized_mean_range": 11.257416071569601,
+          "variable": "speed_std"
+        },
+        {
+          "train_mean_eta_squared": 0.25123842895631515,
+          "validation_mean_eta_squared": 0.24701792873802314,
+          "validation_mean_standardized_mean_range": 4.529921838203952,
+          "variable": "speed_median"
+        },
+        {
+          "train_mean_eta_squared": 0.22066031902002506,
+          "validation_mean_eta_squared": 0.24293356832879315,
+          "validation_mean_standardized_mean_range": 11.312873027680078,
+          "variable": "speed_max"
+        },
+        {
+          "train_mean_eta_squared": 0.21729658519640246,
+          "validation_mean_eta_squared": 0.22838955972357705,
+          "validation_mean_standardized_mean_range": 10.437388804707666,
+          "variable": "speed_p95"
+        },
+        {
+          "train_mean_eta_squared": 0.20791172979331224,
+          "validation_mean_eta_squared": 0.21082552547608233,
+          "validation_mean_standardized_mean_range": 2.551076111026685,
+          "variable": "bout_duration_s"
+        },
+        {
+          "train_mean_eta_squared": 0.274641399495209,
+          "validation_mean_eta_squared": 0.20225797552612987,
+          "validation_mean_standardized_mean_range": 9.810961986201011,
+          "variable": "accel_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.25809584358738114,
+          "validation_mean_eta_squared": 0.20153812528540777,
+          "validation_mean_standardized_mean_range": 8.39353092903722,
+          "variable": "accel_abs_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.2744608971310325,
+          "validation_mean_eta_squared": 0.19870983857573385,
+          "validation_mean_standardized_mean_range": 10.032736238376605,
+          "variable": "accel_abs_std"
+        }
+      ],
+      "train_count": 47712,
+      "validation_count": 9816
+    },
+    "Slow2": {
+      "top_validation_categorical_variables": [
+        {
+          "validation_mean_cramers_v": 0.17019509749356077,
+          "validation_mean_nmi": 0.03563679595492836,
+          "variable": "context_id"
+        },
+        {
+          "validation_mean_cramers_v": 0.17019509749356077,
+          "validation_mean_nmi": 0.03563679595492836,
+          "variable": "context_name"
+        },
+        {
+          "validation_mean_cramers_v": 0.08590547615895418,
+          "validation_mean_nmi": 0.013015391737531625,
+          "variable": "stimulus_code"
+        }
+      ],
+      "top_validation_continuous_variables": [
+        {
+          "train_mean_eta_squared": 0.3833229245663631,
+          "validation_mean_eta_squared": 0.3998508379798286,
+          "validation_mean_standardized_mean_range": 2.851942122055923,
+          "variable": "speed_std"
+        },
+        {
+          "train_mean_eta_squared": 0.37873480385751757,
+          "validation_mean_eta_squared": 0.3961752519983599,
+          "validation_mean_standardized_mean_range": 2.794038715954899,
+          "variable": "speed_p95"
+        },
+        {
+          "train_mean_eta_squared": 0.3662509397184389,
+          "validation_mean_eta_squared": 0.38034547151159825,
+          "validation_mean_standardized_mean_range": 3.200942046934551,
+          "variable": "speed_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.34654282847914736,
+          "validation_mean_eta_squared": 0.3607893047103016,
+          "validation_mean_standardized_mean_range": 2.316690510107186,
+          "variable": "speed_max"
+        },
+        {
+          "train_mean_eta_squared": 0.28652784515324703,
+          "validation_mean_eta_squared": 0.30195923226558297,
+          "validation_mean_standardized_mean_range": 3.2443977254490632,
+          "variable": "speed_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.2604163976206297,
+          "validation_mean_eta_squared": 0.28069963297381617,
+          "validation_mean_standardized_mean_range": 2.095224797158193,
+          "variable": "accel_rms"
+        },
+        {
+          "train_mean_eta_squared": 0.2408149315143442,
+          "validation_mean_eta_squared": 0.2791856628490885,
+          "validation_mean_standardized_mean_range": 2.465691871547364,
+          "variable": "accel_abs_mean"
+        },
+        {
+          "train_mean_eta_squared": 0.25395295671307877,
+          "validation_mean_eta_squared": 0.2674695423803537,
+          "validation_mean_standardized_mean_range": 2.012399547240176,
+          "variable": "accel_abs_std"
+        },
+        {
+          "train_mean_eta_squared": 0.18393911937390092,
+          "validation_mean_eta_squared": 0.19698352624826282,
+          "validation_mean_standardized_mean_range": 2.0203032742768756,
+          "variable": "bout_duration_s"
+        },
+        {
+          "train_mean_eta_squared": 0.18409846398000296,
+          "validation_mean_eta_squared": 0.1833013137635781,
+          "validation_mean_standardized_mean_range": 1.6563600662067421,
+          "variable": "accel_abs_max"
+        }
+      ],
+      "train_count": 211701,
+      "validation_count": 42853
+    }
+  },
+  "dataset_id": "DS-005",
+  "handcrafted_feature_names": [
+    "bout_duration_s",
+    "inter_bout_interval_s",
+    "speed_mean",
+    "speed_std",
+    "speed_median",
+    "speed_max",
+    "speed_p95",
+    "speed_rms",
+    "accel_abs_mean",
+    "accel_abs_std",
+    "accel_abs_max",
+    "accel_rms",
+    "turn_abs_total_rad",
+    "turn_net_rad",
+    "turn_abs_mean_rad",
+    "turn_abs_std_rad",
+    "turn_abs_max_rad",
+    "turn_rms_rad"
+  ],
+  "interpretation_guardrails": {
+    "association_not_causation": true,
+    "context_association_should_be_interpreted_with_experimental_design": true,
+    "post_hoc_characterization": true,
+    "reproducible_subclusters_not_automatically_new_behaviors": true,
+    "speed_dominance_should_be_treated_as_possible_intensity_structure": true,
+    "test_partition_used": false
+  },
+  "known_label_columns": {
+    "train": "bout_type",
+    "validation": "bout_type"
+  },
+  "reference_seed": 11,
+  "ssl_training_seeds": [
+    11,
+    23,
+    37,
+    51,
+    79
+  ],
+  "test_partition_used": false,
+  "train_derived_cluster_mappings_to_reference": {
+    "11": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7
+    },
+    "23": {
+      "0": 6,
+      "1": 2,
+      "2": 7,
+      "3": 1,
+      "4": 0,
+      "5": 5,
+      "6": 3,
+      "7": 4
+    },
+    "37": {
+      "0": 3,
+      "1": 1,
+      "2": 6,
+      "3": 7,
+      "4": 0,
+      "5": 5,
+      "6": 4,
+      "7": 2
+    },
+    "51": {
+      "0": 6,
+      "1": 2,
+      "2": 0,
+      "3": 5,
+      "4": 7,
+      "5": 3,
+      "6": 4,
+      "7": 1
+    },
+    "79": {
+      "0": 7,
+      "1": 4,
+      "2": 0,
+      "3": 5,
+      "4": 2,
+      "5": 6,
+      "6": 1,
+      "7": 3
+    }
+  }
+}

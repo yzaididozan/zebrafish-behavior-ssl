@@ -1,0 +1,513 @@
+{
+  "aggregate": {
+    "mean_pca_components": 14.2,
+    "mean_train_repeated_fit_stability_ari": 0.9114995304873776,
+    "mean_validation_agreement_to_seed11_using_train_mapping": 0.5290151314043006,
+    "mean_validation_min_cluster_fraction": 0.07506238385983541,
+    "mean_validation_silhouette": 0.16118374168872834,
+    "pca_components_by_seed": {
+      "11": 14,
+      "23": 13,
+      "37": 16,
+      "51": 14,
+      "79": 14
+    },
+    "train_repeated_fit_stability_ari_range": [
+      0.8263664208948432,
+      0.9921254330662039
+    ],
+    "validation_pairwise_aligned_agreement": {
+      "max": 0.6603132466153437,
+      "mean": 0.5373719139899124,
+      "min": 0.47406424210246884,
+      "std": 0.05256726085139633
+    },
+    "validation_pairwise_ari": {
+      "max": 0.5218774580683218,
+      "mean": 0.36130883733395347,
+      "min": 0.285617053256959,
+      "std": 0.06312937418508116
+    },
+    "validation_pairwise_nmi": {
+      "max": 0.6148464655200505,
+      "mean": 0.5015192524849036,
+      "min": 0.447891661719799,
+      "std": 0.04491152268533063
+    },
+    "validation_silhouette_range": [
+      0.14786851406097412,
+      0.17376087605953217
+    ]
+  },
+  "analysis": "frozen_transfer_clustering",
+  "dataset_id": "DS-006",
+  "frozen_configuration": {
+    "clustering_seed": 20260822,
+    "k": 8,
+    "kmeans_fit_on_ds006_train_only": true,
+    "kmeans_n_init": 10,
+    "method": "kmeans",
+    "pca_fit_on_ds006_train_only": true,
+    "pca_variance_target": 0.95,
+    "standard_scaler_fit_on_ds006_train_only": true
+  },
+  "interpretation_guardrails": {
+    "no_k_selection_on_ds006": true,
+    "no_method_selection_on_ds006": true,
+    "not_direct_transfer_of_ds005_kmeans_centroids": true,
+    "test_partition_used": false,
+    "this_is_transfer_representation_plus_frozen_clustering_recipe": true
+  },
+  "per_seed": {
+    "11": {
+      "clustering_seed": 20260822,
+      "dataset_id": "DS-006",
+      "k": 8,
+      "k_selection_performed": false,
+      "kmeans_fit_on_train_only": true,
+      "kmeans_n_init": 10,
+      "method": "kmeans",
+      "method_selection_performed": false,
+      "pca_components": 14,
+      "pca_fit_on_train_only": true,
+      "pca_variance_retained": 0.9500119090080261,
+      "pca_variance_target": 0.95,
+      "scaler_fit_on_train_only": true,
+      "source_encoder_dataset": "DS-005",
+      "ssl_encoder_seed": 11,
+      "test_partition_used": false,
+      "train_occupancy": {
+        "counts": [
+          14265,
+          15029,
+          16199,
+          23275,
+          2339,
+          14612,
+          16418,
+          15963
+        ],
+        "empty_clusters": 0,
+        "fractions": [
+          0.12078746824724809,
+          0.12725656223539372,
+          0.13716342082980526,
+          0.19707874682472482,
+          0.019805249788314987,
+          0.12372565622353937,
+          0.1390177815410669,
+          0.13516511430990685
+        ],
+        "max_fraction": 0.19707874682472482,
+        "min_fraction": 0.019805249788314987
+      },
+      "train_repeated_fit_stability": {
+        "max_pairwise_ari": 1.0,
+        "mean_pairwise_ari": 0.9890679123155305,
+        "min_pairwise_ari": 0.9755329060275885,
+        "repeat_seeds": [
+          20260822,
+          20261831,
+          20262840,
+          20263849,
+          20264858
+        ],
+        "repeats": 5,
+        "sample_rows": 50000,
+        "std_pairwise_ari": 0.010408836925149115
+      },
+      "train_rows": 118100,
+      "train_silhouette": 0.17337656021118164,
+      "validation_confidence": 0.2774374186992645,
+      "validation_occupancy": {
+        "counts": [
+          2168,
+          2333,
+          2451,
+          3635,
+          1225,
+          2090,
+          2530,
+          2403
+        ],
+        "empty_clusters": 0,
+        "fractions": [
+          0.11510485797717016,
+          0.12386514467746217,
+          0.13013007698433768,
+          0.19299177063976639,
+          0.06503849216883462,
+          0.11096363153703212,
+          0.13432439607114416,
+          0.12758162994425273
+        ],
+        "max_fraction": 0.19299177063976639,
+        "min_fraction": 0.06503849216883462
+      },
+      "validation_rows": 18835,
+      "validation_silhouette": 0.1647934466600418
+    },
+    "23": {
+      "clustering_seed": 20260822,
+      "dataset_id": "DS-006",
+      "k": 8,
+      "k_selection_performed": false,
+      "kmeans_fit_on_train_only": true,
+      "kmeans_n_init": 10,
+      "method": "kmeans",
+      "method_selection_performed": false,
+      "pca_components": 13,
+      "pca_fit_on_train_only": true,
+      "pca_variance_retained": 0.9607731103897095,
+      "pca_variance_target": 0.95,
+      "scaler_fit_on_train_only": true,
+      "source_encoder_dataset": "DS-005",
+      "ssl_encoder_seed": 23,
+      "test_partition_used": false,
+      "train_occupancy": {
+        "counts": [
+          10809,
+          25658,
+          19671,
+          10828,
+          22713,
+          11411,
+          10069,
+          6941
+        ],
+        "empty_clusters": 0,
+        "fractions": [
+          0.09152413209144793,
+          0.21725656223539375,
+          0.16656223539373413,
+          0.09168501270110076,
+          0.19232006773920407,
+          0.09662150719729043,
+          0.08525825571549535,
+          0.05877222692633362
+        ],
+        "max_fraction": 0.21725656223539375,
+        "min_fraction": 0.05877222692633362
+      },
+      "train_repeated_fit_stability": {
+        "max_pairwise_ari": 1.0,
+        "mean_pairwise_ari": 0.831029983070691,
+        "min_pairwise_ari": 0.5845725560144899,
+        "repeat_seeds": [
+          20260822,
+          20261831,
+          20262840,
+          20263849,
+          20264858
+        ],
+        "repeats": 5,
+        "sample_rows": 50000,
+        "std_pairwise_ari": 0.19992127718388805
+      },
+      "train_rows": 118100,
+      "train_silhouette": 0.1968313455581665,
+      "validation_confidence": 0.28721141815185547,
+      "validation_occupancy": {
+        "counts": [
+          2358,
+          3883,
+          3050,
+          1737,
+          3263,
+          1709,
+          1608,
+          1227
+        ],
+        "empty_clusters": 0,
+        "fractions": [
+          0.12519246084417307,
+          0.20615874701353862,
+          0.1619325723387311,
+          0.09222192726307406,
+          0.17324130607910804,
+          0.09073533315635784,
+          0.08537297584284577,
+          0.0651446774621715
+        ],
+        "max_fraction": 0.20615874701353862,
+        "min_fraction": 0.0651446774621715
+      },
+      "validation_rows": 18835,
+      "validation_silhouette": 0.17376087605953217
+    },
+    "37": {
+      "clustering_seed": 20260822,
+      "dataset_id": "DS-006",
+      "k": 8,
+      "k_selection_performed": false,
+      "kmeans_fit_on_train_only": true,
+      "kmeans_n_init": 10,
+      "method": "kmeans",
+      "method_selection_performed": false,
+      "pca_components": 16,
+      "pca_fit_on_train_only": true,
+      "pca_variance_retained": 0.9552115201950073,
+      "pca_variance_target": 0.95,
+      "scaler_fit_on_train_only": true,
+      "source_encoder_dataset": "DS-005",
+      "ssl_encoder_seed": 37,
+      "test_partition_used": false,
+      "train_occupancy": {
+        "counts": [
+          9780,
+          10727,
+          12363,
+          14532,
+          12112,
+          19719,
+          19255,
+          19612
+        ],
+        "empty_clusters": 0,
+        "fractions": [
+          0.08281117696867062,
+          0.09082980524978831,
+          0.10468247248094835,
+          0.12304826418289586,
+          0.10255715495342929,
+          0.16696867061812024,
+          0.1630397967823878,
+          0.16606265876375953
+        ],
+        "max_fraction": 0.16696867061812024,
+        "min_fraction": 0.08281117696867062
+      },
+      "train_repeated_fit_stability": {
+        "max_pairwise_ari": 0.9979925785896205,
+        "mean_pairwise_ari": 0.8263664208948432,
+        "min_pairwise_ari": 0.714822270958338,
+        "repeat_seeds": [
+          20260822,
+          20261831,
+          20262840,
+          20263849,
+          20264858
+        ],
+        "repeats": 5,
+        "sample_rows": 50000,
+        "std_pairwise_ari": 0.13542652611527092
+      },
+      "train_rows": 118100,
+      "train_silhouette": 0.1824115812778473,
+      "validation_confidence": 0.28853434324264526,
+      "validation_occupancy": {
+        "counts": [
+          1731,
+          2600,
+          1906,
+          2315,
+          1850,
+          2887,
+          2673,
+          2873
+        ],
+        "empty_clusters": 0,
+        "fractions": [
+          0.09190337138306344,
+          0.13804088133793468,
+          0.10119458455003982,
+          0.12290947703743031,
+          0.09822139633660738,
+          0.15327847093177596,
+          0.14191664454473055,
+          0.15253517387841783
+        ],
+        "max_fraction": 0.15327847093177596,
+        "min_fraction": 0.09190337138306344
+      },
+      "validation_rows": 18835,
+      "validation_silhouette": 0.15588916838169098
+    },
+    "51": {
+      "clustering_seed": 20260822,
+      "dataset_id": "DS-006",
+      "k": 8,
+      "k_selection_performed": false,
+      "kmeans_fit_on_train_only": true,
+      "kmeans_n_init": 10,
+      "method": "kmeans",
+      "method_selection_performed": false,
+      "pca_components": 14,
+      "pca_fit_on_train_only": true,
+      "pca_variance_retained": 0.9568129181861877,
+      "pca_variance_target": 0.95,
+      "scaler_fit_on_train_only": true,
+      "source_encoder_dataset": "DS-005",
+      "ssl_encoder_seed": 51,
+      "test_partition_used": false,
+      "train_occupancy": {
+        "counts": [
+          2849,
+          21103,
+          18806,
+          19984,
+          18356,
+          11655,
+          16481,
+          8866
+        ],
+        "empty_clusters": 0,
+        "fractions": [
+          0.02412362404741744,
+          0.17868755292125318,
+          0.15923793395427605,
+          0.16921253175275192,
+          0.15542760372565623,
+          0.09868755292125317,
+          0.13955122777307366,
+          0.07507197290431837
+        ],
+        "max_fraction": 0.17868755292125318,
+        "min_fraction": 0.02412362404741744
+      },
+      "train_repeated_fit_stability": {
+        "max_pairwise_ari": 0.9997255228582376,
+        "mean_pairwise_ari": 0.9189079030896196,
+        "min_pairwise_ari": 0.86556634554983,
+        "repeat_seeds": [
+          20260822,
+          20261831,
+          20262840,
+          20263849,
+          20264858
+        ],
+        "repeats": 5,
+        "sample_rows": 50000,
+        "std_pairwise_ari": 0.06170528800217185
+      },
+      "train_rows": 118100,
+      "train_silhouette": 0.1591416299343109,
+      "validation_confidence": 0.269886314868927,
+      "validation_occupancy": {
+        "counts": [
+          1384,
+          2933,
+          2912,
+          3060,
+          2671,
+          1780,
+          2506,
+          1589
+        ],
+        "empty_clusters": 0,
+        "fractions": [
+          0.07348022298911601,
+          0.15572073267852402,
+          0.15460578709848685,
+          0.16246349880541544,
+          0.14181045925139368,
+          0.09450491106981683,
+          0.13305017255110166,
+          0.08436421555614547
+        ],
+        "max_fraction": 0.16246349880541544,
+        "min_fraction": 0.07348022298911601
+      },
+      "validation_rows": 18835,
+      "validation_silhouette": 0.14786851406097412
+    },
+    "79": {
+      "clustering_seed": 20260822,
+      "dataset_id": "DS-006",
+      "k": 8,
+      "k_selection_performed": false,
+      "kmeans_fit_on_train_only": true,
+      "kmeans_n_init": 10,
+      "method": "kmeans",
+      "method_selection_performed": false,
+      "pca_components": 14,
+      "pca_fit_on_train_only": true,
+      "pca_variance_retained": 0.9516443610191345,
+      "pca_variance_target": 0.95,
+      "scaler_fit_on_train_only": true,
+      "source_encoder_dataset": "DS-005",
+      "ssl_encoder_seed": 79,
+      "test_partition_used": false,
+      "train_occupancy": {
+        "counts": [
+          12505,
+          4015,
+          9225,
+          14983,
+          27347,
+          17768,
+          13947,
+          18310
+        ],
+        "empty_clusters": 0,
+        "fractions": [
+          0.1058848433530906,
+          0.033996613039796786,
+          0.07811176968670618,
+          0.1268670618120237,
+          0.2315580016934801,
+          0.15044877222692635,
+          0.11809483488569009,
+          0.1550381033022862
+        ],
+        "max_fraction": 0.2315580016934801,
+        "min_fraction": 0.033996613039796786
+      },
+      "train_repeated_fit_stability": {
+        "max_pairwise_ari": 0.9964668163517424,
+        "mean_pairwise_ari": 0.9921254330662039,
+        "min_pairwise_ari": 0.984893578155369,
+        "repeat_seeds": [
+          20260822,
+          20261831,
+          20262840,
+          20263849,
+          20264858
+        ],
+        "repeats": 5,
+        "sample_rows": 50000,
+        "std_pairwise_ari": 0.003628903668329259
+      },
+      "train_rows": 118100,
+      "train_silhouette": 0.18603605031967163,
+      "validation_confidence": 0.2834128439426422,
+      "validation_occupancy": {
+        "counts": [
+          1966,
+          1535,
+          1502,
+          2385,
+          4045,
+          2565,
+          2169,
+          2668
+        ],
+        "empty_clusters": 0,
+        "fractions": [
+          0.104380143350146,
+          0.0814972126360499,
+          0.07974515529599151,
+          0.12662596230422088,
+          0.21475975577382533,
+          0.13618263870453942,
+          0.1151579506238386,
+          0.14165118131138837
+        ],
+        "max_fraction": 0.21475975577382533,
+        "min_fraction": 0.07974515529599151
+      },
+      "validation_rows": 18835,
+      "validation_silhouette": 0.1636067032814026
+    }
+  },
+  "scientific_mode": "frozen_method_replication",
+  "source_encoder_dataset": "DS-005",
+  "ssl_encoder_seeds": [
+    11,
+    23,
+    37,
+    51,
+    79
+  ],
+  "test_partition_used": false
+}

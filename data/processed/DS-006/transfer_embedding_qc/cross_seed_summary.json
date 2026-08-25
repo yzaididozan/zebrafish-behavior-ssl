@@ -1,0 +1,157 @@
+{
+  "analysis": "transfer_embedding_geometry_similarity",
+  "dataset_id": "DS-006",
+  "seeds": [
+    11,
+    23,
+    37,
+    51,
+    79
+  ],
+  "source_encoder_dataset": "DS-005",
+  "test_partition_loaded": false,
+  "train": {
+    "max_pairwise_rho": 0.8872275122715262,
+    "mean_pairwise_rho": 0.7108511777151748,
+    "median_pairwise_rho": 0.7115062980086624,
+    "metric": "Spearman correlation of sampled pairwise Euclidean distance profiles",
+    "min_pairwise_rho": 0.5237838435193862,
+    "pairs": [
+      {
+        "pvalue": 0.0,
+        "seed_a": 11,
+        "seed_b": 23,
+        "spearman_rho": 0.7033232035068346
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 11,
+        "seed_b": 37,
+        "spearman_rho": 0.7515471029670474
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 11,
+        "seed_b": 51,
+        "spearman_rho": 0.7237153716648598
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 11,
+        "seed_b": 79,
+        "spearman_rho": 0.7705966961486144
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 23,
+        "seed_b": 37,
+        "spearman_rho": 0.7184481263117928
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 23,
+        "seed_b": 51,
+        "spearman_rho": 0.6265011593959603
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 23,
+        "seed_b": 79,
+        "spearman_rho": 0.5237838435193862
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 37,
+        "seed_b": 51,
+        "spearman_rho": 0.8872275122715262
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 37,
+        "seed_b": 79,
+        "spearman_rho": 0.6988042916601951
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 51,
+        "seed_b": 79,
+        "spearman_rho": 0.7045644697055319
+      }
+    ],
+    "sample_rows": 2000,
+    "sampled_pairs": 20000,
+    "sampling_seed": 20260824
+  },
+  "validation": {
+    "max_pairwise_rho": 0.9011547626293992,
+    "mean_pairwise_rho": 0.7660819989410856,
+    "median_pairwise_rho": 0.7816540549293454,
+    "metric": "Spearman correlation of sampled pairwise Euclidean distance profiles",
+    "min_pairwise_rho": 0.6163456007968021,
+    "pairs": [
+      {
+        "pvalue": 0.0,
+        "seed_a": 11,
+        "seed_b": 23,
+        "spearman_rho": 0.7412442609530099
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 11,
+        "seed_b": 37,
+        "spearman_rho": 0.8005375577462347
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 11,
+        "seed_b": 51,
+        "spearman_rho": 0.7865033711025861
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 11,
+        "seed_b": 79,
+        "spearman_rho": 0.8297440387729631
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 23,
+        "seed_b": 37,
+        "spearman_rho": 0.7489684961469056
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 23,
+        "seed_b": 51,
+        "spearman_rho": 0.6699958579019918
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 23,
+        "seed_b": 79,
+        "spearman_rho": 0.6163456007968021
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 37,
+        "seed_b": 51,
+        "spearman_rho": 0.9011547626293992
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 37,
+        "seed_b": 79,
+        "spearman_rho": 0.7768047387561047
+      },
+      {
+        "pvalue": 0.0,
+        "seed_a": 51,
+        "seed_b": 79,
+        "spearman_rho": 0.7895213046048595
+      }
+    ],
+    "sample_rows": 2000,
+    "sampled_pairs": 20000,
+    "sampling_seed": 20260824
+  }
+}
