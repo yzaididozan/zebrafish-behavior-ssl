@@ -6,6 +6,9 @@ import sys
 import pytest
 
 
+pytestmark = pytest.mark.requires_ds005
+
+
 # Allow importing src/data/ds005.py without requiring package installation.
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SRC_DATA = REPO_ROOT / "src" / "data"

@@ -7,6 +7,9 @@ import numpy as np
 import pytest
 
 
+pytestmark = pytest.mark.requires_ds005
+
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
 SRC_DATA = REPO_ROOT / "src" / "data"

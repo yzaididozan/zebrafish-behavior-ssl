@@ -30,4 +30,6 @@ jobs:
         run: pip install -e ".[dev,viz]"
 
       - name: Run test suite
-        run: python -m pytest -q
+        # The raw DS-005 HDF5 archive is intentionally not stored in GitHub.
+        # Full data-integration tests remain available locally with plain pytest.
+        run: python -m pytest -q -m "not requires_ds005"

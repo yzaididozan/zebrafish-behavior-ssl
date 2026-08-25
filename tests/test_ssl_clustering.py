@@ -6,30 +6,30 @@ import numpy as np
 import pytest
 
 from src.discovery.ssl_clustering import (
-    composite_score,
-    deterministic_subsample,
+    deterministic_indices,
     fit_preprocessing,
+    selection_score,
 )
 
 
-def test_composite_score_matches_documented_weights() -> None:
-    score = composite_score(
-        val_silhouette=0.5,
-        stability=1.0,
+def test_selection_score_matches_documented_weights() -> None:
+    score = selection_score(
+        validation_silhouette=0.5,
+        stability_ari=1.0,
+        validation_min_cluster_fraction=0.05,
+        validation_empty_clusters=0,
     )
     assert score == pytest.approx(0.7)
 
 
-def test_deterministic_subsample_is_reproducible() -> None:
-    x = np.arange(1000, dtype=np.float32).reshape(100, 10)
-
-    a = deterministic_subsample(
-        x,
+def test_deterministic_indices_are_reproducible() -> None:
+    a = deterministic_indices(
+        100,
         max_rows=20,
         seed=11,
     )
-    b = deterministic_subsample(
-        x,
+    b = deterministic_indices(
+        100,
         max_rows=20,
         seed=11,
     )
@@ -46,7 +46,7 @@ def test_fit_preprocessing_uses_expected_shapes() -> None:
         train,
         validation,
         pca_variance=0.95,
-        seed=20260822,
+        random_state=20260822,
     )
 
     assert train_pca.shape[0] == 200

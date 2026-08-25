@@ -39,6 +39,9 @@ include = ["src*"]
 testpaths = ["tests"]
 addopts = "-ra"
 pythonpath = ["."]
+markers = [
+  "requires_ds005: requires the local, untracked DS-005 raw HDF5 dataset",
+]
 
 [tool.coverage.run]
 branch = true
