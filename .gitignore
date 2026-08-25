@@ -13,6 +13,8 @@ data/processed/DS-006/baseline_clustering/*_bout_id.npy
 results/ssl/checkpoints/
 results/ssl/logs/
 *.pt
+artifacts/*.tar.gz
+artifacts/*.tar.gz.sha256
 
 # macOS Finder metadata
 .DS_Store
