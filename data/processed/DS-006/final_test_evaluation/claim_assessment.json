@@ -1,0 +1,41 @@
+{
+  "allowed_statuses": [
+    "SUPPORTED",
+    "WEAKENED",
+    "CONTRADICTED",
+    "NOT_TESTABLE"
+  ],
+  "assessments": {
+    "01_broad_ssl_representation_transfer_successful": "SUPPORTED",
+    "02_frozen_k8_clustering_has_moderate_cross_seed_structure": "SUPPORTED",
+    "03_speed_dependence_reproduces": "SUPPORTED",
+    "04_mean_speed_only_collapse_is_rejected": "SUPPORTED",
+    "05_fish_well_identity_leakage_is_low": "SUPPORTED",
+    "06_recording_and_context_leakage_is_low": "SUPPORTED",
+    "07_coarse_baseline_clustering_differs_from_ssl": "SUPPORTED",
+    "08_handcrafted_feature_probes_are_only_moderately_predictive": "SUPPORTED",
+    "09_strong_ds005_nonlinear_recoverability_does_not_reproduce": "SUPPORTED",
+    "10_acceleration_speed_change_heterogeneity_reproduces": "WEAKENED",
+    "11_turning_magnitude_is_a_partial_analogue": "SUPPORTED",
+    "12_strong_duration_heterogeneity_does_not_reproduce": "WEAKENED",
+    "13_signed_net_turning_does_not_reproduce_strongly": "SUPPORTED",
+    "14_direct_long_cs_llc_replication": "NOT_TESTABLE"
+  },
+  "observed_summary": {
+    "mean_baseline_ssl_ari": 0.03822972919287916,
+    "mean_context_cramers_v": 0.14542479270695943,
+    "mean_cross_seed_ari": 0.35413370739518973,
+    "mean_duration_eta_squared": 0.22234324988849874,
+    "mean_identity_cramers_v": 0.18349446219525214,
+    "mean_linear_probe_balanced_accuracy": 0.3902744152894212,
+    "mean_nonlinear_probe_balanced_accuracy": 0.4279697608767867,
+    "mean_speed_change_eta_squared": 0.22326252293302312,
+    "mean_speed_change_train_test_spearman": 0.9857142857142858,
+    "mean_speed_eta_squared": 0.4294009062211387,
+    "mean_speed_only_balanced_accuracy": 0.2751096696024891,
+    "mean_turn_net_eta_squared": 0.011931842896470311,
+    "mean_turn_total_abs_eta_squared": 0.40642654344986856,
+    "mean_turn_total_abs_train_test_spearman": 0.9904761904761905
+  },
+  "rules_frozen_before_test": true
+}

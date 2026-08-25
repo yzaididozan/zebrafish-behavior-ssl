@@ -1,0 +1,262 @@
+{
+  "11": {
+    "contexts": {
+      "condition_code": {
+        "ami": 0.012946297523954809,
+        "cramers_v": 0.24892908085823964,
+        "maximum_concentration": 0.6181864493122772,
+        "mean_normalized_entropy": 0.701860389906697,
+        "nmi": 0.01314043167658044
+      },
+      "condition_label": {
+        "ami": 0.012946297523954807,
+        "cramers_v": 0.24892908085823964,
+        "maximum_concentration": 0.6181864493122772,
+        "mean_normalized_entropy": 0.701860389906697,
+        "nmi": 0.01314043167658044
+      },
+      "family": {
+        "ami": 0.014675257969023045,
+        "cramers_v": 0.13547157361596654,
+        "maximum_concentration": 0.4612159329140461,
+        "mean_normalized_entropy": 0.9365371998592799,
+        "nmi": 0.014914360406321214
+      },
+      "recording_id": {
+        "ami": 0.02010566721272097,
+        "cramers_v": 0.17728196835777954,
+        "maximum_concentration": 0.37746478873239436,
+        "mean_normalized_entropy": 0.8500675650554959,
+        "nmi": 0.020417160240075314
+      },
+      "well": {
+        "ami": 0.007494845398545189,
+        "cramers_v": 0.07188172798559618,
+        "maximum_concentration": 0.1740041928721174,
+        "mean_normalized_entropy": 0.9798500790314759,
+        "nmi": 0.008153217130695743
+      }
+    },
+    "fish_well_identity": {
+      "ami": 0.02994090228068991,
+      "cramers_v": 0.20398773372555237,
+      "maximum_concentration": 0.07547169811320754,
+      "mean_normalized_entropy": 0.9001105637859101,
+      "nmi": 0.03257044643186071
+    },
+    "mean_speed_eta_squared": 0.4786801538812906,
+    "speed_only": {
+      "accuracy": 0.29357060849598166,
+      "balanced_accuracy": 0.3015806198745193,
+      "macro_f1": 0.24875547642894308
+    }
+  },
+  "23": {
+    "contexts": {
+      "condition_code": {
+        "ami": 0.007528666720889273,
+        "cramers_v": 0.1268128945323396,
+        "maximum_concentration": 0.6371359223300971,
+        "mean_normalized_entropy": 0.6798257538419271,
+        "nmi": 0.007722763746748817
+      },
+      "condition_label": {
+        "ami": 0.007528666720889273,
+        "cramers_v": 0.1268128945323396,
+        "maximum_concentration": 0.6371359223300971,
+        "mean_normalized_entropy": 0.6798257538419271,
+        "nmi": 0.007722763746748817
+      },
+      "family": {
+        "ami": 0.005539277737155564,
+        "cramers_v": 0.07898739182645262,
+        "maximum_concentration": 0.3773660894079742,
+        "mean_normalized_entropy": 0.9503207467584543,
+        "nmi": 0.0057796861766952696
+      },
+      "recording_id": {
+        "ami": 0.010606449563192845,
+        "cramers_v": 0.10067746101887987,
+        "maximum_concentration": 0.3773660894079742,
+        "mean_normalized_entropy": 0.8532164175522159,
+        "nmi": 0.01091970731072213
+      },
+      "well": {
+        "ami": 0.008767709448181702,
+        "cramers_v": 0.07731496260599936,
+        "maximum_concentration": 0.14740233588401128,
+        "mean_normalized_entropy": 0.9801813448870293,
+        "nmi": 0.009423206749224594
+      }
+    },
+    "fish_well_identity": {
+      "ami": 0.02598655822087376,
+      "cramers_v": 0.16001627399316426,
+      "maximum_concentration": 0.08913412563667232,
+      "mean_normalized_entropy": 0.9044230101089195,
+      "nmi": 0.0286226512243359
+    },
+    "mean_speed_eta_squared": 0.4058130232931026,
+    "speed_only": {
+      "accuracy": 0.2924990432453119,
+      "balanced_accuracy": 0.2611430560633068,
+      "macro_f1": 0.2151351612236989
+    }
+  },
+  "37": {
+    "contexts": {
+      "condition_code": {
+        "ami": 0.011202592643446975,
+        "cramers_v": 0.16016157901503053,
+        "maximum_concentration": 0.6426071741032371,
+        "mean_normalized_entropy": 0.6734788987911269,
+        "nmi": 0.011392282965794054
+      },
+      "condition_label": {
+        "ami": 0.011202592643446975,
+        "cramers_v": 0.16016157901503053,
+        "maximum_concentration": 0.6426071741032371,
+        "mean_normalized_entropy": 0.6734788987911269,
+        "nmi": 0.011392282965794054
+      },
+      "family": {
+        "ami": 0.0044523570308037125,
+        "cramers_v": 0.07294449538942258,
+        "maximum_concentration": 0.35007105637138797,
+        "mean_normalized_entropy": 0.9561426993599484,
+        "nmi": 0.004689263385857665
+      },
+      "recording_id": {
+        "ami": 0.009836636368136082,
+        "cramers_v": 0.10616789020259146,
+        "maximum_concentration": 0.35007105637138797,
+        "mean_normalized_entropy": 0.858065495214258,
+        "nmi": 0.010145303874631709
+      },
+      "well": {
+        "ami": 0.008601501911782303,
+        "cramers_v": 0.07750505184640401,
+        "maximum_concentration": 0.1347331583552056,
+        "mean_normalized_entropy": 0.9815309004117033,
+        "nmi": 0.009249392213911413
+      }
+    },
+    "fish_well_identity": {
+      "ami": 0.02255464600586884,
+      "cramers_v": 0.1544741562028417,
+      "maximum_concentration": 0.06321626617375231,
+      "mean_normalized_entropy": 0.9097808197083344,
+      "nmi": 0.02517192293544295
+    },
+    "mean_speed_eta_squared": 0.3157226271469191,
+    "speed_only": {
+      "accuracy": 0.24052812858783007,
+      "balanced_accuracy": 0.227695676947128,
+      "macro_f1": 0.15819469073596631
+    }
+  },
+  "51": {
+    "contexts": {
+      "condition_code": {
+        "ami": 0.014713606068813194,
+        "cramers_v": 0.24644685098483404,
+        "maximum_concentration": 0.649556696220252,
+        "mean_normalized_entropy": 0.695962964707591,
+        "nmi": 0.0149077135869091
+      },
+      "condition_label": {
+        "ami": 0.014713606068813195,
+        "cramers_v": 0.24644685098483407,
+        "maximum_concentration": 0.649556696220252,
+        "mean_normalized_entropy": 0.6959629647075909,
+        "nmi": 0.0149077135869091
+      },
+      "family": {
+        "ami": 0.01389890789870438,
+        "cramers_v": 0.13127056885365818,
+        "maximum_concentration": 0.4048865619546248,
+        "mean_normalized_entropy": 0.9458886032596738,
+        "nmi": 0.014138584069346885
+      },
+      "recording_id": {
+        "ami": 0.019246176031897676,
+        "cramers_v": 0.17139203645364537,
+        "maximum_concentration": 0.3779296875,
+        "mean_normalized_entropy": 0.8576359379416216,
+        "nmi": 0.019558413815991733
+      },
+      "well": {
+        "ami": 0.012019336144832986,
+        "cramers_v": 0.08938098171555751,
+        "maximum_concentration": 0.1762652705061082,
+        "mean_normalized_entropy": 0.9749535102790816,
+        "nmi": 0.0126754518910005
+      }
+    },
+    "fish_well_identity": {
+      "ami": 0.03399258640448101,
+      "cramers_v": 0.20975934202850113,
+      "maximum_concentration": 0.0947265625,
+      "mean_normalized_entropy": 0.9009624505697463,
+      "nmi": 0.03661587414902498
+    },
+    "mean_speed_eta_squared": 0.5317805384534573,
+    "speed_only": {
+      "accuracy": 0.33654802908534254,
+      "balanced_accuracy": 0.31466860002969743,
+      "macro_f1": 0.25906037731462667
+    }
+  },
+  "79": {
+    "contexts": {
+      "condition_code": {
+        "ami": 0.013131463156609225,
+        "cramers_v": 0.22026644210524501,
+        "maximum_concentration": 0.6270348837209302,
+        "mean_normalized_entropy": 0.6948718035374809,
+        "nmi": 0.01332513053146845
+      },
+      "condition_label": {
+        "ami": 0.013131463156609225,
+        "cramers_v": 0.22026644210524501,
+        "maximum_concentration": 0.6270348837209302,
+        "mean_normalized_entropy": 0.6948718035374809,
+        "nmi": 0.01332513053146845
+      },
+      "family": {
+        "ami": 0.01106088633688906,
+        "cramers_v": 0.11342329323399032,
+        "maximum_concentration": 0.38559212231147966,
+        "mean_normalized_entropy": 0.9502393193095197,
+        "nmi": 0.011300579554940519
+      },
+      "recording_id": {
+        "ami": 0.016447850253203472,
+        "cramers_v": 0.1508614667618994,
+        "maximum_concentration": 0.38559212231147966,
+        "mean_normalized_entropy": 0.8569328062195744,
+        "nmi": 0.016760078646932113
+      },
+      "well": {
+        "ami": 0.008344078835405822,
+        "cramers_v": 0.07582525281476488,
+        "maximum_concentration": 0.1572769953051643,
+        "mean_normalized_entropy": 0.9806937822058892,
+        "nmi": 0.009001180824896824
+      }
+    },
+    "fish_well_identity": {
+      "ami": 0.02878644209049848,
+      "cramers_v": 0.18923480502620127,
+      "maximum_concentration": 0.07825861622181912,
+      "mean_normalized_entropy": 0.9047967549351348,
+      "nmi": 0.03142022017034237
+    },
+    "mean_speed_eta_squared": 0.4150081883309241,
+    "speed_only": {
+      "accuracy": 0.3345197091465748,
+      "balanced_accuracy": 0.2704603950977942,
+      "macro_f1": 0.20045046410111614
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "baseline_vs_ssl": {
+    "ami": 0.08410690649015821,
+    "ari": 0.04793722023327228,
+    "nmi": 0.0842072777856008,
+    "normalized_conditional_entropy_baseline_given_ssl": 0.7704948992359952,
+    "normalized_conditional_entropy_ssl_given_baseline": 0.948436902305146
+  },
+  "contributors": {
+    "0": {
+      "fish_wells": 58,
+      "recordings": 5
+    },
+    "1": {
+      "fish_wells": 56,
+      "recordings": 5
+    },
+    "2": {
+      "fish_wells": 58,
+      "recordings": 5
+    },
+    "3": {
+      "fish_wells": 56,
+      "recordings": 5
+    },
+    "4": {
+      "fish_wells": 56,
+      "recordings": 5
+    },
+    "5": {
+      "fish_wells": 57,
+      "recordings": 5
+    },
+    "6": {
+      "fish_wells": 57,
+      "recordings": 5
+    },
+    "7": {
+      "fish_wells": 57,
+      "recordings": 5
+    }
+  },
+  "distance_margin_confidence": {
+    "max": 0.7617652416229248,
+    "mean": 0.29962882264326063,
+    "min": 5.73920042370446e-05,
+    "std": 0.16608015138199156
+  },
+  "linear_18_feature_to_ssl_probe": {
+    "accuracy": 0.3813624186758515,
+    "balanced_accuracy": 0.3708936488010977,
+    "macro_f1": 0.3448569823672689
+  },
+  "nonlinear_18_feature_to_ssl_probe": {
+    "accuracy": 0.41706850363566783,
+    "balanced_accuracy": 0.4203276917135422,
+    "macro_f1": 0.3858490981725237
+  },
+  "occupancy": {
+    "0": 2483,
+    "1": 5638,
+    "2": 4382,
+    "3": 4777,
+    "4": 1648,
+    "5": 2406,
+    "6": 2440,
+    "7": 2356
+  },
+  "silhouette": 0.19210143387317657,
+  "silhouette_sample_size": 20000,
+  "test_used_for_fitting": false
+}

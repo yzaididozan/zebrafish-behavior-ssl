@@ -2,16 +2,16 @@
 
 ## Document Status
 
-**Status:** FROZEN PRE-TEST REPLICATION REPORT
+**Status:** FINAL HELD-OUT TEST EVALUATION COMPLETE
 **Dataset:** DS-006
 **Role:** External replication / transfer dataset
 **Primary dataset:** DS-005
 **Date frozen:** 2026-08-25
-**TEST status:** **SEALED / NOT USED**
+**TEST status:** **OPENED ONCE / FINAL EVALUATION COMPLETE**
 
-This document freezes the DS-006 replication findings obtained from TRAIN and
-VALIDATION only. It must be committed before any scientific inspection of the
-DS-006 TEST partition.
+This document preserves the frozen TRAIN/VALIDATION findings and records the
+one-time held-out DS-006 TEST evaluation performed from pre-TEST freeze commit
+`575ead5403d0b2f721d143366b4d2e0014bd67ee`.
 
 Any later deviation from this document must be documented explicitly rather
 than silently replacing the frozen plan or interpretation.
@@ -191,7 +191,9 @@ Recording overlap between partitions:
 0
 ```
 
-**TEST remains sealed.**
+**Historical pre-TEST state:** TEST remained sealed when this split and the
+TRAIN/VALIDATION analysis were frozen. The one-time final evaluation is
+recorded in Section 28.
 
 ---
 
@@ -747,9 +749,9 @@ The correct baseline-versus-SSL claim is:
 
 ---
 
-# 24. TEST Protection
+# 24. Pre-TEST Protection Record
 
-As of this freeze:
+At the pre-TEST freeze:
 
 ```text
 DS-006 TEST recordings: 5
@@ -757,7 +759,7 @@ DS-006 TEST bouts:       26,130
 Scientific TEST access:  NO
 ```
 
-TEST has not been used for:
+Before the one-time final evaluation, TEST had not been used for:
 
 - representation QC;
 - PCA fitting;
@@ -1050,8 +1052,8 @@ provenance record and be disclosed in publication materials.
 [x] Pre-TEST replication report updated
 [x] Frame-rate analytical interpretation resolved and formally documented
 [x] Unknown origin of embedded 25 Hz metadata retained as a provenance limitation
-[ ] DS-006 TEST opened
-[ ] Final TEST confirmation completed
+[x] DS-006 TEST opened exactly once under the frozen procedure
+[x] Final TEST confirmation completed
 ```
 
 ---
@@ -1079,4 +1081,179 @@ with the following interpretation:
 
 Any TEST result that weakens these conclusions must be reported.
 
-**DS-006 TEST remains sealed at freeze time.**
+**Historical freeze state:** DS-006 TEST remained sealed when the above
+interpretations were frozen. It was subsequently opened exactly once using the
+committed procedure and freeze commit. The results follow.
+
+---
+
+# 28. Final Held-Out DS-006 TEST Evaluation
+
+## 28.1 Run identity and integrity
+
+The one-time final evaluation completed on **2026-08-25** using:
+
+```yaml
+freeze_commit: "575ead5403d0b2f721d143366b4d2e0014bd67ee"
+utc_timestamp: "2026-08-25T08:04:03.153450+00:00"
+test_bouts: 26130
+test_recordings: 5
+ssl_seeds: [11, 23, 37, 51, 79]
+input_shape: [26130, 175, 3]
+embedding_shape: [26130, 64]
+unique_nonempty_bout_ids: true
+test_used_for_fitting: false
+no_configuration_changed: true
+prohibited_operations_performed: []
+```
+
+All 22 entries in `FINAL_TEST_SHA256SUMS` were independently verified after
+the run. The checksum manifest itself has SHA-256:
+
+```text
+e80acf4a774650b71776ed24368b20e82a60aad7793560773ec917541859d189
+```
+
+The runner produced all required outputs under
+`data/processed/DS-006/final_test_evaluation/` and did not write TEST-derived
+artifacts elsewhere.
+
+## 28.2 Clustering and cross-seed stability
+
+| Metric | Mean | SD | Minimum | Maximum |
+|---|---:|---:|---:|---:|
+| Cross-seed ARI | 0.354134 | 0.066777 | 0.277422 | 0.519813 |
+| Cross-seed NMI | 0.490504 | 0.049226 | 0.436659 | 0.616907 |
+| Aligned agreement | 0.454910 | 0.103687 | 0.244240 | 0.579793 |
+
+All eight aligned clusters were occupied for every seed. Per-seed TEST
+silhouette and normalized distance-margin confidence were:
+
+| Seed | Silhouette | Mean distance margin | Cluster occupancy, labels 0–7 |
+|---:|---:|---:|---|
+| 11 | 0.169315 | 0.277208 | 3019, 3223, 3517, 5245, 477, 3195, 3926, 3528 |
+| 23 | 0.192101 | 0.299629 | 2483, 5638, 4382, 4777, 1648, 2406, 2440, 2356 |
+| 37 | 0.177116 | 0.298744 | 4034, 2677, 4222, 2705, 2286, 4352, 3453, 2401 |
+| 51 | 0.157490 | 0.273406 | 4006, 4345, 2143, 3574, 573, 2666, 4727, 4096 |
+| 79 | 0.181516 | 0.293028 | 3847, 3195, 5769, 3440, 852, 3007, 2161, 3859 |
+
+## 28.3 Baseline-versus-SSL comparison
+
+| Seed | ARI | NMI | AMI | Linear probe balanced accuracy | Nonlinear probe balanced accuracy |
+|---:|---:|---:|---:|---:|---:|
+| 11 | 0.033944 | 0.094409 | 0.094310 | 0.427516 | 0.455939 |
+| 23 | 0.047937 | 0.084207 | 0.084107 | 0.370894 | 0.420328 |
+| 37 | 0.042378 | 0.112362 | 0.112266 | 0.352509 | 0.391725 |
+| 51 | 0.025806 | 0.087643 | 0.087542 | 0.432988 | 0.475807 |
+| 79 | 0.041083 | 0.097184 | 0.097085 | 0.367465 | 0.396050 |
+| **Mean** | **0.038230** | **0.095161** | **0.095062** | **0.390274** | **0.427970** |
+
+The coarse baseline clustering remained substantially different from the SSL
+partition. Nonlinear recovery remained moderate and far below the strong
+DS-005 nonlinear-recoverability result. Normalized conditional entropies in
+both directions are retained in `baseline_vs_ssl_summary.json`.
+
+## 28.4 Nuisance controls
+
+Mean TEST values across SSL seeds were:
+
+```yaml
+mean_speed_eta_squared: 0.429401
+speed_only_accuracy: 0.299533
+speed_only_balanced_accuracy: 0.275110
+speed_only_macro_f1: 0.216319
+fish_well_identity_nmi: 0.030880
+fish_well_identity_ami: 0.028252
+fish_well_identity_cramers_v: 0.183494
+fish_well_identity_normalized_entropy: 0.904015
+fish_well_identity_maximum_concentration: 0.080161
+```
+
+Mean context association values were:
+
+| Field | NMI | AMI | Cramér's V |
+|---|---:|---:|---:|
+| `recording_id` | 0.015560 | 0.015249 | 0.141276 |
+| `family` | 0.010164 | 0.009925 | 0.106419 |
+| `condition_label` | 0.012098 | 0.011905 | 0.200523 |
+| `condition_code` | 0.012098 | 0.011905 | 0.200523 |
+| `well` | 0.009700 | 0.009045 | 0.078382 |
+
+Thus, TEST confirmed substantial speed association without mean-speed-only
+collapse, low fish-well identity association, and low recording/context
+association under the frozen decision rules.
+
+## 28.5 Frozen kinematic axes
+
+| Axis | Mean TEST eta² | Mean TRAIN→TEST profile rho | Mean cross-seed TEST profile rho | Assessment |
+|---|---:|---:|---:|---|
+| `speed_change_rms` | 0.223255 | 0.985714 | 0.342857 | WEAKENED |
+| `speed_change_std` | 0.223270 | 0.985714 | 0.342857 | WEAKENED |
+| `bout_duration` | 0.222343 | 0.995238 | 0.183333 | WEAKENED |
+| `turn_net` | 0.011932 | 0.880952 | 0.547619 | SUPPORTED as weak signed-turn structure |
+| `turn_total_abs` | 0.406427 | 0.990476 | 0.721429 | SUPPORTED as a partial analogue |
+
+The speed-change profiles retained very strong TRAIN-to-TEST correspondence,
+but their TEST eta-squared fell below the frozen support threshold. Duration
+eta-squared rose above the frozen strong-support cutoff, while cross-seed TEST
+profile reproducibility was low. Both pre-TEST interpretations are therefore
+reported as **WEAKENED**, not silently retained as replicated.
+
+## 28.6 Frozen claim assessment
+
+| Frozen interpretation | TEST assessment |
+|---|---|
+| Broad SSL representation transfer is successful | **SUPPORTED** |
+| Frozen `k=8` clustering has moderate cross-seed structure | **SUPPORTED** |
+| Speed dependence reproduces | **SUPPORTED** |
+| Mean-speed-only collapse is rejected | **SUPPORTED** |
+| Fish-well identity leakage is low | **SUPPORTED** |
+| Recording/context leakage is low | **SUPPORTED** |
+| Coarse baseline clustering differs from SSL | **SUPPORTED** |
+| Handcrafted-feature probes are only moderately predictive | **SUPPORTED** |
+| Strong DS-005 nonlinear recoverability does not reproduce | **SUPPORTED** |
+| Acceleration/speed-change heterogeneity reproduces | **WEAKENED** |
+| Turning magnitude is a partial analogue | **SUPPORTED** |
+| Strong duration heterogeneity does not reproduce | **WEAKENED** |
+| Signed net turning does not reproduce strongly | **SUPPORTED** |
+| Direct Long_CS/LLC label replication | **NOT_TESTABLE** |
+
+Final assessment counts:
+
+```text
+SUPPORTED       11
+WEAKENED         2
+CONTRADICTED     0
+NOT_TESTABLE     1
+```
+
+The final held-out result is a **mixed but confirmatory external replication**:
+the broad representation-level conclusions survived, no frozen claim was
+contradicted, and the two weakened kinematic claims are retained explicitly.
+
+## 28.7 Final output SHA-256 values
+
+```text
+f80bf2e6c58ccaee70fc8936b1bd6f69d3565f279d0fc07db1089179f41c826e  baseline_test_labels.npy
+627ac3fbc5393719f61af0ba11f7f441f613dc60e73a133c06c38a509332e4ac  baseline_vs_ssl_summary.json
+d8fbce8c9cf59f165e14be9afcb2c2f22a77f3c2adc49cb4a12349db4646fe1a  claim_assessment.json
+07055798d615e33a065784a3e73a912d03b0ca553086b1930e98ad220132f9d5  cross_seed_summary.json
+fbcee768392828367a1b97afe850866356c0c2fb208c71b2d090dbcd20b2c86c  kinematic_axes_summary.json
+fdf21b5b40bcb94a894ed87548c007c84a9cee8290b42f92ae1f294a43f4c4c2  nuisance_summary.json
+56cf4f47075b04cb5a9395878984104fb9378a9e154ccc87eb5bf079570116c1  run_manifest.json
+30a625a5b2d00366c0c739c821c99647ca4d54bd2d71b0f52a499771ff9a7007  seed11/metrics.json
+793907e5e7f1aa677eac6e96865f75f3febfddd31b00229f94be09ac6fb6358b  seed11/test_embeddings.npz
+0ff8c5c6ae798a0aa9c51ab089a20251d5e0c473018742514fb829646765fca8  seed11/test_labels.npy
+0691e83bac5856c37066a8e78025e4aa047d40c29b5f9b6eb4ccb30efce122a4  seed23/metrics.json
+3a99e7a8f5a664df17da9f60353d5c699d35292b9d741f87e4fe73b78db09cc5  seed23/test_embeddings.npz
+a981fb72b791d185d5dfdf2058ba8432f418df539d5d5c23844510ce1a6b76d5  seed23/test_labels.npy
+85b0eeccbef3553f5671d7bf424e08d7257022d8beb60df3ec4a6dfad0f636ce  seed37/metrics.json
+3e64903ea5c10e200e6d116e78543cabca1ba1b232018cb4ca407550727f7e34  seed37/test_embeddings.npz
+c35c93a2df54a6d156d19fa8dcb318b96c010d585ff2cedd547b6d17229865b7  seed37/test_labels.npy
+c3589b263805a88b06e44dede2382fe53aa2f499f7d9e197a81362caccb24e4f  seed51/metrics.json
+07282251f35687f3b0cd63a2cef5e3767d26c80d54b058a48ffab55110a5be8f  seed51/test_embeddings.npz
+ba5d7ad937df94ddac8fc8315dec9bb92ed0302637926d0b3d19fa1200720155  seed51/test_labels.npy
+cc1b038e3ac1224ae702abdff390758af8983df880b49a024de314ea1bf4cf2d  seed79/metrics.json
+8a5f91978b185a631197682c84136b549a5b4573a09235d8c471117e98ca7184  seed79/test_embeddings.npz
+baf93f8dae1d75bddcabd8c65588ec188773a283a6f8ee184e340e58bb2ddcd3  seed79/test_labels.npy
+```

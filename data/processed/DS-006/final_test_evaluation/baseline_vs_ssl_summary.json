@@ -1,0 +1,87 @@
+{
+  "11": {
+    "ami": 0.09430952774902178,
+    "ari": 0.03394446567657617,
+    "linear_probe": {
+      "accuracy": 0.4070417145044011,
+      "balanced_accuracy": 0.4275161280043286,
+      "macro_f1": 0.39165208081809644
+    },
+    "nmi": 0.09440928774559212,
+    "nonlinear_probe": {
+      "accuracy": 0.4339073861461921,
+      "balanced_accuracy": 0.455938713110952,
+      "macro_f1": 0.4263155547450637
+    },
+    "normalized_conditional_entropy_baseline_given_ssl": 0.7439507477677408,
+    "normalized_conditional_entropy_ssl_given_baseline": 0.9421258041542742
+  },
+  "23": {
+    "ami": 0.08410690649015821,
+    "ari": 0.04793722023327228,
+    "linear_probe": {
+      "accuracy": 0.3813624186758515,
+      "balanced_accuracy": 0.3708936488010977,
+      "macro_f1": 0.3448569823672689
+    },
+    "nmi": 0.0842072777856008,
+    "nonlinear_probe": {
+      "accuracy": 0.41706850363566783,
+      "balanced_accuracy": 0.4203276917135422,
+      "macro_f1": 0.3858490981725237
+    },
+    "normalized_conditional_entropy_baseline_given_ssl": 0.7704948992359952,
+    "normalized_conditional_entropy_ssl_given_baseline": 0.948436902305146
+  },
+  "37": {
+    "ami": 0.1122663473534047,
+    "ari": 0.042378056722728125,
+    "linear_probe": {
+      "accuracy": 0.3787217757367011,
+      "balanced_accuracy": 0.352509293769318,
+      "macro_f1": 0.31512512254467384
+    },
+    "nmi": 0.11236157581618059,
+    "nonlinear_probe": {
+      "accuracy": 0.4059318790662074,
+      "balanced_accuracy": 0.39172494496132587,
+      "macro_f1": 0.36713168619147213
+    },
+    "normalized_conditional_entropy_baseline_given_ssl": 0.687159127360019,
+    "normalized_conditional_entropy_ssl_given_baseline": 0.9315216983072057
+  },
+  "51": {
+    "ami": 0.08754238081405599,
+    "ari": 0.025806332618667875,
+    "linear_probe": {
+      "accuracy": 0.4379640260237275,
+      "balanced_accuracy": 0.4329884348500159,
+      "macro_f1": 0.4022668739589234
+    },
+    "nmi": 0.08764310792414633,
+    "nonlinear_probe": {
+      "accuracy": 0.4717948717948718,
+      "balanced_accuracy": 0.47580697339438227,
+      "macro_f1": 0.4615665244210653
+    },
+    "normalized_conditional_entropy_baseline_given_ssl": 0.7628341173577075,
+    "normalized_conditional_entropy_ssl_given_baseline": 0.9462462768103155
+  },
+  "79": {
+    "ami": 0.09708520345738532,
+    "ari": 0.04108257071315135,
+    "linear_probe": {
+      "accuracy": 0.3774971297359357,
+      "balanced_accuracy": 0.3674645710223459,
+      "macro_f1": 0.33896056312949013
+    },
+    "nmi": 0.0971844998166611,
+    "nonlinear_probe": {
+      "accuracy": 0.3966322234978951,
+      "balanced_accuracy": 0.39605048120373154,
+      "macro_f1": 0.3744120553381966
+    },
+    "normalized_conditional_entropy_baseline_given_ssl": 0.7360367958533226,
+    "normalized_conditional_entropy_ssl_given_baseline": 0.9404443090858755
+  }
+}
