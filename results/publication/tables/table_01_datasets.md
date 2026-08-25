@@ -1,0 +1,4 @@
+| Dataset | Role | Units | Bouts | Split unit | TEST bouts | TEST status |
+| --- | --- | --- | --- | --- | --- | --- |
+| DS-005 | Primary | 463 fish | 1,203,409 | Fish | 192,104 | Opened once; complete |
+| DS-006 | External replication | 374 usable fish-wells | 163,065 | Recording | 26,130 | Opened once; complete |

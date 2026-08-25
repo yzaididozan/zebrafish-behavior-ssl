@@ -1,0 +1,10 @@
+Finding,Metric,TEST value,Assessment
+Cross-seed structure,Mean ARI,0.36063359895421676,SUPPORTED
+Cross-seed structure,Mean NMI,0.46265384734860027,SUPPORTED
+Baseline differs from SSL,Mean ARI,0.0198316766141574,SUPPORTED
+Linear feature recovery,Balanced accuracy,0.4818338518348635,SUPPORTING
+Nonlinear feature recovery,Balanced accuracy,0.9035733828795063,SUPPORTED
+Speed dependence,Mean-speed eta-squared,0.4818949132351714,SUPPORTED
+Speed-only collapse rejected,Balanced accuracy,0.21702409358849845,SUPPORTED
+Low fish identity leakage,Cramer's V,0.1808253035238447,SUPPORTED
+Low context leakage,Cramer's V,0.1199203604028444,SUPPORTED

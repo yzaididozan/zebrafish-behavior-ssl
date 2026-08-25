@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="639.36pt" height="302.688pt" viewBox="0 0 639.36 302.688" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>1970-01-01T00:00:00+00:00</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 302.688 
+L 639.36 302.688 
+L 639.36 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 22.824 117.7104 
+L 140.004 117.7104 
+L 140.004 48.0408 
+L 22.824 48.0408 
+z
+" clip-path="url(#pd761f88f9c)" style="fill: #ffffff; stroke: #0072b2; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 22.824 252.2448 
+L 140.004 252.2448 
+L 140.004 182.5752 
+L 22.824 182.5752 
+z
+" clip-path="url(#pd761f88f9c)" style="fill: #ffffff; stroke: #009e73; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 168.648 117.7104 
+L 296.244 117.7104 
+L 296.244 48.0408 
+L 168.648 48.0408 
+z
+" clip-path="url(#pd761f88f9c)" style="fill: #ffffff; stroke: #e69f00; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 168.648 252.2448 
+L 296.244 252.2448 
+L 296.244 182.5752 
+L 168.648 182.5752 
+z
+" clip-path="url(#pd761f88f9c)" style="fill: #ffffff; stroke: #cc79a7; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 327.492 184.9776 
+L 449.88 184.9776 
+L 449.88 115.308 
+L 327.492 115.308 
+z
+" clip-path="url(#pd761f88f9c)" style="fill: #ffffff; stroke: #56b4e9; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 481.128 184.9776 
+L 608.724 184.9776 
+L 608.724 115.308 
+L 481.128 115.308 
+z
+" clip-path="url(#pd761f88f9c)" style="fill: #ffffff; stroke: #d55e00; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #0072b2; font: 700 10px 'DejaVu Sans'; text-anchor: start" x="30.1152" y="61.49424" transform="rotate(-0 30.1152 61.49424)">DS-005 primary</text>
+   </g>
+   <g id="text_2">
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(30.1152 82.747234)">463 fish</text>
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(30.1152 93.851054)">1,203,409 bouts</text>
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(30.1152 104.954874)">fish-level split</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #009e73; font: 700 10px 'DejaVu Sans'; text-anchor: start" x="30.1152" y="196.02864" transform="rotate(-0 30.1152 196.02864)">DS-006 replication</text>
+   </g>
+   <g id="text_4">
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(30.1152 217.281634)">374 usable fish-wells</text>
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(30.1152 228.385454)">163,065 bouts</text>
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(30.1152 239.489274)">recording-level split</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #e69f00; font: 700 10px 'DejaVu Sans'; text-anchor: start" x="175.9392" y="61.49424" transform="rotate(-0 175.9392 61.49424)">Input A</text>
+   </g>
+   <g id="text_6">
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(175.9392 82.747234)">18 handcrafted features</text>
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(175.9392 93.851054)">PCA(6) → GMM(k=2)</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #cc79a7; font: 700 10px 'DejaVu Sans'; text-anchor: start" x="175.9392" y="196.02864" transform="rotate(-0 175.9392 196.02864)">Input B</text>
+   </g>
+   <g id="text_8">
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(175.9392 217.281634)">175 × 3 temporal bout</text>
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(175.9392 228.385454)">1D CNN → 64-D embedding</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #56b4e9; font: 700 10px 'DejaVu Sans'; text-anchor: start" x="334.7832" y="128.76144" transform="rotate(-0 334.7832 128.76144)">Frozen discovery</text>
+   </g>
+   <g id="text_10">
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(334.7832 150.014434)">Five SSL seeds</text>
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(334.7832 161.118254)">PCA → KMeans(k=8)</text>
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(334.7832 172.222074)">TRAIN-only alignment</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #d55e00; font: 700 10px 'DejaVu Sans'; text-anchor: start" x="488.4192" y="128.76144" transform="rotate(-0 488.4192 128.76144)">Final evaluation</text>
+   </g>
+   <g id="text_12">
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(488.4192 150.014434)">One-time held-out TEST</text>
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(488.4192 161.118254)">controls + biological cases</text>
+    <text style="font: 9px 'DejaVu Sans'" transform="translate(488.4192 172.222074)">checksum-verified</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 142.000548 83.11584 
+Q 154.324019 83.11584 164.970438 83.11584 
+" style="fill: none; stroke: #222222; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 161.370438 81.31584 
+L 164.970438 83.11584 
+L 161.370438 84.91584 
+" style="fill: none; stroke: #222222; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 142.000548 217.65024 
+Q 154.324019 217.65024 164.970438 217.65024 
+" style="fill: none; stroke: #222222; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 161.370438 215.85024 
+L 164.970438 217.65024 
+L 161.370438 219.45024 
+" style="fill: none; stroke: #222222; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 297.249108 84.846788 
+Q 311.867552 110.021948 325.643863 133.746829 
+" style="fill: none; stroke: #222222; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 325.392722 129.729749 
+L 325.643863 133.746829 
+L 322.279515 131.537494 
+" style="fill: none; stroke: #222222; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 297.241479 215.917093 
+Q 311.867303 190.50433 325.656586 166.545081 
+" style="fill: none; stroke: #222222; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 322.300772 168.767358 
+L 325.656586 166.545081 
+L 325.420919 170.563098 
+" style="fill: none; stroke: #222222; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 451.882588 150.38304 
+Q 465.50391 150.38304 477.448181 150.38304 
+" style="fill: none; stroke: #222222; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 473.848181 148.58304 
+L 477.448181 150.38304 
+L 473.848181 152.18304 
+" style="fill: none; stroke: #222222; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_13">
+    <text style="font: 700 14px 'DejaVu Sans'; text-anchor: middle" x="319.68" y="20.65344" transform="rotate(-0 319.68 20.65344)">Frozen, leakage-resistant analysis workflow</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #d55e00; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="319.68" y="283.476" transform="rotate(-0 319.68 283.476)">No TEST fitting, tuning, new alignment, or method selection</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd761f88f9c">
+   <rect x="7.2" y="7.2" width="624.96" height="288.288"/>
+  </clipPath>
+ </defs>
+</svg>

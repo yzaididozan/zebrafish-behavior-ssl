@@ -491,34 +491,6 @@ TEST partition may be rerun or used for further selection.
 Any accidental TEST inspection capable of influencing methodology must be documented as a deviation.
 
 ---
-
-# Current Project Status
-
-```text
-Primary dataset selection                         ✅
-Dataset/version freeze                            ✅
-Fish-level split                                  ✅
-Unit of analysis                                  ✅
-
-Input A implementation                            ✅
-Input A representation freeze                     ✅
-Baseline discovery/clustering                     ✅
-
-Input B SSL implementation                        ✅
-Input B representation freeze                     ✅
-SSL objective / encoder / seeds                    ✅
-Full multi-seed SSL training                      ✅ five seeds complete
-
-SSL clustering and stability analysis             ✅ TRAIN / VALIDATION complete
-Input A vs Input B comparison                      ✅ linear + nonlinear probes complete
-Nuisance and known-class validation                ✅ TRAIN / VALIDATION complete
-Within-class characterization                      ✅ Long_CS primary; LLC secondary
-Validation analysis freeze                        ✅ committed at d66aca7
-Independent DS-006 replication analysis           ✅ final TEST complete
-Final DS-005 held-out TEST evaluation              ✅ opened once; complete
-Final DS-006 held-out TEST evaluation              ✅ opened once; complete
-```
-
 ## Final Held-Out TEST Findings
 
 DS-005 TEST contained 192,104 bouts. All frozen directly testable claims were

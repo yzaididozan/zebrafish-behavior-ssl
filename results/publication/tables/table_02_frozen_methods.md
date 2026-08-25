@@ -1,0 +1,9 @@
+| Component | Frozen specification |
+| --- | --- |
+| Input A | 18 handcrafted timing, speed, acceleration, and turning features |
+| Baseline clustering | TRAIN-fitted PCA(6) + GaussianMixture(k=2, seed=20260822) |
+| Input B | 175×3 temporal orientation/speed sequence; 1D CNN; 64-D embedding |
+| SSL seeds | 11, 23, 37, 51, 79 |
+| SSL clustering | TRAIN-fitted StandardScaler + PCA(95% variance) + KMeans(k=8) |
+| Alignment | Hungarian mapping derived on TRAIN only; reference seed 11 |
+| Final evaluation | One-time inference only; no fitting, tuning, or new selection |
