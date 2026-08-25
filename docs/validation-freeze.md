@@ -2,8 +2,9 @@
 
 Date frozen: 2026-08-24
 
-Freeze status: prepared; becomes operative when committed or otherwise
-immutably timestamped with the cited TRAIN / VALIDATION artifacts.
+Freeze status: operative at commit
+`d66aca763c76242edc719683a617c2511e8ec37b`; one-time final TEST evaluation
+completed 2026-08-25.
 
 Primary source artifacts:
 
@@ -22,7 +23,9 @@ All cited summaries report `test_partition_used: false`.
 
 ## 1. Test partition status
 
-The DS-005 TEST partition remains unopened and unused for all analyses described below.
+Historical pre-TEST state: the DS-005 TEST partition was unopened and unused
+for all TRAIN/VALIDATION analyses described below. It was later opened exactly
+once under the committed procedure in Section 11; final evaluation is complete.
 
 No TEST-derived result has been used for:
 
@@ -35,7 +38,8 @@ No TEST-derived result has been used for:
 - candidate-class selection
 - threshold selection
 
-The TEST partition will be opened once after this document is committed.
+The TEST partition was opened once after this document and its guarded runner
+were committed at `d66aca763c76242edc719683a617c2511e8ec37b`.
 
 ---
 
@@ -411,3 +415,109 @@ Required outputs are per-seed TEST embeddings, aligned labels and metrics;
 command, UTC time, environment versions, input/output hashes, expected shapes,
 and explicit assertions that TEST was not used for fitting, configuration,
 alignment, or selection.
+
+---
+
+## 12. Final Held-Out DS-005 TEST Result
+
+### 12.1 Execution and integrity
+
+DS-005 TEST was opened exactly once on 2026-08-25 using freeze commit:
+
+```text
+d66aca763c76242edc719683a617c2511e8ec37b
+```
+
+The completed run processed 192,104 bouts for seeds 11, 23, 37, 51, and 79.
+All entries in `FINAL_TEST_SHA256SUMS` verify successfully. The run manifest
+records no fitting, configuration change, new label alignment, method
+selection, or prohibited operation.
+
+Final artifacts:
+
+```text
+data/processed/DS-005/final_test_evaluation/
+```
+
+Authoritative checksum-manifest SHA-256:
+
+```text
+9695b4d0474f37ec1e380ad001684776bfc658c9d8b734433d7f4e95780c1305
+```
+
+Principal result hashes:
+
+| Artifact | SHA-256 |
+|---|---|
+| `run_manifest.json` | `fa941420d06d65d83957d039864ccda173b4927ce24ff7e33257c5c1ddc64767` |
+| `claim_assessment.json` | `d845dfc985d02d42d27c4f428b73199e2d678103cd4e1889e6ecf0c918ca1937` |
+| `cross_seed_summary.json` | `f8d1a3308822ce843a1ce0b9e74a9fe92245e095854f8593d7ffffdb9835874d` |
+| `baseline_vs_ssl_summary.json` | `53a01dd5f524400549685ff826ca18f19cc2cc76259970b4ad99b9a856d4045e` |
+| `nuisance_summary.json` | `40b684ec9f58002c1ceaadf9548a1bb4761ce4bfa631c82a9f0ebecaeb6f8632` |
+| `long_cs_primary_summary.json` | `997381bb85182c228f2e50075a5f7f341d4a2f222e910d3f076333505902319e` |
+| `llc_secondary_summary.json` | `2e0c2e9d1c3161adba13d5bc71b4fbecb23be2c783ef8217f5b0fd384c1be09a` |
+
+### 12.2 General clustering and representation comparison
+
+- Mean cross-seed TEST ARI: `0.360634`
+- Mean cross-seed TEST NMI: `0.462654`
+- Mean aligned agreement: `0.539512`
+- Mean baseline-versus-SSL ARI: `0.019832`
+- Mean linear 18-feature probe balanced accuracy: `0.481834`
+- Mean nonlinear 18-feature probe balanced accuracy: `0.903573`
+
+The frozen two-state baseline and SSL organizations remain substantially
+different, while the nonlinear probe confirms that much of the DS-005 SSL
+organization is recoverable from the 18 handcrafted variables.
+
+### 12.3 Long_CS primary result
+
+| Frozen variable | Mean TEST eta-squared | Mean TRAIN-to-TEST Spearman |
+|---|---:|---:|
+| `bout_duration_s` | `0.553873` | `0.719048` |
+| `accel_rms` | `0.535440` | `0.580952` |
+| `accel_abs_std` | `0.511263` | `0.500000` |
+
+The preregistered Long_CS primary interpretation is `SUPPORTED`. Although some
+individual-seed profile correlations are weaker, all three variables meet the
+frozen aggregate support thresholds.
+
+### 12.4 LLC secondary result
+
+- Mean TEST `turn_net_rad` eta-squared: `0.162747`
+- Mean TRAIN-to-TEST profile Spearman: `0.971429`
+- Aligned cluster 0 positive and cluster 6 negative: `5/5` seeds
+
+The preregistered LLC secondary interpretation is `SUPPORTED`.
+
+### 12.5 Nuisance controls and claim assessment
+
+- Mean-speed eta-squared: `0.481895`
+- Speed-only balanced accuracy: `0.217024`
+- Fish-identity Cramer's V: `0.180825`
+- Context Cramer's V: `0.119920`
+
+Final frozen assessments:
+
+```text
+SUPPORTED       8
+WEAKENED        0
+CONTRADICTED    0
+NOT_TESTABLE    1
+```
+
+General k=8 structure, baseline/SSL difference, nonlinear handcrafted-feature
+recoverability, low fish identity leakage, low context leakage, speed-related
+but not speed-only structure, Long_CS, and LLC are `SUPPORTED`. Whether the
+eight clusters constitute eight distinct novel biological behaviors remains
+`NOT_TESTABLE`.
+
+### 12.6 Final TEST status
+
+```text
+DS-005 TEST: opened once; final evaluation complete
+DS-006 TEST: opened once; final evaluation complete
+```
+
+Neither TEST partition may be rerun or used for additional method, feature,
+threshold, cluster, alignment, or interpretation selection.

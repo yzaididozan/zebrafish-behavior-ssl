@@ -133,7 +133,9 @@ docs/evaluation-protocol.md
 
 That prerequisite was satisfied at commit `575ead5403d0b2f721d143366b4d2e0014bd67ee`.
 DS-006 TEST was subsequently opened exactly once under the frozen procedure;
-its final evaluation is complete. DS-005 TEST remains unopened.
+its final evaluation is complete. DS-005 TEST was subsequently opened exactly
+once from freeze commit `d66aca763c76242edc719683a617c2511e8ec37b`; its
+final evaluation is also complete.
 
 ---
 
@@ -294,7 +296,8 @@ recording_overlap: 0
 
 The DS-006 TRAIN/VALIDATION analysis was frozen before TEST access. DS-006 TEST
 has now been opened exactly once and its final evaluation is complete. DS-005
-TEST remains unopened.
+TEST was likewise opened exactly once after its committed freeze, and its final
+evaluation is complete.
 
 DS-006 may not be used to change the primary DS-005 method.
 
@@ -482,7 +485,8 @@ The DS-005 TEST partition must not influence feature definition, normalization, 
 
 DS-006 followed the same governance: replication-side procedures were frozen
 before its one-time final TEST evaluation. DS-006 TEST evaluation is complete;
-DS-005 TEST remains unopened.
+DS-005 TEST evaluation is also complete after one authorized opening. Neither
+TEST partition may be rerun or used for further selection.
 
 Any accidental TEST inspection capable of influencing methodology must be documented as a deviation.
 
@@ -509,10 +513,31 @@ SSL clustering and stability analysis             ✅ TRAIN / VALIDATION complet
 Input A vs Input B comparison                      ✅ linear + nonlinear probes complete
 Nuisance and known-class validation                ✅ TRAIN / VALIDATION complete
 Within-class characterization                      ✅ Long_CS primary; LLC secondary
-Validation analysis freeze                        ✅ documented; commit/timestamp pending
+Validation analysis freeze                        ✅ committed at d66aca7
 Independent DS-006 replication analysis           ✅ final TEST complete
-Final DS-005 held-out TEST evaluation              🔒 not yet opened
+Final DS-005 held-out TEST evaluation              ✅ opened once; complete
 Final DS-006 held-out TEST evaluation              ✅ opened once; complete
+```
+
+## Final Held-Out TEST Findings
+
+DS-005 TEST contained 192,104 bouts. All frozen directly testable claims were
+supported: moderate cross-seed k=8 organization (mean ARI `0.3606`), a strong
+difference between the coarse baseline and SSL (mean ARI `0.0198`), nonlinear
+recoverability from the 18 handcrafted features (balanced accuracy `0.9036`),
+speed association without speed-only collapse, and low fish/context leakage.
+
+The primary Long_CS finding was supported (mean eta-squared: duration `0.5539`,
+acceleration RMS `0.5354`, acceleration absolute SD `0.5113`). The secondary
+LLC finding was supported (turn-net eta-squared `0.1627`, mean TRAIN-to-TEST
+profile Spearman `0.9714`, frozen cluster-0/cluster-6 directions retained in
+5/5 seeds). Whether k=8 denotes eight distinct novel behaviors remains
+`NOT_TESTABLE`.
+
+The authoritative DS-005 final output checksum-manifest hash is:
+
+```text
+9695b4d0474f37ec1e380ad001684776bfc658c9d8b734433d7f4e95780c1305
 ```
 
 ## Current TRAIN / VALIDATION Findings

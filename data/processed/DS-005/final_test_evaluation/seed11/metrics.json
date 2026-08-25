@@ -1,0 +1,58 @@
+{
+  "baseline_vs_ssl": {
+    "ami": 0.051532315733687654,
+    "ari": 0.01973832973439757,
+    "nmi": 0.05154692688417683,
+    "normalized_conditional_entropy_baseline_given_ssl": 0.8165133253197159,
+    "normalized_conditional_entropy_ssl_given_baseline": 0.9700146419893747
+  },
+  "contributing_contexts": {
+    "0": 14,
+    "1": 14,
+    "2": 14,
+    "3": 14,
+    "4": 14,
+    "5": 14,
+    "6": 14,
+    "7": 14
+  },
+  "contributing_fish": {
+    "0": 70,
+    "1": 70,
+    "2": 70,
+    "3": 70,
+    "4": 70,
+    "5": 70,
+    "6": 70,
+    "7": 70
+  },
+  "distance_margin_confidence": {
+    "max": 0.6908295205047155,
+    "mean": 0.22121693656535465,
+    "min": 1.8142079471504172e-06,
+    "std": 0.13858920423106424
+  },
+  "linear_18_feature_probe": {
+    "accuracy": 0.39062174655394993,
+    "balanced_accuracy": 0.44587119348112,
+    "macro_f1": 0.41148356692228777
+  },
+  "nonlinear_18_feature_probe": {
+    "accuracy": 0.9030212801399242,
+    "balanced_accuracy": 0.9002925587678277,
+    "macro_f1": 0.9004436865111085
+  },
+  "occupancy": {
+    "0": 23274,
+    "1": 26967,
+    "2": 32581,
+    "3": 25105,
+    "4": 10091,
+    "5": 17000,
+    "6": 26410,
+    "7": 30676
+  },
+  "silhouette": 0.12453831732273102,
+  "silhouette_sample_size": 20000,
+  "test_used_for_fitting": false
+}

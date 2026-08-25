@@ -839,7 +839,7 @@ DS-006 recording/fish-well IDs frozen          ✅
 DS-006 well-level QC frozen                    ✅ 374 usable units
 DS-006 preprocessing and split                 ✅
 Independent DS-006 replication analysis        ✅ final TEST complete
-Final DS-005 held-out test evaluation          🔒 not opened
+Final DS-005 held-out test evaluation          ✅ opened once; complete
 Final DS-006 held-out test evaluation          ✅ opened once; complete
 ```
 
@@ -927,7 +927,9 @@ arrays did not constitute scientific inspection. DS-006 TEST was later opened
 exactly once from freeze commit
 `575ead5403d0b2f721d143366b4d2e0014bd67ee`; the final results and output hashes
 are recorded in `docs/ds-006-replication.md` and
-`data/processed/DS-006/final_test_evaluation/`. DS-005 TEST remains unopened.
+`data/processed/DS-006/final_test_evaluation/`. DS-005 TEST was subsequently
+opened exactly once from freeze commit
+`d66aca763c76242edc719683a617c2511e8ec37b`; its final evaluation is complete.
 
 DS-006 is an independently acquired Reddy et al. (2022) dataset, distinct from
 the Marques et al. recordings underlying DS-005. Differences in assay design,
@@ -978,18 +980,40 @@ bd9f9e4086fae94835409ca37c85163e22db607f3a76020c481dac12ab3474d6
 
 ---
 
-# 24. Next Freeze Point
+# 24. Final DS-005 Held-Out TEST Evaluation
 
-The TRAIN / VALIDATION analysis freeze is recorded in
-`docs/validation-freeze.md`. Before opening DS-005 TEST, commit or otherwise
-immutably timestamp that document together with the result artifacts and verify
-their recorded hashes. The final evaluation must use the frozen `Long_CS`
-primary case study, `LLC` secondary case study, and stated nuisance checks; TEST
-must not be used to select replacements.
+The TRAIN / VALIDATION analysis and exact TEST procedure were frozen at commit:
+
+```text
+d66aca763c76242edc719683a617c2511e8ec37b
+```
+
+DS-005 TEST was opened exactly once under that procedure. The run processed
+192,104 bouts for all five seeds and recorded:
+
+```yaml
+test_used_for_fitting: false
+configuration_changed: false
+new_alignment_performed: false
+method_selection_performed: false
+prohibited_operations_performed: []
+```
+
+Final artifacts:
+
+```text
+data/processed/DS-005/final_test_evaluation/
+```
+
+Final checksum-manifest SHA-256:
+
+```text
+9695b4d0474f37ec1e380ad001684776bfc658c9d8b734433d7f4e95780c1305
+```
 
 The baseline and SSL clustering methods, candidate selection, dimensionality
 reduction, seeds, stability procedure, validation metrics, nuisance controls,
-and sensitivity definitions are already frozen and evaluated on TRAIN /
-VALIDATION. No additional method-selection freeze remains. Only after the
-validation freeze is immutably recorded should the final held-out TEST partition
-be evaluated.
+and sensitivity definitions remained frozen. TEST was not used to select
+replacement classes, variables, thresholds, or methods. Both DS-005 and DS-006
+TEST partitions have now been opened once and their final evaluations are
+complete; neither may be rerun for selection.

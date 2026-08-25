@@ -1,0 +1,27 @@
+{
+  "allowed_statuses": [
+    "SUPPORTED",
+    "WEAKENED",
+    "CONTRADICTED",
+    "NOT_TESTABLE"
+  ],
+  "assessments": {
+    "baseline_and_ssl_organizations_differ": "SUPPORTED",
+    "eight_clusters_are_distinct_novel_behaviors": "NOT_TESTABLE",
+    "general_ssl_k8_structure": "SUPPORTED",
+    "llc_secondary_interpretation": "SUPPORTED",
+    "long_cs_primary_interpretation": "SUPPORTED",
+    "low_context_leakage": "SUPPORTED",
+    "low_fish_identity_leakage": "SUPPORTED",
+    "speed_related_but_not_speed_only": "SUPPORTED",
+    "ssl_is_nonlinearly_recoverable_from_handcrafted_features": "SUPPORTED"
+  },
+  "rules_frozen_before_test": true,
+  "thresholds": {
+    "llc_directional_seeds": 4,
+    "llc_supported_eta2": 0.1,
+    "llc_supported_rho": 0.5,
+    "long_cs_supported_eta2": 0.25,
+    "long_cs_supported_rho": 0.5
+  }
+}

@@ -6,8 +6,8 @@
 
 **Primary dataset:** `DS-005`  
 **External replication dataset:** `DS-006`  
-**Protocol status:** `FROZEN — RECORDED IN DEC-025; VALIDATION INTERPRETATION FROZEN SEPARATELY`
-**Last updated:** `2026-08-24`
+**Protocol status:** `FROZEN — BOTH ONE-TIME FINAL TEST EVALUATIONS COMPLETE`
+**Last updated:** `2026-08-25`
 
 ---
 
@@ -32,7 +32,7 @@ No metric in this protocol may be changed based on DS-005 TEST performance.
 
 # 2. Protected Data Rule
 
-The DS-005 TEST partition remains protected until:
+Before its one-time final evaluation, the DS-005 TEST partition was protected until:
 
 - SSL multi-seed training is complete;
 - all confirmatory metrics in this protocol are frozen;
@@ -43,8 +43,10 @@ The DS-005 TEST partition remains protected until:
 The DS-006 TEST partition was required to remain sealed until the
 replication-side TRAIN/VALIDATION procedure was frozen. That condition was met
 at commit `575ead5403d0b2f721d143366b4d2e0014bd67ee`; DS-006 TEST was then opened
-exactly once and its final evaluation is complete. DS-005 TEST remains
-protected and unopened.
+exactly once and its final evaluation is complete. DS-005 TEST was likewise
+protected through commit
+`d66aca763c76242edc719683a617c2511e8ec37b`, then was opened exactly once; its
+final evaluation is complete.
 
 The prerequisite DS-005 multi-seed TRAIN / VALIDATION analyses are complete.
 Their evidence-driven interpretation, selected within-class case studies, and
@@ -1009,7 +1011,7 @@ sensitivity_analyses:
   alternate_segmentation: NOT_PRIMARY
 
 test_partitions:
-  DS005: PROTECTED_UNOPENED
+  DS005: OPENED_ONCE_FINAL_EVALUATION_COMPLETE
   DS006: OPENED_ONCE_FINAL_EVALUATION_COMPLETE
 ```
 
@@ -1028,11 +1030,13 @@ With this protocol frozen, the following previously open preregistration items c
 - [x] Document planned sensitivity analyses.
 ```
 
-The remaining preregistration readiness checks should focus on:
+The preregistration readiness conditions were satisfied before TEST access:
 
 ```text
 1. confirming docs/charter.md is stable;
 2. preserving the completed five-seed TRAIN / VALIDATION artifacts;
-3. committing or otherwise immutably timestamping docs/validation-freeze.md;
-4. keeping DS-005 TEST protected until that record is fixed.
+3. committing `docs/validation-freeze.md` and the guarded runner at
+   `d66aca763c76242edc719683a617c2511e8ec37b`;
+4. keeping DS-005 TEST protected until that commit, followed by one authorized
+   final evaluation.
 ```

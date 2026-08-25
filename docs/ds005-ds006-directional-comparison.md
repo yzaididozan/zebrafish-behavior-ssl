@@ -7,8 +7,8 @@ of the frozen DS-005 findings reproduce in DS-006.
 
 It does **not** use individual p-values as the replication criterion.
 
-**Current TEST status:** DS-006 TEST was opened exactly once under the frozen
-procedure and its final evaluation is complete. DS-005 TEST remains unopened.
+**Current TEST status:** DS-005 and DS-006 TEST were each opened exactly once
+under their respective frozen procedures; both final evaluations are complete.
 
 DS-006 does not provide the same conventional bout-class labels as DS-005
 (`Long_CS`, `LLC`, etc.), so those class-specific comparisons are treated as
@@ -181,7 +181,7 @@ The overall outcome is therefore a **mixed but informative replication**.
 
 ```text
 DS-006 TEST partition: OPENED ONCE / FINAL EVALUATION COMPLETE
-DS-005 TEST partition: UNOPENED / PROTECTED
+DS-005 TEST partition: OPENED ONCE / FINAL EVALUATION COMPLETE
 ```
 
 The comparison table above preserves the TRAIN/VALIDATION evidence frozen
@@ -205,3 +205,14 @@ and the partial turning-magnitude analogue. Direct Long_CS/LLC label replication
 remains **NOT_TESTABLE**. Full TEST metrics and hashes are recorded in
 `docs/ds-006-replication.md` and
 `data/processed/DS-006/final_test_evaluation/`.
+
+DS-005 TEST was subsequently evaluated once from freeze commit
+`d66aca763c76242edc719683a617c2511e8ec37b`. All eight directly testable frozen
+DS-005 interpretations were `SUPPORTED`; the proposition that eight clusters
+are eight distinct novel biological behaviors remains `NOT_TESTABLE`. Key TEST
+results were mean cross-seed ARI `0.3606`, nonlinear handcrafted-feature probe
+balanced accuracy `0.9036`, Long_CS eta-squared `0.5539`/`0.5354`/`0.5113` for
+duration/acceleration RMS/acceleration absolute SD, and LLC turn-net
+eta-squared `0.1627` with TRAIN-to-TEST Spearman `0.9714`. The authoritative
+DS-005 output checksum-manifest SHA-256 is
+`9695b4d0474f37ec1e380ad001684776bfc658c9d8b734433d7f4e95780c1305`.

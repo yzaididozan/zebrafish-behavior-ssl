@@ -1576,11 +1576,11 @@ formal_preregistration: INTERNALLY_READY_PENDING_IMMUTABLE_TIMESTAMP
 
 ---
 
-# Updated Next Decision Gate
+# Historical Pre-TEST Decision Gate
 
 The primary methodological design is now substantially frozen.
 
-Before formal preregistration is declared complete:
+The following conditions applied before the DS-005 freeze and final evaluation:
 
 1. confirm `docs/charter.md` is stable;
 2. ensure `docs/preregistration-draft.md` reflects `DEC-024` through `DEC-027`;
@@ -1591,15 +1591,16 @@ Before formal preregistration is declared complete:
    selecting new configurations from it.
 
 DS-006 satisfied its replication-side freeze condition before its one-time
-final evaluation. No DS-005 final TEST evaluation should occur before the
-remaining DS-005 checks are complete.
+final evaluation. DS-005 subsequently satisfied items 1–5 at commit
+`d66aca763c76242edc719683a617c2511e8ec37b` and completed its one-time final
+evaluation under `DEC-030`.
 
 ---
 
 # DEC-028 — DS-005 Validation Interpretation and Final TEST Analysis Freeze
 
 **Date:** 2026-08-24
-**Status:** FROZEN PENDING COMMIT / IMMUTABLE TIMESTAMP
+**Status:** FROZEN AT `d66aca763c76242edc719683a617c2511e8ec37b`
 
 ## Decision
 
@@ -1623,10 +1624,11 @@ secondary case study using `turn_net_rad`; `BS` remains supporting evidence.
 
 ## Governance
 
-DS-005 TEST remains unopened. This decision becomes the operative pre-TEST
-freeze only when committed or otherwise immutably timestamped with its source
-TRAIN / VALIDATION artifacts. Any later departure must be recorded as a protocol
-deviation.
+Historical state at this decision: DS-005 TEST was unopened. This decision
+became the operative pre-TEST freeze when committed with its source TRAIN /
+VALIDATION artifacts at `d66aca763c76242edc719683a617c2511e8ec37b`.
+The later one-time execution and result are recorded in `DEC-030`; any departure
+from the frozen procedure must be recorded as a protocol deviation.
 
 ---
 
@@ -1684,5 +1686,70 @@ e80acf4a774650b71776ed24368b20e82a60aad7793560773ec917541859d189
 
 DS-006 TEST is no longer sealed: it was opened once and final evaluation is
 complete. It must not be rerun or used for further model, threshold, feature,
-cluster, or interpretation selection. DS-005 TEST remains unopened and
-protected under `DEC-028`.
+cluster, or interpretation selection. At the time of this decision, DS-005 TEST
+remained unopened and protected under `DEC-028`; its later final evaluation is
+recorded in `DEC-030`.
+
+---
+
+# DEC-030 — One-Time DS-005 Final TEST Evaluation
+
+**Date:** 2026-08-25
+**Status:** COMPLETE / FROZEN RESULT
+
+## Decision and execution
+
+Open DS-005 TEST exactly once using the inference-only procedure and frozen
+objects committed at:
+
+```text
+d66aca763c76242edc719683a617c2511e8ec37b
+```
+
+The runner verified the exact HDF5, split, TEST matrices, feature schema,
+normalization, training configuration, five checkpoints, TRAIN-derived label
+mapping, and all serialized inference-object hashes before processing TEST.
+
+```yaml
+test_bouts: 192104
+ssl_seeds: [11, 23, 37, 51, 79]
+test_used_for_fitting: false
+configuration_changed: false
+new_alignment_performed: false
+method_selection_performed: false
+prohibited_operations_performed: []
+```
+
+## Result
+
+```text
+SUPPORTED       8
+WEAKENED        0
+CONTRADICTED    0
+NOT_TESTABLE    1
+```
+
+The general k=8 structure, baseline/SSL difference, nonlinear handcrafted
+feature recoverability, speed control, low fish/context leakage, Long_CS
+primary interpretation, and LLC secondary interpretation were supported. The
+claim that eight clusters are eight distinct novel biological behaviors remains
+not testable.
+
+Final artifacts:
+
+```text
+data/processed/DS-005/final_test_evaluation/
+```
+
+Final checksum-manifest SHA-256:
+
+```text
+9695b4d0474f37ec1e380ad001684776bfc658c9d8b734433d7f4e95780c1305
+```
+
+## Consequence
+
+DS-005 TEST is no longer sealed: it was opened once and its final evaluation is
+complete. It must not be rerun or used for model, threshold, feature, cluster,
+alignment, or interpretation selection. DS-006 TEST is likewise opened once
+and complete. Both one-time final evaluations are now closed.

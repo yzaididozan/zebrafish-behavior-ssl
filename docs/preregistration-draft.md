@@ -768,8 +768,9 @@ recording_overlap: 0
 
 Historical pre-TEST state: the DS-006 TEST partition remained sealed through
 the replication freeze. It was subsequently opened exactly once under the
-committed procedure and its final evaluation is complete. DS-005 TEST remains
-unopened.
+committed procedure and its final evaluation is complete. DS-005 TEST was
+protected through its own freeze commit, then was opened exactly
+once; its final evaluation is complete.
 
 ---
 
@@ -978,7 +979,8 @@ ds006_test_partition: OPENED_ONCE_FINAL_EVALUATION_COMPLETE
 - [x] `docs/dataset-register.md` contains an approved primary dataset.
 - [x] `docs/research-question.md` is frozen.
 - [x] Primary dataset is downloaded, verified, and structurally inspected.
-- [x] No final TEST analyses have been performed.
+- [x] No final TEST analyses had been performed when this preregistration
+  package and its analysis rules were frozen.
 - [x] Unit of analysis is frozen.
 - [x] Baseline features are frozen.
 - [x] Primary SSL approach is frozen.
@@ -1000,7 +1002,7 @@ The completed SSL training and validation analyses did not reopen the frozen
 methods. Validation-driven claim restrictions and the preselected final TEST
 case studies are recorded in `docs/validation-freeze.md`.
 
-Before any DS-005 TEST evaluation:
+Before the now-completed DS-005 TEST evaluation, the project required:
 
 1. preserve the current charter, decision log, dataset register, evaluation protocol, and preregistration draft;
 2. preserve the completed five-seed TRAIN / VALIDATION artifacts and hashes;
@@ -1008,8 +1010,9 @@ Before any DS-005 TEST evaluation:
 4. verify that no protected TEST results have been inspected;
 5. formally timestamp or register the preregistration package.
 
-After that point, TEST evaluation may proceed exactly under the frozen protocol
-and validation-freeze document. Current validation evidence restricts the claim:
+Those requirements were satisfied at freeze commit
+`d66aca763c76242edc719683a617c2511e8ec37b`; TEST was then evaluated exactly
+once under the frozen protocol. Validation and TEST evidence restrict the claim:
 SSL organization is highly recoverable by a nonlinear Input-A probe, so the
 study must not claim that SSL captures information fundamentally absent from the
 handcrafted representation.

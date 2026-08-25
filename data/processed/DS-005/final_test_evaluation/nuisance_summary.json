@@ -1,0 +1,182 @@
+{
+  "11": {
+    "context_id": {
+      "ami": 0.020626357779230223,
+      "cramers_v": 0.1167382998696859,
+      "maximum_concentration": 0.25597066693092857,
+      "mean_normalized_entropy": 0.8726655498253981,
+      "nmi": 0.020731731832917173
+    },
+    "context_name": {
+      "ami": 0.020626357779230223,
+      "cramers_v": 0.1167382998696859,
+      "maximum_concentration": 0.25597066693092857,
+      "mean_normalized_entropy": 0.8726655498253981,
+      "nmi": 0.020731731832917173
+    },
+    "fish_identity": {
+      "ami": 0.028756650933362025,
+      "cramers_v": 0.17613285199085094,
+      "maximum_concentration": 0.107917946685165,
+      "mean_normalized_entropy": 0.9268396488255832,
+      "nmi": 0.029157677530760782
+    },
+    "mean_speed_eta_squared": 0.44618190930003804,
+    "session_identity": {
+      "ami": 0.028756650933362025,
+      "cramers_v": 0.17613285199085094,
+      "maximum_concentration": 0.107917946685165,
+      "mean_normalized_entropy": 0.9268396488255832,
+      "nmi": 0.029157677530760782
+    },
+    "speed_only": {
+      "accuracy": 0.1976793820014159,
+      "balanced_accuracy": 0.20294777585998336,
+      "macro_f1": 0.08452065031103718
+    }
+  },
+  "23": {
+    "context_id": {
+      "ami": 0.01498433790430482,
+      "cramers_v": 0.10297856372118036,
+      "maximum_concentration": 0.2158432374030056,
+      "mean_normalized_entropy": 0.8871266782134349,
+      "nmi": 0.015089836964048106
+    },
+    "context_name": {
+      "ami": 0.01498433790430482,
+      "cramers_v": 0.10297856372118036,
+      "maximum_concentration": 0.2158432374030056,
+      "mean_normalized_entropy": 0.8871266782134349,
+      "nmi": 0.015089836964048106
+    },
+    "fish_identity": {
+      "ami": 0.023896812731183336,
+      "cramers_v": 0.16696150699451287,
+      "maximum_concentration": 0.07442064478397543,
+      "mean_normalized_entropy": 0.9364654106834558,
+      "nmi": 0.024298496330698624
+    },
+    "mean_speed_eta_squared": 0.5093091601716561,
+    "session_identity": {
+      "ami": 0.023896812731183336,
+      "cramers_v": 0.16696150699451287,
+      "maximum_concentration": 0.07442064478397543,
+      "mean_normalized_entropy": 0.9364654106834558,
+      "nmi": 0.024298496330698624
+    },
+    "speed_only": {
+      "accuracy": 0.18253654270603423,
+      "balanced_accuracy": 0.2390346890472695,
+      "macro_f1": 0.13078505345940475
+    }
+  },
+  "37": {
+    "context_id": {
+      "ami": 0.026729889239698615,
+      "cramers_v": 0.1314050501309627,
+      "maximum_concentration": 0.27553022517051295,
+      "mean_normalized_entropy": 0.8661119233450773,
+      "nmi": 0.026834535064392238
+    },
+    "context_name": {
+      "ami": 0.026729889239698615,
+      "cramers_v": 0.1314050501309627,
+      "maximum_concentration": 0.27553022517051295,
+      "mean_normalized_entropy": 0.8661119233450773,
+      "nmi": 0.026834535064392238
+    },
+    "fish_identity": {
+      "ami": 0.03286300882883088,
+      "cramers_v": 0.18426872732363722,
+      "maximum_concentration": 0.13893300943660655,
+      "mean_normalized_entropy": 0.9239220973811547,
+      "nmi": 0.03326213761521056
+    },
+    "mean_speed_eta_squared": 0.45501495972002576,
+    "session_identity": {
+      "ami": 0.03286300882883088,
+      "cramers_v": 0.18426872732363722,
+      "maximum_concentration": 0.13893300943660655,
+      "mean_normalized_entropy": 0.9239220973811547,
+      "nmi": 0.03326213761521056
+    },
+    "speed_only": {
+      "accuracy": 0.20158872277516346,
+      "balanced_accuracy": 0.20053473918548115,
+      "macro_f1": 0.0838343827235625
+    }
+  },
+  "51": {
+    "context_id": {
+      "ami": 0.026117182989460967,
+      "cramers_v": 0.1301248657211163,
+      "maximum_concentration": 0.2827102803738318,
+      "mean_normalized_entropy": 0.8682827054930795,
+      "nmi": 0.02622183351771557
+    },
+    "context_name": {
+      "ami": 0.026117182989460967,
+      "cramers_v": 0.1301248657211163,
+      "maximum_concentration": 0.2827102803738318,
+      "mean_normalized_entropy": 0.8682827054930795,
+      "nmi": 0.02622183351771557
+    },
+    "fish_identity": {
+      "ami": 0.03324519743726413,
+      "cramers_v": 0.18886876017021278,
+      "maximum_concentration": 0.12118380062305296,
+      "mean_normalized_entropy": 0.9245507346907319,
+      "nmi": 0.03364399681818569
+    },
+    "mean_speed_eta_squared": 0.4915393409558754,
+    "session_identity": {
+      "ami": 0.03324519743726413,
+      "cramers_v": 0.18886876017021278,
+      "maximum_concentration": 0.12118380062305296,
+      "mean_normalized_entropy": 0.9245507346907319,
+      "nmi": 0.03364399681818569
+    },
+    "speed_only": {
+      "accuracy": 0.17712801399242079,
+      "balanced_accuracy": 0.21526143504731382,
+      "macro_f1": 0.10562295336373158
+    }
+  },
+  "79": {
+    "context_id": {
+      "ami": 0.021250035510560945,
+      "cramers_v": 0.11835502257127671,
+      "maximum_concentration": 0.2526824415547502,
+      "mean_normalized_entropy": 0.8732555671347054,
+      "nmi": 0.021356529724233575
+    },
+    "context_name": {
+      "ami": 0.021250035510560945,
+      "cramers_v": 0.11835502257127671,
+      "maximum_concentration": 0.2526824415547502,
+      "mean_normalized_entropy": 0.8732555671347054,
+      "nmi": 0.021356529724233575
+    },
+    "fish_identity": {
+      "ami": 0.03116964914436827,
+      "cramers_v": 0.18789467114000977,
+      "maximum_concentration": 0.11838271868116251,
+      "mean_normalized_entropy": 0.9247799925528246,
+      "nmi": 0.03157295857860533
+    },
+    "mean_speed_eta_squared": 0.5074291960282619,
+    "session_identity": {
+      "ami": 0.03116964914436827,
+      "cramers_v": 0.18789467114000977,
+      "maximum_concentration": 0.11838271868116251,
+      "mean_normalized_entropy": 0.9247799925528246,
+      "nmi": 0.03157295857860533
+    },
+    "speed_only": {
+      "accuracy": 0.22126035897222338,
+      "balanced_accuracy": 0.22734182880244413,
+      "macro_f1": 0.12605026651976198
+    }
+  }
+}
